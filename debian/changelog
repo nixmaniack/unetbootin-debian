@@ -4,6 +4,8 @@ unetbootin (299.dfsg-2) UNRELEASED; urgency=low
     - Upstream now provides tarballs with version string.
   * debian/rules:
     - Stopped passing now unneeded option to qmake. 
+  * debian/unetbootin.{dirs,install}:
+    - Modified to include desktop file.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Mon, 10 Nov 2008 21:20:06 +0200
 
