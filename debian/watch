@@ -1,1 +1,2 @@
-# Upstream doesn't provide source tarballs with version numbers :(
+version=3
+http://sf.net/unetbootin/ unetbootin-source-(.+)\.tar\.gz
