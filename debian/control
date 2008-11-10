@@ -1,0 +1,26 @@
+Source: unetbootin
+Section: utils
+Priority: optional
+Maintainer: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Build-Depends: debhelper (>= 7), libqt4-dev (>= 4.2)
+Standards-Version: 3.8.0
+Homepage: http://unetbootin.sourceforge.net
+
+Package: unetbootin
+Architecture: any
+Depends: ${shlibs:Depends}, syslinux, p7zip-full, udev
+Recommends: unetbootin-translations (>= ${binary:Version})
+Description: installer of Linux/BSD distributions to a partition or USB drive
+ UNetbootin allows for the installation of various Linux/BSD distributions to a
+ partition or USB drive, so it's no different from a standard install, only it
+ doesn't need a CD. It can create a dual-boot install, or replace the existing
+ OS entirely.
+
+Package: unetbootin-translations
+Architecture: all
+Recommends: unetbootin
+Description: translations for unetbootin distribution installer
+ UNetbooin is an installer of Linux/BSD distributions to a partition or USB
+ drive.
+ .
+ This package contains translation files for unetbootin.
