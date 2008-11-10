@@ -5,7 +5,7 @@
 
 build: build-stamp
 build-stamp:
-	qmake-qt4 "DEFINES += NOSTATIC" "RESOURCES -= unetbootin.qrc" "QMAKE_CXXFLAGS_RELEASE += $(CFLAGS)"
+	qmake-qt4 "QMAKE_CXXFLAGS_RELEASE += $(CFLAGS)"
 	make
 	touch $@
 
