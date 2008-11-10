@@ -1,3 +1,10 @@
+unetbootin (299.dfsg-2) UNRELEASED; urgency=low
+
+  * debian/watch:
+    - Upstream now provides tarballs with version string.
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Mon, 10 Nov 2008 21:20:06 +0200
+
 unetbootin (299.dfsg-1) unstable; urgency=low
 
   * New upstream release.
