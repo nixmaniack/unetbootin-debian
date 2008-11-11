@@ -1,2 +1,2 @@
 unetbootin usr/bin
-unetbootin.desktop usr/share/applications
+debbuild/usr/share/applications/unetbootin.desktop usr/share/applications

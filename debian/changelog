@@ -1,6 +1,8 @@
 unetbootin (301-1) unstable; urgency=low
 
   * New upstream release.
+  * debian/unetbootin.install:
+    - Switched to new source patch for .desktop file.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Tue, 11 Nov 2008 23:55:50 +0200
 
