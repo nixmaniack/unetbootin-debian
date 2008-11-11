@@ -1,5 +1,13 @@
-unetbootin (299.dfsg-2) unstable; urgency=low
+unetbootin (299-1) unstable; urgency=low
 
+  * New upstream release.
+  * debian/copyright:
+    - Updated copyright year.
+  * debian/rules:
+    - Added passing dpkg-buildpackage-provided CFLAGS to qmake. This enables
+      handling of 'noopt' in DEB_BUILD_OPTIONS.
+  * debian/dirs:
+    - Split into debian/unetbootin.dirs and debian/unetbootin-translations.dirs.
   * debian/watch:
     - Upstream now provides tarballs with version string.
   * debian/rules:
@@ -10,20 +18,7 @@ unetbootin (299.dfsg-2) unstable; urgency=low
     - Project is now maintained at git.debian.org, add Vcs-Git and Vcs-Browser
       fields.
 
- -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Mon, 10 Nov 2008 21:20:06 +0200
-
-unetbootin (299.dfsg-1) unstable; urgency=low
-
-  * New upstream release.
-  * debian/copyright:
-    - Updated copyright year.
-  * debian/rules:
-    - Added passing dpkg-buildpackage-provided CFLAGS to qmake. This enables
-      handling of 'noopt' in DEB_BUILD_OPTIONS.
-  * debian/dirs:
-    - Split into debian/unetbootin.dirs and debian/unetbootin-translations.dirs.
-
- -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 08 Nov 2008 22:13:37 +0200
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Tue, 11 Nov 2008 23:22:40 +0200
 
 unetbootin (298.dfsg-1) unstable; urgency=low
 
