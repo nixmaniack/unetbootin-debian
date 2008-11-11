@@ -6,6 +6,9 @@ unetbootin (299.dfsg-2) unstable; urgency=low
     - Stopped passing now unneeded option to qmake. 
   * debian/unetbootin.{dirs,install}:
     - Modified to include desktop file.
+  * debian/control:
+    - Project is now maintained at git.debian.org, add Vcs-Git and Vcs-Browser
+      fields.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Mon, 10 Nov 2008 21:20:06 +0200
 
