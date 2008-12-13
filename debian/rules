@@ -14,7 +14,7 @@ clean:
 	rm -f *.qm
 
 install: build
-	dh install
+	dh install -punetbootin
 
 # Build architecture-independent files here.
 binary-indep:
