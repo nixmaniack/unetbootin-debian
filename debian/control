@@ -10,7 +10,7 @@ Homepage: http://unetbootin.sourceforge.net
 
 Package: unetbootin
 Architecture: any
-Depends: ${shlibs:Depends}, syslinux, p7zip-full, udev
+Depends: ${misc:Depends}, ${shlibs:Depends}, syslinux, p7zip-full, udev
 Recommends: unetbootin-translations (>= ${binary:Version})
 Description: installer of Linux/BSD distributions to a partition or USB drive
  UNetbootin allows for the installation of various Linux/BSD distributions to a
@@ -20,6 +20,7 @@ Description: installer of Linux/BSD distributions to a partition or USB drive
 
 Package: unetbootin-translations
 Architecture: all
+Depends: ${misc:Depends}
 Recommends: unetbootin
 Description: translations for unetbootin distribution installer
  UNetbooin is an installer of Linux/BSD distributions to a partition or USB

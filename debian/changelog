@@ -3,6 +3,8 @@ unetbootin (301-2) unstable; urgency=low
   * debian/rules:
     - Don't try to deal with binary-independent files in binary-arch rule.
       Fixes FTBFS. (Closes: #508639)
+  * debian/control:
+    - Added '{misc:Depends}' to 'Depends' fields, fixes lintian warning.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 13 Dec 2008 23:10:40 +0200
 
