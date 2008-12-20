@@ -641,28 +641,28 @@ Reboot now?</source>
 *ВАЖНО* После перезагрузки не обращайте внимания на любые сообщения об ошибках, возвратитесь обратно, если будет затребован CD-диск. Затем выберите &apos;Start Installation&apos; в главном меню. Выберите &apos;Network&apos; в качестве источника, укажите &apos;HTTP&apos; в качестве протокола, введите  &apos;mirrors.kernel.org&apos; для имени сервера, и  &apos;/centos/%1/os/%2&apos; - для имени каталога.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="268"/>
+        <location filename="distrolst.cpp" line="272"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *ВАЖНО* После перезагрузки не обращайте внимания на любые сообщения об ошибках, возвратитесь обратно, если будет затребован CD-диск. Затем выберите &apos;Start Installation&apos; в главном меню. Выберите &apos;Network&apos; в качестве источника, укажите &apos;HTTP&apos; в качестве протокола, введите  &apos;download.fedora.redhat.com&apos; для имени сервера, и  &apos;/pub/fedora/linux/development/%1/os&apos; - для имени каталога.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="274"/>
+        <location filename="distrolst.cpp" line="278"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *ВАЖНО* После перезагрузки не обращайте внимания на любые сообщения об ошибках, возвратитесь обратно, если будет затребован CD-диск. Затем выберите &apos;Start Installation&apos; в главном меню. Выберите &apos;Network&apos; в качестве источника, укажите &apos;HTTP&apos; в качестве протокола, введите  &apos;download.fedora.redhat.com&apos; для имени сервера, и  &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; - для имени каталога.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="450"/>
+        <location filename="distrolst.cpp" line="454"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation type="unfinished">
 *ВАЖНО* После перезагрузки не обращайте внимания на любые сообщения об ошибках, возвратитесь обратно, если будет затребован CD-диск. Затем выберите &apos;Start Installation&apos; в главном меню. Выберите &apos;Network&apos; в качестве источника, укажите &apos;HTTP&apos; в качестве протокола, введите  &apos;download.opensuse.org&apos; для имени сервера, и  &apos;/distribution/SL-OSS-factory/inst-sources&apos; - для имени каталога.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="456"/>
+        <location filename="distrolst.cpp" line="460"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
