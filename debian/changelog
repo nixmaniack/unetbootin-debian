@@ -3,8 +3,10 @@ unetbootin (304-1) unstable; urgency=low
   * New upstream version:
     - Added download URL for Fedora 10.
     - Updated download URL for Linux Mint.
-    - Kubuntu, Ubuntu, XUbuntu, Fedora, Linux Mint, OpenSUSE entries updates.
+    - Updated Kubuntu, Ubuntu, XUbuntu, Fedora, Linux Mint, OpenSUSE entries.
     - Added Norwegian Bokmal translation.
+  * debian/watch:
+    - Corrected to not accept non-digit symbols in version.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 20 Dec 2008 15:06:40 +0200
 
