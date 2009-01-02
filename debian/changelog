@@ -1,3 +1,9 @@
+unetbootin (304-2) unstable; urgency=low
+
+  * Upload as requested by ftpmaster to test a DM code change. 
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Fri, 02 Jan 2009 23:24:58 +0200
+
 unetbootin (304-1) unstable; urgency=low
 
   * New upstream version:
