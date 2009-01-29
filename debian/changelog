@@ -1,6 +1,7 @@
 unetbootin (308-1) unstable; urgency=low
 
-  * New upstream release.
+  * New upstream release, some changes:
+    - Sabayon Linux support.
 
  -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Thu, 29 Jan 2009 10:12:01 +0200
 
