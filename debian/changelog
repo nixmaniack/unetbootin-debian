@@ -1,3 +1,9 @@
+unetbootin (308-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Thu, 29 Jan 2009 10:12:01 +0200
+
 unetbootin (304-2) unstable; urgency=low
 
   * Upload as requested by ftpmaster to test a DM code change. 
