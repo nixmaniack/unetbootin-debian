@@ -1,3 +1,11 @@
+unetbootin (312-1) unstable; urgency=low
+
+  * New upstream release:
+    - Use also 'df' command to determine all drives in system.
+    - Handle mount point paths with spaces correctly. (Closes: #513948)
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Thu, 05 Feb 2009 20:29:20 +0200
+
 unetbootin (308-1) unstable; urgency=low
 
   * New upstream release, some changes:
