@@ -10,7 +10,7 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/unetbootin.git;a=summary
 Homepage: http://unetbootin.sourceforge.net
 
 Package: unetbootin
-Architecture: any
+Architecture: i386 amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}, syslinux, p7zip-full, udev
 Recommends: unetbootin-translations (>= ${binary:Version})
 Description: installer of Linux/BSD distributions to a partition or USB drive

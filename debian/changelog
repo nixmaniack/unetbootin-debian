@@ -1,3 +1,10 @@
+unetbootin (312-2) unstable; urgency=low
+
+  * debian/control:
+    - UNetbootin is useful and installable only on i386 and amd64 architectures.
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Wed, 18 Feb 2009 20:43:29 +0200
+
 unetbootin (312-1) unstable; urgency=low
 
   * New upstream release:
