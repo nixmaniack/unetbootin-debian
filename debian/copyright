@@ -25,5 +25,5 @@ License:
 On Debian systems, you can find copy of GPLv2 license at
 `/usr/share/common-licenses/GPL-2'.
 
-The Debian packaging is (C) 2008, Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+The Debian packaging is Copyright (C) 2008, Eugene V. Lyubimkin <jackyf.devel@gmail.com>
 and is licensed under the GPLv3, see `/usr/share/common-licenses/GPL-3'.
