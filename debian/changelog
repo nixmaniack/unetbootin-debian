@@ -1,3 +1,13 @@
+unetbootin (319-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added gNewSense, Super Ubuntu and MEPIS to list of supported distros.
+    - Added new download location for Parted Magic utility.
+    - Use right-to-left window layout for right-to-left languages.
+    - Added he_IL (Hebrew) translation.
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sun, 08 Mar 2009 10:27:48 +0200
+
 unetbootin (312-2) unstable; urgency=low
 
   * debian/control:
