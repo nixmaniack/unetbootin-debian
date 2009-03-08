@@ -364,6 +364,21 @@ if (nameDistro == "Gentoo")
 	extractiso(isotmpf, targetPath);
 }
 
+if (nameDistro == "gNewSense")
+{
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"http://cdimage.gnewsense.org/" << 
+	"http://heanet.archive.gnewsense.org/gnewsense/cdimage/" <<
+	"http://mirror.softwarelibre.nl/gnewsense/cdimage/"
+	, 61440000, 1048576000, QList<QRegExp>() << 
+	QRegExp("gnewsense\\S{0,}livecd\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp("livecd\\S{0,}.iso$", Qt::CaseInsensitive) <<
+	QRegExp("gnewsense\\S{0,}.iso$", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "Gujin")
 {
 	instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
@@ -403,6 +418,48 @@ if (nameDistro == "Mandriva")
 		instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
 		downloadfile(QString("ftp://ftp.free.fr/mirrors/ftp.mandriva.com/MandrivaLinux/official/%1/%2/install/images/all.img").arg(relname, cpuarch), QString("%1ubninit").arg(targetPath));
 	}
+}
+
+if (nameDistro == "MEPIS")
+{
+	if (isarch64)
+	{
+		cpuarch = "64";
+	}
+	else
+	{
+		cpuarch = "32";
+	}
+	if (relname == "antix")
+	{
+		downloadfile(fileFilterNetDir(QStringList() << 
+		"ftp://ftp.ibiblio.org/pub/linux/distributions/mepis/released/antix/" << 
+		"http://distro.ibiblio.org/pub/linux/distributions/mepis/released/antix/" <<
+		"ftp://ftp-linux.cc.gatech.edu/pub/linux/distributions/mepis/released/antix/" << 
+		"http://ftp.uwsg.indiana.edu/linux/mepis/released/antix/" <<
+		"ftp://ftp.ussg.iu.edu/pub/linux/mepis/released/antix/" <<
+		"http://mirror.cs.vt.edu/pub/MEPIS/antix/"
+		, 61440000, 1048576000, QList<QRegExp>() << 
+		QRegExp("antiX\\S{0,}.iso$", Qt::CaseInsensitive) << 
+		QRegExp(".iso$", Qt::CaseInsensitive)
+		), isotmpf);
+	}
+	else
+	{
+		downloadfile(fileFilterNetDir(QStringList() << 
+		"ftp://ftp.ibiblio.org/pub/linux/distributions/mepis/released/" << 
+		"http://distro.ibiblio.org/pub/linux/distributions/mepis/released/" <<
+		"ftp://ftp-linux.cc.gatech.edu/pub/linux/distributions/mepis/released/" << 
+		"http://ftp.uwsg.indiana.edu/linux/mepis/released/" <<
+		"ftp://ftp.ussg.iu.edu/pub/linux/mepis/released/" <<
+		"http://mirror.cs.vt.edu/pub/MEPIS/"
+		, 61440000, 1048576000, QList<QRegExp>() << 
+		QRegExp("MEPIS\\S{0,}.iso$", Qt::CaseInsensitive) << 
+		QRegExp(".iso$", Qt::CaseInsensitive) << 
+		QRegExp("\\S{0,}"+cpuarch+".iso$", Qt::CaseInsensitive)
+		), isotmpf);
+	}
+	extractiso(isotmpf, targetPath);
 }
 
 if (nameDistro == "NetBSD")
@@ -480,15 +537,15 @@ if (nameDistro == "Parted Magic")
 	else
 	{
 		downloadfile(fileFilterNetDir(QStringList() << 
-		"http://partedmagic.com/downloads/stable/" << 
 		"http://exo.enarel.eu/mirror/partedmagic/" << 
+		"ftp://ftp.mirrorservice.org/sites/ftp.sourceforge.net/pub/sourceforge/p/pa/partedmagic/" <<
 		"http://fulloffacts.com/get/partedmagic/" <<
 		"http://www.digitalincursion.net/partedmagic/"
 		, 10485760, 209715200, QList<QRegExp>() << 
 		QRegExp("^pmagic", Qt::CaseInsensitive) << 
-		QRegExp("pxe", Qt::CaseInsensitive) << 
-		QRegExp("-pxe", Qt::CaseInsensitive) << 
-		QRegExp("^pmagic-pxe", Qt::CaseInsensitive)
+		QRegExp(".iso.zip$", Qt::CaseInsensitive) << 
+		QRegExp("\\d.iso.zip$", Qt::CaseInsensitive) << 
+		QRegExp("^pmagic-\\d", Qt::CaseInsensitive)
 		), isotmpf);
 		extractiso(isotmpf, targetPath);
 	}
@@ -585,6 +642,19 @@ if (nameDistro == "Super Grub Disk")
 {
 	instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
 	downloadfile(QString("http://lubi.sourceforge.net/sgd-latest.img").arg(relname), QString("%1ubninit").arg(targetPath));
+}
+
+if (nameDistro == "Super Ubuntu")
+{
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"http://superubuntu.kaobear.com/" <<
+	"ftp://linux-ds.unidu.hr/super_ubuntu/"
+	, 61440000, 2147483647, QList<QRegExp>() << 
+	QRegExp("super\\S{0,}ubuntu\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp("super\\S{0,}ubuntu", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf, targetPath);
 }
 
 if (nameDistro == "Ubuntu")
