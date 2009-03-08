@@ -328,6 +328,11 @@ void unetbootin::ubninitialize()
 //		"<b>Description:</b> GAG is a user-friendly graphical boot manager.<br/>"
 //		"<b>Install Notes:</b> GAG simply boots and runs; no installation is required to use it.") << 
 //	"4.9"));
+	distroselect->addItem("gNewSense", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://www.gnewsense.org/\">http://www.gnewsense.org</a><br/>"
+		"<b>Description:</b> gNewSense is an FSF-endorsed distribution based on Ubuntu with all non-free components removed.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") << 
+	"Latest_Live"));
 	distroselect->addItem("Gujin", (QStringList() << "2.4" << 
 	tr("<b>Homepage:</b> <a href=\"http://gujin.sourceforge.net/\">http://gujin.sourceforge.net</a><br/>"
 		"<b>Description:</b> Gujin is a graphical boot manager which can bootstrap various volumes and files.<br/>"
@@ -349,6 +354,11 @@ void unetbootin::ubninitialize()
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over the internet (FTP) or via pre-downloaded <a href=\"http://www.mandriva.com/en/download\">\"Free\" iso image files</a>.") << 
 	"2007.1_NetInstall" << "2007.1_NetInstall_x64" << "2008.0_NetInstall" << "2008.0_NetInstall_x64" << "2008.1_NetInstall" << "2008.1_NetInstall_x64"));
 //	"2007.1_NetInstall" << "2007.1_NetInstall_x64" << "2008.0_NetInstall" << "2008.0_NetInstall_x64" << "2008.0_Live" << "2008.1_NetInstall" << "2008.1_NetInstall_x64" << "2008.1_Live"));
+	distroselect->addItem("MEPIS", (QStringList() << "SimplyMEPIS" <<
+	tr("<b>Homepage:</b> <a href=\"http://www.mepis.org/\">http://www.mepis.org</a><br/>"
+		"<b>Description:</b> MEPIS is a Debian-based distribution. SimplyMEPIS is a user-friendly version based on KDE, while AntiX is a lightweight version for older computers.<br/>"
+		"<b>Install Notes:</b> MEPIS supports booting in Live mode, from which the installer can optionally be launched.") << 
+        "SimplyMEPIS" << "SimplyMEPIS_x64" << "AntiX"));
 	distroselect->addItem("NetBSD", (QStringList() << "4.0" << 
 	tr("<b>Homepage:</b> <a href=\"http://www.netbsd.org/\">http://www.netbsd.org</a><br/>"
 		"<b>Description:</b> NetBSD is a Unix-like operating system which focuses on portability.<br/>"
@@ -384,11 +394,11 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Puppy Linux is a lightweight distribution designed for older computers.<br/>"
 		"<b>Install Notes:</b> The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.") << 
         "Latest_Live"));
-        distroselect->addItem("Sabayon Linux", (QStringList() << "4-LiteMCE" <<
-        tr("<b>Homepage:</b> <a href=\"http://www.sabayonlinux.org/\">http://www.sabayonlinux.org</a><br/>"
-                "<b>Description:</b> Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.<br/>"
-                "<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB.") <<
-        "4-LiteMCE" << "4-LiteMCE_x64"));
+	distroselect->addItem("Sabayon Linux", (QStringList() << "4-LiteMCE" <<
+	tr("<b>Homepage:</b> <a href=\"http://www.sabayonlinux.org/\">http://www.sabayonlinux.org</a><br/>"
+		"<b>Description:</b> Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive") <<
+		"4-LiteMCE" << "4-LiteMCE_x64" << "4" << "4_x64"));
 	distroselect->addItem("Slax", (QStringList() << "Latest_Live" << 
 	tr("<b>Homepage:</b> <a href=\"http://www.slax.org/\">http://www.slax.org</a><br/>"
 		"<b>Description:</b> Slax is a Slackware-based distribution featuring the KDE desktop.<br/>"
@@ -409,12 +419,17 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.<br/>"
 		"<b>Install Notes:</b> SGD simply boots and runs; no installation is required to use it.") << 
 	"Latest"));
-        distroselect->addItem("Ubuntu", (QStringList() << "8.10_Live" <<
+	distroselect->addItem("Super Ubuntu", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://hacktolive.org/wiki/Super_Ubuntu\">http://hacktolive.org/wiki/Super_Ubuntu</a><br/>"
+		"<b>Description:</b> Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") << 
+	"Latest_Live"));
+	distroselect->addItem("Ubuntu", (QStringList() << "8.10_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.ubuntu.com/\">http://www.ubuntu.com</a><br/>"
 		"<b>Description:</b> Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.<br/>"
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.") << 
 	"6.06_NetInstall" << "6.06_NetInstall_x64" << "6.06_Live" << "6.06_Live_x64" << "6.10_NetInstall" << "6.10_NetInstall_x64" << "6.10_Live" << "6.10_Live_x64" << "7.04_NetInstall" << "7.04_NetInstall_x64" << "7.04_Live" << "7.04_Live_x64" << "7.10_NetInstall" << "7.10_NetInstall_x64" << "7.10_Live" << "7.10_Live_x64" << "8.04_NetInstall" << "8.04_NetInstall_x64" << "8.04_Live" << "8.04_Live_x64" << "8.10_NetInstall" << "8.10_NetInstall_x64" << "8.10_Live" << "8.10_Live_x64" << "Daily_Live" << "Daily_Live_x64"));
-        distroselect->addItem("Xubuntu", (QStringList() << "8.10_Live" <<
+	distroselect->addItem("Xubuntu", (QStringList() << "8.10_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.xubuntu.org/\">http://www.xubuntu.org</a><br/>"
 		"<b>Description:</b> Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.<br/>"
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.") << 
@@ -1258,6 +1273,13 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 	sdesc2->setText(QString("<b>%1 (Current)</b>").arg(sdesc2->text()));
 	tprogress->setValue(0);
 	QPair<QPair<QStringList, QList<quint64> >, QStringList> listfilesizedirpair = listarchiveconts(isofile);
+	if (listfilesizedirpair.first.first.size() == 1)
+	{
+		QString subarchivename = listfilesizedirpair.first.first.at(0);
+		randtmpfile tmpoutsubarchive(ubntmpf, subarchivename.right(3));
+		extractfile(listfilesizedirpair.first.first.at(0), tmpoutsubarchive.fileName(), isofile);
+		return extractiso(tmpoutsubarchive.fileName(), exoutputdir);
+	}
 	kernelOpts = extractcfg(isofile, listfilesizedirpair.first.first);
 	extraoptionsPL = extractcfgL(isofile, listfilesizedirpair.first.first);
 	extractkernel(isofile, QString("%1ubnkern").arg(exoutputdir), listfilesizedirpair.first);
