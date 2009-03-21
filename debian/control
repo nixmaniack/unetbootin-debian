@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
 Build-Depends: syslinux, debhelper (>= 7), libqt4-dev (>= 4.2)
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 DM-Upload-Allowed: yes
 Vcs-Git: git://git.debian.org/git/collab-maint/unetbootin.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/unetbootin.git;a=summary
