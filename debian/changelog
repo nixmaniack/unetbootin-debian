@@ -1,3 +1,10 @@
+unetbootin (319-2) unstable; urgency=low
+
+  * debian/control:
+    - Added syslinux to build-depends, set arch to 'any'. (Closes: #519214)
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 21 Mar 2009 13:57:58 +0200
+
 unetbootin (319-1) unstable; urgency=low
 
   * New upstream release:
