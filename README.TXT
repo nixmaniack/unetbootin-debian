@@ -1,9 +1,9 @@
-UNetbootin Source Revision 319
+UNetbootin Source Revision 323
 Copyright Geza Kovacs
 Homepage at http://unetbootin.sourceforge.net
 Licensed under the GNU GPL v2 and above, components from other projects are licensed under their respective licenses
-Build generated on Sat Mar  7 01:08:39 EST 2009
-Download using bzr: bzr checkout http://bazaar.launchpad.net/~gezakovacs/unetbootin/devel-new -r319
+Build generated on Wed Apr 22 13:10:01 EDT 2009
+Download using bzr: bzr checkout http://bazaar.launchpad.net/~gezakovacs/unetbootin/devel-new -r323
 
 Build instructions at http://unetbootin.wiki.sourceforge.net/compile
 
