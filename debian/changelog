@@ -1,3 +1,11 @@
+unetbootin (323-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added *Ubuntu Jaunty distributions.
+    - Updated German translation.
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 02 May 2009 13:53:51 +0300
+
 unetbootin (319-2) unstable; urgency=low
 
   * debian/control:
