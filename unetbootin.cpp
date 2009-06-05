@@ -128,6 +128,10 @@ void nDirListStor::sAppendSelfUrlInfoList(QUrlInfo curDirUrl)
 	{
 		nDirFileListSL.append(curDirUrl.name());
 	}
+	else if (this->searchsymlinks && curDirUrl.isReadable() && curDirUrl.isSymLink())
+	{
+		nDirFileListSL.append(curDirUrl.name());
+	}
 }
 
 unetbootin::unetbootin(QWidget *parent)
@@ -138,6 +142,7 @@ unetbootin::unetbootin(QWidget *parent)
 
 void unetbootin::ubninitialize()
 {
+	this->searchsymlinks = false;
 	secondlayer->setEnabled(false);
 	secondlayer->hide();
 	firstlayer->setEnabled(true);
@@ -227,6 +232,18 @@ void unetbootin::ubninitialize()
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a> is installed. This installer is based on <a href=\"http://unetbootin.sourceforge.net/\">UNetbootin</a>.") << 
 	"Unstable_Live"));
 	#endif
+
+        #ifdef KIWILINUX
+        distroselect->addItem("Kiwi Linux", (QStringList() << "9.04" <<
+        tr("<img src=\":/kiwi_logo_ro.png\" /><br/>"
+        "<b>Homepage:</b> <a href=\"http://www.kiwilinux.org/\">http://www.kiwilinux.org</a><br/>"
+        "<b>Description:</b> Kiwi Linux is an Ubuntu derivative primarily made for Romanian, Hungarian and English speaking users.<br/>"
+        "<b>Install Notes:</b> Make sure install media is empty and formatted before proceeding with install.") <<
+        "9.04"));
+        #endif
+
+
+
 	#ifdef GNEWSENSE
 	distroselect->addItem("gNewSense", (QStringList() << "deltah-2.1" << 
 	tr("<img src=\":/gnewsense.png\" /><br/>"
@@ -288,6 +305,11 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Dreamlinux is a user-friendly Debian-based distribution.<br/>"
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") << 
 	"Latest_Live"));
+	distroselect->addItem("Dr.Web AntiVirus", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://www.freedrweb.com/livecd\">http://www.freedrweb.com/livecd</a><br/>"
+		"<b>Description:</b> Dr.Web AntiVirus is an anti-virus emergency kit to restore a system that broke due to malware.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") << 
+	"Latest_Live"));
 	distroselect->addItem("Elive", (QStringList() << "Unstable_Live" << 
 	tr("<b>Homepage:</b> <a href=\"http://www.elivecd.org/\">http://www.elivecd.org</a><br/>"
 		"<b>Description:</b> Elive is a Debian-based distribution featuring the Enlightenment window manager.<br/>"
@@ -318,6 +340,11 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Frugalware is a general-purpose Slackware-based distro for advanced users.<br/>"
 		"<b>Install Notes:</b> The default option allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.") << 
 	"Stable" << "Stable_x64" << "Testing" << "Testing_x64" << "Current" << "Current_x64"));
+	distroselect->addItem("F-Secure Rescue CD", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://www.f-secure.com/linux-weblog/\">http://www.f-secure.com/linux-weblog/</a><br/>"
+		"<b>Description:</b> F-Secure Rescue CD detects and removes malware from your Windows installation.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") << 
+	"Latest_Live"));
 	distroselect->addItem("Gentoo", (QStringList() << "2008.0_Live" << 
 	tr("<b>Homepage:</b> <a href=\"http://www.gentoo.org/\">http://www.gentoo.org</a><br/>"
 		"<b>Description:</b> Gentoo is a flexible source-based distribution designed for advanced users.<br/>"
@@ -338,6 +365,11 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Gujin is a graphical boot manager which can bootstrap various volumes and files.<br/>"
 		"<b>Install Notes:</b> Gujin simply boots and runs; no installation is required to use it.") << 
 	"2.4"));
+	distroselect->addItem("Kaspersky Rescue Disk", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://ftp.kaspersky.com/devbuilds/RescueDisk/\">http://ftp.kaspersky.com/devbuilds/RescueDisk/</a><br/>"
+		"<b>Description:</b> Kaspersky Rescue Disk detects and removes malware from your Windows installation.<br/>"
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") << 
+	"Latest_Live"));
         distroselect->addItem("Kubuntu", (QStringList() << "9.04_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.kubuntu.org/\">http://www.kubuntu.org</a><br/>"
 		"<b>Description:</b> Kubuntu is an official Ubuntu derivative featuring the KDE desktop.<br/>"
@@ -424,11 +456,21 @@ void unetbootin::ubninitialize()
 		"<b>Description:</b> Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.<br/>"
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") << 
 	"Latest_Live"));
+	distroselect->addItem("SystemRescueCD", (QStringList() << "Latest_Live" << 
+	tr("<b>Homepage:</b> <a href=\"http://www.sysresccd.org\">http://www.sysresccd.org</a><br/>"
+		"<b>Description:</b> SystemRescueCD includes various partition management and data recovery and backup tools.<br/>"
+		"<b>Install Notes:</b> SystemRescueCD is booted and run in live mode; no installation is required to use it.") << 
+	"Latest_Live"));
 	distroselect->addItem("Ubuntu", (QStringList() << "9.04_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.ubuntu.com/\">http://www.ubuntu.com</a><br/>"
 		"<b>Description:</b> Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.<br/>"
 		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.") << 
 	"6.06_NetInstall" << "6.06_NetInstall_x64" << "6.06_Live" << "6.06_Live_x64" << "6.10_NetInstall" << "6.10_NetInstall_x64" << "6.10_Live" << "6.10_Live_x64" << "7.04_NetInstall" << "7.04_NetInstall_x64" << "7.04_Live" << "7.04_Live_x64" << "7.10_NetInstall" << "7.10_NetInstall_x64" << "7.10_Live" << "7.10_Live_x64" << "8.04_NetInstall" << "8.04_NetInstall_x64" << "8.04_Live" << "8.04_Live_x64" << "8.10_NetInstall" << "8.10_NetInstall_x64" << "8.10_Live" << "8.10_Live_x64" << "9.04_NetInstall" << "9.04_NetInstall_x64" << "9.04_Live" << "9.04_Live_x64" << "Daily_Live" << "Daily_Live_x64"));
+	distroselect->addItem("xPUD", (QStringList() << "Latest_Live" <<
+	tr("<b>Homepage:</b> <a href=\"http://www.xpud.org/\">http://www.xpud.org</a><br/>"
+		"<b>Description:</b> xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.<br/>"
+		"<b>Install Notes:</b> The Live version loads the entire system into RAM and boots from memory.") << 
+	"Latest_Live"));
 	distroselect->addItem("Xubuntu", (QStringList() << "9.04_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.xubuntu.org/\">http://www.xubuntu.org</a><br/>"
 		"<b>Description:</b> Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.<br/>"
@@ -955,7 +997,7 @@ bool unetbootin::extractfile(QString filepath, QString destinfileL, QString arch
 bool unetbootin::extractkernel(QString archivefile, QString kernoutputfile, QPair<QStringList, QList<quint64> > archivefileconts)
 {
 	pdesc1->setText(QString("Locating kernel file in %1").arg(archivefile));
-	QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux";
+	QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux" << "rescue" << "xpud";
 	QStringList tnarchivefileconts;
 	QStringList narchivefileconts;
 	QString curarcitm;
@@ -980,7 +1022,7 @@ bool unetbootin::extractkernel(QString archivefile, QString kernoutputfile, QPai
 	{
 		for (int j = 0; j < narchivefileconts.size(); ++j)
 		{
-			if (narchivefileconts.at(j).right(narchivefileconts.at(j).size() - narchivefileconts.at(j).lastIndexOf(QDir::toNativeSeparators("/")) - 1).contains(kernelnames.at(i)))
+			if (narchivefileconts.at(j).right(narchivefileconts.at(j).size() - narchivefileconts.at(j).lastIndexOf(QDir::toNativeSeparators("/")) - 1).contains(kernelnames.at(i), Qt::CaseInsensitive))
 			{
 				pdesc1->setText(QString("Copying kernel file from %1").arg(narchivefileconts.at(j)));
 				return extractfile(narchivefileconts.at(j), kernoutputfile, archivefile);
@@ -994,7 +1036,7 @@ bool unetbootin::extractkernel(QString archivefile, QString kernoutputfile, QPai
 bool unetbootin::extractinitrd(QString archivefile, QString kernoutputfile, QPair<QStringList, QList<quint64> > archivefileconts)
 {
 	pdesc1->setText(QString("Locating initrd file in %1").arg(archivefile));
-	QStringList kernelnames = QStringList() << "initrd.img.gz" << "initrd.igz" << "initrd.gz" << "initrd.img" << "initramfs.gz" << "initramfs.img" << "initrd" << "initramfs" << "minirt" << "miniroot" << "sabayon.igz" << "gentoo.igz" << "archlive.img" << "rootfs.gz" << ".igz" << ".cgz" << ".img" << "rootfs" << "fs.gz" << "root.gz" << ".gz";
+	QStringList kernelnames = QStringList() << "initrd.img.gz" << "initrd.igz" << "initrd.gz" << "initrd.img" << "initramfs.gz" << "initramfs.img" << "initrd" << "initramfs" << "minirt" << "miniroot" << "sabayon.igz" << "gentoo.igz" << "archlive.img" << "rootfs.gz" << ".igz" << ".cgz" << ".img" << "rootfs" << "fs.gz" << "root.gz" << ".gz" << "initram" << "initr" << "init" << "ram";
 	QStringList tnarchivefileconts;
 	QStringList narchivefileconts;
 	QString curarcitm;
@@ -1019,7 +1061,7 @@ bool unetbootin::extractinitrd(QString archivefile, QString kernoutputfile, QPai
 	{
 		for (int j = 0; j < narchivefileconts.size(); ++j)
 		{
-			if (narchivefileconts.at(j).right(narchivefileconts.at(j).size() - narchivefileconts.at(j).lastIndexOf(QDir::toNativeSeparators("/")) - 1).contains(kernelnames.at(i)))
+			if (narchivefileconts.at(j).right(narchivefileconts.at(j).size() - narchivefileconts.at(j).lastIndexOf(QDir::toNativeSeparators("/")) - 1).contains(kernelnames.at(i), Qt::CaseInsensitive))
 			{
 				pdesc1->setText(QString("Copying initrd file from %1").arg(narchivefileconts.at(j)));
 				return extractfile(narchivefileconts.at(j), kernoutputfile, archivefile);
@@ -1185,7 +1227,9 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 			{
 				QString indvitrloc = getfullarchivepath(combinedcfgPL.first.second.at(i), archivefileconts);
 				if (indvitrloc.isEmpty())
+				{
 					filteredcfgPL.first.second.append(initrdLoc);
+				}
 				else
 					filteredcfgPL.first.second.append(indvitrloc);
 			}
@@ -1201,18 +1245,22 @@ QString unetbootin::getfullarchivepath(QString relativefilepath, QStringList arc
 {
 	QStringList pfoundmatches;
 	relativefilepath = QDir::fromNativeSeparators(relativefilepath);
-//	if (!relativefilepath.startsWith('/'))
-//		relativefilepath = QString("/%1").arg(relativefilepath);
+	if (relativefilepath.endsWith('/'))
+		relativefilepath = relativefilepath.left(relativefilepath.size()-1);
+	if (!relativefilepath.startsWith('/'))
+		relativefilepath = QString("/%1").arg(relativefilepath);
 //	if (!relativefilepath.endsWith('/'))
 //		relativefilepath = QString("%1/").arg(relativefilepath);
 	for (int i = 0; i < archivefile.size(); ++i)
 	{
 		QString curarchiveitem = QDir::fromNativeSeparators(archivefile.at(i));
+		if (curarchiveitem.endsWith('/'))
+			curarchiveitem = curarchiveitem.left(curarchiveitem.size()-1);
 		if (!curarchiveitem.startsWith('/'))
 			curarchiveitem = QString("/%1").arg(curarchiveitem);
 //		if (!curarchiveitem.endsWith('/'))
 //			curarchiveitem = QString("%1/").arg(curarchiveitem);
-		if (curarchiveitem.contains(relativefilepath))
+		if (curarchiveitem.contains(QRegExp(relativefilepath+"$", Qt::CaseInsensitive)))
 			pfoundmatches.append(curarchiveitem);
 	}
 	if (pfoundmatches.isEmpty())
@@ -1277,8 +1325,34 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 	{
 		QString subarchivename = listfilesizedirpair.first.first.at(0);
 		randtmpfile tmpoutsubarchive(ubntmpf, subarchivename.right(3));
-		extractfile(listfilesizedirpair.first.first.at(0), tmpoutsubarchive.fileName(), isofile);
+		pdesc1->setText(tr("<b>Extracting compressed iso:</b> %1").arg(subarchivename));
+		extractfile(subarchivename, tmpoutsubarchive.fileName(), isofile);
 		return extractiso(tmpoutsubarchive.fileName(), exoutputdir);
+	}
+	QFileInfo isofileFI(isofile);
+	qint64 isofileSize = isofileFI.size();
+	if (listfilesizedirpair.first.first.size() < 10 && isofileSize > 12)
+	{
+		bool foundiso = false;
+		quint64 isofileSizeOneFourth = isofileSize / 4;
+		quint64 isofileSizeThreeFourth = isofileSizeOneFourth * 3;
+		for (int i = 0; i < listfilesizedirpair.first.first.size() && i < listfilesizedirpair.first.second.size(); ++i)
+		{
+			if (listfilesizedirpair.first.first.at(i).contains(QRegExp(".iso$", Qt::CaseInsensitive)))
+			{
+				if (foundiso)
+					break;
+				foundiso = true;
+				if (listfilesizedirpair.first.second.at(i) > isofileSizeThreeFourth)
+				{
+					QString subarchivename = listfilesizedirpair.first.first.at(i);
+					randtmpfile tmpoutsubarchive(ubntmpf, subarchivename.right(3));
+					pdesc1->setText(tr("<b>Extracting compressed iso:</b> %1").arg(subarchivename));
+					extractfile(subarchivename, tmpoutsubarchive.fileName(), isofile);
+					return extractiso(tmpoutsubarchive.fileName(), exoutputdir);
+				}
+			}
+		}
 	}
 	kernelOpts = extractcfg(isofile, listfilesizedirpair.first.first);
 	extraoptionsPL = extractcfgL(isofile, listfilesizedirpair.first.first);
@@ -1791,6 +1865,7 @@ QStringList unetbootin::lstFtpDirFiles(QString ldfDirStringUrl, int ldfMinSize, 
 	nDirListStor nDirListStorL;
 	nDirListStorL.nMinFileSizeBytes = ldfMinSize;
 	nDirListStorL.nMaxFileSizeBytes = ldfMaxSize;
+	nDirListStorL.searchsymlinks = this->searchsymlinks;
 	connect(&ldfFtp, SIGNAL(done(bool)), &ldfWait, SLOT(quit()));
 	connect(&ldfFtp, SIGNAL(listInfo(QUrlInfo)), &nDirListStorL, SLOT(sAppendSelfUrlInfoList(QUrlInfo)));
 	ldfFtp.connectToHost(ldfDirUrl.host());
