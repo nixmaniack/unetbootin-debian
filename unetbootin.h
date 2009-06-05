@@ -60,6 +60,13 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 //#define USBINSTALL
 #endif
 
+#ifdef KIWILINUX
+#define UNETBOOTINB "Kiwi pe USB"
+#define NOMANUAL
+#define NOFLOPPY
+//#define USBINSTALL
+#endif
+
 #ifdef SLITAZ
 #define UNETBOOTINB "SliTaz Installer"
 #define NOMANUAL
@@ -113,6 +120,7 @@ public:
 	QStringList nDirFileListSL;
 	int nMinFileSizeBytes;
 	int nMaxFileSizeBytes;
+	bool searchsymlinks;
 
 public slots:
 	void sAppendSelfUrlInfoList(QUrlInfo curDirUrl);
@@ -134,6 +142,7 @@ public:
 	bool islivecd;
 	bool isnetinstall;
 	bool overwriteall;
+	bool searchsymlinks;
 	QString targetDrive;
 	QString targetPath;
 	QString installType;

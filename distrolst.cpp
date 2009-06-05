@@ -70,6 +70,18 @@ if (nameDistro == "gNewSense")
 
 #endif
 
+#ifdef KIWILINUX
+
+if (nameDistro == "Kiwi Linux")
+{
+        downloadfile(QString("http://depo.osn.ro/content/distributii/linux/romanesti/kiwilinux-%1.iso").arg(relname), isotmpf);
+        extractiso(isotmpf, targetPath);
+
+}
+
+#endif
+
+
 #ifdef SLITAZ
 
 if (nameDistro == "SliTaz")
@@ -214,6 +226,18 @@ if (nameDistro == "Dreamlinux")
 	extractiso(isotmpf, targetPath);
 }
 
+if (nameDistro == "Dr.Web AntiVirus")
+{
+	this->searchsymlinks = true;
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"ftp://ftp.drweb.com/pub/drweb/livecd/"
+	, 9288000, 1048576000, QList<QRegExp>() << 
+	QRegExp(".iso$", Qt::CaseInsensitive) << 
+	QRegExp("DrWeb\\S{0,}.iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "Elive")
 {
 	downloadfile(fileFilterNetDir(QStringList() << 
@@ -344,6 +368,12 @@ if (nameDistro == "Frugalware")
 	kernelOpts = "load_ramdisk=1 prompt_ramdisk=0 ramdisk_size=100000 rw root=/dev/ram quiet vga=791";
 }
 
+if (nameDistro == "F-Secure Rescue CD")
+{
+	downloadfile("http://unetbootin.sourceforge.net/f-secure-rescue-cd.zip", isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "GAG")
 {
 	instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
@@ -375,6 +405,18 @@ if (nameDistro == "gNewSense")
 	QRegExp("livecd\\S{0,}.iso$", Qt::CaseInsensitive) <<
 	QRegExp("gnewsense\\S{0,}.iso$", Qt::CaseInsensitive) <<
 	QRegExp(".iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
+if (nameDistro == "Kaspersky Rescue Disk")
+{
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"http://ftp.kaspersky.com/devbuilds/RescueDisk/" <<
+	"ftp://ftp.kaspersky.com/devbuilds/RescueDisk/"
+	, 9288000, 1048576000, QList<QRegExp>() << 
+	QRegExp(".iso$", Qt::CaseInsensitive) << 
+	QRegExp("k\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
@@ -539,6 +581,7 @@ if (nameDistro == "Parted Magic")
 		downloadfile(fileFilterNetDir(QStringList() << 
 		"http://exo.enarel.eu/mirror/partedmagic/" << 
 		"ftp://ftp.mirrorservice.org/sites/ftp.sourceforge.net/pub/sourceforge/p/pa/partedmagic/" <<
+		"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/p/pa/partedmagic/" <<
 		"http://fulloffacts.com/get/partedmagic/" <<
 		"http://www.digitalincursion.net/partedmagic/"
 		, 10485760, 209715200, QList<QRegExp>() << 
@@ -657,6 +700,20 @@ if (nameDistro == "Super Ubuntu")
 	extractiso(isotmpf, targetPath);
 }
 
+if (nameDistro == "SystemRescueCD")
+{
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"ftp://ftp.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/sy/systemrescuecd/" <<
+	"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/sy/systemrescuecd/"
+	, 9440000, 1147483647, QList<QRegExp>() << 
+	QRegExp("systemrescuecd\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp("x86", Qt::CaseInsensitive) <<
+	QRegExp("systemrescuecd-x86\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp(".iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "Ubuntu")
 {
 	if (isarch64)
@@ -763,6 +820,25 @@ if (nameDistro == "Kubuntu")
 			kernelOpts = "vga=normal";
 		}
 	}
+}
+
+if (nameDistro == "xPUD")
+{
+	downloadfile(fileFilterNetDir(QStringList() << 
+	"http://download.xpud.org/" <<
+	"http://ftp.ubuntu-tw.org/mirror/xpud.org/download/"
+	, 5440000, 544000000, QList<QRegExp>() << 
+	QRegExp("xpud\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp("xpud-\\S{0,}.iso$", Qt::CaseInsensitive) << 
+	QRegExp("xpud-\\d{1,}\\S{0,}.iso$", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive)
+	), isotmpf);
+	initrdLoc = "";
+	kernelLoc = "/boot/xpud";
+	initrdOpts = "";
+	initrdLine = "";
+	slinitrdLine = "";
+	extractiso(isotmpf, targetPath);
 }
 
 if (nameDistro == "Xubuntu")
