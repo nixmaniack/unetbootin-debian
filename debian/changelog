@@ -1,3 +1,26 @@
+unetbootin (344-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added distributions:
+      - Kiwi Linux
+      - xPUD
+      - SystemRescueCD
+    - Added support for anti-virus software:
+      - Dr.Web AntiVirus
+      - F-Secure Rescue CD
+      - Kaspersky Rescue Disk
+    - Added one more mirror for Parted Magic distribution.
+    - Added translations:
+      - Romanian
+      - Turkish
+      - Spanish
+      - Vietnamese
+      - Catalan
+      - Norwegian Bokmål
+      - Dutch
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Fri, 05 Jun 2009 19:56:59 +0300
+
 unetbootin (323-1) unstable; urgency=low
 
   * New upstream release:
