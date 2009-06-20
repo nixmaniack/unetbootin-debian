@@ -1,3 +1,16 @@
+unetbootin (356-1) unstable; urgency=low
+
+  * New upstream release, some changes:
+    - Added a graceful check for out of space errors (Closes: #531574).
+    - Added translations:
+      - Arabic
+      - pt_BR
+      - Czech
+      - Greek
+      - Chinese (traditional)
+
+ -- Eugene V. Lyubimkin <jackyf.devel@gmail.com>  Sat, 20 Jun 2009 11:16:16 +0300
+
 unetbootin (344-1) unstable; urgency=low
 
   * New upstream release:
