@@ -25,6 +25,10 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #include <shellapi.h>
 #endif
 
+#ifdef Q_OS_UNIX
+#include <sys/vfs.h>
+#endif
+
 #ifdef AUTOSUPERGRUBDISK
 #define UNETBOOTINB "Auto Super Grub Disk"
 #define NOEXTERN
@@ -72,6 +76,18 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #define NOMANUAL
 #define NOFLOPPY
 //#define USBINSTALL
+#endif
+
+#ifdef XPUD
+#define UNETBOOTINB "xPUD USB Installer"
+#define NOMANUAL
+#define NOFLOPPY
+//#define USBINSTALL
+#define NOEXTRACTKERNEL
+#define NOEXTRACTINITRD
+#define NODEFAULTBOOT
+#define NODEFAULTKERNEL
+#define NOINITRD
 #endif
 
 #ifndef UNETBOOTINB
@@ -143,6 +159,7 @@ public:
 	bool isnetinstall;
 	bool overwriteall;
 	bool searchsymlinks;
+	bool ignoreoutofspace;
 	QString targetDrive;
 	QString targetPath;
 	QString installType;
@@ -160,6 +177,7 @@ public:
         QString fdiskcommand;
         QString dfcommand;
 	QString sfdiskcommand;
+	QString blkidcommand;
 	QString volidcommand;
         QString syslinuxcommand;
         QString extlinuxcommand;
@@ -168,8 +186,10 @@ public:
 	void ubninitialize();
 	QString displayfisize(quint64 fisize);
 	QPair<QPair<QStringList, QList<quint64> >, QStringList> listarchiveconts(QString archivefile);
-	bool overwritefileprompt(QString ovwfileloc);	
+	bool overwritefileprompt(QString ovwfileloc);
+	bool ignoreoutofspaceprompt(QString destindir);
 	bool extractfile(QString filepath, QString destinfileL, QString archivefile);
+	bool checkifoutofspace(QString destindir);
 	bool extractkernel(QString archivefile, QString kernoutputfile, QPair<QStringList, QList<quint64> > archivefileconts);
 	bool extractinitrd(QString archivefile, QString initoutputfile, QPair<QStringList, QList<quint64> > archivefileconts);
 	QString extractcfg(QString archivefile, QStringList archivefileconts);
@@ -210,6 +230,7 @@ public:
 	QString locatedevicenode(QString mountpoint);
 	QString locatemountpoint(QString devicenode);
 	QString getGrubNotation(QString devicenode);
+	QString getGrub2Notation(QString devicenode);
 	int letterToNumber(QChar lettertoconvert);
 	int getDiskNumber(QString devicenode);
 	int getPartitionNumber(QString devicenode);
@@ -224,6 +245,9 @@ public:
 	QString instTempfl(QString srcfName, QString dstfType);
 	void runinst();
 	void instDetType();
+	#ifdef Q_OS_UNIX
+	void writegrub2cfg();
+	#endif
 	void runinsthdd();
 	void runinstusb();
 	void fininstall();
