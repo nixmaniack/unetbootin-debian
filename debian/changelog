@@ -1,10 +1,11 @@
 unetbootin (372-1) unstable; urgency=low
 
-  * New upstream release:
+  * New upstream release, includes:
     - Force sync before reboot. (Closes: #533832)
   * debian/control:
     - Bumped Standards-Version to 3.8.3, no changes needed.
     - Updated my mail address.
+    - Removed 'DM-Upload-Allowed' field, it's not needed anymore.
 
  -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 27 Sep 2009 14:48:46 +0300
 
