@@ -140,7 +140,7 @@ unetbootin::unetbootin(QWidget *parent)
 	setupUi(this);
 }
 
-void unetbootin::ubninitialize()
+bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 {
 	this->ignoreoutofspace = false;
 	this->searchsymlinks = false;
@@ -322,7 +322,7 @@ void unetbootin::ubninitialize()
 	distroselect->addItem("Elive", (QStringList() << "Unstable_Live" <<
 	tr("<b>Homepage:</b> <a href=\"http://www.elivecd.org/\">http://www.elivecd.org</a><br/>"
 		"<b>Description:</b> Elive is a Debian-based distribution featuring the Enlightenment window manager.<br/>"
-		"<b>Install Notes:</b> The Live version allows for booting in Live mode. The Unstable version does not support Hard Drive installations, though the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a> (not freely downloadable) does.") <<
+		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a>.") <<
 	"Unstable_Live"));
 //	distroselect->addItem("FaunOS", (QStringList() << "shadow-0.5.4-stable" <<
 //	tr("<b>Homepage:</b> <a href=\"http://www.faunos.com/\">http://www.faunos.com</a><br/>"
@@ -538,6 +538,121 @@ void unetbootin::ubninitialize()
 	if (typeselect->findText(tr("Hard Disk")) != -1)
 		typeselect->setCurrentIndex(typeselect->findText(tr("Hard Disk")));
 	#endif
+	for (QList<QPair<QString, QString> >::const_iterator i = oppairs.constBegin(); i < oppairs.constEnd(); ++i)
+	{
+		QString pfirst(i->first);
+		QString psecond(i->second);
+		if (pfirst.contains("method", Qt::CaseInsensitive))
+		{
+			if (psecond.contains("distribution", Qt::CaseInsensitive))
+				this->radioDistro->setChecked(true);
+			else if (psecond.contains("diskimage", Qt::CaseInsensitive))
+				this->radioFloppy->setChecked(true);
+			else if (psecond.contains("custom", Qt::CaseInsensitive))
+				this->radioManual->setChecked(true);
+		}
+		else if (pfirst.contains("distribution", Qt::CaseInsensitive))
+		{
+			int distidx = this->distroselect->findText(psecond, Qt::MatchFixedString);
+			if (distidx != -1)
+				this->distroselect->setCurrentIndex(distidx);
+		}
+		else if (pfirst.contains("version", Qt::CaseInsensitive))
+		{
+			QStringList verlist = this->distroselect->itemData(this->distroselect->currentIndex()).value<QStringList>();
+			for (int j = 2; j < verlist.size(); ++j)
+			{
+				if (verlist[j].contains(psecond, Qt::CaseInsensitive))
+				{
+					this->dverselect->setCurrentIndex(j-2);
+					break;
+				}
+			}
+		}
+		else if (pfirst.contains("isofile", Qt::CaseInsensitive))
+		{
+			this->diskimagetypeselect->setCurrentIndex(diskimagetypeselect->findText(tr("ISO")));
+			this->FloppyPath->setText(psecond);
+		}
+		else if (pfirst.contains("imgfile", Qt::CaseInsensitive))
+		{
+			this->diskimagetypeselect->setCurrentIndex(diskimagetypeselect->findText(tr("Floppy")));
+			this->FloppyPath->setText(psecond);
+		}
+		else if (pfirst.contains("kernelfile", Qt::CaseInsensitive))
+		{
+			this->KernelPath->setText(psecond);
+		}
+		else if (pfirst.contains("initrdfile", Qt::CaseInsensitive))
+		{
+			this->InitrdPath->setText(psecond);
+		}
+		else if (pfirst.contains("cfgfile", Qt::CaseInsensitive))
+		{
+			QString cfgoptstxt = getcfgkernargs(psecond, "", QStringList());
+			if (cfgoptstxt.isEmpty())
+			{
+				cfgoptstxt = getgrubcfgargs(psecond);
+			}
+			this->OptionEnter->setText(cfgoptstxt);
+		}
+		else if (pfirst.contains("kernelopts", Qt::CaseInsensitive))
+		{
+			this->OptionEnter->setText(psecond);
+		}
+		else if (pfirst.contains("installtype", Qt::CaseInsensitive))
+		{
+			if (psecond.contains("Hard", Qt::CaseInsensitive) || psecond.contains("HDD", Qt::CaseInsensitive))
+				this->typeselect->setCurrentIndex(this->typeselect->findText(tr("Hard Disk")));
+			else
+				this->typeselect->setCurrentIndex(this->typeselect->findText(tr("USB Drive")));
+		}
+		else if (pfirst.contains("targetdrive", Qt::CaseInsensitive))
+		{
+			int driveidx = this->driveselect->findText(psecond, Qt::MatchFixedString);
+			if (driveidx != -1)
+			{
+				this->driveselect->setCurrentIndex(driveidx);
+			}
+		}
+		else if (pfirst.contains("nocustom", Qt::CaseInsensitive))
+		{
+			if (psecond.contains('y', Qt::CaseInsensitive))
+			{
+				customlayer->setEnabled(false);
+				customlayer->hide();
+				radioManual->setEnabled(false);
+				radioManual->hide();
+				diskimagelayer->move(diskimagelayer->x(), diskimagelayer->y() + 80);
+				radioFloppy->move(radioFloppy->x(), radioFloppy->y() + 80);
+				intromessage->resize(intromessage->width(), intromessage->height() + 80);
+			}
+		}
+		else if (pfirst.contains("nodistro", Qt::CaseInsensitive))
+		{
+			if (psecond.contains('y', Qt::CaseInsensitive))
+			{
+				radioDistro->setEnabled(false);
+				radioDistro->hide();
+				distroselect->setEnabled(false);
+				distroselect->hide();
+				dverselect->setEnabled(false);
+				dverselect->hide();
+				intromessage->move(intromessage->x(), intromessage->y()-20);
+				intromessage->resize(intromessage->width(), intromessage->height() + 20);
+			}
+		}
+		else if (pfirst.contains("message", Qt::CaseInsensitive))
+		{
+			intromessage->setText(psecond);
+		}
+		else if (pfirst.contains("autoinstall", Qt::CaseInsensitive))
+		{
+			if (psecond.contains('y', Qt::CaseInsensitive))
+				return true;
+		}
+	}
+	return false;
 }
 
 void unetbootin::on_distroselect_currentIndexChanged(int distroselectIndex)
@@ -834,7 +949,7 @@ void unetbootin::on_okbutton_clicked()
 				break;
 		}
 	}
-	else if (radioFloppy->isChecked() && !QFile::exists(FloppyPath->text()))
+	else if (radioFloppy->isChecked() && !QFile::exists(FloppyPath->text()) && !FloppyPath->text().startsWith("http://") && !FloppyPath->text().startsWith("ftp://"))
 	{
 		QMessageBox ffnotexistsmsgb;
 		ffnotexistsmsgb.setIcon(QMessageBox::Information);
@@ -849,7 +964,7 @@ void unetbootin::on_okbutton_clicked()
 				break;
 		}
 	}
-	else if (radioManual->isChecked() && !QFile::exists(KernelPath->text()))
+	else if (radioManual->isChecked() && !QFile::exists(KernelPath->text()) && !KernelPath->text().startsWith("http://") && !KernelPath->text().startsWith("ftp://"))
 	{
 		QMessageBox kfnotexistsmsgb;
 		kfnotexistsmsgb.setIcon(QMessageBox::Information);
@@ -864,7 +979,7 @@ void unetbootin::on_okbutton_clicked()
 				break;
 		}
 	}
-	else if (radioManual->isChecked() && InitrdPath->text().trimmed() != "" && !QFile::exists(InitrdPath->text()))
+	else if (radioManual->isChecked() && InitrdPath->text().trimmed() != "" && !QFile::exists(InitrdPath->text())  && !InitrdPath->text().startsWith("http://") && !InitrdPath->text().startsWith("ftp://"))
 	{
 		QMessageBox ifnotexistsmsgb;
 		ifnotexistsmsgb.setIcon(QMessageBox::Information);
@@ -1422,8 +1537,11 @@ QStringList unetbootin::filteroutlistL(QStringList listofdata, QList<QRegExp> li
 
 void unetbootin::extractiso(QString isofile, QString exoutputdir)
 {
-	sdesc1->setText(QString(sdesc1->text()).remove("<b>").replace("(Current)</b>", "(Done)"));
-	sdesc2->setText(QString("<b>%1 (Current)</b>").arg(sdesc2->text()));
+	if (!sdesc2->text().contains("(Current)"))
+	{
+		sdesc1->setText(QString(sdesc1->text()).remove("<b>").replace("(Current)</b>", "(Done)"));
+		sdesc2->setText(QString("<b>%1 (Current)</b>").arg(sdesc2->text()));
+	}
 	tprogress->setValue(0);
 	QPair<QPair<QStringList, QList<quint64> >, QStringList> listfilesizedirpair = listarchiveconts(isofile);
 	if (listfilesizedirpair.first.first.size() == 1)
@@ -1931,16 +2049,32 @@ void unetbootin::downloadfile(QString fileurl, QString targetfile)
 
 void unetbootin::dlprogressupdate(int dlbytes, int maxbytes)
 {
-	tprogress->setValue(dlbytes);
-	tprogress->setMaximum(maxbytes);
-	pdesc1->setText(tr("<b>Downloaded:</b> %1 of %2 bytes").arg(dlbytes).arg(maxbytes));
+ QTime time = QTime::currentTime();
+ static int oldsec = 0;
+ // refresh the progress bar every second
+ if(oldsec != time.second())
+ {
+   oldsec = time.second();
+     tprogress->setValue(dlbytes);
+     tprogress->setMaximum(maxbytes);
+   // display the downloaded size with suffix
+     pdesc1->setText(tr("<b>Downloaded:</b> %1 of %2").arg(displayfisize(dlbytes)).arg(displayfisize(maxbytes)));
+ }
 }
 
 void unetbootin::dlprogressupdate64(qint64 dlbytes, qint64 maxbytes)
 {
-	tprogress->setValue(dlbytes);
-	tprogress->setMaximum(maxbytes);
-	pdesc1->setText(tr("<b>Downloaded:</b> %1 of %2 bytes").arg(dlbytes).arg(maxbytes));
+ QTime time = QTime::currentTime();
+ static int oldsec = 0;
+ // refresh the progress bar every second
+ if(oldsec != time.second())
+ {
+   oldsec = time.second();
+     tprogress->setValue(dlbytes);
+     tprogress->setMaximum(maxbytes);
+   // display the downloaded size with suffix
+     pdesc1->setText(tr("<b>Downloaded:</b> %1 of %2").arg(displayfisize(dlbytes)).arg(displayfisize(maxbytes)));
+ }
 }
 
 QString unetbootin::downloadpagecontents(QString pageurl)
@@ -2492,6 +2626,8 @@ QString unetbootin::instTempfl(QString srcfName, QString dstfType)
 
 void unetbootin::runinst()
 {
+	this->trcurrent = tr("(Current)");
+	this->trdone = tr("(Done)");
 	firstlayer->setEnabled(false);
 	firstlayer->hide();
 	secondlayer->setEnabled(true);
@@ -2500,12 +2636,13 @@ void unetbootin::runinst()
 	rebootlayer->hide();
 	progresslayer->setEnabled(true);
 	progresslayer->show();
-	sdesc1->setText(QString("<b>%1 (Current)</b>").arg(sdesc1->text()));
+	sdesc1->setText(QString("<b>%1 %2</b>").arg(sdesc1->text()).arg(trcurrent));
 	tprogress->setValue(0);
 	installType = typeselect->currentText();
 	targetDrive = driveselect->currentText();
 	QString ginstallDir;
 	QString installDir;
+	QString isotmpf = randtmpfile::getrandfilename(ubntmpf, "iso");
 	#ifdef Q_OS_WIN32
 	if (installType == tr("Hard Disk"))
 	{
@@ -2579,11 +2716,20 @@ void unetbootin::runinst()
 		if (diskimagetypeselect->currentIndex() == diskimagetypeselect->findText(tr("Floppy")))
 		{
 			instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
-			QFile::copy(FloppyPath->text(), QString("%1ubninit").arg(targetPath));
+			if (!FloppyPath->text().startsWith("http://") && !FloppyPath->text().startsWith("ftp://"))
+				QFile::copy(FloppyPath->text(), QString("%1ubninit").arg(targetPath));
+			else
+				downloadfile(FloppyPath->text(), QString("%1ubninit").arg(targetPath));
 		}
 		if (diskimagetypeselect->currentIndex() == diskimagetypeselect->findText(tr("ISO")))
 		{
-			extractiso(FloppyPath->text(), targetPath);
+			if (!FloppyPath->text().startsWith("http://") && !FloppyPath->text().startsWith("ftp://"))
+				extractiso(FloppyPath->text(), targetPath);
+			else
+			{
+				downloadfile(FloppyPath->text(), isotmpf);
+				extractiso(isotmpf, targetPath);
+			}
 			if (QFile::exists(QString("%1sevnz.exe").arg(ubntmpf)))
 			{
 				QFile::remove(QString("%1sevnz.exe").arg(ubntmpf));
@@ -2596,8 +2742,14 @@ void unetbootin::runinst()
 	}
 	else if (radioManual->isChecked())
 	{
-		QFile::copy(KernelPath->text(), QString("%1ubnkern").arg(targetPath));
-		QFile::copy(InitrdPath->text(), QString("%1ubninit").arg(targetPath));
+		if (!KernelPath->text().startsWith("http://") && !KernelPath->text().startsWith("ftp://"))
+			QFile::copy(KernelPath->text(), QString("%1ubnkern").arg(targetPath));
+		else
+			downloadfile(KernelPath->text(), QString("%1ubnkern").arg(targetPath));
+		if (!InitrdPath->text().startsWith("http://") && !InitrdPath->text().startsWith("ftp://"))
+			QFile::copy(InitrdPath->text(), QString("%1ubninit").arg(targetPath));
+		else
+			downloadfile(InitrdPath->text(), QString("%1ubninit").arg(targetPath));
 		kernelOpts = OptionEnter->text();
 	}
 	else if (radioDistro->isChecked())
@@ -2627,7 +2779,6 @@ void unetbootin::runinst()
 		{
 			isarch64 = false;
 		}
-		QString isotmpf = randtmpfile::getrandfilename(ubntmpf, "iso");
 		QString cpuarch;
 		QString relname = nameVersion.toLower();
 		#include "customdistrolst.cpp"
@@ -2642,17 +2793,17 @@ void unetbootin::runinst()
 	}
 	if (!sdesc1->text().contains("(Done)"))
 	{
-		sdesc1->setText(QString(sdesc1->text()).remove("<b>").replace("(Current)</b>", "(Done)"));
+		sdesc1->setText(QString(sdesc1->text()).remove("<b>").replace(trcurrent+"</b>", trdone));
 	}
 	if (sdesc2->text().contains("(Current)"))
 	{
-		sdesc2->setText(QString(sdesc2->text()).remove("<b>").replace("(Current)</b>", "(Done)"));
+		sdesc2->setText(QString(sdesc2->text()).remove("<b>").replace(trcurrent+"</b>", trdone));
 	}
 	else
 	{
-		sdesc2->setText(QString("%1 (Done)").arg(sdesc2->text()));
+		sdesc2->setText(QString("%1 %2").arg(sdesc2->text()).arg(trdone));
 	}
-	sdesc3->setText(QString("<b>%1 (Current)</b>").arg(sdesc3->text()));
+	sdesc3->setText(QString("<b>%1 %2</b>").arg(sdesc3->text()).arg(trcurrent));
 	tprogress->setValue(0);
 	instDetType();
 }
@@ -2734,9 +2885,11 @@ void unetbootin::writegrub2cfg()
 
 void unetbootin::runinsthdd()
 {
+	this->tprogress->setValue(this->tprogress->maximum()/3);
 	#ifdef Q_OS_UNIX
 	if (QFile::exists("/boot/grub/grub.cfg")) // has grub2
 	{
+		pdesc1->setText(tr("Configuring grub2 on %1").arg(targetDev));
 		writegrub2cfg();
 		if (!QFile::exists("/boot/grub/menu.lst")) // grub2-only
 		{
@@ -2748,6 +2901,7 @@ void unetbootin::runinsthdd()
 	}
 	#endif
 	#ifdef Q_OS_WIN32
+	pdesc1->setText(tr("Configuring grldr on %1").arg(targetDev));
 	if (QFile::exists(QDir::toNativeSeparators(QString("%1unetbtin.exe").arg(targetDrive))))
 	{
 		QFile::remove(QDir::toNativeSeparators(QString("%1unetbtin.exe").arg(targetDrive)));
@@ -2775,6 +2929,7 @@ void unetbootin::runinsthdd()
 	menulst.setFileName(QString("%1menu.lst").arg(targetPath));
 	#endif
 	#ifdef Q_OS_UNIX
+	pdesc1->setText(tr("Configuring grub on %1").arg(targetDev));
 	menulst.setFileName("/boot/grub/menu.lst");
 	if (QFile::exists(QString("%1.bak").arg(menulst.fileName())))
 		QFile::remove(QString("%1.bak").arg(menulst.fileName()));
@@ -2895,6 +3050,8 @@ void unetbootin::runinsthdd()
 
 void unetbootin::runinstusb()
 {
+	this->tprogress->setValue(this->tprogress->maximum()/3);
+	pdesc1->setText(tr("Installing syslinux to %1").arg(targetDev));
 	#ifdef Q_OS_WIN32
 	QString sysltfloc = instTempfl("syslinux.exe", "exe");
 	callexternapp(sysltfloc, QString("-ma %1").arg(targetDev));
@@ -2915,7 +3072,7 @@ void unetbootin::runinstusb()
 		isext2 = false;
 		if (!volidcommand.isEmpty())
 		{
-			if (callexternapp(volidcommand, QString("-t %2").arg(targetDev)).contains(QRegExp("(ext2|ext3)")))
+			if (callexternapp(volidcommand, QString("-t %2").arg(targetDev)).contains(QRegExp("(ext2|ext3|ext4)")))
 				isext2 = true;
 		}
 		else
@@ -2928,7 +3085,10 @@ void unetbootin::runinstusb()
 			}
 		}
 		if (isext2)
+		{
+			pdesc1->setText(tr("Installing extlinux to %1").arg(targetDev));
 			callexternapp(extlinuxcommand, QString("-i %1").arg(targetPath));
+		}
 		else
 			callexternapp(syslinuxcommand, targetDev);
 	if (rawtargetDev != targetDev)
@@ -2947,10 +3107,6 @@ void unetbootin::runinstusb()
 	}
 	#endif
 	QString syslinuxcfgname = QString("%1syslinux.cfg").arg(targetPath);
-	#ifdef Q_OS_UNIX
-	if (isext2)
-		syslinuxcfgname = QString("%1extlinux.cfg").arg(targetPath);
-	#endif
 	if (QFile::exists(syslinuxcfgname))
 	{
 		overwritefileprompt(syslinuxcfgname);
@@ -2992,11 +3148,17 @@ void unetbootin::runinstusb()
 
 void unetbootin::fininstall()
 {
+	#ifdef Q_OS_UNIX
+	this->tprogress->setValue(this->tprogress->maximum()*2/3);
+	pdesc1->setText(tr("Syncing filesystems"));
+	callexternapp("sync", "");
+	#endif
+	pdesc1->setText("");
 	progresslayer->setEnabled(false);
 	progresslayer->hide();
 	rebootlayer->setEnabled(true);
 	rebootlayer->show();
-	sdesc3->setText(QString(sdesc3->text()).remove("<b>").replace("(Current)</b>", "(Done)"));
+	sdesc3->setText(QString(sdesc3->text()).remove("<b>").replace(trcurrent+"</b>", trdone));
 	sdesc4->setText(QString("<b>%1 (Current)</b>").arg(sdesc4->text()));
 	if (installType == tr("Hard Disk"))
 	{
