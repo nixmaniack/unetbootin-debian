@@ -1,7 +1,7 @@
 Source: unetbootin
 Section: utils
 Priority: optional
-Maintainer: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
 Build-Depends: syslinux, debhelper (>= 7), libqt4-dev (>= 4.2)
 Standards-Version: 3.8.3
 DM-Upload-Allowed: yes
