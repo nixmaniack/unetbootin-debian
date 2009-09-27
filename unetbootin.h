@@ -148,6 +148,8 @@ class unetbootin : public QWidget, private Ui::unetbootinui
 
 public:
 	unetbootin(QWidget *parent = 0);
+	QString trcurrent;
+	QString trdone;
 	QString appNlang;
 	QString appDir;
 	QString appLoc;
@@ -183,7 +185,7 @@ public:
         QString extlinuxcommand;
         bool isext2;
 	#endif
-	void ubninitialize();
+	bool ubninitialize(QList<QPair<QString, QString> > oppairs);
 	QString displayfisize(quint64 fisize);
 	QPair<QPair<QStringList, QList<quint64> >, QStringList> listarchiveconts(QString archivefile);
 	bool overwritefileprompt(QString ovwfileloc);
@@ -263,13 +265,13 @@ private slots:
 	void on_InitrdFileSelector_clicked();
 	void on_CfgFileSelector_clicked();
 	void on_cancelbutton_clicked();
-	void on_okbutton_clicked();
 	void on_frebootbutton_clicked();
 	void on_fexitbutton_clicked();
 
 public slots:
 	void dlprogressupdate(int dlbytes, int maxbytes);
 	void dlprogressupdate64(qint64 dlbytes, qint64 maxbytes);
+	void on_okbutton_clicked();
 };
 
 #endif
