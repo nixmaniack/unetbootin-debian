@@ -1,3 +1,10 @@
+unetbootin (372-1) unstable; urgency=low
+
+  * New upstream release:
+    - Force sync before reboot. (Closes: #533832)
+
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 27 Sep 2009 14:48:46 +0300
+
 unetbootin (356-1) unstable; urgency=low
 
   * New upstream release, some changes:
