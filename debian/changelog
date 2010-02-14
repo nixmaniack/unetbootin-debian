@@ -1,6 +1,8 @@
 unetbootin (377-2) unstable; urgency=low
 
   * New upstream release.
+    - Added an option to download Debian hd-media kernel and initrd.
+      (Closes: #563738)
 
  -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 14 Feb 2010 09:16:41 +0200
 
