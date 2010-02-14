@@ -1,3 +1,9 @@
+unetbootin (377-2) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 14 Feb 2010 09:16:41 +0200
+
 unetbootin (377-1) unstable; urgency=low
 
   * New upstream release.
