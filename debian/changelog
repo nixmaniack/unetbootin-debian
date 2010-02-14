@@ -1,4 +1,4 @@
-unetbootin (377-2) unstable; urgency=low
+unetbootin (408-1) unstable; urgency=low
 
   * New upstream release.
     - Added an option to download Debian hd-media kernel and initrd.
