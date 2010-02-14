@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ja_JP">
+<TS version="2.0" language="bg_BG">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translation>Project-Id-Version: PACKAGE VERSION
-Report-Msgid-Bugs-To: 
+        <translatorcomment>Bulgarian translation for unetbootin
+Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+This file is distributed under the same license as the unetbootin package.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+
+</translatorcomment>
+        <translation>Project-Id-Version: unetbootin
+Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2010-02-01 02:26-0500
-PO-Revision-Date: 2009-04-29 04:24+0000
-Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;
-Language-Team: LANGUAGE &lt;LL@li.org&gt;
+PO-Revision-Date: 2010-01-29 08:13+0000
+Last-Translator: Emil Pavlov &lt;emil.p.pavlov@gmail.com&gt;
+Language-Team: Bulgarian &lt;bg@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -83,7 +89,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2537"/>
         <location filename="unetbootin.cpp" line="2889"/>
         <source>Hard Disk</source>
-        <translation></translation>
+        <translation>Твърд диск</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="164"/>
@@ -104,7 +110,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2541"/>
         <location filename="unetbootin.cpp" line="2893"/>
         <source>USB Drive</source>
-        <translation></translation>
+        <translation>Устройство с USB</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="165"/>
@@ -115,7 +121,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="534"/>
         <location filename="unetbootin.cpp" line="2443"/>
         <source>ISO</source>
-        <translation></translation>
+        <translation>ISO</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="166"/>
@@ -126,7 +132,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="539"/>
         <location filename="unetbootin.cpp" line="2435"/>
         <source>Floppy</source>
-        <translation></translation>
+        <translation>Дискета</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="209"/>
@@ -363,145 +369,147 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="1258"/>
         <location filename="unetbootin.cpp" line="1280"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Извличане от компресирания iso-файла:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1348"/>
         <source>Extracting files, please wait...</source>
-        <translation></translation>
+        <translation>Извличане на файлове, моля, изчакайте…</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1349"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Архив:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1350"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Източник:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1351"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1352"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; 0 от %1 файла</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1355"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Източник:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1356"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1357"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; %1 от %2 файла</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1699"/>
         <source>Downloading files, please wait...</source>
-        <translation></translation>
+        <translation>Изтегляне на файлове, моля, изчакайте…</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1700"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Източник:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1701"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1702"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; 0 байта</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1779"/>
         <location filename="unetbootin.cpp" line="1794"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; %1 от %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1870"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>Търсене в(ъв) &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1874"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>%1/%2 съвпадения в &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2059"/>
         <source>%1 not found</source>
-        <translation></translation>
+        <translation>%1 не е намерен(а/о)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2060"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation></translation>
+        <translation>%1 не е намерен(а/о). Изисква се за режим на инсталиране %2.
+Инсталирайте пакета „%3“ или неговия еквивалент за дистрибуцията Ви.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2348"/>
         <source>(Current)</source>
-        <translation></translation>
+        <translation>(в процес)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2349"/>
         <source>(Done)</source>
-        <translation></translation>
+        <translation>(готово)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2616"/>
         <source>Configuring grub2 on %1</source>
-        <translation></translation>
+        <translation>Настройване на grub2 на %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2628"/>
         <source>Configuring grldr on %1</source>
-        <translation></translation>
+        <translation>Настройване на grldr на %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2656"/>
         <source>Configuring grub on %1</source>
-        <translation></translation>
+        <translation>Настройване на grub на %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2778"/>
         <source>Installing syslinux to %1</source>
-        <translation></translation>
+        <translation>Инсталиране на syslinux в(ъв) %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2813"/>
         <source>Installing extlinux to %1</source>
-        <translation></translation>
+        <translation>Инсталиране на extlinux в(ъв) %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2879"/>
         <source>Syncing filesystems</source>
-        <translation></translation>
+        <translation>Синхронизиране на файловите системи</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2891"/>
         <source>After rebooting, select the </source>
-        <translation></translation>
+        <translation>След рестартиране изберете </translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2895"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation></translation>
+        <translation>След рестартиране изберете зареждане от USB менюто на BIOS.%1
+Рестартиране сега?</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="229"/>
