@@ -7,16 +7,20 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2010-02-01 02:26-0500
-PO-Revision-Date: 2010-02-09 07:57+0000
+POT-Creation-Date: 2010-03-14 12:27-0400
+PO-Revision-Date: 2010-02-14 05:28+0000
 Last-Translator: Jeppe Toustrup &lt;launchpad@tenzer.dk&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2010-02-13 21:40+0000
+X-Launchpad-Export-Date: 2010-03-27 20:52+0000
 X-Generator: Launchpad (build Unknown)
 </translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; BackTrack is een distributie gefocust op netwerk analyse en &apos;penetration testing&apos;.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie::&lt;/b&gt; BackTrack wordt geboot en draait vanuit live-modus. Installatie is niet nodig om het te gebruiken.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CloneZilla is a distribution used for disk backup and imaging.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; CloneZilla is booted and run in live mode; no installation is required to use it.</source>
@@ -79,8 +83,28 @@ X-Generator: Launchpad (build Unknown)
         <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is een op Debian gebaseerde distributie met de Enlightenment window manager&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt;Met de Live versie kunt u opstarten naar de live modus. De unstable versie ondersteunt geen installatie naar de harde schijf. De &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable versie&lt;/a&gt; (niet gratis te downloaden) wel.</translation>
     </message>
     <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Debian is een door de gemeenschap ontwikkelde linuxdistributie die een grote variëteit aan architecturen ondersteunt en een grote repository aan pakketten biedt.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kunt u opstarten naar live modus, vanaf waar de installatie eventueel gestart kan worden. Met de NetInstall versie kunt u installeren over FTP.</translation>
+    </message>
+    <message>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.faunos.com/&quot;&gt;http://www.faunos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FaunOS is a distribution based on Arch Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.faunos.com/&quot;&gt;http://www.faunos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; FaunOS is een op Arch Linux gebaseerde distributie.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt;Met de Live versie kunt u opstarten naar live modus, vanaf waar de installatie eventueel gestart kan worden.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Xubuntu and other official Ubuntu derivatives.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Kubuntu is een officiele afstammeling van Ubuntu met de KDE desktop.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de live versie kan worden opgestart naar Live modus, vanuit waar optioneel de installatie kan worden gestart. Met de Netinstall kan over FTP worden geïnstalleerd, en kunnen ook Xubuntu en andere officiële Ubuntu afstammelingen worden geïnstalleerd.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Ubuntu is een gebruiksvriendelijke op Debian gebaseerde distributie. Momenteel is het op desktop gebied de populairste distributie.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart. Met de Netinstall kan via FTP worden geïnstalleerd, zowel Ubuntu als Kubuntu en andere afstammelingen van Ubuntu.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Xubuntu is een officiële Ubuntu afstammeling met daarin de XFCE desktop.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart. Met de Netinstall kan via FTP worden geïnstalleerd, zowel Ubuntu als Kubuntu en andere afstammelingen van Ubuntu.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
+        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Super Ubuntu is een onofficiële afstammeling van Ubuntu die standaard extra software bevat. Benodigt een 2GB USB drive om naar te installeren.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart.</translation>
     </message>
     <message>
         <source>Extracting files, please wait...</source>
@@ -221,10 +245,344 @@ Nu herstarten?</translation>
 <context>
     <name>unetbootin</name>
     <message>
+        <location filename="unetbootin.cpp" line="164"/>
+        <location filename="unetbootin.cpp" line="246"/>
+        <location filename="unetbootin.cpp" line="247"/>
+        <location filename="unetbootin.cpp" line="314"/>
+        <location filename="unetbootin.cpp" line="413"/>
+        <location filename="unetbootin.cpp" line="506"/>
+        <location filename="unetbootin.cpp" line="2452"/>
+        <location filename="unetbootin.cpp" line="2465"/>
+        <location filename="unetbootin.cpp" line="2623"/>
+        <location filename="unetbootin.cpp" line="3064"/>
+        <source>Hard Disk</source>
+        <translation>Harde schijf</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="165"/>
+        <location filename="unetbootin.cpp" line="229"/>
+        <location filename="unetbootin.cpp" line="243"/>
+        <location filename="unetbootin.cpp" line="244"/>
+        <location filename="unetbootin.cpp" line="316"/>
+        <location filename="unetbootin.cpp" line="417"/>
+        <location filename="unetbootin.cpp" line="511"/>
+        <location filename="unetbootin.cpp" line="583"/>
+        <location filename="unetbootin.cpp" line="599"/>
+        <location filename="unetbootin.cpp" line="853"/>
+        <location filename="unetbootin.cpp" line="1342"/>
+        <location filename="unetbootin.cpp" line="1404"/>
+        <location filename="unetbootin.cpp" line="1801"/>
+        <location filename="unetbootin.cpp" line="1843"/>
+        <location filename="unetbootin.cpp" line="2456"/>
+        <location filename="unetbootin.cpp" line="2481"/>
+        <location filename="unetbootin.cpp" line="2627"/>
+        <location filename="unetbootin.cpp" line="3068"/>
+        <source>USB Drive</source>
+        <translation>USB-schijf</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="166"/>
+        <location filename="unetbootin.cpp" line="193"/>
+        <location filename="unetbootin.cpp" line="194"/>
+        <location filename="unetbootin.cpp" line="282"/>
+        <location filename="unetbootin.cpp" line="534"/>
+        <location filename="unetbootin.cpp" line="535"/>
+        <location filename="unetbootin.cpp" line="2529"/>
+        <source>ISO</source>
+        <translation>ISO</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="167"/>
+        <location filename="unetbootin.cpp" line="189"/>
+        <location filename="unetbootin.cpp" line="190"/>
+        <location filename="unetbootin.cpp" line="287"/>
+        <location filename="unetbootin.cpp" line="539"/>
+        <location filename="unetbootin.cpp" line="540"/>
+        <location filename="unetbootin.cpp" line="2521"/>
+        <source>Floppy</source>
+        <translation>Diskette</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="207"/>
+        <location filename="unetbootin.cpp" line="211"/>
+        <location filename="unetbootin.cpp" line="215"/>
+        <location filename="unetbootin.cpp" line="219"/>
+        <location filename="unetbootin.cpp" line="225"/>
+        <location filename="unetbootin.cpp" line="237"/>
+        <source>either</source>
+        <translation>Ofwel</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="531"/>
+        <source>Open Disk Image File</source>
+        <translation>Open Disk Image-bestand</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="549"/>
+        <source>Open Kernel File</source>
+        <translation>Open Kernel-bestand</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="557"/>
+        <source>Open Initrd File</source>
+        <translation>Open Initrd-Bestand</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="565"/>
+        <source>Open Bootloader Config File</source>
+        <translation>Open Bootloader configuratiebestand</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="587"/>
+        <source>Insert a USB flash drive</source>
+        <translation>Sluit een USB drive aan</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="588"/>
+        <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
+        <translation>Er is geen USB drive gevonden. Als je er wel één hebt aangesloten, probeer deze dan te formatteren als FAT32.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="603"/>
+        <source>%1 not mounted</source>
+        <translation>%1 niet aangekoppeld.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="604"/>
+        <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
+        <translation>Je moet de USB drive %1 eerst aankoppelen (mounten). De meeste distributies doen dat automatisch als je de de USB drive verwijdert en vervolgens terugplaatst.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="619"/>
+        <source>Select a distro</source>
+        <translation>Selecteer een distributie</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="620"/>
+        <source>You must select a distribution to load.</source>
+        <translation>Je dient een distributie te selecteren om te laden.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="634"/>
+        <source>Select a disk image file</source>
+        <translation>Selecteer een disk image bestand.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="635"/>
+        <source>You must select a disk image file to load.</source>
+        <translation>Je dient een disk image-bestand te selecteren om in te laden.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="649"/>
+        <source>Select a kernel and/or initrd file</source>
+        <translation>Selecteer een kernel- en/of initrd-bestand</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="650"/>
+        <source>You must select a kernel and/or initrd file to load.</source>
+        <translation>Je dient een kernel- en/of initrd-bestand te selecteren om te laden</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="664"/>
+        <source>Diskimage file not found</source>
+        <translation>Disk image-bestand niet gevonden.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="665"/>
+        <source>The specified diskimage file %1 does not exist.</source>
+        <translation>Het gekozen disk image-bestand %1 bestaat niet.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="679"/>
+        <source>Kernel file not found</source>
+        <translation>Kernelbestand niet gevonden.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="680"/>
+        <source>The specified kernel file %1 does not exist.</source>
+        <translation>Het geselecteerde kernelbestand %1 bestaat niet.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="694"/>
+        <source>Initrd file not found</source>
+        <translation>Initrd-bestand niet gevonden</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="695"/>
+        <source>The specified initrd file %1 does not exist.</source>
+        <translation>Het geselecteerde initrd-bestand %1 bestaat niet.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="799"/>
+        <source>%1 exists, overwrite?</source>
+        <translation>%1 bestaat al, wil je het overschrijven?</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="800"/>
+        <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
+        <translation>Het bestand %1 bestaat al. Klik &apos;Ja op alles&apos; om het te overschrijven en dit voor alle volgende situaties ook te doen, &apos;Ja&apos; om het te overschrijven en de volgende keer weer te vragen en &apos;Nee&apos; om de huidige versie te behouden. Als je twijfelt, klik dan op &apos;Ja op alles&apos;.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="826"/>
+        <source>%1 is out of space, abort installation?</source>
+        <translation>Geen ruimte meer op %1, installatie annuleren?</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="827"/>
+        <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
+        <translation>De directory %1 heeft geen vrije ruimte meer. Klik &apos;Ja&apos; om te annuleren, of &apos;Nee&apos; om deze fout te negeren en toch proberen door te gaan. Kies &apos;Nee op alles&apos; om alle toekomstige ruimte-meldingen te negeren.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1263"/>
+        <location filename="unetbootin.cpp" line="1285"/>
+        <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
+        <translation>&lt;b&gt;Iso bestand uitpakken:&lt;/b&gt; %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1434"/>
+        <source>Extracting files, please wait...</source>
+        <translation>Bestanden uitpakken, één moment...</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1435"/>
+        <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
+        <translation>&lt;b&gt;Archief:&lt;/b&gt; %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1436"/>
+        <source>&lt;b&gt;Source:&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Bron:&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1437"/>
+        <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Bestemming:&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1438"/>
+        <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
+        <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; 0 van%1 bestand(en)</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1441"/>
+        <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
+        <translation>&lt;b&gt;Bron::&lt;/b&gt; %1 (%2)</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1442"/>
+        <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
+        <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1%2</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1443"/>
+        <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
+        <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; %1 van %2 bestand(en)</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1785"/>
+        <source>Downloading files, please wait...</source>
+        <translation>Bestanden worden gedownload, één momentje...</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1786"/>
+        <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
+        <translation>&lt;b&gt;Bron:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1787"/>
+        <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
+        <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1788"/>
+        <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
+        <translation>&lt;b&gt;Gedownload:&lt;/b&gt; 0 bytes</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1865"/>
+        <location filename="unetbootin.cpp" line="1880"/>
+        <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
+        <translation>&lt;b&gt;Gedownload:&lt;b&gt; %1 van %2</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1956"/>
+        <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
+        <translation>Aan het zoeken in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1960"/>
+        <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
+        <translation>%1/%2  overeenkomsten op &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2145"/>
+        <source>%1 not found</source>
+        <translation>%1 niet gevonden</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2146"/>
+        <source>%1 not found. This is required for %2 install mode.
+Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
+        <translation>%1 niet gevonden. Dit is noodzakelijk voor de %2 installatiemodus.
+Installeer het &quot;%3&quot; pakket of het equivalent voor jouw distributie.</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2434"/>
+        <source>(Current)</source>
+        <translation>(huidig)</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2435"/>
+        <source>(Done)</source>
+        <translation>(Voltooid)</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2702"/>
+        <source>Configuring grub2 on %1</source>
+        <translation>grub 2 configureren op %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2714"/>
+        <source>Configuring grldr on %1</source>
+        <translation>grldr configureren op %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2742"/>
+        <source>Configuring grub on %1</source>
+        <translation>grub configureren op %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2913"/>
+        <source>Installing syslinux to %1</source>
+        <translation>syslinux installeren op %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2948"/>
+        <source>Installing extlinux to %1</source>
+        <translation>extlinux installeren op %1</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="3054"/>
+        <source>Syncing filesystems</source>
+        <translation>Bestandssystemen synchroniseren</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="3066"/>
+        <source>After rebooting, select the </source>
+        <translation>Na het herstarten, selecteer de </translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="3070"/>
+        <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
+Reboot now?</source>
+        <translation>Kies, na het herstarten, in je BIOS de optie &apos;USB boot&apos; %1
+Nu herstarten?</translation>
+    </message>
+    <message>
         <location filename="distrolst.cpp" line="27"/>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="199"/>
@@ -237,7 +595,7 @@ Nu herstarten?</translation>
         <location filename="distrolst.cpp" line="255"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="345"/>
@@ -268,104 +626,6 @@ Nu herstarten?</translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;download.opensuse.org&apos; in, en voer &apos;/distribution/%1/repo/oss&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="163"/>
-        <location filename="unetbootin.cpp" line="245"/>
-        <location filename="unetbootin.cpp" line="246"/>
-        <location filename="unetbootin.cpp" line="313"/>
-        <location filename="unetbootin.cpp" line="412"/>
-        <location filename="unetbootin.cpp" line="505"/>
-        <location filename="unetbootin.cpp" line="2366"/>
-        <location filename="unetbootin.cpp" line="2379"/>
-        <location filename="unetbootin.cpp" line="2537"/>
-        <location filename="unetbootin.cpp" line="2889"/>
-        <source>Hard Disk</source>
-        <translation>Harde schijf</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="164"/>
-        <location filename="unetbootin.cpp" line="228"/>
-        <location filename="unetbootin.cpp" line="242"/>
-        <location filename="unetbootin.cpp" line="243"/>
-        <location filename="unetbootin.cpp" line="315"/>
-        <location filename="unetbootin.cpp" line="416"/>
-        <location filename="unetbootin.cpp" line="510"/>
-        <location filename="unetbootin.cpp" line="582"/>
-        <location filename="unetbootin.cpp" line="598"/>
-        <location filename="unetbootin.cpp" line="848"/>
-        <location filename="unetbootin.cpp" line="1318"/>
-        <location filename="unetbootin.cpp" line="1715"/>
-        <location filename="unetbootin.cpp" line="1757"/>
-        <location filename="unetbootin.cpp" line="2370"/>
-        <location filename="unetbootin.cpp" line="2395"/>
-        <location filename="unetbootin.cpp" line="2541"/>
-        <location filename="unetbootin.cpp" line="2893"/>
-        <source>USB Drive</source>
-        <translation>USB-schijf</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="165"/>
-        <location filename="unetbootin.cpp" line="192"/>
-        <location filename="unetbootin.cpp" line="193"/>
-        <location filename="unetbootin.cpp" line="281"/>
-        <location filename="unetbootin.cpp" line="533"/>
-        <location filename="unetbootin.cpp" line="534"/>
-        <location filename="unetbootin.cpp" line="2443"/>
-        <source>ISO</source>
-        <translation>ISO</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="166"/>
-        <location filename="unetbootin.cpp" line="188"/>
-        <location filename="unetbootin.cpp" line="189"/>
-        <location filename="unetbootin.cpp" line="286"/>
-        <location filename="unetbootin.cpp" line="538"/>
-        <location filename="unetbootin.cpp" line="539"/>
-        <location filename="unetbootin.cpp" line="2435"/>
-        <source>Floppy</source>
-        <translation>Diskette</translation>
-    </message>
-    <message>
-        <location filename="distrover.cpp" line="209"/>
-        <location filename="distrovercust.cpp" line="12"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
-        <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Super Grub Disk is een bootloader die verschillende MBR en bootloader hersteltaken kan uitvoeren.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; SGD start op en werkt, geen installatie is benodigd</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="33"/>
-        <source>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; EeePCLinuxOS is a user-friendly PCLinuxOS based distribution for the EeePC.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; EeePCLinuxOS is een gebruiksvriendelijke distributie voor de eeepc gebaseerd op  PCLinuxOS&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="41"/>
-        <source>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu Eee is not only Ubuntu optimized for the Asus Eee PC. It&apos;s an operating system, using the Netbook Remix interface, which favors the best software available instead of open source alternatives (ie. Skype instead of Ekiga).&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Ubuntu Eee is niet alleen ubuntu geoptimaliseerd voor de Asus Eee PC. Het is een besturingssysteem die de Netbook Remix interface. De voorkeur wordt gegeven aan de beste software, in plaats van vast te houden aan opensource alternatieven.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="53"/>
-        <source>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
-        <translation>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Elive is een op Debian gebaseerde distributie met de Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kunt u opstarten naar de live-modus, vanuit waar u eventueel de installatie kunt starten. Dit is de unstable-versie, niet de&lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable versie&lt;/a&gt;. Deze installer is gebaseerd op &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="61"/>
-        <source>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kiwi Linux is an Ubuntu derivative primarily made for Romanian, Hungarian and English speaking users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Kiwi Linux is een afgeleide van Ubuntu van oorsprong geschikt voor Roemeens-, Hongaars- en Engels-talige gebruikers.&lt;br/&gt;&lt;b&gt;Installatie Opmerkingen:&lt;/b&gt; Verzeker uzelf ervan dat het installatie medium leeg en geformatteerd is voordat u verder gaat met de installatie</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="69"/>
-        <source>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is a high-quality GNU/Linux distribution that extends and improves Ubuntu to create a completely free operating system without any binary blobs or package trees that contain proprietary software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; gNewSense is een GNU/Linux distributie gebaseerd op ubuntu maar zonder gesloten software.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="77"/>
-        <source>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
-        <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; SliTaz is een lichte, desktop-georienteerde microdistributie&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; De live versie laadt het gehele systeem in het RAM geheugen en start daarvan op. Installatie is daarom niet noodzakelijk, maar optioneel. Deze installer is gebaseerd op&lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="distrovercust.cpp" line="85"/>
-        <source>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
-        <translation>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; xPUD is een lichtgewicht distributie met een simpele kiosk-achtige interface inclusief een web browser en mediaspeler.&lt;br/&gt;&lt;b&gt;Installatie Opmerkingen:&lt;/b&gt; De Live versie laad het gehele systeem in het RAM geheugen en start op uit het geheugen.</translation>
-    </message>
-    <message>
         <location filename="distrover.cpp" line="21"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
         <translation>Welkom bij &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, ofwel &apos;Universal Netboot Installer&apos;. Gebruik:&lt;ol&gt;&lt;li&gt;Selecteer een distributie en versie om te downloaden van de lijst hierboven, of kies handmatig bestanden om te laden, hier beneden.&lt;/li&gt;&lt;li&gt;Kies een installatietype en klik OK om te beginnen.&lt;/li&gt;&lt;/ol&gt;</translation>
@@ -376,8 +636,9 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Arch Linux is een lichte distributie die geoptimaliseerd is voor snelheid en flexibiliteit.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; De standaardversie kan geïnstalleerd worden over het internet (FTP). Als u geïnteresseerd bent in een LiveUSB versie, kijk dan naar FaunOS.</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
-        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; BackTrack is een distributie gefocust op netwerk analyse en &apos;penetration testing&apos;.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie::&lt;/b&gt; BackTrack wordt geboot en draait vanuit live-modus. Installatie is niet nodig om het te gebruiken.</translation>
+        <location filename="distrover.cpp" line="32"/>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.backtrack-linux.org/&quot;&gt;http://www.backtrack-linux.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="37"/>
@@ -395,8 +656,9 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Damn Small Linux is een minimalistische distributie ontworpen voor oudere computers.&lt;br/&gt;&lt;b&gt;Opmerking m.b.t. installatie::&lt;/b&gt; De Live versie laadt het gehele systeem in het RAM geheugen en start daarvan op. Installatie is niet noodzakelijk maar optioneel.</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP.</source>
-        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Debian is een door de gemeenschap ontwikkelde linuxdistributie die een grote variëteit aan architecturen ondersteunt en een grote repository aan pakketten biedt.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kunt u opstarten naar live modus, vanaf waar de installatie eventueel gestart kan worden. Met de NetInstall versie kunt u installeren over FTP.</translation>
+        <location filename="distrover.cpp" line="52"/>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The NetInstall version allows for installation over FTP. If you would like to use a pre-downloaded install iso, use the HdMedia option, and then place the install iso file on the root directory of your hard drive or USB drive</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="58"/>
@@ -429,6 +691,11 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; FreeDOS is een gratis MS-DOS compatibel besturingssysteem.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zie de &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;gebruiksaanwijzing&lt;/a&gt; voor opmerkingen m.b.t. installatie.</translation>
     </message>
     <message>
+        <location filename="distrover.cpp" line="93"/>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeNAS is an embedded open source NAS (Network-Attached Storage) distribution based on FreeBSD.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The LiveCD version creates a RAM drive for FreeNAS, and uses a FAT formatted floppy disk or USB key for saving the configuration file. The embedded version allows installation to hard disk.</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="distrover.cpp" line="98"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Frugalware is a general-purpose Slackware-based distro for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default option allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Frugalware is een op Slackware gebaseerde distributie voor meer geavanceerde gebruikers&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt;De standaard optie biedt de mogelijkheid om te installeren via FTP of offline installatie m.b.v. vooraf gedownloade ISO bestanden.</translation>
@@ -459,28 +726,9 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ftp.kaspersky.com/devbuilds/RescueDisk/&quot;&gt;http://ftp.kaspersky.com/devbuilds/RescueDisk/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Kaspersky Rescue Disk detecteerd en verwijdert malware in uw Windows installatie.&lt;br/&gt;&lt;b&gt;Installatie Opmerkingen:&lt;/b&gt; De Live versie staat opstarten in Live modus toe, van waaruit malware scans kunnen worden uitgevoerd.</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Xubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Kubuntu is een officiele afstammeling van Ubuntu met de KDE desktop.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de live versie kan worden opgestart naar Live modus, vanuit waar optioneel de installatie kan worden gestart. Met de Netinstall kan over FTP worden geïnstalleerd, en kunnen ook Xubuntu en andere officiële Ubuntu afstammelingen worden geïnstalleerd.</translation>
-    </message>
-    <message>
-        <location filename="distrover.cpp" line="32"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.backtrack-linux.org/&quot;&gt;http://www.backtrack-linux.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="distrover.cpp" line="52"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The NetInstall version allows for installation over FTP. If you would like to use a pre-downloaded install iso, use the HdMedia option, and then place the install iso file on the root directory of your hard drive or USB drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="distrover.cpp" line="93"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeNAS is an embedded open source NAS (Network-Attached Storage) distribution based on FreeBSD.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The LiveCD version creates a RAM drive for FreeNAS, and uses a FAT formatted floppy disk or USB key for saving the configuration file. The embedded version allows installation to hard disk.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="distrover.cpp" line="133"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="138"/>
@@ -553,9 +801,15 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Smart Boot Manager is a bootloader which can overcome some boot-related BIOS limitations and bugs.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; SBM laadt in het RAM geheugen en start daarvan op.</translation>
     </message>
     <message>
+        <location filename="distrover.cpp" line="209"/>
+        <location filename="distrovercust.cpp" line="12"/>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
+        <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Super Grub Disk is een bootloader die verschillende MBR en bootloader hersteltaken kan uitvoeren.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; SGD start op en werkt, geen installatie is benodigd</translation>
+    </message>
+    <message>
         <location filename="distrover.cpp" line="214"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Super Ubuntu is een onofficiële afstammeling van Ubuntu die standaard extra software bevat. Benodigt een 2GB USB drive om naar te installeren.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart.</translation>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super OS is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="219"/>
@@ -565,161 +819,7 @@ Nu herstarten?</translation>
     <message>
         <location filename="distrover.cpp" line="224"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Ubuntu is een gebruiksvriendelijke op Debian gebaseerde distributie. Momenteel is het op desktop gebied de populairste distributie.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart. Met de Netinstall kan via FTP worden geïnstalleerd, zowel Ubuntu als Kubuntu en andere afstammelingen van Ubuntu.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Xubuntu is een officiële Ubuntu afstammeling met daarin de XFCE desktop.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart. Met de Netinstall kan via FTP worden geïnstalleerd, zowel Ubuntu als Kubuntu en andere afstammelingen van Ubuntu.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1258"/>
-        <location filename="unetbootin.cpp" line="1280"/>
-        <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Iso bestand uitpakken:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1348"/>
-        <source>Extracting files, please wait...</source>
-        <translation>Bestanden uitpakken, één moment...</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1349"/>
-        <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Archief:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1350"/>
-        <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Bron:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1351"/>
-        <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Bestemming:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1352"/>
-        <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; 0 van%1 bestand(en)</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1355"/>
-        <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Bron::&lt;/b&gt; %1 (%2)</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1356"/>
-        <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1%2</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1357"/>
-        <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; %1 van %2 bestand(en)</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1699"/>
-        <source>Downloading files, please wait...</source>
-        <translation>Bestanden worden gedownload, één momentje...</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1700"/>
-        <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Bron:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1701"/>
-        <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1702"/>
-        <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Gedownload:&lt;/b&gt; 0 bytes</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1779"/>
-        <location filename="unetbootin.cpp" line="1794"/>
-        <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation>&lt;b&gt;Gedownload:&lt;b&gt; %1 van %2</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1870"/>
-        <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Aan het zoeken in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1874"/>
-        <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2  overeenkomsten op &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2059"/>
-        <source>%1 not found</source>
-        <translation>%1 niet gevonden</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2060"/>
-        <source>%1 not found. This is required for %2 install mode.
-Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation>%1 niet gevonden. Dit is noodzakelijk voor de %2 installatiemodus.
-Installeer het &quot;%3&quot; pakket of het equivalent voor jouw distributie.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2348"/>
-        <source>(Current)</source>
-        <translation>(huidig)</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2349"/>
-        <source>(Done)</source>
-        <translation>(Voltooid)</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2616"/>
-        <source>Configuring grub2 on %1</source>
-        <translation>grub 2 configureren op %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2628"/>
-        <source>Configuring grldr on %1</source>
-        <translation>grldr configureren op %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2656"/>
-        <source>Configuring grub on %1</source>
-        <translation>grub configureren op %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2778"/>
-        <source>Installing syslinux to %1</source>
-        <translation>syslinux installeren op %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2813"/>
-        <source>Installing extlinux to %1</source>
-        <translation>extlinux installeren op %1</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2879"/>
-        <source>Syncing filesystems</source>
-        <translation>Bestandssystemen synchroniseren</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2891"/>
-        <source>After rebooting, select the </source>
-        <translation>Na het herstarten, selecteer de </translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2895"/>
-        <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
-Reboot now?</source>
-        <translation>Kies, na het herstarten, in je BIOS de optie &apos;USB boot&apos; %1
-Nu herstarten?</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="229"/>
@@ -729,7 +829,7 @@ Nu herstarten?</translation>
     <message>
         <location filename="distrover.cpp" line="234"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="239"/>
@@ -737,134 +837,39 @@ Nu herstarten?</translation>
         <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Zenwalk is een op Slackware gebaseerde distributie met daarin de XFCE desktop.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kan in Live modus worden opgestart vanaf waar eventueel de installatie kan worden gestart.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="206"/>
-        <location filename="unetbootin.cpp" line="210"/>
-        <location filename="unetbootin.cpp" line="214"/>
-        <location filename="unetbootin.cpp" line="218"/>
-        <location filename="unetbootin.cpp" line="224"/>
-        <location filename="unetbootin.cpp" line="236"/>
-        <source>either</source>
-        <translation>Ofwel</translation>
+        <location filename="distrovercust.cpp" line="33"/>
+        <source>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; EeePCLinuxOS is a user-friendly PCLinuxOS based distribution for the EeePC.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
+        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; EeePCLinuxOS is een gebruiksvriendelijke distributie voor de eeepc gebaseerd op  PCLinuxOS&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="530"/>
-        <source>Open Disk Image File</source>
-        <translation>Open Disk Image-bestand</translation>
+        <location filename="distrovercust.cpp" line="41"/>
+        <source>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu Eee is not only Ubuntu optimized for the Asus Eee PC. It&apos;s an operating system, using the Netbook Remix interface, which favors the best software available instead of open source alternatives (ie. Skype instead of Ekiga).&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
+        <translation>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Ubuntu Eee is niet alleen ubuntu geoptimaliseerd voor de Asus Eee PC. Het is een besturingssysteem die de Netbook Remix interface. De voorkeur wordt gegeven aan de beste software, in plaats van vast te houden aan opensource alternatieven.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="548"/>
-        <source>Open Kernel File</source>
-        <translation>Open Kernel-bestand</translation>
+        <location filename="distrovercust.cpp" line="53"/>
+        <source>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
+        <translation>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Elive is een op Debian gebaseerde distributie met de Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de Live versie kunt u opstarten naar de live-modus, vanuit waar u eventueel de installatie kunt starten. Dit is de unstable-versie, niet de&lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable versie&lt;/a&gt;. Deze installer is gebaseerd op &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="556"/>
-        <source>Open Initrd File</source>
-        <translation>Open Initrd-Bestand</translation>
+        <location filename="distrovercust.cpp" line="61"/>
+        <source>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kiwi Linux is an Ubuntu derivative primarily made for Romanian, Hungarian and English speaking users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
+        <translation>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Kiwi Linux is een afgeleide van Ubuntu van oorsprong geschikt voor Roemeens-, Hongaars- en Engels-talige gebruikers.&lt;br/&gt;&lt;b&gt;Installatie Opmerkingen:&lt;/b&gt; Verzeker uzelf ervan dat het installatie medium leeg en geformatteerd is voordat u verder gaat met de installatie</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="564"/>
-        <source>Open Bootloader Config File</source>
-        <translation>Open Bootloader configuratiebestand</translation>
+        <location filename="distrovercust.cpp" line="69"/>
+        <source>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is a high-quality GNU/Linux distribution that extends and improves Ubuntu to create a completely free operating system without any binary blobs or package trees that contain proprietary software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
+        <translation>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; gNewSense is een GNU/Linux distributie gebaseerd op ubuntu maar zonder gesloten software.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Zorg ervoor dat het installatiemedium leeg en geformateerd is voor je doorgaat met de installatie.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="586"/>
-        <source>Insert a USB flash drive</source>
-        <translation>Sluit een USB drive aan</translation>
+        <location filename="distrovercust.cpp" line="77"/>
+        <source>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
+        <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; SliTaz is een lichte, desktop-georienteerde microdistributie&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; De live versie laadt het gehele systeem in het RAM geheugen en start daarvan op. Installatie is daarom niet noodzakelijk, maar optioneel. Deze installer is gebaseerd op&lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="587"/>
-        <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Er is geen USB drive gevonden. Als je er wel één hebt aangesloten, probeer deze dan te formatteren als FAT32.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="602"/>
-        <source>%1 not mounted</source>
-        <translation>%1 niet aangekoppeld.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="603"/>
-        <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
-        <translation>Je moet de USB drive %1 eerst aankoppelen (mounten). De meeste distributies doen dat automatisch als je de de USB drive verwijdert en vervolgens terugplaatst.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="618"/>
-        <source>Select a distro</source>
-        <translation>Selecteer een distributie</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="619"/>
-        <source>You must select a distribution to load.</source>
-        <translation>Je dient een distributie te selecteren om te laden.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="633"/>
-        <source>Select a disk image file</source>
-        <translation>Selecteer een disk image bestand.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="634"/>
-        <source>You must select a disk image file to load.</source>
-        <translation>Je dient een disk image-bestand te selecteren om in te laden.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="648"/>
-        <source>Select a kernel and/or initrd file</source>
-        <translation>Selecteer een kernel- en/of initrd-bestand</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="649"/>
-        <source>You must select a kernel and/or initrd file to load.</source>
-        <translation>Je dient een kernel- en/of initrd-bestand te selecteren om te laden</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="663"/>
-        <source>Diskimage file not found</source>
-        <translation>Disk image-bestand niet gevonden.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="664"/>
-        <source>The specified diskimage file %1 does not exist.</source>
-        <translation>Het gekozen disk image-bestand %1 bestaat niet.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="678"/>
-        <source>Kernel file not found</source>
-        <translation>Kernelbestand niet gevonden.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="679"/>
-        <source>The specified kernel file %1 does not exist.</source>
-        <translation>Het geselecteerde kernelbestand %1 bestaat niet.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="693"/>
-        <source>Initrd file not found</source>
-        <translation>Initrd-bestand niet gevonden</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="694"/>
-        <source>The specified initrd file %1 does not exist.</source>
-        <translation>Het geselecteerde initrd-bestand %1 bestaat niet.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="794"/>
-        <source>%1 exists, overwrite?</source>
-        <translation>%1 bestaat al, wil je het overschrijven?</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="795"/>
-        <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
-        <translation>Het bestand %1 bestaat al. Klik &apos;Ja op alles&apos; om het te overschrijven en dit voor alle volgende situaties ook te doen, &apos;Ja&apos; om het te overschrijven en de volgende keer weer te vragen en &apos;Nee&apos; om de huidige versie te behouden. Als je twijfelt, klik dan op &apos;Ja op alles&apos;.</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="821"/>
-        <source>%1 is out of space, abort installation?</source>
-        <translation>Geen ruimte meer op %1, installatie annuleren?</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="822"/>
-        <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
-        <translation>De directory %1 heeft geen vrije ruimte meer. Klik &apos;Ja&apos; om te annuleren, of &apos;Nee&apos; om deze fout te negeren en toch proberen door te gaan. Kies &apos;Nee op alles&apos; om alle toekomstige ruimte-meldingen te negeren.</translation>
+        <location filename="distrovercust.cpp" line="85"/>
+        <source>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
+        <translation>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; xPUD is een lichtgewicht distributie met een simpele kiosk-achtige interface inclusief een web browser en mediaspeler.&lt;br/&gt;&lt;b&gt;Installatie Opmerkingen:&lt;/b&gt; De Live versie laad het gehele systeem in het RAM geheugen en start op uit het geheugen.</translation>
     </message>
 </context>
 <context>
