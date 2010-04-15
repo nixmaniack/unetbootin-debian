@@ -1,6 +1,8 @@
 unetbootin (429-1) unstable; urgency=low
 
   * New upstream release. 
+  * debian/control:
+    - Bumped Standards-Version to 3.8.4, no changes needed.
 
  -- Eugene V. Lyubimkin <jackyf@debian.org>  Thu, 15 Apr 2010 20:13:52 +0300
 
