@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="lt_LT">
+<TS version="2.0" language="fi_FI">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translatorcomment>Lithuanian translation for unetbootin
-Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+        <translatorcomment>Finnish translation for unetbootin
+Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 This file is distributed under the same license as the unetbootin package.
-FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2010.
 
 </translatorcomment>
         <translation>Project-Id-Version: unetbootin
 Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2010-03-14 12:27-0400
-PO-Revision-Date: 2009-09-20 22:03+0000
-Last-Translator: Izumi &lt;Unknown&gt;
-Language-Team: Lithuanian &lt;lt@li.org&gt;
+PO-Revision-Date: 2010-03-14 19:18+0000
+Last-Translator: Geza Kovacs &lt;geza0kovacs@gmail.com&gt;
+Language-Team: Finnish &lt;fi@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -30,7 +30,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="main.cpp" line="266"/>
         <source>LeftToRight</source>
-        <translation>Iš kairės į dešinę</translation>
+        <translation>VasemmaltaOikealle</translation>
     </message>
 </context>
 <context>
@@ -47,7 +47,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2623"/>
         <location filename="unetbootin.cpp" line="3064"/>
         <source>Hard Disk</source>
-        <translation>Standusis diskas</translation>
+        <translation>Kiintolevy</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="165"/>
@@ -69,7 +69,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2627"/>
         <location filename="unetbootin.cpp" line="3068"/>
         <source>USB Drive</source>
-        <translation>USB diskas</translation>
+        <translation>USB-asema</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="166"/>
@@ -91,7 +91,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="540"/>
         <location filename="unetbootin.cpp" line="2521"/>
         <source>Floppy</source>
-        <translation>Lankstus diskelis</translation>
+        <translation>Levyke</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="207"/>
@@ -101,22 +101,22 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="225"/>
         <location filename="unetbootin.cpp" line="237"/>
         <source>either</source>
-        <translation></translation>
+        <translation>Ei kumpikaan</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="531"/>
         <source>Open Disk Image File</source>
-        <translation></translation>
+        <translation>Avaa levy kuva tiedosto</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="549"/>
         <source>Open Kernel File</source>
-        <translation></translation>
+        <translation>Avaa ydin tiedosto</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="557"/>
         <source>Open Initrd File</source>
-        <translation></translation>
+        <translation>Avaa initrd tiedosto</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="565"/>
@@ -126,17 +126,17 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="587"/>
         <source>Insert a USB flash drive</source>
-        <translation></translation>
+        <translation>Aseta USB asema</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="588"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation></translation>
+        <translation>USB asemaa ei löytynyt. Jos olet jo asettanut USB aseman, yritä uudelleen alustamista muotoon FAT32.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="603"/>
         <source>%1 not mounted</source>
-        <translation></translation>
+        <translation>%1 ei ole liitetty</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="604"/>
@@ -146,7 +146,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="619"/>
         <source>Select a distro</source>
-        <translation></translation>
+        <translation>Valitse Linux jakelu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="620"/>
@@ -227,67 +227,67 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="1263"/>
         <location filename="unetbootin.cpp" line="1285"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Išskleidžiamas ISO atvaizdas:&lt;/b&gt; %1</translation>
+        <translation>&lt;/a&gt;Avataan tiivistettyä iso tiedostoa:&lt;/a&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1434"/>
         <source>Extracting files, please wait...</source>
-        <translation>Išskleidžiamos bylos, prašome palaukti...</translation>
+        <translation>Puretaan tiedostoja, odota kärsivällisesti...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1435"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Archyvas:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Arkisto:&lt;/b&gt;  %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1436"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Šaltinis:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Lähde:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1437"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Määränpää:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1438"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Išskleista:&lt;b/&gt; 0 iš %1 bylų</translation>
+        <translation>&lt;b&gt;Purettu:&lt;/b&gt;  0 %1 tiedostosta</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1441"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Šaltinis:&lt;/b&gt; %1 (%2)</translation>
+        <translation>&lt;b&gt;Lähde:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1442"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Määränpää:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1443"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Purettu:&lt;/b&gt; %1 %2 tiedostosta</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1785"/>
         <source>Downloading files, please wait...</source>
-        <translation>Parsiunčiamos bylos, prašome palaukti...</translation>
+        <translation>Ladataan tiedostoja, odota kärsivällisesti...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1786"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Lähde:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1787"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Määränpää:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1788"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Ladattu:&lt;/b&gt; 0 tavua</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1865"/>
@@ -298,7 +298,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="1956"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>Haetaan: &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1960"/>
@@ -308,7 +308,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="2145"/>
         <source>%1 not found</source>
-        <translation></translation>
+        <translation>%1 ei löytynyt</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2146"/>
@@ -319,17 +319,17 @@ Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</sour
     <message>
         <location filename="unetbootin.cpp" line="2434"/>
         <source>(Current)</source>
-        <translation></translation>
+        <translation>(Nykyinen)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2435"/>
         <source>(Done)</source>
-        <translation></translation>
+        <translation>(Valmis)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2702"/>
         <source>Configuring grub2 on %1</source>
-        <translation></translation>
+        <translation>Säädetään grub2: %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2714"/>
@@ -344,12 +344,12 @@ Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</sour
     <message>
         <location filename="unetbootin.cpp" line="2913"/>
         <source>Installing syslinux to %1</source>
-        <translation></translation>
+        <translation>Asennetaan syslinuxia: %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2948"/>
         <source>Installing extlinux to %1</source>
-        <translation></translation>
+        <translation>Asennetaan extlinuxia: %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3054"/>
@@ -359,13 +359,14 @@ Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</sour
     <message>
         <location filename="unetbootin.cpp" line="3066"/>
         <source>After rebooting, select the </source>
-        <translation></translation>
+        <translation>Uudelleen käynnistyksen jälkeen valitse </translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3070"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation></translation>
+        <translation>Uudelleen käynnistyksen jälkeen, valitse USB asema käynnistettäväksi mediaksi BIOS menusta. %1
+Uudelleen käynnistä nyt?</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="27"/>

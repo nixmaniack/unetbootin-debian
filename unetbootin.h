@@ -163,6 +163,8 @@ public:
 	bool overwriteall;
 	bool searchsymlinks;
 	bool ignoreoutofspace;
+	bool dontgeneratesyslinuxcfg;
+	QStringList locatedsyslinuxcfgfiles;
 	QString targetDrive;
 	QString targetPath;
 	QString installType;
@@ -203,7 +205,7 @@ public:
 	QStringList filteroutlistL(QStringList listofdata, QList<QRegExp> listofmatches);
 	void extractiso(QString isofile, QString exoutputdir);
 	QStringList makepathtree(QString dirmkpathw, QStringList pathlist);
-	QStringList extractallfiles(QString archivefile, QString dirxfilesto, QPair<QStringList, QList<quint64> > filesizelist);
+	QStringList extractallfiles(QString archivefile, QString dirxfilesto, QPair<QStringList, QList<quint64> > filesizelist, QStringList outputfilelist);
 	QString getgrubcfgargs(QString cfgfile);
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > getgrubcfgargsL(QString cfgfile);
 	QString getFirstTextBlock(QString fulltext);
@@ -228,6 +230,7 @@ public:
 	QStringList listcurdrives();
 	QStringList listsanedrives();
 	QStringList listalldrives();
+	void replaceTextInFile(QString repfilepath, QRegExp replaceme, QString replacewith);
 	#ifdef Q_OS_UNIX
 	QString locatecommand(QString commandtolocate, QString reqforinstallmode, QString packagename);
 	QString locatedevicenode(QString mountpoint);
@@ -254,6 +257,10 @@ public:
 	void runinsthdd();
 	void runinstusb();
 	void fininstall();
+	void rmFile(const QString &fn);
+	void rmFile(const QFile &fn);
+	void mvFile(const QString &fn, const QString &outfn);
+	void mvFile(const QFile &fn, const QFile &outfn);
 
 private slots:
 	void on_distroselect_currentIndexChanged(int distroselectIndex);
