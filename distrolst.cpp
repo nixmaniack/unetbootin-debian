@@ -14,7 +14,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
-	relname.replace("9.10", "karmic").replace("9.04", "jaunty").replace("8.10", "intrepid").replace("8.04", "hardy").replace("7.10", "gutsy").replace("7.04", "feisty").replace("6.10", "edgy").replace("6.06", "dapper");
+	relname.replace("10.04", "lucid").replace("9.10", "karmic").replace("9.04", "jaunty").replace("8.10", "intrepid").replace("8.04", "hardy").replace("7.10", "gutsy").replace("7.04", "feisty").replace("6.10", "edgy").replace("6.06", "dapper");
 #endif
 
 #ifndef ubuntunetinst
@@ -126,7 +126,13 @@ if (nameDistro == "SliTaz")
 	}
 	else
 	{
-		downloadfile(QString("http://mirror.slitaz.org/iso/%1/slitaz-%1.iso").arg(relname), isotmpf);
+		downloadfile(fileFilterNetDir(QStringList() <<
+		QString("http://mirror.slitaz.org/iso/%1/").arg(relname)
+		, 3072000, 1048576000, QList<QRegExp>() <<
+		QRegExp("^slitaz", Qt::CaseInsensitive) <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("^slitaz-\\S{1,}.iso$", Qt::CaseInsensitive)
+		), isotmpf);
 		extractiso(isotmpf, targetPath);
 	}
 
@@ -499,7 +505,15 @@ if (nameDistro == "Gujin")
 
 if (nameDistro == "Linux Mint")
 {
-        downloadfile(QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/LinuxMint-%2.iso").arg(QString(relname).remove(QRegExp("-r\\d{0,}")), relname), isotmpf);
+	if (isarch64)
+	{
+		cpuarch = "-x64";
+	}
+	else
+	{
+		cpuarch = "";
+	}
+	downloadfile(QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/LinuxMint-%2%3.iso").arg(QString(relname).remove(QRegExp("-r\\d{0,}"))).arg(relname).arg(cpuarch), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
 
@@ -666,18 +680,7 @@ if (nameDistro == "Parted Magic")
 
 if (nameDistro == "PCLinuxOS")
 {
-	if (relname == "2007")
-	{
-		downloadfile("ftp://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/pclinuxos-2007.iso", isotmpf);
-	}
-	if (relname == "2008 gnome")
-	{
-		downloadfile("ftp://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/pclos-gnome2008.iso", isotmpf);
-	}
-	if (relname == "2008 minime")
-	{
-		downloadfile("ftp://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/pclinuxos-minime-2008.iso", isotmpf);
-	}
+	downloadfile(QString("http://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/pclinuxos-%1.iso").arg(relname.toLower().replace(" ", "-")), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
 
@@ -700,11 +703,11 @@ if (nameDistro == "Sabayon Linux")
 {
         if (isarch64)
         {
-                cpuarch = "x86_64";
+			cpuarch = "amd64";
         }
         else
         {
-                cpuarch = "x86";
+			cpuarch = "x86";
         }
         QString relnamenum = nameVersion;
         QString relnamepart = "";
@@ -714,21 +717,24 @@ if (nameDistro == "Sabayon Linux")
             relnamepart = nameVersion.section('-', -1, -1);
         }
         downloadfile(fileFilterNetDir(QStringList() <<
-        "http://cross-lfs.sabayonlinux.org/" <<
-        "http://mirror.cs.vt.edu/pub/SabayonLinux/" <<
-        "http://mirror.umoss.org/sabayonlinux/" <<
+		"http://cross-lfs.sabayonlinux.org/iso/" <<
+		"http://mirror.cs.vt.edu/pub/SabayonLinux/iso/" <<
+		"http://mirror.umoss.org/sabayonlinux/iso/" <<
         "http://distro.ibiblio.org/pub/linux/distributions/sabayonlinux/" <<
-        "http://ftp.nluug.nl/pub/os/Linux/distr/sabayonlinux/" <<
-        "http://mirror.aarnet.edu.au/pub/SabayonLinux/" <<
-        "http://na.mirror.garr.it/mirrors/sabayonlinux/" <<
-        "http://cesium.di.uminho.pt/pub/sabayon/" <<
-        "http://ftp.fsn.hu/pub/linux/distributions/sabayon/"
+		"http://ftp.nluug.nl/pub/os/Linux/distr/sabayonlinux/iso/" <<
+		"http://mirror.aarnet.edu.au/pub/SabayonLinux/iso/" <<
+		"http://na.mirror.garr.it/mirrors/sabayonlinux/iso/" <<
+		"http://cesium.di.uminho.pt/pub/sabayon/iso/" <<
+		"http://ftp.fsn.hu/pub/linux/distributions/sabayon/iso/"
         , 61440000, 2147483647, QList<QRegExp>() << // need to store as unsigned long long to use FTP (HTTP doesn't check size)
         QRegExp(".iso$", Qt::CaseInsensitive) <<
-        QRegExp("^Sabayon-Linux-\\S{1,}.iso$", Qt::CaseInsensitive) <<
-        QRegExp("^Sabayon-Linux-"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
-        QRegExp("^Sabayon-Linux-"+cpuarch+"-"+relnamenum+"\\S{0,}"+relnamepart+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
-        QRegExp("^Sabayon-Linux-"+cpuarch+"-"+relnamenum+"\\S{0,}"+relnamepart+"\\S{0,}.iso$", Qt::CaseInsensitive)
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,1}"+relnamenum+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}"+relnamepart+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}"+relnamepart+"\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive)
         ), isotmpf);
         extractiso(isotmpf, targetPath);
 }
@@ -741,7 +747,13 @@ if (nameDistro == "Slax")
 
 if (nameDistro == "SliTaz")
 {
-	downloadfile(QString("http://mirror.slitaz.org/iso/%1/slitaz-%1.iso").arg(relname), isotmpf);
+	downloadfile(fileFilterNetDir(QStringList() <<
+	QString("http://mirror.slitaz.org/iso/%1/").arg(relname)
+	, 3072000, 1048576000, QList<QRegExp>() <<
+	QRegExp("^slitaz", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive) <<
+	QRegExp("^slitaz-\\S{1,}.iso$", Qt::CaseInsensitive)
+	), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
 

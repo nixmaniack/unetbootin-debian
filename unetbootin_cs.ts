@@ -7,14 +7,14 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2010-03-14 12:27-0400
-PO-Revision-Date: 2010-03-14 06:18+0000
-Last-Translator: Vojtěch Trefný &lt;vojtech.trefny@gmail.com&gt;
+POT-Creation-Date: 2010-04-18 12:45-0400
+PO-Revision-Date: 2010-04-23 19:26+0000
+Last-Translator: Roman Horník &lt;Unknown&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2010-03-27 20:52+0000
+X-Launchpad-Export-Date: 2010-05-01 13:32+0000
 X-Generator: Launchpad (build Unknown)
 </translation>
     </message>
@@ -253,10 +253,10 @@ Restartovat nyní</translation>
         <location filename="unetbootin.cpp" line="314"/>
         <location filename="unetbootin.cpp" line="413"/>
         <location filename="unetbootin.cpp" line="506"/>
-        <location filename="unetbootin.cpp" line="2452"/>
-        <location filename="unetbootin.cpp" line="2465"/>
-        <location filename="unetbootin.cpp" line="2623"/>
-        <location filename="unetbootin.cpp" line="3064"/>
+        <location filename="unetbootin.cpp" line="2456"/>
+        <location filename="unetbootin.cpp" line="2469"/>
+        <location filename="unetbootin.cpp" line="2627"/>
+        <location filename="unetbootin.cpp" line="3082"/>
         <source>Hard Disk</source>
         <translation>Pevný disk</translation>
     </message>
@@ -271,14 +271,14 @@ Restartovat nyní</translation>
         <location filename="unetbootin.cpp" line="583"/>
         <location filename="unetbootin.cpp" line="599"/>
         <location filename="unetbootin.cpp" line="853"/>
-        <location filename="unetbootin.cpp" line="1342"/>
-        <location filename="unetbootin.cpp" line="1404"/>
-        <location filename="unetbootin.cpp" line="1801"/>
-        <location filename="unetbootin.cpp" line="1843"/>
-        <location filename="unetbootin.cpp" line="2456"/>
-        <location filename="unetbootin.cpp" line="2481"/>
-        <location filename="unetbootin.cpp" line="2627"/>
-        <location filename="unetbootin.cpp" line="3068"/>
+        <location filename="unetbootin.cpp" line="1346"/>
+        <location filename="unetbootin.cpp" line="1408"/>
+        <location filename="unetbootin.cpp" line="1805"/>
+        <location filename="unetbootin.cpp" line="1847"/>
+        <location filename="unetbootin.cpp" line="2460"/>
+        <location filename="unetbootin.cpp" line="2485"/>
+        <location filename="unetbootin.cpp" line="2631"/>
+        <location filename="unetbootin.cpp" line="3086"/>
         <source>USB Drive</source>
         <translation>Mechanika USB</translation>
     </message>
@@ -289,7 +289,7 @@ Restartovat nyní</translation>
         <location filename="unetbootin.cpp" line="282"/>
         <location filename="unetbootin.cpp" line="534"/>
         <location filename="unetbootin.cpp" line="535"/>
-        <location filename="unetbootin.cpp" line="2529"/>
+        <location filename="unetbootin.cpp" line="2533"/>
         <source>ISO</source>
         <translation>ISO</translation>
     </message>
@@ -300,7 +300,7 @@ Restartovat nyní</translation>
         <location filename="unetbootin.cpp" line="287"/>
         <location filename="unetbootin.cpp" line="539"/>
         <location filename="unetbootin.cpp" line="540"/>
-        <location filename="unetbootin.cpp" line="2521"/>
+        <location filename="unetbootin.cpp" line="2525"/>
         <source>Floppy</source>
         <translation>Disketa</translation>
     </message>
@@ -317,22 +317,22 @@ Restartovat nyní</translation>
     <message>
         <location filename="unetbootin.cpp" line="531"/>
         <source>Open Disk Image File</source>
-        <translation>Výběr souboru s obrazem disku</translation>
+        <translation>Vybrat soubor s obrazem disku</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="549"/>
         <source>Open Kernel File</source>
-        <translation>Výběr souboru s jádrem</translation>
+        <translation>Vybrat soubor s jádrem</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="557"/>
         <source>Open Initrd File</source>
-        <translation>Výběr souboru initrd</translation>
+        <translation>Vybrat soubor initrd</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="565"/>
         <source>Open Bootloader Config File</source>
-        <translation>Výběr souboru s nastavením zavaděče</translation>
+        <translation>Vybrat soubor s nastavením zavaděče</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="587"/>
@@ -387,7 +387,7 @@ Restartovat nyní</translation>
     <message>
         <location filename="unetbootin.cpp" line="664"/>
         <source>Diskimage file not found</source>
-        <translation>Obraz disku nebyl nalezen</translation>
+        <translation>Soubor obrazu disku nebyl nalezen</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="665"/>
@@ -438,143 +438,143 @@ Restartovat nyní</translation>
         <location filename="unetbootin.cpp" line="1263"/>
         <location filename="unetbootin.cpp" line="1285"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Rozbalování ISO obrazu:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Rozbaluji ISO obraz:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1434"/>
+        <location filename="unetbootin.cpp" line="1438"/>
         <source>Extracting files, please wait...</source>
-        <translation>Rozbalování souborů, prosíme čekejte...</translation>
+        <translation>Rozbaluji soubory, čekejte prosím...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1435"/>
+        <location filename="unetbootin.cpp" line="1439"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Archiv:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1436"/>
+        <location filename="unetbootin.cpp" line="1440"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Zdroj:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1437"/>
+        <location filename="unetbootin.cpp" line="1441"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Cíl:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1438"/>
+        <location filename="unetbootin.cpp" line="1442"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
         <translation>&lt;b&gt;Rozbaleno:&lt;/b&gt; 0 z %1 souborů</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1441"/>
+        <location filename="unetbootin.cpp" line="1445"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
         <translation>&lt;b&gt;Zdroj:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1442"/>
+        <location filename="unetbootin.cpp" line="1446"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
         <translation>&lt;b&gt;Cíl:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1443"/>
+        <location filename="unetbootin.cpp" line="1447"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
         <translation>&lt;b&gt;Rozbaleno:&lt;/b&gt; %1 z %2 souborů</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1785"/>
+        <location filename="unetbootin.cpp" line="1789"/>
         <source>Downloading files, please wait...</source>
-        <translation>Stahhování souborů, prosíme čekejte...</translation>
+        <translation>Stahuji soubory, čekejte prosím...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1786"/>
+        <location filename="unetbootin.cpp" line="1790"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>&lt;b&gt;Zdroj:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1787"/>
+        <location filename="unetbootin.cpp" line="1791"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Cíl:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1788"/>
+        <location filename="unetbootin.cpp" line="1792"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Staženo:&lt;/b&gt; 0 bytes</translation>
+        <translation>&lt;b&gt;Staženo:&lt;/b&gt; 0 bajtů</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1865"/>
-        <location filename="unetbootin.cpp" line="1880"/>
+        <location filename="unetbootin.cpp" line="1869"/>
+        <location filename="unetbootin.cpp" line="1884"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;Staženo:&lt;/b&gt; %1 z %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1956"/>
+        <location filename="unetbootin.cpp" line="1960"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>Vyhledávání &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1960"/>
+        <location filename="unetbootin.cpp" line="1964"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2 suhlasí s &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+        <translation>%1/%2 souhlasí s &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2145"/>
+        <location filename="unetbootin.cpp" line="2149"/>
         <source>%1 not found</source>
-        <translation>%1 nenalezen</translation>
+        <translation>%1 nenalezeno</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2146"/>
+        <location filename="unetbootin.cpp" line="2150"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
         <translation>%1 nebylo nenalezeno. Toto je třeba pro %2 instalační režimy.
 Nainstalujte balík &quot;%3&quot; nebo ekvivalent pro vaši distribuci.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2434"/>
+        <location filename="unetbootin.cpp" line="2438"/>
         <source>(Current)</source>
         <translation>(Aktuální)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2435"/>
+        <location filename="unetbootin.cpp" line="2439"/>
         <source>(Done)</source>
         <translation>(Hotovo)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2702"/>
+        <location filename="unetbootin.cpp" line="2706"/>
         <source>Configuring grub2 on %1</source>
-        <translation>Nastavování grub2 na %1</translation>
+        <translation>Nastavuji grub2 na %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2714"/>
+        <location filename="unetbootin.cpp" line="2718"/>
         <source>Configuring grldr on %1</source>
-        <translation>Nastavování grldr na %1</translation>
+        <translation>Nastavuji grldr na %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2742"/>
+        <location filename="unetbootin.cpp" line="2746"/>
         <source>Configuring grub on %1</source>
-        <translation>Nastavování grub na %1</translation>
+        <translation>Nastavuji grub na %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2913"/>
+        <location filename="unetbootin.cpp" line="2931"/>
         <source>Installing syslinux to %1</source>
-        <translation>Instalace syslinux na %1</translation>
+        <translation>Instaluji syslinux na %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2948"/>
+        <location filename="unetbootin.cpp" line="2966"/>
         <source>Installing extlinux to %1</source>
-        <translation>Instalace extlinux na %1</translation>
+        <translation>Instaluji extlinux na %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3054"/>
+        <location filename="unetbootin.cpp" line="3072"/>
         <source>Syncing filesystems</source>
-        <translation>Synchronizace souborových systémů</translation>
+        <translation>Synchronizuji souborové systémy</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3066"/>
+        <location filename="unetbootin.cpp" line="3084"/>
         <source>After rebooting, select the </source>
         <translation>Po restartu zvolte </translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3070"/>
+        <location filename="unetbootin.cpp" line="3088"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
         <translation>Po restartu zvolte v BIOSu možnost zavádění systému z USB. %1
@@ -585,258 +585,258 @@ Restartovat nyní</translation>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
         <translation>
-*NALÉHAVÉ* Před restartováním umístěte ISO soubor Ubuntu alternate CD (ne desktop) do kořenového adresáře vašeho pevného nebo USB disku. Alternate CD můžete stáhnout z cdimage.ubuntu.com</translation>
+*DŮLEŽITÉ* Před restartováním umístěte ISO soubor Ubuntu alternate CD (ne desktop) do kořenové složky vašeho pevného nebo USB disku. Alternate CD můžete stáhnout z cdimage.ubuntu.com</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="199"/>
+        <location filename="distrolst.cpp" line="205"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;mirrors.kernel.org&apos; when prompted for a server, and enter &apos;/centos/%1/os/%2&apos; when asked for the folder.</source>
         <translation>
 *DŮLEŽITÉ* Po restartu ignorujte všechna chybová hlášení a pokud jste vyzvání k vložení CD, zvolte zpět, běžte do hlavní nabídky a vyberte &apos;Zahájit instalaci&apos;, jako zdroj vyberte &apos;Síť&apos;, jako protokol zvolte &apos;HTTP&apos;, při výzvě k zadání serveru zadejte &apos;mirrors.kernel.org&apos; a při dotazu na adresář zadejte &apos;/centos/%1/os/%2&apos;.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="255"/>
+        <location filename="distrolst.cpp" line="261"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
         <translation>
-*NALÉHAVÉ* Před restartováním umístěte instalační ISO Debianu do kořenového adresáře vašeho pevného nebo USB disku. Alternate CD můžete stáhnout z cdimage.debian.org</translation>
+*DŮLEŽITÉ* Před restartováním umístěte instalační ISO Debianu do kořenové složky vašeho pevného nebo USB disku. Alternate CD můžete stáhnout z cdimage.debian.org</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="345"/>
+        <location filename="distrolst.cpp" line="351"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *DŮLEŽITÉ* Po restartu ignorujte všechna chybová hlášení a pokud jste vyzvání k vložení CD, zvolte zpět, běžte do hlavní nabídky a vyberte &apos;Zahájit instalaci&apos;, jako zdroj vyberte &apos;Síť&apos;, jako protokol zvolte &apos;HTTP&apos;, při výzvě k zadání serveru zadejte &apos;download.fedora.redhat.com&apos; a při dotazu na adresář zadejte &apos;/pub/fedora/linux/development/%1/os&apos;.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="351"/>
+        <location filename="distrolst.cpp" line="357"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *DŮLEŽITÉ* Po restartu ignorujte všechna chybová hlášení a pokud jste vyzvání k vložení CD, zvolte zpět, běžte do hlavní nabídky a vyberte &apos;Zahájit instalaci&apos;, jako zdroj vyberte &apos;Síť&apos;, jako protokol zvolte &apos;HTTP&apos;, při výzvě k zadání serveru zadejte &apos;download.fedora.redhat.com&apos; a při dotazu na adresář zadejte &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos;.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="623"/>
+        <location filename="distrolst.cpp" line="637"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *DŮLEŽITÉ* Po restartu ignorujte všechna chybová hlášení a pokud jste vyzvání k vložení CD, zvolte zpět, běžte do hlavní nabídky a vyberte &apos;Zahájit instalaci&apos;, jako zdroj vyberte &apos;Síť&apos;, jako protokol zvolte &apos;HTTP&apos;, při výzvě k zadání serveru zadejte &apos;download.opensuse.org&apos; a při dotazu na adresář zadejte &apos;/factory/repo/oss&apos;.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="629"/>
+        <location filename="distrolst.cpp" line="643"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *DŮLEŽITÉ* Po restartu ignorujte všechna chybová hlášení a pokud jste vyzvání k vložení CD, zvolte zpět, běžte do hlavní nabídky a vyberte &apos;Zahájit instalaci&apos;, jako zdroj vyberte &apos;Síť&apos;, jako protokol zvolte &apos;HTTP&apos;, při výzvě k zadání serveru zadejte &apos;download.opensuse.org&apos; a při dotazu na adresář zadejte &apos;/distribution/%1/repo/oss&apos;.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="21"/>
+        <location filename="distrover.cpp" line="22"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
-        <translation>Vítejte v &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt; - Universal Netboot Installer. Použití:&lt;ol&gt;&lt;li&gt;Ze seznamu nahoře vyberte distribuci a verzi ke stažení, nebo ručně zvolte potřebné soubory níže.&lt;/li&gt;&lt;li&gt;Vyberte typ instalace a k zahájení klikněte na OK.&lt;/li&gt;&lt;/ol&gt;</translation>
+        <translation>Vítá vás &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, Universal Netboot Installer. Použití:&lt;ol&gt;&lt;li&gt;Ze seznamu nahoře vyberte distribuci a verzi ke stažení, nebo ručně zvolte potřebné soubory níže.&lt;/li&gt;&lt;li&gt;Vyberte typ instalace a k zahájení klikněte na OK.&lt;/li&gt;&lt;/ol&gt;</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="26"/>
+        <location filename="distrover.cpp" line="27"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Arch Linux je rychlá a flexibilní distribuce. &lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt;Výchozí verze umoňuje instalaci přes FTP. Pro LIveUSB verzi navštivte FaunOS.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="32"/>
+        <location filename="distrover.cpp" line="33"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.backtrack-linux.org/&quot;&gt;http://www.backtrack-linux.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.backtrack-linux.org/&quot;&gt;http://www.backtrack-linux.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; BackTrack je distribuce zaměřená na analýzu sítí a bezpečnostní testy.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; BackTrack funguje jako živý (live) systém a nevyžaduje instalaci.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="37"/>
+        <location filename="distrover.cpp" line="38"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CentOS is a free Red Hat Enterprise Linux clone.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; CentOS je bezplatný klon Red Hat Enterprise Linux.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Standardní verze nabízí jak instalaci přes internet (FTP), tak offline instalaci za pomocí dříve získaných ISO obrazů.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="42"/>
+        <location filename="distrover.cpp" line="43"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CloneZilla is a distribution used for disk backup and imaging.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; CloneZilla is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; CloneZilla je distribuce určená pro snadné zálohování.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; CloneZilla funguje jako živý (live) systém a nevyžaduje instalaci.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="47"/>
+        <location filename="distrover.cpp" line="48"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Damn Small Linux is a minimalist distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Damn Small Linuxje minimalistická distribuce určená pro starší počítače.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Spustitelná verze načte celý systém do RAM odkud je následně zaveden, instalace tedy není nutná, ale je možná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="52"/>
+        <location filename="distrover.cpp" line="53"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The NetInstall version allows for installation over FTP. If you would like to use a pre-downloaded install iso, use the HdMedia option, and then place the install iso file on the root directory of your hard drive or USB drive</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Debian je komunitně vyvíjená linuxová distribuce podporující širokou škálu architektur, nabízející obrovský repozitář balíků.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; NetInstall verze umožňuje instalaci přes FTP. Přejete-li si použít předem stažený instalační obraz, zvolte možnost HdMedia, pak vložte instalační ISO soubor do kořenové složky vašeho harddisku nebo USB disku</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="58"/>
+        <location filename="distrover.cpp" line="59"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dreamlinux is a user-friendly Debian-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Dreamlinux je uživatelsky přívětivá distribuce založená na Debianu.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="63"/>
+        <location filename="distrover.cpp" line="64"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dr.Web AntiVirus is an anti-virus emergency kit to restore a system that broke due to malware.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Dr.Web AntiVirus je antivirový balík určený k opravě systému poškozeného malwarem.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt;Živá (Live) verze umožňuje spuštění systému přímo z CD a provedení  skenování nainstalovaného systému.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="68"/>
+        <location filename="distrover.cpp" line="69"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt;.</source>
-        <translation>&lt;b&gt;Domovská stráka:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Elive je od Debianu odvozenou distribucí obsahující grafické prostředí Enlightenment.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) umožňuje práci se systémem bez jeho instalace, která je ale i tak možná. Toto je experimentální verze, nikoli &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;stabilní vydání&lt;/a&gt;.</translation>
+        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Elive je od Debianu odvozenou distribucí obsahující grafické prostředí Enlightenment.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje práci se systémem bez jeho instalace, která je ale i tak možná. Toto je experimentální verze, nikoli &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;stabilní vydání&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="78"/>
+        <location filename="distrover.cpp" line="79"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Fedora je komunitní distribuce sponzorovaná firmou Red Hat zaměříjící se na nejnovější free/open-source software.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace. Verze NetInstall umožňuje instalaci z intrnetu (FTP) nebo z předem staženého ISO obrazu.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="83"/>
+        <location filename="distrover.cpp" line="84"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeBSD is a general-purpose Unix-like operating system designed for scalability and performance.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; FreeBSD je unixový operační systém navržený pro stabilitu a rychlost.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Standardní verze umožňuje instalaci z intrnetu (FTP) nebo z předem staženého ISO obrazu.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="88"/>
+        <location filename="distrover.cpp" line="89"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeDOS is a free MS-DOS compatible operating system.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; See the &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;manual&lt;/a&gt; for installation details.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; FreeDOS je svobodný operační systém kompatibilní s MS-DOS.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Pro více informací o instalaci navštivte &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;online manuál&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="93"/>
+        <location filename="distrover.cpp" line="94"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeNAS is an embedded open source NAS (Network-Attached Storage) distribution based on FreeBSD.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The LiveCD version creates a RAM drive for FreeNAS, and uses a FAT formatted floppy disk or USB key for saving the configuration file. The embedded version allows installation to hard disk.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="98"/>
+        <location filename="distrover.cpp" line="99"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Frugalware is a general-purpose Slackware-based distro for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default option allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Frugalware je distribuce odvozená od Slackwaru určená pro pokročilé uživatele.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Standardní verze umožňuje instalaci z intrnetu (FTP) nebo z předem stažených ISO obrazů.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="103"/>
+        <location filename="distrover.cpp" line="104"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.f-secure.com/linux-weblog/&quot;&gt;http://www.f-secure.com/linux-weblog/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; F-Secure Rescue CD detects and removes malware from your Windows installation.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.f-secure.com/linux-weblog/&quot;&gt;http://www.f-secure.com/linux-weblog/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; F-Secure Rescue CD slouží k nalezení a odstranění malwaru ze systému Windows.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živé CD umožňuje spuštění systému, ze kterého je možné spustit skenování počítače.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="108"/>
+        <location filename="distrover.cpp" line="109"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;http://www.gentoo.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Gentoo is a flexible source-based distribution designed for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;http://www.gentoo.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Gentoo je flexibilní distribuce určená pro pokročilé uživatele.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="118"/>
+        <location filename="distrover.cpp" line="119"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is an FSF-endorsed distribution based on Ubuntu with all non-free components removed.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; gNewSense je na Ubuntu založené distribuce, která je podporovaná Free Software Foundation a neobsahuje žádné nesvobodné součásti.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="123"/>
+        <location filename="distrover.cpp" line="124"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://gujin.sourceforge.net/&quot;&gt;http://gujin.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Gujin is a graphical boot manager which can bootstrap various volumes and files.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Gujin simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://gujin.sourceforge.net/&quot;&gt;http://gujin.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Gujin je grafický boot manager schopný zaváděný z rozličných zařízení a souborových systémů..&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Gujin se jednoduše zavede a spustí - instalace není potřebná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="128"/>
+        <location filename="distrover.cpp" line="129"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ftp.kaspersky.com/devbuilds/RescueDisk/&quot;&gt;http://ftp.kaspersky.com/devbuilds/RescueDisk/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kaspersky Rescue Disk detects and removes malware from your Windows installation.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://ftp.kaspersky.com/devbuilds/RescueDisk/&quot;&gt;http://ftp.kaspersky.com/devbuilds/RescueDisk/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Kaspersky Rescue Disk slouží k nalezení a odstranění malwaru ze systému Windows.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živé CD umožňuje spuštění systému, ze kterého je možné spustit skenování počítače.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="133"/>
+        <location filename="distrover.cpp" line="134"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="138"/>
+        <location filename="distrover.cpp" line="139"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Linux Mint je uživatelsky přívětivá distribuce odvozená od Ubuntu, která již v základní instalaci obsahuje různé nesvobodné kodeky a další software.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="143"/>
+        <location filename="distrover.cpp" line="144"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Mandriva is a user-friendly distro formerly known as Mandrake Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over the internet (FTP) or via pre-downloaded &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;&quot;Free&quot; iso image files&lt;/a&gt;.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Mandriva je uživatelsky přívětivá distribuce dříve známá jako Mandrake Linux.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace. Verze NetInstall umožňuje instalaci z intrnetu (FTP) nebo z předem staženého &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;ISO obrazu&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="149"/>
+        <location filename="distrover.cpp" line="150"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mepis.org/&quot;&gt;http://www.mepis.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; MEPIS is a Debian-based distribution. SimplyMEPIS is a user-friendly version based on KDE, while AntiX is a lightweight version for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; MEPIS supports booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.mepis.org/&quot;&gt;http://www.mepis.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; MEPIS je distribuce odvozená od Debianu. SimplyMEPIS je uživatelsky přívětivá distribuce založená na prostředí KDE a Antix nenáročná verze pro staré počítače.&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="154"/>
+        <location filename="distrover.cpp" line="155"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.netbsd.org/&quot;&gt;http://www.netbsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NetBSD is a Unix-like operating system which focuses on portability.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt;The default version allows for both installation over the internet (FTP), or using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.netbsd.org/&quot;&gt;http://www.netbsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; NetBSD je unïxový operační systém zaměřený na přenosnost.&lt;br/&gt;&lt;b&gt;Poznámy:&lt;/b&gt;Standardní verze umoňuje jak instalaci z internetu (FTP), tak z předem stažených instalačních ISO obrazů.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="159"/>
+        <location filename="distrover.cpp" line="160"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NTPasswd is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; The Offline NT Password and Registry Editor umí resetovat hesla ve Windows a upravovat registry ve verzích Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; NTPasswd se jednoduše zavede a spustí - instalace není potřebná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="164"/>
+        <location filename="distrover.cpp" line="165"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; openSUSE is a user-friendly Novell sponsored distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; openSUSE je uživatelsky přívětivá distribuce sponzorovaná firmou Novell.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Standardní verze umoňuje jak instalaci z internetu (FTP), tak z předem stažených instalačních ISO obrazů.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="169"/>
+        <location filename="distrover.cpp" line="170"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ophcrack can crack Windows passwords.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Ophcrack is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Ophcrack umí získávat hesel z Windows.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Ophcrack se jednoduše zavede a spustí - instalace není potřebná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="174"/>
+        <location filename="distrover.cpp" line="175"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Parted Magic includes the GParted partition manager and other system utilities which can resize, copy, backup, and manipulate disk partitions.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Parted Magic is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Parted Magic obsahuje program GParted a další nástroje určená pro změnu velikosti, kopírování, zálohu a další manipulaci s diskovými oddíly.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Parted Magic se jednoduše zavede a spustí - instalace není potřebná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="179"/>
+        <location filename="distrover.cpp" line="180"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; PCLinuxOS is a user-friendly Mandriva-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; PCLinuxOS je uživatelsky přívětivá distribuce založená na Mandrivě.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="184"/>
+        <location filename="distrover.cpp" line="185"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Puppy Linux is a lightweight distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Puppy Linux je minimalistická distribuce určená pro starší počítače.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Spustitelná verze načte celý systém do RAM odkud je následně zaveden, instalace tedy není nutná, ale je možná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="189"/>
+        <location filename="distrover.cpp" line="190"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Sabayon Linux je LiveDVD založené na Gentoo přinášející správce balíků Entropy jako doplněk k Portage.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace. Verze LiteMCE vyžaduje 2GB místa, zatímco plná verze 8GB.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="194"/>
+        <location filename="distrover.cpp" line="195"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Slax is a Slackware-based distribution featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Slax je distribuce založená na Slackware, která přináší prostředí KDE.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="199"/>
+        <location filename="distrover.cpp" line="200"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; SliTaz je nenáročná mikrodistribuce zaměřená na stolní počítače.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Spustitelná verze načte celý systém do RAM odkud je následně zaveden, instalace tedy není nutná, ale je možná.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="204"/>
+        <location filename="distrover.cpp" line="205"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Smart Boot Manager is a bootloader which can overcome some boot-related BIOS limitations and bugs.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SBM simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Smart Boot Manager je zavaděč schopný překonat některá omezení BIOSu v bootování. &lt;/b&gt; SBM se jednoduše zavede a spustí - k použití nepotřebujete instalaci.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="209"/>
+        <location filename="distrover.cpp" line="210"/>
         <location filename="distrovercust.cpp" line="12"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Super Grub Disk slouží ke snadné obnově MBR a různých zavaděčů systémů.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; SGD se jednoduše zavede a spustí - k použití nepotřebujete instalaci.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="214"/>
+        <location filename="distrover.cpp" line="215"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super OS is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="219"/>
+        <location filename="distrover.cpp" line="220"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SystemRescueCD includes various partition management and data recovery and backup tools.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SystemRescueCD is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; SystemRescueCD obsahuje různé nástroje pro úpravu diskových oddílů a záchranu a zálohu dat.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; SystemRescueCD se jednoduše zavede a spustí - k použití nepotřebujete instalaci.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="224"/>
+        <location filename="distrover.cpp" line="225"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="229"/>
+        <location filename="distrover.cpp" line="230"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; xPUD je nenáročná distribuce s &quot;kioskovým&quot; rozhraním s internetovým prohlížečem a multimetiálním přehrávačem.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Spustitelná verze načte celý systém do RAM odkud je následně zaveden.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="234"/>
+        <location filename="distrover.cpp" line="235"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="239"/>
+        <location filename="distrover.cpp" line="240"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Zenwalk is a Slackware-based distribution featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Zenwalk je distribuce založená na Slackwaru s pracovním prostředím XFCE.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verze umožňuje spuštění systému přímo z CD s možností spuštění instalace.</translation>
     </message>

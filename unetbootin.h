@@ -231,6 +231,7 @@ public:
 	QStringList listsanedrives();
 	QStringList listalldrives();
 	void replaceTextInFile(QString repfilepath, QRegExp replaceme, QString replacewith);
+	QString fixkernelbootoptions(const QString &cfgfileCL);
 	#ifdef Q_OS_UNIX
 	QString locatecommand(QString commandtolocate, QString reqforinstallmode, QString packagename);
 	QString locatedevicenode(QString mountpoint);
@@ -258,9 +259,9 @@ public:
 	void runinstusb();
 	void fininstall();
 	void rmFile(const QString &fn);
-	void rmFile(const QFile &fn);
+	void rmFile(QFile &fn);
 	void mvFile(const QString &fn, const QString &outfn);
-	void mvFile(const QFile &fn, const QFile &outfn);
+	void mvFile(QFile &fn, QFile &outfn);
 
 private slots:
 	void on_distroselect_currentIndexChanged(int distroselectIndex);

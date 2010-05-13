@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="bg_BG">
+<TS version="2.0" language="fo_FO">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translatorcomment>Bulgarian translation for unetbootin
-Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+        <translatorcomment>Faroese translation for unetbootin
+Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 This file is distributed under the same license as the unetbootin package.
-FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2010.
 
 </translatorcomment>
         <translation>Project-Id-Version: unetbootin
 Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2010-04-18 12:45-0400
-PO-Revision-Date: 2010-03-14 06:18+0000
-Last-Translator: Yuksel Saliev &lt;yuksbg@gmail.com&gt;
-Language-Team: Bulgarian &lt;bg@li.org&gt;
+PO-Revision-Date: 2010-04-20 22:02+0000
+Last-Translator: Gunleif Joensen &lt;Unknown&gt;
+Language-Team: Faroese &lt;fo@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -30,7 +30,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="main.cpp" line="266"/>
         <source>LeftToRight</source>
-        <translation></translation>
+        <translation>Vinstru til høgru</translation>
     </message>
 </context>
 <context>
@@ -47,7 +47,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2627"/>
         <location filename="unetbootin.cpp" line="3082"/>
         <source>Hard Disk</source>
-        <translation>Твърд диск</translation>
+        <translation>Harðdiskur</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="165"/>
@@ -69,7 +69,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2631"/>
         <location filename="unetbootin.cpp" line="3086"/>
         <source>USB Drive</source>
-        <translation>Устройство с USB</translation>
+        <translation>Geymi</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="166"/>
@@ -91,7 +91,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="540"/>
         <location filename="unetbootin.cpp" line="2525"/>
         <source>Floppy</source>
-        <translation>Дискета</translation>
+        <translation>Diskil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="207"/>
@@ -101,280 +101,277 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="225"/>
         <location filename="unetbootin.cpp" line="237"/>
         <source>either</source>
-        <translation>или</translation>
+        <translation>annahvørt</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="531"/>
         <source>Open Disk Image File</source>
-        <translation>Отвори Disk Image файла</translation>
+        <translation>Lat upp diskmyndafílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="549"/>
         <source>Open Kernel File</source>
-        <translation></translation>
+        <translation>Lat upp kjarnufílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="557"/>
         <source>Open Initrd File</source>
-        <translation></translation>
+        <translation>Lat upp Initrd fílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="565"/>
         <source>Open Bootloader Config File</source>
-        <translation></translation>
+        <translation>Lat upp byrjunarløðara samansetingafílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="587"/>
         <source>Insert a USB flash drive</source>
-        <translation>Включи USB устройството</translation>
+        <translation>Set inn ein geyma</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="588"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Не беше намерено USB устройство. Ако устройството вече е включено, пробвайте да го форматирате във FAT32 файлова система.</translation>
+        <translation>Eingin geymi funnin. Um tú longu hevur sett ein geyma inn, royn at endursniða hann sum FAT32.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="603"/>
         <source>%1 not mounted</source>
-        <translation></translation>
+        <translation>%1 ikki ísett</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="604"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
-        <translation>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</translation>
+        <translation>Tú mást fyrst seta geyman í %1 eitt ísetingastað. Tær flestu linux útgávurnar gerða hetta sjálvvirknar, eftir at tú tekur geyman út og setur hann inn aftur.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="619"/>
         <source>Select a distro</source>
-        <translation>Избор на дистрибуция</translation>
+        <translation>Vel ein linux útgávu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="620"/>
         <source>You must select a distribution to load.</source>
-        <translation>Трябва да изберете дистрибуция за зареждане</translation>
+        <translation>Tú mást velja eina linux útgávu at løða.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="634"/>
         <source>Select a disk image file</source>
-        <translation>Избор на disk image файл</translation>
+        <translation>Vel eina diskmyndafílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="635"/>
         <source>You must select a disk image file to load.</source>
-        <translation>Трябва да изберете disk image  файл за зареждане.</translation>
+        <translation>Tú mást velja eina diskmyndafílu at løða.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="649"/>
         <source>Select a kernel and/or initrd file</source>
-        <translation></translation>
+        <translation>Vel ein kjarna og/ella initrd fílu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="650"/>
         <source>You must select a kernel and/or initrd file to load.</source>
-        <translation></translation>
+        <translation>Tú mást velja ein kjarna og/ella initrd fílu at løða.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="664"/>
         <source>Diskimage file not found</source>
-        <translation>Disk image файла не беше открит.</translation>
+        <translation>Diskmyndafíla ikki funnin</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="665"/>
         <source>The specified diskimage file %1 does not exist.</source>
-        <translation></translation>
+        <translation>Tann tilskilaða diskmyndafílan %1 finnst ikki.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="679"/>
         <source>Kernel file not found</source>
-        <translation></translation>
+        <translation>Kjarnufíla ikki funnin</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="680"/>
         <source>The specified kernel file %1 does not exist.</source>
-        <translation></translation>
+        <translation>Tann tilskilaða kjarnufílan %1 finnst ikki.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="694"/>
         <source>Initrd file not found</source>
-        <translation>Initrd файла не беше открит</translation>
+        <translation>Initrd fílan er ikki funnin</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="695"/>
         <source>The specified initrd file %1 does not exist.</source>
-        <translation></translation>
+        <translation>Tann tilskilaða initrd fían %1 finnst ikki.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="799"/>
         <source>%1 exists, overwrite?</source>
-        <translation>%1 съществува, презаписване?</translation>
+        <translation>%1 finnst, skriva omaná?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="800"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
-        <translation></translation>
+        <translation>Fílan %1 finnst longu. Trýst &apos;Ja til alt&apos; fyri at skriva omaná, og ikki verða ámint/ur aftur, &apos;Ja&apos; fyri at skriva omaná fílur á einum einstøkum føri, og &apos;Nei&apos; fyri at varveita núverandi útgávu. Er tú í iva, trýst &apos;Ja til alt&apos;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="826"/>
         <source>%1 is out of space, abort installation?</source>
-        <translation>%1 няма достатъчно пространство, прекъсване на инсталацията ?</translation>
+        <translation>%1 hevur ikki pláss, gevst við innlegging?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="827"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
-        <translation>В директорията %1 няма налично свободно пространство. Натиснете &apos;Да&apos; за прекъсване на инсталирането, &apos;Не&apos; за игнориране на това съобщение и опит за довършване на инсталацията, и &apos;Не на всички&apos; за игнориране на всички подобни съобщения.</translation>
+        <translation>Fíluskráin %1 hevur ikki pláss. Trýst &apos;Ja&apos; fyri at gevast við innlegging. &apos;Nei&apos; fyri at síggja burtur frá hesari villu, og royna at halda á við innlegging; og &apos;Nei til allt&apos; fyri at síggja burtur frá øllum pláss-trots-villum.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1263"/>
         <location filename="unetbootin.cpp" line="1285"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Извличане от компресирания iso-файла:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Pakki út stappaða iso:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1438"/>
         <source>Extracting files, please wait...</source>
-        <translation>Извличане на файлове, моля, изчакайте…</translation>
+        <translation>Pakki út fílur, vinarliga bíða...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1439"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Архив:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Skjalasavn:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1440"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Kelda:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1441"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Móttøkustaður:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1442"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; 0 от %1 файла</translation>
+        <translation>&lt;b&gt;Útpakkað:&lt;/b&gt; 0 of %1 fílur</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1445"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt; %1 (%2)</translation>
+        <translation>&lt;b&gt;Kelda:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1446"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1%2</translation>
+        <translation>&lt;b&gt;Móttøkustaður:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1447"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; %1 от %2 файла</translation>
+        <translation>&lt;b&gt;Útpakkað:&lt;/b&gt; %1 of %2 fílur</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1789"/>
         <source>Downloading files, please wait...</source>
-        <translation>Изтегляне на файлове, моля, изчакайте…</translation>
+        <translation>Niðurtaki fílur, vinarliga bíða...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1790"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>&lt;b&gt;Kelda:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1791"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Móttøkustaður:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1792"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; 0 байта</translation>
+        <translation>&lt;b&gt;Niðurtikið:&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1869"/>
         <location filename="unetbootin.cpp" line="1884"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; %1 от %2</translation>
+        <translation>&lt;b&gt;Niðurtikið:&lt;/b&gt; %1 of %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1960"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Търсене в(ъв) &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>Leiti í &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1964"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2 съвпадения в &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+        <translation>%1/%2 samsvar í &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2149"/>
         <source>%1 not found</source>
-        <translation>%1 не е намерен(а/о)</translation>
+        <translation>%1 ikki funnin</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2150"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation>%1 не е намерен(а/о). Изисква се за режим на инсталиране %2.
-Инсталирайте пакета „%3“ или неговия еквивалент за дистрибуцията Ви.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2438"/>
         <source>(Current)</source>
-        <translation>(в процес)</translation>
+        <translation>(Núverandi)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2439"/>
         <source>(Done)</source>
-        <translation>(готово)</translation>
+        <translation>(Liðugt)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2706"/>
         <source>Configuring grub2 on %1</source>
-        <translation>Настройване на grub2 на %1</translation>
+        <translation>Samanseti grub2 á %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2718"/>
         <source>Configuring grldr on %1</source>
-        <translation>Настройване на grldr на %1</translation>
+        <translation>Samanseti grldr á %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2746"/>
         <source>Configuring grub on %1</source>
-        <translation>Настройване на grub на %1</translation>
+        <translation>Samanseti grub á %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2931"/>
         <source>Installing syslinux to %1</source>
-        <translation>Инсталиране на syslinux в(ъв) %1</translation>
+        <translation>Innleggi syslinux á %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2966"/>
         <source>Installing extlinux to %1</source>
-        <translation>Инсталиране на extlinux в(ъв) %1</translation>
+        <translation>Innleggi extlinux á %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3072"/>
         <source>Syncing filesystems</source>
-        <translation>Синхронизиране на файловите системи</translation>
+        <translation>Stevjavni fílukervi</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3084"/>
         <source>After rebooting, select the </source>
-        <translation>След рестартиране изберете </translation>
+        <translation>Eftir endurbyrjan, vel </translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3088"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation>След рестартиране изберете зареждане от USB менюто на BIOS.%1
-Рестартиране сега?</translation>
+        <translation>Eftir endurbyrjan, vel USB/geymu byrjanarkostin í BIOS byrjanarvalmyndini.%1</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="27"/>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
-        <translation>
-*ВАЖНО* Преди рестарирането, сложете Ubuntu alternate (не десктоп) iso файла на главната директория на хард диска или USB устройството. Може да бъде свалено от cdimage.ubuntu.com</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="205"/>
@@ -664,18 +661,18 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="20"/>
         <source>Unetbootin</source>
-        <translation></translation>
+        <translation>Unetbootin</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="44"/>
         <location filename="unetbootin.ui" line="65"/>
         <source>Select from a list of supported distributions</source>
-        <translation></translation>
+        <translation>Vel úr listanum av tøkum útgávum</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="47"/>
         <source>&amp;Distribution</source>
-        <translation></translation>
+        <translation>&amp;Útgáva</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="127"/>
@@ -685,7 +682,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="130"/>
         <source>Disk&amp;image</source>
-        <translation></translation>
+        <translation>D&amp;iskmynd</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="378"/>
@@ -709,89 +706,89 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="427"/>
         <source>&amp;Format Drive (Wipes Out Data)</source>
-        <translation></translation>
+        <translation>&amp;Forsniða driv (slettar allar dátur)</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="490"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="493"/>
         <source>Return</source>
-        <translation></translation>
+        <translation>Vend aftur</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="500"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Ógilda</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="503"/>
         <source>Esc</source>
-        <translation></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="548"/>
         <source>Reboot Now</source>
-        <translation></translation>
+        <translation>Endurbyrja nú</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="555"/>
         <source>Exit</source>
-        <translation></translation>
+        <translation>Far út</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="647"/>
         <source>1. Downloading Files</source>
-        <translation></translation>
+        <translation>1. niðurtaki fílur</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="654"/>
         <source>2. Extracting and Copying Files</source>
-        <translation></translation>
+        <translation>2. Pakka út og avrita fílir</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="661"/>
         <source>3. Installing Bootloader</source>
-        <translation></translation>
+        <translation>3. Innleggi byrjunarløðara</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="668"/>
         <source>4. Installation Complete, Reboot</source>
-        <translation></translation>
+        <translation>4. Innlegging liðug, endyrbyrja</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="464"/>
         <location filename="unetbootin.ui" line="483"/>
         <source>Select the target drive to install to</source>
-        <translation></translation>
+        <translation>Vel máldrivuna at innleggja á</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="467"/>
         <source>Dri&amp;ve:</source>
-        <translation></translation>
+        <translation>Dri&amp;v:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="438"/>
         <location filename="unetbootin.ui" line="457"/>
         <source>Select the installation target type</source>
-        <translation></translation>
+        <translation>Vel hvat miðlaslag ið tú vil skriva á</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="441"/>
         <source>&amp;Type:</source>
-        <translation></translation>
+        <translation>&amp;Slag:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="81"/>
         <source>Select the distribution version</source>
-        <translation></translation>
+        <translation>Vel hvørja útgávu ið tú vil hava</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="307"/>
         <source>Select disk image file</source>
-        <translation></translation>
+        <translation>Vel diskmyndafílu</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="246"/>
@@ -799,50 +796,50 @@ p, li { white-space: pre-wrap; }
         <location filename="unetbootin.ui" line="335"/>
         <location filename="unetbootin.ui" line="360"/>
         <source>...</source>
-        <translation></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="148"/>
         <source>Select the disk image type</source>
-        <translation></translation>
+        <translation>Vel diskmyndaslag</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="203"/>
         <source>Specify a floppy/hard disk image, or CD image (ISO) file to load</source>
-        <translation></translation>
+        <translation>Vel eina diskil/harðdiskamynd, ella fløgumynd (ISO) fílu at løða</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="167"/>
         <location filename="unetbootin.ui" line="218"/>
         <source>Specify a kernel file to load</source>
-        <translation></translation>
+        <translation>Vel eina kjarnufílu at løða</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="243"/>
         <source>Select kernel file</source>
-        <translation></translation>
+        <translation>Vel kjarnufílu</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="253"/>
         <location filename="unetbootin.ui" line="272"/>
         <source>Specify an initrd file to load</source>
-        <translation></translation>
+        <translation>Nevn eina initrd fílu at løða</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="332"/>
         <source>Select initrd file</source>
-        <translation></translation>
+        <translation>Vel initrd fílu</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="357"/>
         <source>Select syslinux.cfg or isolinux.cfg file</source>
-        <translation></translation>
+        <translation>Vel syslinux.cfg ella isolinux.cfg fílu</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="186"/>
         <location filename="unetbootin.ui" line="281"/>
         <source>Specify parameters and options to pass to the kernel</source>
-        <translation></translation>
+        <translation>Nevn bundnatøl og kostir at senda víðari til kjarnuna</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="406"/>
@@ -856,22 +853,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="413"/>
         <source>Show &amp;All Drives (Use with Care)</source>
-        <translation></translation>
+        <translation>Sýn &amp;Øll driv (nýt við varni)</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="170"/>
         <source>&amp;Kernel:</source>
-        <translation></translation>
+        <translation>%Kjarni:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="256"/>
         <source>Init&amp;rd:</source>
-        <translation></translation>
+        <translation>Init&amp;rd:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="189"/>
         <source>&amp;Options:</source>
-        <translation></translation>
+        <translation>&amp;Kostir:</translation>
     </message>
 </context>
 <context>
@@ -879,32 +876,32 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="main.cpp" line="156"/>
         <source>Uninstallation Complete</source>
-        <translation></translation>
+        <translation>Av-innlegging fullfgjørd</translation>
     </message>
     <message>
         <location filename="main.cpp" line="157"/>
         <source>%1 has been uninstalled.</source>
-        <translation>%1 беше премахнато.</translation>
+        <translation>%1 er vorðin av-innløgd</translation>
     </message>
     <message>
         <location filename="main.cpp" line="318"/>
         <source>Must run as root</source>
-        <translation>Трябва да стартирате като root</translation>
+        <translation>Má koyra sum rót</translation>
     </message>
     <message>
         <location filename="main.cpp" line="320"/>
         <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</source>
-        <translation></translation>
+        <translation>%2 má koyrast sum rót. Lat aftur, og koyr umaftir við annahvørt at nýta:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="main.cpp" line="342"/>
         <source>%1 Uninstaller</source>
-        <translation></translation>
+        <translation>%1 av-innleggjari</translation>
     </message>
     <message>
         <location filename="main.cpp" line="343"/>
         <source>%1 is currently installed. Remove the existing version?</source>
-        <translation></translation>
+        <translation>%1 er innlagt í løtuni. Tak burtur tí núverandi útgávuna?</translation>
     </message>
 </context>
 </TS>

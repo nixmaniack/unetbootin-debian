@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="bg_BG">
+<TS version="2.0" language="sl_SI">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translatorcomment>Bulgarian translation for unetbootin
-Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+        <translatorcomment>Slovenian translation for unetbootin
+Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 This file is distributed under the same license as the unetbootin package.
-FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2010.
 
 </translatorcomment>
         <translation>Project-Id-Version: unetbootin
 Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2010-04-18 12:45-0400
-PO-Revision-Date: 2010-03-14 06:18+0000
-Last-Translator: Yuksel Saliev &lt;yuksbg@gmail.com&gt;
-Language-Team: Bulgarian &lt;bg@li.org&gt;
+PO-Revision-Date: 2010-04-29 22:40+0000
+Last-Translator: Štefan Baebler &lt;Unknown&gt;
+Language-Team: Slovenian &lt;sl@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -47,7 +47,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2627"/>
         <location filename="unetbootin.cpp" line="3082"/>
         <source>Hard Disk</source>
-        <translation>Твърд диск</translation>
+        <translation>Trdi disk</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="165"/>
@@ -69,7 +69,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="2631"/>
         <location filename="unetbootin.cpp" line="3086"/>
         <source>USB Drive</source>
-        <translation>Устройство с USB</translation>
+        <translation>Pogon USB</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="166"/>
@@ -91,7 +91,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="540"/>
         <location filename="unetbootin.cpp" line="2525"/>
         <source>Floppy</source>
-        <translation>Дискета</translation>
+        <translation>Disketa</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="207"/>
@@ -101,12 +101,12 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="225"/>
         <location filename="unetbootin.cpp" line="237"/>
         <source>either</source>
-        <translation>или</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="531"/>
         <source>Open Disk Image File</source>
-        <translation>Отвори Disk Image файла</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="549"/>
@@ -126,42 +126,42 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="587"/>
         <source>Insert a USB flash drive</source>
-        <translation>Включи USB устройството</translation>
+        <translation>Vstavite USB pomnilnik</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="588"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Не беше намерено USB устройство. Ако устройството вече е включено, пробвайте да го форматирате във FAT32 файлова система.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="603"/>
         <source>%1 not mounted</source>
-        <translation></translation>
+        <translation>%1 ni priklopljen</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="604"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
-        <translation>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="619"/>
         <source>Select a distro</source>
-        <translation>Избор на дистрибуция</translation>
+        <translation>Izberite distribucijo</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="620"/>
         <source>You must select a distribution to load.</source>
-        <translation>Трябва да изберете дистрибуция за зареждане</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="634"/>
         <source>Select a disk image file</source>
-        <translation>Избор на disk image файл</translation>
+        <translation>Izberi datoteko slike diska</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="635"/>
         <source>You must select a disk image file to load.</source>
-        <translation>Трябва да изберете disk image  файл за зареждане.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="649"/>
@@ -176,7 +176,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="664"/>
         <source>Diskimage file not found</source>
-        <translation>Disk image файла не беше открит.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="665"/>
@@ -196,7 +196,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="694"/>
         <source>Initrd file not found</source>
-        <translation>Initrd файла не беше открит</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="695"/>
@@ -206,7 +206,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="799"/>
         <source>%1 exists, overwrite?</source>
-        <translation>%1 съществува, презаписване?</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="800"/>
@@ -216,165 +216,162 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="826"/>
         <source>%1 is out of space, abort installation?</source>
-        <translation>%1 няма достатъчно пространство, прекъсване на инсталацията ?</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="827"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
-        <translation>В директорията %1 няма налично свободно пространство. Натиснете &apos;Да&apos; за прекъсване на инсталирането, &apos;Не&apos; за игнориране на това съобщение и опит за довършване на инсталацията, и &apos;Не на всички&apos; за игнориране на всички подобни съобщения.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1263"/>
         <location filename="unetbootin.cpp" line="1285"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Извличане от компресирания iso-файла:&lt;/b&gt; %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1438"/>
         <source>Extracting files, please wait...</source>
-        <translation>Извличане на файлове, моля, изчакайте…</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1439"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Архив:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Arhiv:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1440"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Vir:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1441"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Cilj:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1442"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; 0 от %1 файла</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1445"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt; %1 (%2)</translation>
+        <translation>&lt;b&gt;Vir:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1446"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1%2</translation>
+        <translation>&lt;b&gt;Cilj:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1447"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation>&lt;b&gt;Извлечени са:&lt;/b&gt; %1 от %2 файла</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1789"/>
         <source>Downloading files, please wait...</source>
-        <translation>Изтегляне на файлове, моля, изчакайте…</translation>
+        <translation>Prenašanje datotek. Prosim, počakajte..</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1790"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Източник:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1791"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Крайна цел:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Cilj:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1792"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; 0 байта</translation>
+        <translation>&lt;b&gt;Prenešeno:&lt;/b&gt; 0 bajtov</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1869"/>
         <location filename="unetbootin.cpp" line="1884"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation>&lt;b&gt;Изтеглени са:&lt;/b&gt; %1 от %2</translation>
+        <translation>&lt;b&gt;Prenešeno:&lt;/b&gt; %1 od %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1960"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Търсене в(ъв) &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>Iskanje v &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1964"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2 съвпадения в &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2149"/>
         <source>%1 not found</source>
-        <translation>%1 не е намерен(а/о)</translation>
+        <translation>%1 ni bil najden</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2150"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation>%1 не е намерен(а/о). Изисква се за режим на инсталиране %2.
-Инсталирайте пакета „%3“ или неговия еквивалент за дистрибуцията Ви.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2438"/>
         <source>(Current)</source>
-        <translation>(в процес)</translation>
+        <translation>(trenutno)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2439"/>
         <source>(Done)</source>
-        <translation>(готово)</translation>
+        <translation>(končano)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2706"/>
         <source>Configuring grub2 on %1</source>
-        <translation>Настройване на grub2 на %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2718"/>
         <source>Configuring grldr on %1</source>
-        <translation>Настройване на grldr на %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2746"/>
         <source>Configuring grub on %1</source>
-        <translation>Настройване на grub на %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2931"/>
         <source>Installing syslinux to %1</source>
-        <translation>Инсталиране на syslinux в(ъв) %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2966"/>
         <source>Installing extlinux to %1</source>
-        <translation>Инсталиране на extlinux в(ъв) %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3072"/>
         <source>Syncing filesystems</source>
-        <translation>Синхронизиране на файловите системи</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3084"/>
         <source>After rebooting, select the </source>
-        <translation>След рестартиране изберете </translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3088"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation>След рестартиране изберете зареждане от USB менюто на BIOS.%1
-Рестартиране сега?</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="27"/>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
-        <translation>
-*ВАЖНО* Преди рестарирането, сложете Ubuntu alternate (не десктоп) iso файла на главната директория на хард диска или USB устройството. Може да бъде свалено от cdimage.ubuntu.com</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="205"/>
@@ -664,7 +661,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="20"/>
         <source>Unetbootin</source>
-        <translation></translation>
+        <translation>Unetbootin</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="44"/>
@@ -675,7 +672,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="47"/>
         <source>&amp;Distribution</source>
-        <translation></translation>
+        <translation>&amp;Distribucija</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="127"/>
@@ -695,7 +692,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="381"/>
         <source>&amp;Custom</source>
-        <translation></translation>
+        <translation>Po &amp;meri</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="420"/>
@@ -714,7 +711,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="490"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>V redu</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="493"/>
@@ -724,7 +721,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="500"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="503"/>
@@ -744,22 +741,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="647"/>
         <source>1. Downloading Files</source>
-        <translation></translation>
+        <translation>1. Prenašanje datotek</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="654"/>
         <source>2. Extracting and Copying Files</source>
-        <translation></translation>
+        <translation>2. Razširjanje in kopiranje datotek</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="661"/>
         <source>3. Installing Bootloader</source>
-        <translation></translation>
+        <translation>3. Namestitev zaganjalnika</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="668"/>
         <source>4. Installation Complete, Reboot</source>
-        <translation></translation>
+        <translation>4. Namestitev končana, ponovno zaženite</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="464"/>
@@ -781,12 +778,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="441"/>
         <source>&amp;Type:</source>
-        <translation></translation>
+        <translation>&amp;Vrsta:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="81"/>
         <source>Select the distribution version</source>
-        <translation></translation>
+        <translation>Izberite verzijo distribucije</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="307"/>
@@ -799,7 +796,7 @@ p, li { white-space: pre-wrap; }
         <location filename="unetbootin.ui" line="335"/>
         <location filename="unetbootin.ui" line="360"/>
         <source>...</source>
-        <translation></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="148"/>
@@ -856,12 +853,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="413"/>
         <source>Show &amp;All Drives (Use with Care)</source>
-        <translation></translation>
+        <translation>Prikaži &amp;vsel pogone (bodite previdni)</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="170"/>
         <source>&amp;Kernel:</source>
-        <translation></translation>
+        <translation>&amp;Jedro:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="256"/>
@@ -884,12 +881,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="main.cpp" line="157"/>
         <source>%1 has been uninstalled.</source>
-        <translation>%1 беше премахнато.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="318"/>
         <source>Must run as root</source>
-        <translation>Трябва да стартирате като root</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="320"/>
