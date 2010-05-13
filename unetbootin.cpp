@@ -1338,6 +1338,10 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 				}
 			}
 		}
+		else
+		{
+			directorypathnames = listfilesizedirpair.second;
+		}
 	}
 	if (installType == tr("USB Drive"))
 	{
@@ -1471,7 +1475,7 @@ QString unetbootin::getgrubcfgargs(QString cfgfile)
 		}
 		if (cfgfileCL.contains(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}\\S{1,}", Qt::CaseInsensitive)))
 		{
-						return QString(cfgfileCL).remove(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}", Qt::CaseInsensitive)).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").trimmed();
+			return fixkernelbootoptions(QString(cfgfileCL).remove(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}", Qt::CaseInsensitive)));
 		}
 	}
 	return "";
@@ -1538,7 +1542,7 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 			}
 			if (cfgfileCL.contains(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}\\S{1,}", Qt::CaseInsensitive)))
 			{
-								titleandparams.second[curindex] = QString(cfgfileCL).remove(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}", Qt::CaseInsensitive)).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").trimmed();
+				titleandparams.second[curindex] = fixkernelbootoptions(QString(cfgfileCL).remove(QRegExp("^kernel\\s{1,}\\S{1,}\\s{1,}", Qt::CaseInsensitive)));
 			}
 			kernelandinitrd.first[curindex] = getFirstTextBlock(QString(cfgfileCL).remove(QRegExp("^kernel", Qt::CaseInsensitive)).trimmed());
 //			if (kernelandinitrd.first.at(curindex).isEmpty())
@@ -1592,7 +1596,7 @@ QString unetbootin::getcfgkernargs(QString cfgfile, QString archivefile, QString
 		}
 		else if (cfgfileCL.contains(QRegExp("^\\s{0,}append\\s{1,}", Qt::CaseInsensitive)))
 		{
-						return QString(cfgfileCL).remove(QRegExp("\\s{0,}append\\s{1,}", Qt::CaseInsensitive)).remove(QRegExp("\\s{0,1}initrd=\\S{0,}", Qt::CaseInsensitive)).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").trimmed();
+			return fixkernelbootoptions(QString(cfgfileCL).remove(QRegExp("\\s{0,}append\\s{1,}", Qt::CaseInsensitive)).remove(QRegExp("\\s{0,1}initrd=\\S{0,}", Qt::CaseInsensitive)));
 		}
 	}
 	return "";
@@ -1676,7 +1680,7 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 //				else if (!kernelandinitrd.second.at(curindex).contains('/'))
 //					kernelandinitrd.second[curindex] = QString("%1%2").arg(cfgfiledir, kernelandinitrd.second.at(curindex));
 			}
-						titleandparams.second[curindex] = QString(appendoptsL).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").trimmed();
+			titleandparams.second[curindex] = fixkernelbootoptions(appendoptsL);
 			continue;
 		}
 		if (cfgfileCL.contains(QRegExp("^label\\s{1,}\\S{1,}", Qt::CaseInsensitive)))
@@ -2840,7 +2844,7 @@ void unetbootin::runinsthdd()
 	{
 		bootiniEdit();
 	}
-	else if (QSysInfo::WindowsVersion == QSysInfo::WV_VISTA)
+	else if (QSysInfo::WindowsVersion == QSysInfo::WV_VISTA) //|| QSysInfo::WindowsVersion == QSysInfo::WV_WINDOWS7) // TODO when upgrading to latest Qt
 	{
 		vistabcdEdit();
 	}
@@ -2858,9 +2862,14 @@ void unetbootin::runinsthdd()
 	fininstall();
 }
 
-void unetbootin::rmFile(const QFile &fn)
+void unetbootin::rmFile(QFile &fn)
 {
-	rmFile(QFileInfo(fn).canonicalFilePath());
+	if (!fn.exists()) return;
+	fn.setPermissions(QFile::WriteUser);
+	fn.remove();
+#ifdef Q_OS_UNIX
+	callexternapp("sync", "");
+#endif
 }
 
 void unetbootin::rmFile(const QString &fn)
@@ -2873,9 +2882,13 @@ void unetbootin::rmFile(const QString &fn)
 #endif
 }
 
-void unetbootin::mvFile(const QFile &fn, const QFile &outfn)
+void unetbootin::mvFile(QFile &fn, QFile &outfn)
 {
-	mvFile(QFileInfo(fn).canonicalFilePath(), QFileInfo(outfn).canonicalFilePath());
+	rmFile(outfn);
+	fn.rename(outfn.fileName());
+#ifdef Q_OS_UNIX
+	callexternapp("sync", "");
+#endif
 }
 
 void unetbootin::mvFile(const QString &fn, const QString &outfn)
@@ -2905,6 +2918,11 @@ void unetbootin::replaceTextInFile(QString repfilepath, QRegExp replaceme, QStri
 	nrepfileF.rename(repfilepath);
 	nrepfileF.close();
 	//mvFile(nrepfilepath, repfilepath);
+}
+
+QString unetbootin::fixkernelbootoptions(const QString &cfgfileCL)
+{
+	return QString(cfgfileCL).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").trimmed();
 }
 
 void unetbootin::runinstusb()
@@ -3006,15 +3024,15 @@ void unetbootin::runinstusb()
 		{
 			QString syslpathloc = QFileInfo(locatedsyslinuxcfgfiles.at(j)).path();
 			if (syslpathloc == ".") syslpathloc = "";
-			if (syslpathloc.contains("/"))
-			{
-				if (!syslpathloc.endsWith("/"))
-					syslpathloc.append("/");
-			}
-			else if (syslpathloc.contains(QDir::toNativeSeparators("/")))
+			if (syslpathloc.contains(QDir::toNativeSeparators("/")))
 			{
 				if (!syslpathloc.endsWith(QDir::toNativeSeparators("/")))
 					syslpathloc.append(QDir::toNativeSeparators("/"));
+			}
+			else
+			{
+				if (!syslpathloc.endsWith("/"))
+					syslpathloc.append("/");
 			}
 			QString abssyslpathloc = QDir::fromNativeSeparators(QString(syslpathloc));
 			if (!abssyslpathloc.startsWith("/"))
