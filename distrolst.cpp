@@ -306,12 +306,6 @@ if (nameDistro == "Elive")
 	extractiso(isotmpf, targetPath);
 }
 
-if (nameDistro == "FaunOS")
-{
-	downloadfile(QString("http://download.faunos.com/FaunOS-%1/FaunOS-%1-dvd.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
-}
-
 if (nameDistro == "Fedora")
 {
 	if (isarch64)
@@ -487,13 +481,28 @@ if (nameDistro == "gNewSense")
 
 if (nameDistro == "Kaspersky Rescue Disk")
 {
-	downloadfile(fileFilterNetDir(QStringList() << 
-	"http://ftp.kaspersky.com/devbuilds/RescueDisk/" <<
-	"ftp://ftp.kaspersky.com/devbuilds/RescueDisk/"
-	, 9288000, 1048576000, QList<QRegExp>() << 
-	QRegExp(".iso$", Qt::CaseInsensitive) << 
-	QRegExp("k\\S{0,}.iso$", Qt::CaseInsensitive)
-	), isotmpf);
+	if (relname == "8")
+	{
+		downloadfile(fileFilterNetDir(QStringList() <<
+		"http://devbuilds.kaspersky-labs.com/devbuilds/RescueDisk/" <<
+		"http://ftp.kaspersky.com/devbuilds/RescueDisk/" <<
+		"ftp://ftp.kaspersky.com/devbuilds/RescueDisk/"
+		, 9288000, 1048576000, QList<QRegExp>() <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("k\\S{0,}.iso$", Qt::CaseInsensitive)
+		), isotmpf);
+	}
+	else
+	{
+		downloadfile(fileFilterNetDir(QStringList() <<
+		"http://devbuilds.kaspersky-labs.com/devbuilds/RescueDisk10/" <<
+		"http://ftp.kaspersky.com/devbuilds/RescueDisk10/" <<
+		"ftp://ftp.kaspersky.com/devbuilds/RescueDisk10/"
+		, 9288000, 1048576000, QList<QRegExp>() <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("k\\S{0,}.iso$", Qt::CaseInsensitive)
+		), isotmpf);
+	}
 	extractiso(isotmpf, targetPath);
 }
 
@@ -503,17 +512,76 @@ if (nameDistro == "Gujin")
 	downloadfile(QString("http://downloads.sourceforge.net/sourceforge/lubi/gujin-%1.img.gz").arg(relname), QString("%1ubninit").arg(targetPath));
 }
 
+if (nameDistro == "LinuxConsole")
+{
+  downloadfile(QString("http://jukebox.linuxconsole.org/official/linuxconsole%1.iso").arg(QString(relname)), isotmpf);
+  extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "Linux Mint")
 {
-	if (isarch64)
+	if (relname == "9")
 	{
-		cpuarch = "-x64";
+		if (isarch64)
+		{
+			cpuarch = "amd64";
+		}
+		else
+		{
+			cpuarch = "i386";
+		}
 	}
 	else
 	{
-		cpuarch = "";
+		if (isarch64)
+		{
+			cpuarch = "-x64";
+		}
+		else
+		{
+			cpuarch = "";
+		}
 	}
-	downloadfile(QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/LinuxMint-%2%3.iso").arg(QString(relname).remove(QRegExp("-r\\d{0,}"))).arg(relname).arg(cpuarch), isotmpf);
+	QList<QRegExp> mintregex = QList<QRegExp>() <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("linuxmint", Qt::CaseInsensitive) <<
+		QRegExp(cpuarch, Qt::CaseInsensitive);
+	if (relname == "9")
+	{
+		mintregex.append(QRegExp("cd", Qt::CaseInsensitive));
+		mintregex.append(QRegExp("gnome", Qt::CaseInsensitive));
+	}
+	downloadfile(fileFilterNetDir(QStringList() <<
+	QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("http://mira.sunsite.utk.edu/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.yellowfiber.net/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.optus.net/linuxmint/isos/stable/%1/").arg(relname) <<
+	QString("http://mint.ez.by/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("http://linuxmint.secsup.org/stable/%1/").arg(relname) <<
+	QString("http://ftp.jaist.ac.jp/pub/Linux/LinuxMint-ISO/stable/%1/").arg(relname) <<
+	QString("http://ftp.riken.jp/pub/Linux/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://ftp.oss.tw/pub/Mint/LinuxMint-ISO/stable/%1/").arg(relname) <<
+	QString("http://gd.tuwien.ac.at/linux/mint/isos/stable/%1/").arg(relname) <<
+	QString("http://ftp.mgts.by/pub/linuxmint/isos/stable/%1/").arg(relname) <<
+	QString("http://mirrors.cytanet.com.cy/linux/mint/stable/%1/").arg(relname) <<
+	QString("http://ftp.klid.dk/ftp/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://ftp5.gwdg.de/pub/linux/debian/mint/stable/%1/").arg(relname) <<
+	QString("http://mirror.netcologne.de/mint/stable/%1/").arg(relname) <<
+	QString("http://ftp.cc.uoc.gr/mirrors/linux/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("http://ftp.akl.lt/Linux/Mint/stable/%1/").arg(relname) <<
+	QString("http://cesium.di.uminho.pt/pub/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://ftp.df.lth.se/pub/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.switch.ch/ftp/mirror/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.sov.uk.goscomb.net/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("http://mirror.csclub.uwaterloo.ca/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.aarnet.edu.au/pub/linuxmint/stable/%1/").arg(relname) <<
+	QString("http://mirror.waia.asn.au/pub/linux/linuxmint/linuxmint-isos/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("ftp://mirrors.secution.com/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("ftp://ftp.is.co.za/mirror/linuxmint.com/stable/%1/").arg(relname) <<
+	QString("ftp://ftp.tpnet.pl/pub/linux/linuxmint/isos/stable/%1/").arg(relname) <<
+	QString("ftp://mirror.unej.ac.id/pub/iso/linux-mint/stable/%1/").arg(relname)
+	, 61440000, 1048576000, mintregex), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
 
@@ -680,7 +748,16 @@ if (nameDistro == "Parted Magic")
 
 if (nameDistro == "PCLinuxOS")
 {
-	downloadfile(QString("http://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/pclinuxos-%1.iso").arg(relname.toLower().replace(" ", "-")), isotmpf);
+	QString deskn = relname.toLower().split(" ").first();
+	QString vern = relname.toLower().split(" ").last();
+	downloadfile(fileFilterNetDir(QStringList() <<
+	"http://distro.ibiblio.org/pub/linux/distributions/texstar/pclinuxos/live-cd/english/preview/"
+	, 10485760, 2147483647, QList<QRegExp>() <<
+	QRegExp("^pclinuxos", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive) <<
+	QRegExp(deskn, Qt::CaseInsensitive) <<
+	QRegExp(vern, Qt::CaseInsensitive)
+	), isotmpf);
 	extractiso(isotmpf, targetPath);
 }
 

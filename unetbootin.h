@@ -115,6 +115,20 @@ public:
 	void run();
 };
 
+class copyfileT : public QThread
+{
+	Q_OBJECT
+
+public:
+	QString source;
+	QString destination;
+	void run();
+
+signals:
+	void datacopied64(qint64 dlbytes, qint64 maxbytes);
+	void finished();
+};
+
 class ubngetrequestheader : public QHttpRequestHeader
 {
 public:
@@ -178,6 +192,7 @@ public:
 	QString slinitrdLine;
 	QString sevzcommand;
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > extraoptionsPL;
+	QMap<QString, QString> grub2vars;
 	#ifdef Q_OS_UNIX
 	QString fdiskcommand;
 	QString dfcommand;
@@ -195,7 +210,9 @@ public:
 	bool ignoreoutofspaceprompt(QString destindir);
 	bool extractfile(QString filepath, QString destinfileL, QString archivefile);
 	bool checkifoutofspace(QString destindir);
+	QString locatekernel(QString archivefile, QPair<QStringList, QList<quint64> > archivefileconts);
 	bool extractkernel(QString archivefile, QString kernoutputfile, QPair<QStringList, QList<quint64> > archivefileconts);
+	QString locateinitrd(QString archivefile, QPair<QStringList, QList<quint64> > archivefileconts);
 	bool extractinitrd(QString archivefile, QString initoutputfile, QPair<QStringList, QList<quint64> > archivefileconts);
 	QString extractcfg(QString archivefile, QStringList archivefileconts);
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > extractcfgL(QString archivefile, QStringList archivefileconts);
@@ -204,15 +221,22 @@ public:
 	QString filteroutlist(QStringList listofdata, QList<QRegExp> listofmatches);
 	QStringList filteroutlistL(QStringList listofdata, QList<QRegExp> listofmatches);
 	void extractiso(QString isofile, QString exoutputdir);
+	void extractiso_krd10(QString isofile, QString exoutputdir);
+	void copyfilegui(QString src, QString dst);
 	QStringList makepathtree(QString dirmkpathw, QStringList pathlist);
 	QStringList extractallfiles(QString archivefile, QString dirxfilesto, QPair<QStringList, QList<quint64> > filesizelist, QStringList outputfilelist);
 	QString getgrubcfgargs(QString cfgfile);
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > getgrubcfgargsL(QString cfgfile);
 	QString getFirstTextBlock(QString fulltext);
-	QString getcfgkernargs(QString cfgfile, QString archivefile, QStringList archivefileconts);
-	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > getcfgkernargsL(QString cfgfile, QString archivefile, QStringList archivefileconts);
-	QString searchforincludesfile(QString includesfile, QString archivefile, QStringList archivefileconts);
-	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > searchforincludesfileL(QString includesfile, QString archivefile, QStringList archivefileconts);
+	void loadgrub2env(QString cfgfile);
+	QString getgrub2cfgargs(QString cfgfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > getgrub2cfgargsL(QString cfgfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QString getcfgkernargs(QString cfgfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > getcfgkernargsL(QString cfgfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QString searchforincludesfile(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > searchforincludesfileL(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QString searchforgrub2includesfile(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
+	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > searchforgrub2includesfileL(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
 	void downloadfile(QString fileurl, QString targetfile);
 	QString downloadpagecontents(QString pageurl);
 	QStringList lstFtpDirFiles(QString ldfDirStringUrl, int ldfMinSize, int ldfMaxSize);
@@ -280,6 +304,7 @@ private slots:
 public slots:
 	void dlprogressupdate(int dlbytes, int maxbytes);
 	void dlprogressupdate64(qint64 dlbytes, qint64 maxbytes);
+	void cpprogressupdate64(qint64 dlbytes, qint64 maxbytes);
 	void on_okbutton_clicked();
 };
 

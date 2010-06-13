@@ -26,7 +26,7 @@ unetbootin::tr("Welcome to <a href=\"http://unetbootin.sourceforge.net/\">UNetbo
 distroselect->addItem("Arch Linux", (QStringList() << "2008.03-1" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.archlinux.org/\">http://www.archlinux.org</a><br/>"
 	"<b>Description:</b> Arch Linux is a lightweight distribution optimized for speed and flexibility.<br/>"
-	"<b>Install Notes:</b> The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.") <<
+	"<b>Install Notes:</b> The default version allows for installation over the internet (FTP).") <<
 "2007.08-2" << "2007.08-2_x64" << "2008.03-1" << "2008.03-1_x64"));
 //	"2007.08-2" << "2007.08-2_x64" << "2008.03-1" << "2008.03-1_x64" << "2008.06" << "2008.06_x64"));
 distroselect->addItem("BackTrack", (QStringList() << "4f" <<
@@ -70,16 +70,11 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.elivecd.org/\">http://www.
 	"<b>Description:</b> Elive is a Debian-based distribution featuring the Enlightenment window manager.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a>.") <<
 "Unstable_Live"));
-//	distroselect->addItem("FaunOS", (QStringList() << "shadow-0.5.4-stable" <<
-//	tr("<b>Homepage:</b> <a href=\"http://www.faunos.com/\">http://www.faunos.com</a><br/>"
-//		"<b>Description:</b> FaunOS is a distribution based on Arch Linux.<br/>"
-//		"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
-//	"shadow-0.5.4-stable"));
-	distroselect->addItem("Fedora", (QStringList() << "12_Live" <<
+distroselect->addItem("Fedora", (QStringList() << "13_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://fedoraproject.org/\">http://fedoraproject.org</a><br/>"
 	"<b>Description:</b> Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.") <<
-	"7_NetInstall" << "7_NetInstall_x64" << "8_NetInstall" << "8_NetInstall_x64" << "8_Live" << "8_Live_x64" << "9_NetInstall" << "9_NetInstall_x64" << "9_Live" << "9_Live_x64" << "10_NetInstall" << "10_NetInstall_x64" << "10_Live" << "10_Live_x64" << "11_NetInstall" << "11_NetInstall_x64" << "11_Live" << "11_Live_x64" << "12_NetInstall" << "12_NetInstall_x64" << "12_Live" << "12_Live_x64" << "Rawhide_NetInstall" << "Rawhide_NetInstall_x64"));
+	"7_NetInstall" << "7_NetInstall_x64" << "8_NetInstall" << "8_NetInstall_x64" << "8_Live" << "8_Live_x64" << "9_NetInstall" << "9_NetInstall_x64" << "9_Live" << "9_Live_x64" << "10_NetInstall" << "10_NetInstall_x64" << "10_Live" << "10_Live_x64" << "11_NetInstall" << "11_NetInstall_x64" << "11_Live" << "11_Live_x64" << "12_NetInstall" << "12_NetInstall_x64" << "12_Live" << "12_Live_x64" << "13_NetInstall" << "13_NetInstall_x64" << "13_Live" << "13_Live_x64" << "Rawhide_NetInstall" << "Rawhide_NetInstall_x64"));
 distroselect->addItem("FreeBSD", (QStringList() << "8.0" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.freebsd.org/\">http://www.freebsd.org</a><br/>"
 	"<b>Description:</b> FreeBSD is a general-purpose Unix-like operating system designed for scalability and performance.<br/>"
@@ -125,21 +120,26 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://gujin.sourceforge.net/\">http:
 	"<b>Description:</b> Gujin is a graphical boot manager which can bootstrap various volumes and files.<br/>"
 	"<b>Install Notes:</b> Gujin simply boots and runs; no installation is required to use it.") <<
 "2.4"));
-distroselect->addItem("Kaspersky Rescue Disk", (QStringList() << "Latest_Live" <<
+distroselect->addItem("Kaspersky Rescue Disk", (QStringList() << "10_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://ftp.kaspersky.com/devbuilds/RescueDisk/\">http://ftp.kaspersky.com/devbuilds/RescueDisk/</a><br/>"
 	"<b>Description:</b> Kaspersky Rescue Disk detects and removes malware from your Windows installation.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") <<
-"Latest_Live"));
+"10_Live" << "8_Live"));
 	distroselect->addItem("Kubuntu", (QStringList() << "10.04_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.kubuntu.org/\">http://www.kubuntu.org</a><br/>"
 	"<b>Description:</b> Kubuntu is an official Ubuntu derivative featuring the KDE desktop.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive") <<
 ubuntuverlist));
-	distroselect->addItem("Linux Mint", (QStringList() << "8_Live" <<
+	distroselect->addItem("LinuxConsole", (QStringList() << "1.0.2009-cd" <<
+unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxconsole.org/\">http://linuxconsole.org</a><br/>"
+ "<b>Description:</b> LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .<br/>"
+ "<b>Install Notes:</b> The 1.0.2009 is latest 1.0 release.") <<
+ "1.0.2009-cd"));
+	distroselect->addItem("Linux Mint", (QStringList() << "9_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxmint.com/\">http://linuxmint.com</a><br/>"
 	"<b>Description:</b> Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
-	"3.1_Live" << "4.0_Live" << "5-r1_Live" << "5_Live_x64" << "6_Live" << "6_Live_x64" << "7_Live" << "7_Live_x64" << "8_Live" << "8_Live_x64"));
+	"3.1_Live" << "4.0_Live" << "5_Live" << "5_Live_x64" << "6_Live" << "6_Live_x64" << "7_Live" << "7_Live_x64" << "8_Live" << "8_Live_x64" << "9_Live" << "9_Live_x64"));
 distroselect->addItem("Mandriva", (QStringList() << "2008.1_NetInstall" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.mandriva.com/\">http://www.mandriva.com/</a><br/>"
 	"<b>Description:</b> Mandriva is a user-friendly distro formerly known as Mandrake Linux.<br/>"
