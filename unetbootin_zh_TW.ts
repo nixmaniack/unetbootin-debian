@@ -7,14 +7,14 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2010-05-01 09:36-0400
+POT-Creation-Date: 2010-06-19 01:22-0700
 PO-Revision-Date: 2010-04-18 21:13+0000
 Last-Translator: Anthony Fok &lt;foka@debian.org&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2010-06-01 19:40+0000
+X-Launchpad-Export-Date: 2010-06-20 22:16+0000
 X-Generator: Launchpad (build Unknown)
 </translation>
     </message>
@@ -115,6 +115,10 @@ X-Generator: Launchpad (build Unknown)
         <translation type="obsolete">&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</translation>
     </message>
     <message>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</source>
+        <translation type="obsolete">&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</translation>
+    </message>
+    <message>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode. The Unstable version does not support Hard Drive installations, though the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; (not freely downloadable) does.</source>
         <translation type="obsolete">&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode. The Unstable version does not support Hard Drive installations, though the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; (not freely downloadable) does.</translation>
     </message>
@@ -143,377 +147,384 @@ X-Generator: Launchpad (build Unknown)
     <name>unetbootin</name>
     <message>
         <location filename="unetbootin.cpp" line="189"/>
-        <location filename="unetbootin.cpp" line="271"/>
-        <location filename="unetbootin.cpp" line="272"/>
-        <location filename="unetbootin.cpp" line="339"/>
-        <location filename="unetbootin.cpp" line="438"/>
-        <location filename="unetbootin.cpp" line="531"/>
-        <location filename="unetbootin.cpp" line="2960"/>
-        <location filename="unetbootin.cpp" line="2973"/>
-        <location filename="unetbootin.cpp" line="3131"/>
-        <location filename="unetbootin.cpp" line="3586"/>
+        <location filename="unetbootin.cpp" line="261"/>
+        <location filename="unetbootin.cpp" line="262"/>
+        <location filename="unetbootin.cpp" line="329"/>
+        <location filename="unetbootin.cpp" line="450"/>
+        <location filename="unetbootin.cpp" line="543"/>
+        <location filename="unetbootin.cpp" line="3069"/>
+        <location filename="unetbootin.cpp" line="3082"/>
+        <location filename="unetbootin.cpp" line="3240"/>
+        <location filename="unetbootin.cpp" line="3695"/>
         <source>Hard Disk</source>
         <translation>硬碟</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="190"/>
-        <location filename="unetbootin.cpp" line="254"/>
-        <location filename="unetbootin.cpp" line="268"/>
-        <location filename="unetbootin.cpp" line="269"/>
-        <location filename="unetbootin.cpp" line="341"/>
-        <location filename="unetbootin.cpp" line="442"/>
-        <location filename="unetbootin.cpp" line="536"/>
-        <location filename="unetbootin.cpp" line="608"/>
-        <location filename="unetbootin.cpp" line="624"/>
-        <location filename="unetbootin.cpp" line="878"/>
-        <location filename="unetbootin.cpp" line="1409"/>
-        <location filename="unetbootin.cpp" line="1471"/>
-        <location filename="unetbootin.cpp" line="2294"/>
-        <location filename="unetbootin.cpp" line="2336"/>
-        <location filename="unetbootin.cpp" line="2964"/>
-        <location filename="unetbootin.cpp" line="2989"/>
-        <location filename="unetbootin.cpp" line="3135"/>
-        <location filename="unetbootin.cpp" line="3590"/>
+        <location filename="unetbootin.cpp" line="244"/>
+        <location filename="unetbootin.cpp" line="258"/>
+        <location filename="unetbootin.cpp" line="259"/>
+        <location filename="unetbootin.cpp" line="331"/>
+        <location filename="unetbootin.cpp" line="454"/>
+        <location filename="unetbootin.cpp" line="548"/>
+        <location filename="unetbootin.cpp" line="620"/>
+        <location filename="unetbootin.cpp" line="636"/>
+        <location filename="unetbootin.cpp" line="890"/>
+        <location filename="unetbootin.cpp" line="1421"/>
+        <location filename="unetbootin.cpp" line="1483"/>
+        <location filename="unetbootin.cpp" line="2402"/>
+        <location filename="unetbootin.cpp" line="2444"/>
+        <location filename="unetbootin.cpp" line="3073"/>
+        <location filename="unetbootin.cpp" line="3098"/>
+        <location filename="unetbootin.cpp" line="3244"/>
+        <location filename="unetbootin.cpp" line="3699"/>
         <source>USB Drive</source>
         <translation>USB 磁碟機</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="191"/>
-        <location filename="unetbootin.cpp" line="218"/>
-        <location filename="unetbootin.cpp" line="219"/>
-        <location filename="unetbootin.cpp" line="307"/>
-        <location filename="unetbootin.cpp" line="559"/>
-        <location filename="unetbootin.cpp" line="560"/>
-        <location filename="unetbootin.cpp" line="3037"/>
+        <location filename="unetbootin.cpp" line="208"/>
+        <location filename="unetbootin.cpp" line="209"/>
+        <location filename="unetbootin.cpp" line="297"/>
+        <location filename="unetbootin.cpp" line="571"/>
+        <location filename="unetbootin.cpp" line="572"/>
+        <location filename="unetbootin.cpp" line="3146"/>
         <source>ISO</source>
         <translation>ISO</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="192"/>
-        <location filename="unetbootin.cpp" line="214"/>
-        <location filename="unetbootin.cpp" line="215"/>
-        <location filename="unetbootin.cpp" line="312"/>
-        <location filename="unetbootin.cpp" line="564"/>
-        <location filename="unetbootin.cpp" line="565"/>
-        <location filename="unetbootin.cpp" line="3029"/>
+        <location filename="unetbootin.cpp" line="204"/>
+        <location filename="unetbootin.cpp" line="205"/>
+        <location filename="unetbootin.cpp" line="302"/>
+        <location filename="unetbootin.cpp" line="576"/>
+        <location filename="unetbootin.cpp" line="577"/>
+        <location filename="unetbootin.cpp" line="3138"/>
         <source>Floppy</source>
         <translation>磁片</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="232"/>
-        <location filename="unetbootin.cpp" line="236"/>
+        <location filename="unetbootin.cpp" line="222"/>
+        <location filename="unetbootin.cpp" line="226"/>
+        <location filename="unetbootin.cpp" line="230"/>
+        <location filename="unetbootin.cpp" line="234"/>
         <location filename="unetbootin.cpp" line="240"/>
-        <location filename="unetbootin.cpp" line="244"/>
-        <location filename="unetbootin.cpp" line="250"/>
-        <location filename="unetbootin.cpp" line="262"/>
+        <location filename="unetbootin.cpp" line="252"/>
         <source>either</source>
         <translation>或是</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="556"/>
+        <location filename="unetbootin.cpp" line="568"/>
         <source>Open Disk Image File</source>
         <translation>開啟映像檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="574"/>
+        <location filename="unetbootin.cpp" line="568"/>
+        <location filename="unetbootin.cpp" line="586"/>
+        <location filename="unetbootin.cpp" line="594"/>
+        <location filename="unetbootin.cpp" line="602"/>
+        <source>All Files (*)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="586"/>
         <source>Open Kernel File</source>
         <translation>開啟核心檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="582"/>
+        <location filename="unetbootin.cpp" line="594"/>
         <source>Open Initrd File</source>
         <translation>開啟 Initrd 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="590"/>
+        <location filename="unetbootin.cpp" line="602"/>
         <source>Open Bootloader Config File</source>
         <translation>開啟開機管理設定檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="612"/>
+        <location filename="unetbootin.cpp" line="624"/>
         <source>Insert a USB flash drive</source>
         <translation>插入 USB 隨身碟</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="613"/>
+        <location filename="unetbootin.cpp" line="625"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
         <translation>找不到 USB 隨身碟。如果已經插入，試著格式化成 FAT32 檔案系統。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="628"/>
+        <location filename="unetbootin.cpp" line="640"/>
         <source>%1 not mounted</source>
         <translation>%1 尚未掛載</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="629"/>
+        <location filename="unetbootin.cpp" line="641"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
         <translation>你必須先將 USB 隨身碟 %1 掛載起來。大部分的系統會在你移除並重新插入 USB 隨身碟後自動掛載。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="644"/>
+        <location filename="unetbootin.cpp" line="656"/>
         <source>Select a distro</source>
         <translation>選擇一個發行套件</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="645"/>
+        <location filename="unetbootin.cpp" line="657"/>
         <source>You must select a distribution to load.</source>
         <translation>你必須選擇一個發行套件</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="659"/>
+        <location filename="unetbootin.cpp" line="671"/>
         <source>Select a disk image file</source>
         <translation>選擇一個映像檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="660"/>
+        <location filename="unetbootin.cpp" line="672"/>
         <source>You must select a disk image file to load.</source>
         <translation>你必須選擇一個映像檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="674"/>
+        <location filename="unetbootin.cpp" line="686"/>
         <source>Select a kernel and/or initrd file</source>
         <translation>選擇一個核心或 initrd 檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="675"/>
+        <location filename="unetbootin.cpp" line="687"/>
         <source>You must select a kernel and/or initrd file to load.</source>
         <translation>你必須選擇一個核心或 initrd 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="689"/>
+        <location filename="unetbootin.cpp" line="701"/>
         <source>Diskimage file not found</source>
         <translation>找不到映像檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="690"/>
+        <location filename="unetbootin.cpp" line="702"/>
         <source>The specified diskimage file %1 does not exist.</source>
         <translation>指定的映像檔 %1 不存在。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="704"/>
+        <location filename="unetbootin.cpp" line="716"/>
         <source>Kernel file not found</source>
         <translation>找不到核心檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="705"/>
+        <location filename="unetbootin.cpp" line="717"/>
         <source>The specified kernel file %1 does not exist.</source>
         <translation>指定的核心檔案 %1 不存在。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="719"/>
+        <location filename="unetbootin.cpp" line="731"/>
         <source>Initrd file not found</source>
         <translation>找不到 initrd 檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="720"/>
+        <location filename="unetbootin.cpp" line="732"/>
         <source>The specified initrd file %1 does not exist.</source>
         <translation>指定的 initrd 檔案 %1 不存在。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="824"/>
+        <location filename="unetbootin.cpp" line="836"/>
         <source>%1 exists, overwrite?</source>
         <translation>%1 已經存在，要覆寫嗎？</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="825"/>
+        <location filename="unetbootin.cpp" line="837"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
         <translation>檔案 %1 已存在。請按下 &quot;全部皆是&quot; 以覆蓋該當案，並在之後再也不提示，或按下 &quot;是&quot; 只覆蓋這個檔案，或是 &quot;否&quot; 以保留目前的版本。如果你不知道怎麼做，請按 &quot;全部皆是&quot;。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="851"/>
+        <location filename="unetbootin.cpp" line="863"/>
         <source>%1 is out of space, abort installation?</source>
         <translation>%1 磁碟空間不足，是否要放棄安裝？</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="852"/>
+        <location filename="unetbootin.cpp" line="864"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
         <translation>資料夾 %1 已經滿了。請按 &quot;是&quot; 以中止安裝，&quot;否&quot; 以跳過這個錯誤並嘗試繼續安裝過程，或按下 &quot;全部皆否&quot; 以忽略所有空間不族的訊息。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="946"/>
+        <location filename="unetbootin.cpp" line="958"/>
         <source>Locating kernel file in %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="987"/>
+        <location filename="unetbootin.cpp" line="999"/>
         <source>Copying kernel file from %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="993"/>
+        <location filename="unetbootin.cpp" line="1005"/>
         <source>Locating initrd file in %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1034"/>
+        <location filename="unetbootin.cpp" line="1046"/>
         <source>Copying initrd file from %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1040"/>
-        <location filename="unetbootin.cpp" line="1100"/>
+        <location filename="unetbootin.cpp" line="1052"/>
+        <location filename="unetbootin.cpp" line="1112"/>
         <source>Extracting bootloader configuration</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1315"/>
-        <location filename="unetbootin.cpp" line="1341"/>
+        <location filename="unetbootin.cpp" line="1327"/>
+        <location filename="unetbootin.cpp" line="1353"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;自映象檔提取：&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1570"/>
+        <location filename="unetbootin.cpp" line="1582"/>
         <source>Copying file, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1573"/>
+        <location filename="unetbootin.cpp" line="1585"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
-        <oldsource>&lt;b&gt;Copied:&lt;/b&gt; 0 KB</oldsource>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2388"/>
+        <location filename="unetbootin.cpp" line="2496"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1611"/>
+        <location filename="unetbootin.cpp" line="1623"/>
         <source>Extracting files, please wait...</source>
         <translation>提取檔案中，請稍後...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1612"/>
+        <location filename="unetbootin.cpp" line="1624"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Archive:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1613"/>
+        <location filename="unetbootin.cpp" line="1625"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
         <translation>&lt;b&gt;來源：&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1614"/>
+        <location filename="unetbootin.cpp" line="1626"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
         <translation>&lt;b&gt;目的地：&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1615"/>
+        <location filename="unetbootin.cpp" line="1627"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
         <translation>&lt;b&gt;已提取：&lt;/b&gt; 0 of %1 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1618"/>
+        <location filename="unetbootin.cpp" line="1630"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
         <translation>&lt;b&gt;來源：&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1619"/>
+        <location filename="unetbootin.cpp" line="1631"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
         <translation>&lt;b&gt;目的地：&lt;/b&gt; %1%2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1620"/>
+        <location filename="unetbootin.cpp" line="1632"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
         <translation>&lt;b&gt;已提取：&lt;/b&gt; %1 of %2 files</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2278"/>
+        <location filename="unetbootin.cpp" line="2386"/>
         <source>Downloading files, please wait...</source>
         <translation>檔案下載中，請稍後...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1571"/>
-        <location filename="unetbootin.cpp" line="2279"/>
+        <location filename="unetbootin.cpp" line="1583"/>
+        <location filename="unetbootin.cpp" line="2387"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>&lt;b&gt;來源：&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1572"/>
-        <location filename="unetbootin.cpp" line="2280"/>
+        <location filename="unetbootin.cpp" line="1584"/>
+        <location filename="unetbootin.cpp" line="2388"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;目的地：&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2281"/>
+        <location filename="unetbootin.cpp" line="2389"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;已下載：&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2358"/>
-        <location filename="unetbootin.cpp" line="2373"/>
+        <location filename="unetbootin.cpp" line="2466"/>
+        <location filename="unetbootin.cpp" line="2481"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;已下載：&lt;/b&gt; %1 of %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2464"/>
+        <location filename="unetbootin.cpp" line="2572"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>正在搜尋 &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2468"/>
+        <location filename="unetbootin.cpp" line="2576"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
         <translation>%1/%2 個符合於 &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2653"/>
+        <location filename="unetbootin.cpp" line="2761"/>
         <source>%1 not found</source>
         <translation>找不到 %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2654"/>
+        <location filename="unetbootin.cpp" line="2762"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
         <translation>找不到 %1。%2 安裝模式必須要使用它。
 請安裝 &quot;%3&quot; 軟體包或是您的發行版當中的類似程式。</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2942"/>
+        <location filename="unetbootin.cpp" line="3051"/>
         <source>(Current)</source>
         <translation>(目前)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2943"/>
+        <location filename="unetbootin.cpp" line="3052"/>
         <source>(Done)</source>
         <translation>(完成)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3210"/>
+        <location filename="unetbootin.cpp" line="3319"/>
         <source>Configuring grub2 on %1</source>
         <translation>正在設定 %1 上的 grub2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3222"/>
+        <location filename="unetbootin.cpp" line="3331"/>
         <source>Configuring grldr on %1</source>
         <translation>正在設定 %1 上的 grldr</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3250"/>
+        <location filename="unetbootin.cpp" line="3359"/>
         <source>Configuring grub on %1</source>
         <translation>正在設定 %1 上的 grub</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3435"/>
+        <location filename="unetbootin.cpp" line="3544"/>
         <source>Installing syslinux to %1</source>
         <translation>安裝 syslinux 至 %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3470"/>
+        <location filename="unetbootin.cpp" line="3579"/>
         <source>Installing extlinux to %1</source>
         <translation>安裝 extlinux 至 %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3576"/>
+        <location filename="unetbootin.cpp" line="3685"/>
         <source>Syncing filesystems</source>
         <translation>正在同步檔案系統</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3588"/>
+        <location filename="unetbootin.cpp" line="3697"/>
         <source>After rebooting, select the </source>
         <translation>重開機後，請選擇 </translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3592"/>
+        <location filename="unetbootin.cpp" line="3701"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
         <translation>重開機後，請選擇 BIOS 開機選單當中的 USB 開機選項。%1
@@ -527,46 +538,58 @@ Reboot now?</source>
 *重要* 在重開機之前，請把 Ubuntu 的 alternative（非 desktop）版本安裝映像檔放到您的硬碟或 USB 磁碟機根目錄。這些檔案可以從 cdimage.ubuntu.com 取得</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="205"/>
+        <location filename="distrolst.cpp" line="219"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;mirrors.kernel.org&apos; when prompted for a server, and enter &apos;/centos/%1/os/%2&apos; when asked for the folder.</source>
         <translation>
 *重要*重新開機後，忽略任何錯誤訊息， 如有提示需要光碟則選擇『返回』，之後進入主選單，選擇『開始安裝』選項，選擇『網路』作為來源，選擇『HTTP』協定，伺服器的提示輸入『mirrors.kernel.org』, 資料夾則輸入『/centos/%1/os/%2』。</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="261"/>
+        <location filename="distrolst.cpp" line="275"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
         <translation>
 *重要* 在重開機之前，請把 Debian 的安裝映像檔放到您的硬碟或 USB 磁碟機根目錄。這些檔案可以從 cdimage.debian.org 取得</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="345"/>
+        <location filename="distrolst.cpp" line="364"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *重要*重新開機後，忽略任何錯誤訊息， 如有提示需要光碟則選擇『返回』，之後進入主選單，選擇『開始安裝』選項，選擇『網路』作為來源，選擇『HTTP』協定，伺服器的提示輸入『download.fedora.redhat.com』, 資料夾則輸入『/pub/fedora/linux/development/%1/os』。</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="351"/>
+        <location filename="distrolst.cpp" line="370"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *重要*重新開機後，忽略任何錯誤訊息， 如有提示需要光碟則選擇『返回』，之後進入主選單，選擇『開始安裝』選項，選擇『網路』作為來源，選擇『HTTP』協定，伺服器的提示輸入『download.fedora.redhat.com』, 資料夾則輸入『/pub/fedora/linux/releases/%1/Fedora/%2/os』。</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="705"/>
+        <location filename="distrolst.cpp" line="730"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *重要*重新開機後，忽略任何錯誤訊息， 如有提示需要光碟則選擇『返回』，之後進入主選單，選擇『開始安裝』選項，選擇『網路』作為來源，選擇『HTTP』協定，伺服器的提示輸入『download.opensuse.org』, 資料夾則輸入『/factory/repo/oss』。</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="711"/>
+        <location filename="distrolst.cpp" line="736"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *重要*重新開機後，忽略任何錯誤訊息， 如有提示需要光碟則選擇『返回』，之後進入主選單，選擇『開始安裝』選項，選擇『網路』作為來源，選擇『HTTP』協定，伺服器的提示輸入『download.opensuse.org』, 資料夾則輸入『/distribution/%1/repo/oss』。</translation>
+    </message>
+    <message>
+        <location filename="distrover.cpp" line="21"/>
+        <location filename="unetbootin.cpp" line="652"/>
+        <source>== Select Distribution ==</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="distrover.cpp" line="21"/>
+        <location filename="distrover.cpp" line="25"/>
+        <source>== Select Version ==</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="22"/>
@@ -576,8 +599,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="27"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP).</source>
-        <oldsource>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</oldsource>
-        <translation type="unfinished">&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="33"/>
@@ -616,8 +638,9 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="distrover.cpp" line="69"/>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt;.</source>
-        <translation></translation>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
+        <oldsource>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt;.</oldsource>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="74"/>
@@ -677,7 +700,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="134"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxconsole.org/&quot;&gt;http://linuxconsole.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The 1.0.2009 is latest 1.0 release.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="139"/>
@@ -701,87 +724,92 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="distrover.cpp" line="160"/>
+        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.nimblex.net/&quot;&gt;http://www.nimblex.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NimbleX boots in Live mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="distrover.cpp" line="165"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NTPasswd is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; NTPasswd is booted and run in live mode; no installation is required to use it.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="165"/>
+        <location filename="distrover.cpp" line="170"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; openSUSE is a user-friendly Novell sponsored distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; openSUSE is a user-friendly Novell sponsored distribution.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="170"/>
+        <location filename="distrover.cpp" line="175"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ophcrack can crack Windows passwords.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Ophcrack is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Ophcrack can crack Windows passwords.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; Ophcrack is booted and run in live mode; no installation is required to use it.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="175"/>
+        <location filename="distrover.cpp" line="180"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Parted Magic includes the GParted partition manager and other system utilities which can resize, copy, backup, and manipulate disk partitions.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Parted Magic is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Parted Magic includes the GParted partition manager and other system utilities which can resize, copy, backup, and manipulate disk partitions.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; Parted Magic is booted and run in live mode; no installation is required to use it.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="180"/>
+        <location filename="distrover.cpp" line="185"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; PCLinuxOS is a user-friendly Mandriva-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; PCLinuxOS is a user-friendly Mandriva-based distribution.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="185"/>
+        <location filename="distrover.cpp" line="190"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Puppy Linux is a lightweight distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Puppy Linux is a lightweight distribution designed for older computers.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="190"/>
+        <location filename="distrover.cpp" line="195"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="195"/>
+        <location filename="distrover.cpp" line="200"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Slax is a Slackware-based distribution featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Slax is a Slackware-based distribution featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="200"/>
+        <location filename="distrover.cpp" line="205"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="205"/>
+        <location filename="distrover.cpp" line="210"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Smart Boot Manager is a bootloader which can overcome some boot-related BIOS limitations and bugs.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SBM simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Smart Boot Manager is a bootloader which can overcome some boot-related BIOS limitations and bugs.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; SBM simply boots and runs; no installation is required to use it.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="210"/>
+        <location filename="distrover.cpp" line="215"/>
         <location filename="distrovercust.cpp" line="12"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; SGD 只需開機就可執行，不必安裝。</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="215"/>
+        <location filename="distrover.cpp" line="220"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super OS is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="220"/>
+        <location filename="distrover.cpp" line="225"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SystemRescueCD includes various partition management and data recovery and backup tools.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SystemRescueCD is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; SystemRescueCD includes various partition management and data recovery and backup tools.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; SystemRescueCD is booted and run in live mode; no installation is required to use it.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="225"/>
+        <location filename="distrover.cpp" line="230"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="230"/>
+        <location filename="distrover.cpp" line="235"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="235"/>
+        <location filename="distrover.cpp" line="240"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="240"/>
+        <location filename="distrover.cpp" line="245"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Zenwalk is a Slackware-based distribution featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Zenwalk is a Slackware-based distribution featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</translation>
     </message>
@@ -797,8 +825,9 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="53"/>
-        <source>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
-        <translation>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
+        <source>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
+        <oldsource>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</oldsource>
+        <translation type="unfinished">&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="61"/>
@@ -812,11 +841,16 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="77"/>
+        <source>&lt;img src=&quot;:/nimblex.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.nimblex.net/&quot;&gt;http://www.nimblex.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NimbleX boots in Live mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="distrovercust.cpp" line="85"/>
         <source>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
         <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; Live版本將整個系統載入記憶體並由記憶體開機，不必安裝但可選擇安裝。 This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="distrovercust.cpp" line="85"/>
+        <location filename="distrovercust.cpp" line="93"/>
         <source>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
         <translation>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;首頁：&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;簡介：&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;安裝說明：&lt;/b&gt; Live版本將整個系統載入記憶體並由記憶體開機。</translation>
     </message>
@@ -840,27 +874,27 @@ Reboot now?</source>
         <translation>發行版(&amp;D)</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="127"/>
+        <location filename="unetbootin.ui" line="131"/>
         <source>Specify a disk image file to load</source>
         <translation>指定磁碟映象檔以進行裝載</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="130"/>
+        <location filename="unetbootin.ui" line="134"/>
         <source>Disk&amp;image</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="378"/>
+        <location filename="unetbootin.ui" line="147"/>
         <source>Manually specify a kernel and initrd to load</source>
         <translation>手動指定 kernel 及 initrd 以進行裝載</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="381"/>
+        <location filename="unetbootin.ui" line="150"/>
         <source>&amp;Custom</source>
         <translation>自訂(&amp;C)</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="420"/>
+        <location filename="unetbootin.ui" line="428"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -873,79 +907,79 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;這個&lt;span style=&quot; font-weight:600;&quot;&gt;有潛在危險性&lt;/span&gt;的選項將會格式化掉已選的分割區，抹除掉所有該分割區上已有的資料，如果你正在使用一個正常的 USB 磁碟就應該不是必要的。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="427"/>
+        <location filename="unetbootin.ui" line="435"/>
         <source>&amp;Format Drive (Wipes Out Data)</source>
         <translation>格式化磁碟機(將會清除資料) (&amp;F)</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="490"/>
+        <location filename="unetbootin.ui" line="498"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="493"/>
+        <location filename="unetbootin.ui" line="501"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="500"/>
+        <location filename="unetbootin.ui" line="508"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="503"/>
+        <location filename="unetbootin.ui" line="511"/>
         <source>Esc</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="548"/>
+        <location filename="unetbootin.ui" line="556"/>
         <source>Reboot Now</source>
         <translation>現在重新開機</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="555"/>
+        <location filename="unetbootin.ui" line="563"/>
         <source>Exit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="647"/>
+        <location filename="unetbootin.ui" line="655"/>
         <source>1. Downloading Files</source>
         <translation>1. 檔案下載中</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="654"/>
+        <location filename="unetbootin.ui" line="662"/>
         <source>2. Extracting and Copying Files</source>
         <translation>2. 提取並複製檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="661"/>
+        <location filename="unetbootin.ui" line="669"/>
         <source>3. Installing Bootloader</source>
         <translation>3. 安裝 Bootloader</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="668"/>
+        <location filename="unetbootin.ui" line="676"/>
         <source>4. Installation Complete, Reboot</source>
         <translation>4. 安裝完成，重新開機</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="464"/>
-        <location filename="unetbootin.ui" line="483"/>
+        <location filename="unetbootin.ui" line="472"/>
+        <location filename="unetbootin.ui" line="491"/>
         <source>Select the target drive to install to</source>
         <translation>選擇安裝目標磁碟區</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="467"/>
+        <location filename="unetbootin.ui" line="475"/>
         <source>Dri&amp;ve:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="438"/>
-        <location filename="unetbootin.ui" line="457"/>
+        <location filename="unetbootin.ui" line="446"/>
+        <location filename="unetbootin.ui" line="465"/>
         <source>Select the installation target type</source>
         <translation>選擇安裝目標形式</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="441"/>
+        <location filename="unetbootin.ui" line="449"/>
         <source>&amp;Type:</source>
         <translation>類型(&amp;T)：</translation>
     </message>
@@ -955,63 +989,63 @@ p, li { white-space: pre-wrap; }
         <translation>選擇版本</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="307"/>
+        <location filename="unetbootin.ui" line="347"/>
         <source>Select disk image file</source>
         <translation>選擇映象檔</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="246"/>
-        <location filename="unetbootin.ui" line="310"/>
-        <location filename="unetbootin.ui" line="335"/>
-        <location filename="unetbootin.ui" line="360"/>
+        <location filename="unetbootin.ui" line="286"/>
+        <location filename="unetbootin.ui" line="350"/>
+        <location filename="unetbootin.ui" line="375"/>
+        <location filename="unetbootin.ui" line="400"/>
         <source>...</source>
         <translation>…</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="148"/>
+        <location filename="unetbootin.ui" line="188"/>
         <source>Select the disk image type</source>
         <translation>選擇映像檔格式</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="203"/>
+        <location filename="unetbootin.ui" line="243"/>
         <source>Specify a floppy/hard disk image, or CD image (ISO) file to load</source>
         <translation>指定映像檔 (ISO)進行裝載</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="167"/>
-        <location filename="unetbootin.ui" line="218"/>
+        <location filename="unetbootin.ui" line="207"/>
+        <location filename="unetbootin.ui" line="258"/>
         <source>Specify a kernel file to load</source>
         <translation>指定 kernel 檔案進行裝載</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="243"/>
+        <location filename="unetbootin.ui" line="283"/>
         <source>Select kernel file</source>
         <translation>選擇 kernel 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="253"/>
-        <location filename="unetbootin.ui" line="272"/>
+        <location filename="unetbootin.ui" line="293"/>
+        <location filename="unetbootin.ui" line="312"/>
         <source>Specify an initrd file to load</source>
         <translation>指定 initrd 檔案以進行裝載</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="332"/>
+        <location filename="unetbootin.ui" line="372"/>
         <source>Select initrd file</source>
         <translation>選擇 initrd 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="357"/>
+        <location filename="unetbootin.ui" line="397"/>
         <source>Select syslinux.cfg or isolinux.cfg file</source>
         <translation>選擇 syslinux.cfg 或 isolinux.cfg 檔案</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="186"/>
-        <location filename="unetbootin.ui" line="281"/>
+        <location filename="unetbootin.ui" line="226"/>
+        <location filename="unetbootin.ui" line="321"/>
         <source>Specify parameters and options to pass to the kernel</source>
         <translation>指定進入kernel的參數與選項</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="406"/>
+        <location filename="unetbootin.ui" line="414"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -1024,22 +1058,22 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;這個&lt;span style=&quot; font-weight:600;&quot;&gt;有潛在危險性&lt;/span&gt;的選項將會在&quot;分割區&quot;下拉選單內顯示所有的磁區。請確定你知道你在幹什麼之後再啟用這個選項，若您使用了這個選項，安裝過程將有可能失敗，亦有可能造成系統開機問題。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="413"/>
+        <location filename="unetbootin.ui" line="421"/>
         <source>Show &amp;All Drives (Use with Care)</source>
         <translation>顯示全部磁碟機(使用時請小心) (&amp;A)</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="170"/>
+        <location filename="unetbootin.ui" line="210"/>
         <source>&amp;Kernel:</source>
         <translation>核心(&amp;K):</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="256"/>
+        <location filename="unetbootin.ui" line="296"/>
         <source>Init&amp;rd:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="189"/>
+        <location filename="unetbootin.ui" line="229"/>
         <source>&amp;Options:</source>
         <translation></translation>
     </message>

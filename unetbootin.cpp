@@ -190,17 +190,7 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	typeselect->addItem(tr("USB Drive"));
 	diskimagetypeselect->addItem(tr("ISO"));
 	diskimagetypeselect->addItem(tr("Floppy"));
-	#ifdef NOMANUAL
-	optionslayer->setEnabled(true);
-	optionslayer->show();
-	//customlayer->setEnabled(false);
-	//customlayer->hide();
-	radioManual->setEnabled(false);
-	radioManual->hide();
-	//diskimagelayer->move(diskimagelayer->x(), diskimagelayer->y() + 80);
-	radioFloppy->move(radioFloppy->x(), radioFloppy->y() + 80);
-	intromessage->resize(intromessage->width(), intromessage->height() + 80);
-	#endif
+	bool hideCustom = true;
 	#ifdef NOEXTERN
 	optionslayer->setEnabled(false);
 	optionslayer->hide();
@@ -348,17 +338,11 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 				this->driveselect->setCurrentIndex(driveidx);
 			}
 		}
-		else if (pfirst.contains("nocustom", Qt::CaseInsensitive))
+		else if (pfirst.contains("showcustom", Qt::CaseInsensitive))
 		{
 			if (psecond.contains('y', Qt::CaseInsensitive))
 			{
-				//customlayer->setEnabled(false);
-				//customlayer->hide();
-				radioManual->setEnabled(false);
-				radioManual->hide();
-				//diskimagelayer->move(diskimagelayer->x(), diskimagelayer->y() + 80);
-				radioFloppy->move(radioFloppy->x(), radioFloppy->y() + 80);
-				intromessage->resize(intromessage->width(), intromessage->height() + 80);
+				hideCustom = false;
 			}
 		}
 		else if (pfirst.contains("nodistro", Qt::CaseInsensitive))
@@ -384,6 +368,34 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 			if (psecond.contains('y', Qt::CaseInsensitive))
 				return true;
 		}
+	}
+	if (hideCustom)
+	{
+		radioManual->setEnabled(false);
+		radioManual->hide();
+		labelkernel->setEnabled(false);
+		labelkernel->hide();
+		labelinitrd->setEnabled(false);
+		labelinitrd->hide();
+		labeloption->setEnabled(false);
+		labeloption->hide();
+		KernelFileSelector->setEnabled(false);
+		KernelFileSelector->hide();
+		InitrdFileSelector->setEnabled(false);
+		InitrdFileSelector->hide();
+		CfgFileSelector->setEnabled(false);
+		CfgFileSelector->hide();
+		OptionEnter->setEnabled(false);
+		OptionEnter->hide();
+		KernelPath->setEnabled(false);
+		KernelPath->hide();
+		InitrdPath->setEnabled(false);
+		InitrdPath->hide();
+		KernelFileSelector->setEnabled(false);
+		KernelFileSelector->hide();
+		InitrdFileSelector->setEnabled(false);
+		InitrdFileSelector->hide();
+		radioLayout->removeItem(verticalSpacer);
 	}
 	return false;
 }
@@ -553,7 +565,7 @@ void unetbootin::on_diskimagetypeselect_currentIndexChanged()
 
 void unetbootin::on_FloppyFileSelector_clicked()
 {
-	QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath()));
+	QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath(), tr("All Files (*)")));
 	if (QFileInfo(nameFloppy).completeSuffix().contains("iso", Qt::CaseInsensitive))
 	{
 		if (diskimagetypeselect->findText(tr("ISO")) != -1)
@@ -571,7 +583,7 @@ void unetbootin::on_FloppyFileSelector_clicked()
 
 void unetbootin::on_KernelFileSelector_clicked()
 {
-	QString nameKernel = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Kernel File"), QDir::homePath()));
+	QString nameKernel = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Kernel File"), QDir::homePath(), tr("All Files (*)")));
 	KernelPath->clear();
 	KernelPath->insert(nameKernel);
 	radioManual->setChecked(true);
@@ -579,7 +591,7 @@ void unetbootin::on_KernelFileSelector_clicked()
 
 void unetbootin::on_InitrdFileSelector_clicked()
 {
-	QString nameInitrd = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Initrd File"), QDir::homePath()));
+	QString nameInitrd = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Initrd File"), QDir::homePath(), tr("All Files (*)")));
 	InitrdPath->clear();
 	InitrdPath->insert(nameInitrd);
 	radioManual->setChecked(true);
@@ -587,7 +599,7 @@ void unetbootin::on_InitrdFileSelector_clicked()
 
 void unetbootin::on_CfgFileSelector_clicked()
 {
-	QString nameCfg = QFileDialog::getOpenFileName(this, tr("Open Bootloader Config File"), QDir::homePath());
+	QString nameCfg = QFileDialog::getOpenFileName(this, tr("Open Bootloader Config File"), QDir::homePath(), tr("All Files (*)"));
 	OptionEnter->clear();
 	QString cfgoptstxt = getcfgkernargs(nameCfg, "", QStringList(), QStringList());
 	if (cfgoptstxt.isEmpty())
@@ -637,7 +649,7 @@ void unetbootin::on_okbutton_clicked()
 		}
 	}
 	#endif
-	else if (radioDistro->isChecked() && distroselect->currentIndex() == distroselect->findText("== Select Distribution =="))
+	else if (radioDistro->isChecked() && distroselect->currentIndex() == distroselect->findText(unetbootin::tr("== Select Distribution ==")))
 	{
 		QMessageBox dnotenoughinputmsgb;
 		dnotenoughinputmsgb.setIcon(QMessageBox::Information);
@@ -2151,7 +2163,31 @@ QString unetbootin::searchforincludesfile(QString includesfile, QString archivef
 	{
 		includesfile = includesfile.right(includesfile.size() - 1).trimmed();
 	}
-	QStringList includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	QStringList includesfileL;
+	for (int i = 0; i < archivefileconts.size(); ++i)
+	{
+		QString curentry = archivefileconts.at(i);
+		if (curentry.endsWith("/") || curentry.endsWith(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.left(curentry.size() - 1).trimmed();
+		}
+		if (curentry.contains("/"))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf("/"));
+		}
+		else if (curentry.contains(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf(QDir::toNativeSeparators("/")));
+		}
+		if (includesfile.compare(curentry, Qt::CaseInsensitive) == 0)
+		{
+			includesfileL.append(archivefileconts.at(i));
+		}
+	}
+	if (includesfileL.isEmpty())
+	{
+		includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	}
 	if (!includesfileL.isEmpty())
 	{
 		for (int i = 0; i < includesfileL.size(); ++i)
@@ -2179,7 +2215,31 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 	{
 		includesfile = includesfile.right(includesfile.size() - 1).trimmed();
 	}
-	QStringList includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	QStringList includesfileL;
+	for (int i = 0; i < archivefileconts.size(); ++i)
+	{
+		QString curentry = archivefileconts.at(i);
+		if (curentry.endsWith("/") || curentry.endsWith(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.left(curentry.size() - 1).trimmed();
+		}
+		if (curentry.contains("/"))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf("/"));
+		}
+		else if (curentry.contains(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf(QDir::toNativeSeparators("/")));
+		}
+		if (includesfile.compare(curentry, Qt::CaseInsensitive) == 0)
+		{
+			includesfileL.append(archivefileconts.at(i));
+		}
+	}
+	if (includesfileL.isEmpty())
+	{
+		includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	}
 	if (!includesfileL.isEmpty())
 	{
 		for (int i = 0; i < includesfileL.size(); ++i)
@@ -2207,7 +2267,31 @@ QString unetbootin::searchforgrub2includesfile(QString includesfile, QString arc
 	{
 		includesfile = includesfile.right(includesfile.size() - 1).trimmed();
 	}
-	QStringList includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	QStringList includesfileL;
+	for (int i = 0; i < archivefileconts.size(); ++i)
+	{
+		QString curentry = archivefileconts.at(i);
+		if (curentry.endsWith("/") || curentry.endsWith(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.left(curentry.size() - 1).trimmed();
+		}
+		if (curentry.contains("/"))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf("/"));
+		}
+		else if (curentry.contains(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf(QDir::toNativeSeparators("/")));
+		}
+		if (includesfile.compare(curentry, Qt::CaseInsensitive) == 0)
+		{
+			includesfileL.append(archivefileconts.at(i));
+		}
+	}
+	if (includesfileL.isEmpty())
+	{
+		includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	}
 	if (!includesfileL.isEmpty())
 	{
 		for (int i = 0; i < includesfileL.size(); ++i)
@@ -2235,7 +2319,31 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 	{
 		includesfile = includesfile.right(includesfile.size() - 1).trimmed();
 	}
-	QStringList includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	QStringList includesfileL;
+	for (int i = 0; i < archivefileconts.size(); ++i)
+	{
+		QString curentry = archivefileconts.at(i);
+		if (curentry.endsWith("/") || curentry.endsWith(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.left(curentry.size() - 1).trimmed();
+		}
+		if (curentry.contains("/"))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf("/"));
+		}
+		else if (curentry.contains(QDir::toNativeSeparators("/")))
+		{
+			curentry = curentry.right(curentry.size() - 1 - curentry.indexOf(QDir::toNativeSeparators("/")));
+		}
+		if (includesfile.compare(curentry, Qt::CaseInsensitive) == 0)
+		{
+			includesfileL.append(archivefileconts.at(i));
+		}
+	}
+	if (includesfileL.isEmpty())
+	{
+		includesfileL = archivefileconts.filter(includesfile, Qt::CaseInsensitive);
+	}
 	if (!includesfileL.isEmpty())
 	{
 		for (int i = 0; i < includesfileL.size(); ++i)
@@ -2841,14 +2949,17 @@ void unetbootin::bootiniEdit()
 
 void unetbootin::vistabcdEdit()
 {
+	bool warch64 = false;
+	if (!QProcess::systemEnvironment().filter("ProgramW6432").isEmpty())
+		warch64 = true;
 	instIndvfl("emtxfile.exe", QString("%1emtxfile.exe").arg(targetPath));
 	QFile vbcdEditF1(QString("%1vbcdedit.bat").arg(targetPath));
 	vbcdEditF1.open(QIODevice::ReadWrite | QIODevice::Text);
 	QTextStream vbcdEditS1(&vbcdEditF1);
 	vbcdEditS1 << QString("bcdedit /create /d \""UNETBOOTINB"\" /application bootsector > %1tmpbcdid").arg(targetPath) << endl;
 	vbcdEditF1.close();
-	bool warch64;
-	callexternapp(QString("%1vbcdedit.bat").arg(targetPath), "");
+	if (!warch64)
+		callexternapp(QString("%1vbcdedit.bat").arg(targetPath), "");
 	QFile vbcdTmpInF(QString("%1tmpbcdid").arg(targetPath));
 	vbcdTmpInF.open(QIODevice::ReadOnly | QIODevice::Text);
 	QTextStream vbcdTmpInS(&vbcdTmpInF);
@@ -2856,16 +2967,14 @@ void unetbootin::vistabcdEdit()
 	vbcdTmpInF.close();
 	QString vbcdIdTL;
 	QStringList vbcdIdTLSL;
-	if (qstmpvbcdin.contains("{") && qstmpvbcdin.contains("}") && qstmpvbcdin.contains("-"))
+	if (!warch64)
 	{
-		warch64 = false;
 		vbcdIdTLSL = qstmpvbcdin.replace("{", "\n").replace("}", "\n").split("\n").filter("-");
 		if (!vbcdIdTLSL.isEmpty())
 			vbcdIdTL = vbcdIdTLSL.at(0);
 	}
 	else
 	{
-		warch64 = true;
 		callexternapp(QString("%1emtxfile.exe").arg(targetPath), QString("%1vbcdedit.bat runas").arg(targetPath));
 		vbcdTmpInF.open(QIODevice::ReadOnly | QIODevice::Text);
 		QTextStream vbcdTmpInS2(&vbcdTmpInF);

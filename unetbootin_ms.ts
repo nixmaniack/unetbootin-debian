@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sv_SE">
+<TS version="2.0" language="ms_MY">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translatorcomment>Swedish translation for unetbootin
-Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+        <translatorcomment>Malay translation for unetbootin
+Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 This file is distributed under the same license as the unetbootin package.
-FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2010.
 
 </translatorcomment>
         <translation>Project-Id-Version: unetbootin
 Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2010-06-19 01:22-0700
-PO-Revision-Date: 2010-05-01 21:02+0000
-Last-Translator: Daniel Nylander &lt;yeager@ubuntu.com&gt;
-Language-Team: Swedish &lt;sv@li.org&gt;
+PO-Revision-Date: 2010-06-18 02:31+0000
+Last-Translator: syzwn &lt;Unknown&gt;
+Language-Team: Malay &lt;ms@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -24,61 +24,13 @@ X-Launchpad-Export-Date: 2010-06-20 22:16+0000
 X-Generator: Launchpad (build Unknown)
 </translation>
     </message>
-    <message>
-        <source>Initrd:</source>
-        <translation type="obsolete">Initrd:</translation>
-    </message>
-    <message>
-        <source>Kernel:</source>
-        <translation type="obsolete">Kärna:</translation>
-    </message>
-    <message>
-        <source>Type:</source>
-        <translation type="obsolete">Typ:</translation>
-    </message>
-    <message>
-        <source>Distribution</source>
-        <translation type="obsolete">Distribution</translation>
-    </message>
-    <message>
-        <source>UNetbootin</source>
-        <translation type="obsolete">UNetbootin</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="obsolete">Anpassad</translation>
-    </message>
-    <message>
-        <source>Drive:</source>
-        <translation type="obsolete">Enhet:</translation>
-    </message>
-    <message>
-        <source>Show All Drives (Use with Care)</source>
-        <translation type="obsolete">Visa alla enheter (använd med försiktighet)</translation>
-    </message>
-    <message>
-        <source>Diskimage</source>
-        <translation type="obsolete">Avbildning</translation>
-    </message>
-    <message>
-        <source>Format Drive (Wipes Out Data)</source>
-        <translation type="obsolete">Formatera enhet (raderar all data)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation type="obsolete">Flaggor:</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;Webbsida:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beskrivning:&lt;/b&gt; Ubuntu är en användarvänlig, Debian-baserad distribution. Den är för närvarande den mest populära Linux-distributionen för skrivbordsanvändning.&lt;br/&gt;&lt;b&gt;Installationsanteckningar:&lt;/b&gt; Live-versionen tillåter att man startar i ett Live-läge, från vilket installationsprogrammet valfritt kan startas. Nätverksinstallationen tillåter installation över FTP och kan installera Kubuntu och andra officiella Ubuntu-derivat.</translation>
-    </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <location filename="main.cpp" line="266"/>
         <source>LeftToRight</source>
-        <translation>LeftToRight</translation>
+        <translation>KiriKeKanan</translation>
     </message>
 </context>
 <context>
@@ -95,7 +47,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="3240"/>
         <location filename="unetbootin.cpp" line="3695"/>
         <source>Hard Disk</source>
-        <translation>Hårddisk</translation>
+        <translation>Cakera Keras</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="190"/>
@@ -117,7 +69,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="3244"/>
         <location filename="unetbootin.cpp" line="3699"/>
         <source>USB Drive</source>
-        <translation>USB-enhet</translation>
+        <translation>Pemacu USB</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="191"/>
@@ -139,7 +91,7 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="577"/>
         <location filename="unetbootin.cpp" line="3138"/>
         <source>Floppy</source>
-        <translation>Diskett</translation>
+        <translation>Liut</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="222"/>
@@ -149,12 +101,12 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="240"/>
         <location filename="unetbootin.cpp" line="252"/>
         <source>either</source>
-        <translation>antingen</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="568"/>
         <source>Open Disk Image File</source>
-        <translation>Öppna avbildningsfil</translation>
+        <translation>Buka Fail Imej Pemacu</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="568"/>
@@ -162,122 +114,122 @@ X-Generator: Launchpad (build Unknown)
         <location filename="unetbootin.cpp" line="594"/>
         <location filename="unetbootin.cpp" line="602"/>
         <source>All Files (*)</source>
-        <translation></translation>
+        <translation>Semua Fail (*)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="586"/>
         <source>Open Kernel File</source>
-        <translation>Öppna kärnfil</translation>
+        <translation>Buka Fail Kernel</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="594"/>
         <source>Open Initrd File</source>
-        <translation>Öppna initrd-fil</translation>
+        <translation>Buka Fail Initrd</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="602"/>
         <source>Open Bootloader Config File</source>
-        <translation>Öppna konfigurationsfil för starthanterare</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="624"/>
         <source>Insert a USB flash drive</source>
-        <translation>Anslut en USB-lagringsenhet</translation>
+        <translation>Sisipkan pemacu flash USB</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="625"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Inga USB-lagringsenheter hittades. Om du har anslutit en USB-enhet så prova att formatera om den som FAT32.</translation>
+        <translation>Tiada pemacu flash USB dijumpai. Jika anda telah sisipkan pemacu USB, cuba formatkan semula sebagai FAT32.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="640"/>
         <source>%1 not mounted</source>
-        <translation>%1 är inte monterad</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="641"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
-        <translation>Du måste först montera USB-enheten %1 till en monteringspunkt. De flesta distributioner kommer att göra detta automatiskt efter att du kopplar från och ansluter USB-enheten igen.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="656"/>
         <source>Select a distro</source>
-        <translation>Välj en distribution</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="657"/>
         <source>You must select a distribution to load.</source>
-        <translation>Du måste välja en distribution att läsa in.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="671"/>
         <source>Select a disk image file</source>
-        <translation>Välj en avbildningsfil</translation>
+        <translation>Pilih fail imej cakera</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="672"/>
         <source>You must select a disk image file to load.</source>
-        <translation>Du måste välja en avbildningsfil att läsa in.</translation>
+        <translation>Anda mesti pilih fail imej cakera untuk dimuat.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="686"/>
         <source>Select a kernel and/or initrd file</source>
-        <translation>Välj en fil för kärna och/eller initrd</translation>
+        <translation>Pilih fail kernel dan/atau initrd</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="687"/>
         <source>You must select a kernel and/or initrd file to load.</source>
-        <translation>Du måste välja en fil för kärna och/eller initrd att använda.</translation>
+        <translation>Anda mesti pilih fail kernel dan/atau initrd untuk dimuat.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="701"/>
         <source>Diskimage file not found</source>
-        <translation>Avbildningsfilen hittades inte</translation>
+        <translation>Fail imej cakera tidak dijumpai</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="702"/>
         <source>The specified diskimage file %1 does not exist.</source>
-        <translation>Den angivna avbildningsfilen %1 finns inte.</translation>
+        <translation>Fail imej cakera yang ditetapkan %1 tidak wujud.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="716"/>
         <source>Kernel file not found</source>
-        <translation>Kärnfilen hittades inte</translation>
+        <translation>Fail kernel tidak dijumpai</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="717"/>
         <source>The specified kernel file %1 does not exist.</source>
-        <translation>Den angivna kärnfilen %1 finns inte.</translation>
+        <translation>Fail kernel yang ditetapkan %1 tidak wujud.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="731"/>
         <source>Initrd file not found</source>
-        <translation>Initrd-filen hittades inte</translation>
+        <translation>Fail initrd tidak dijumpai</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="732"/>
         <source>The specified initrd file %1 does not exist.</source>
-        <translation>Den angivna initrd-filen %1 finns inte.</translation>
+        <translation>Fail initrd yang ditetapkan %1 tidak wujud.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="836"/>
         <source>%1 exists, overwrite?</source>
-        <translation>%1 finns redan. Skriv över den?</translation>
+        <translation>%1 wujud, tulis ganti?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="837"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
-        <translation>Filen %1 finns redan. Tryck på &quot;Ja för alla&quot; för att skriva över dem och inte bli tillfrågad igen, &quot;Ja&quot; för att skriva över filer på individuell basis, samt &quot;Nej&quot; för att hålla kvar din befintliga version. Om du är osäker, tryck på &quot;Ja för alla&quot;.</translation>
+        <translation>Fail %1 telah sedia wujud. Tekan &apos;Ya untuk Semua&apos; untuk menulis ganti dan tidak dibantu ingat lagi, &apos;Ya&apos; untuk menulis ganti fail-fail berasaskan individu, dan &apos;Tidak&apos; untuk mengekalkan versi anda yang telah sedia wujud. Jika ragu-ragu, tekan &apos;Ya untuk Semua&apos;.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="863"/>
         <source>%1 is out of space, abort installation?</source>
-        <translation>%1 har slut på utrymme, vill du avbryta installationen?</translation>
+        <translation>%1 kehabisan ruang, henti paksa pemasangan?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="864"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
-        <translation>Katalogen %1 har slut på lagringsutrymme. Tryck på &quot;Ja&quot; för att avbryta installationen, &quot;Nej&quot; för att ignorera detta fel och försöka att fortsätta installationen, samt &quot;Nej till alla&quot; för att ignorera alla relaterade fel.</translation>
+        <translation>Directory %1 kehabisan ruang. Tekan &apos;Ya&apos; untuk henti paksa pemasangan, &apos;Tidak&apos; untuk abaikan ralat ini dan cuba untuk teruskan pemasangan, dan &apos;Tidak untuk Semua&apos; untuk abaikan semua ralat kehabisan ruang.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="958"/>
@@ -287,7 +239,7 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="999"/>
         <source>Copying kernel file from %1</source>
-        <translation></translation>
+        <translation>Menyalin fail kernel dari %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1005"/>
@@ -297,176 +249,175 @@ X-Generator: Launchpad (build Unknown)
     <message>
         <location filename="unetbootin.cpp" line="1046"/>
         <source>Copying initrd file from %1</source>
-        <translation></translation>
+        <translation>Menyalin fail initrd dari %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1052"/>
         <location filename="unetbootin.cpp" line="1112"/>
         <source>Extracting bootloader configuration</source>
-        <translation></translation>
+        <translation>Mengekstrak konfigurasi bootloader</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1327"/>
         <location filename="unetbootin.cpp" line="1353"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Extraherar komprimerad iso:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Mengekstrak iso termampat:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1582"/>
         <source>Copying file, please wait...</source>
-        <translation></translation>
+        <translation>Menyalin fail, sila tunggu...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1585"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Telah disalin:&lt;/b&gt; 0 bait</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2496"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Telah disalin:&lt;/b&gt; %1 daripada %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1623"/>
         <source>Extracting files, please wait...</source>
-        <translation>Extraherar filer, vänta...</translation>
+        <translation>Mengekstrak fail, sila tunggu...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1624"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Arkiv:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Arkib:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1625"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Källa:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Sumber:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1626"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Mål:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Destinasi:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1627"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Extraherat:&lt;/b&gt; 0 av %1 filer</translation>
+        <translation>&lt;b&gt;Telah diekstrak:&lt;/b&gt; 0 daripada %1 fail</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1630"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Källa:&lt;/b&gt; %1 (%2)</translation>
+        <translation>&lt;b&gt;Sumber:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1631"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation>&lt;b&gt;Mål:&lt;/b&gt; %1%2</translation>
+        <translation>&lt;b&gt;Destinasi:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1632"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation>&lt;b&gt;Extraherat:&lt;/b&gt; %1 av %2 filer</translation>
+        <translation>&lt;b&gt;Telah diekstrak:&lt;/b&gt; %1 daripada %2 fail</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2386"/>
         <source>Downloading files, please wait...</source>
-        <translation>Hämtar filer, vänta...</translation>
+        <translation>Memuat turun fail-fail, sila tunggu...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1583"/>
         <location filename="unetbootin.cpp" line="2387"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Källa:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>&lt;b&gt;Sumber:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1584"/>
         <location filename="unetbootin.cpp" line="2388"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Mål:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Destinasi:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2389"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Hämtat:&lt;/b&gt; 0 byte</translation>
+        <translation>&lt;b&gt;Telah dimuat turun:&lt;/b&gt; 0 bait</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2466"/>
         <location filename="unetbootin.cpp" line="2481"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation>&lt;b&gt;Hämtat:&lt;/b&gt; %1 av %2</translation>
+        <translation>&lt;b&gt;Telah dimuat turun:&lt;/b&gt; %1 of %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2572"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Söker i &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2576"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2 sökträffar i &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2761"/>
         <source>%1 not found</source>
-        <translation>%1 hittades inte</translation>
+        <translation>%1 tidak dijumpai</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2762"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation>%1 hittades inte. Denna krävs för installationsläget %2.
-Installera paketet &quot;%3&quot; eller motsvarande i din distribution.</translation>
+        <translation>%1 tidak dijumpai. Ianya diperlukan untuk mod pemasangan %2.
+Pasang package &quot;%3&quot; atau padanan daripada distribusi anda.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3051"/>
         <source>(Current)</source>
-        <translation>(Pågående)</translation>
+        <translation>(Semasa)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3052"/>
         <source>(Done)</source>
-        <translation>(Färdig)</translation>
+        <translation>(Selesai)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3319"/>
         <source>Configuring grub2 on %1</source>
-        <translation>Konfigurerar grub2 på %1</translation>
+        <translation>Mengkonfigurasi grub2 on %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3331"/>
         <source>Configuring grldr on %1</source>
-        <translation>Konfigurerar grldr på %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3359"/>
         <source>Configuring grub on %1</source>
-        <translation>Konfigurerar grub på %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3544"/>
         <source>Installing syslinux to %1</source>
-        <translation>Installerar syslinux på %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3579"/>
         <source>Installing extlinux to %1</source>
-        <translation>Installerar extlinux på %1</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3685"/>
         <source>Syncing filesystems</source>
-        <translation>Synkroniserar filsystem</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3697"/>
         <source>After rebooting, select the </source>
-        <translation>Efter omstart, välj </translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3701"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation>Efter omstart, välj uppstartsalternativet för USB i uppstartsmenyn i ditt BIOS.%1
-Starta om nu?</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="27"/>
@@ -525,7 +476,7 @@ Starta om nu?</translation>
     <message>
         <location filename="distrover.cpp" line="22"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
-        <translation>Välkommen till &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, Universal Netboot Installer. Användning:&lt;ol&gt;&lt;li&gt;Välj en distribution och version att hämta från ovanstående lista, eller ange filer manuellt att läsa in nedan.&lt;/li&gt;&lt;li&gt;Välj en installationstyp och tryck på OK för att påbörja installationen.&lt;/li&gt;&lt;/ol&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="27"/>
@@ -712,7 +663,7 @@ Starta om nu?</translation>
         <location filename="distrover.cpp" line="215"/>
         <location filename="distrovercust.cpp" line="12"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
-        <translation>&lt;b&gt;Webbsida:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beskrivning:&lt;/b&gt; Super Grub Disk är en starthanterare som kan utföra ett flertal återställningsåtgärder för MBR och starthanterare.&lt;br/&gt;&lt;b&gt;Installationsanteckningar:&lt;/b&gt; Med SGD fungerar dina uppstarter direkt utan krav på installation.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="220"/>
@@ -747,12 +698,12 @@ Starta om nu?</translation>
     <message>
         <location filename="distrovercust.cpp" line="33"/>
         <source>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; EeePCLinuxOS is a user-friendly PCLinuxOS based distribution for the EeePC.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Webbsida:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beskrivning:&lt;/b&gt; EeePCLinuxOS är en användarvänlig PCLinuxOS-baserad distribution för din EeePC.&lt;br/&gt;&lt;b&gt;Installationsanteckningar:&lt;/b&gt; Kontrollera att installationsmediet är tomt och formaterat innan du fortsätter installationen.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="41"/>
         <source>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu Eee is not only Ubuntu optimized for the Asus Eee PC. It&apos;s an operating system, using the Netbook Remix interface, which favors the best software available instead of open source alternatives (ie. Skype instead of Ekiga).&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Webbsida:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beskrivning:&lt;/b&gt; Ubuntu Eee är inte bara Ubuntu-optimerat för Asus Eee PC, det är ett operativsystem som använder Netbook Remix-gränssnittet som innehåller den bästa programvaran istället för öppenkällkodsalternativ t.ex. Skype istället för Ekiga).&lt;br/&gt;&lt;b&gt;Installationsanteckningar:&lt;/b&gt; Kontrollera att installationsmediet är tomt och formaterat innan du fortsätter installationen.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="53"/>
@@ -791,38 +742,38 @@ Starta om nu?</translation>
     <message>
         <location filename="unetbootin.ui" line="20"/>
         <source>Unetbootin</source>
-        <translation>Unetbootin</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="44"/>
         <location filename="unetbootin.ui" line="65"/>
         <source>Select from a list of supported distributions</source>
-        <translation>Välj från en lista över distributioner som stöds</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="47"/>
         <source>&amp;Distribution</source>
-        <translation>&amp;Distribution</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="131"/>
         <source>Specify a disk image file to load</source>
-        <translation>Ange en avbildningsfil att använda</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="134"/>
         <source>Disk&amp;image</source>
-        <translation>Diska&amp;vbildning</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="147"/>
         <source>Manually specify a kernel and initrd to load</source>
-        <translation>Ange kärna samt initrd manuellt</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="150"/>
         <source>&amp;Custom</source>
-        <translation>A&amp;npassa</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="428"/>
@@ -836,89 +787,89 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="435"/>
         <source>&amp;Format Drive (Wipes Out Data)</source>
-        <translation>&amp;Formatera enhet (raderar allt data)</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="498"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="501"/>
         <source>Return</source>
-        <translation>Return</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="508"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="511"/>
         <source>Esc</source>
-        <translation>Esc</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="556"/>
         <source>Reboot Now</source>
-        <translation>Starta om nu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="563"/>
         <source>Exit</source>
-        <translation>Avsluta</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="655"/>
         <source>1. Downloading Files</source>
-        <translation>1. Hämtar filer</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="662"/>
         <source>2. Extracting and Copying Files</source>
-        <translation>2. Extraherar och kopierar filer</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="669"/>
         <source>3. Installing Bootloader</source>
-        <translation>3. Installerar starthanterare</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="676"/>
         <source>4. Installation Complete, Reboot</source>
-        <translation>4. Installationen är färdig, Starta om datorn</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="472"/>
         <location filename="unetbootin.ui" line="491"/>
         <source>Select the target drive to install to</source>
-        <translation>Ange målenhet för installerationen</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="475"/>
         <source>Dri&amp;ve:</source>
-        <translation>En&amp;het:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="446"/>
         <location filename="unetbootin.ui" line="465"/>
         <source>Select the installation target type</source>
-        <translation>Ange typ för installationsmål</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="449"/>
         <source>&amp;Type:</source>
-        <translation>&amp;Typ:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="81"/>
         <source>Select the distribution version</source>
-        <translation>Välj distributionsversion</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="347"/>
         <source>Select disk image file</source>
-        <translation>Välj avbildningsfil</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="286"/>
@@ -926,50 +877,50 @@ p, li { white-space: pre-wrap; }
         <location filename="unetbootin.ui" line="375"/>
         <location filename="unetbootin.ui" line="400"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="188"/>
         <source>Select the disk image type</source>
-        <translation>Välj typ av avbildningsfil</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="243"/>
         <source>Specify a floppy/hard disk image, or CD image (ISO) file to load</source>
-        <translation>Ange en avbildningsfil för diskett/hårddisk eller cd-avbildningsfil (ISO) att använda</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="207"/>
         <location filename="unetbootin.ui" line="258"/>
         <source>Specify a kernel file to load</source>
-        <translation>Ange en kärnfil att använda</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="283"/>
         <source>Select kernel file</source>
-        <translation>Välj kärna</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="293"/>
         <location filename="unetbootin.ui" line="312"/>
         <source>Specify an initrd file to load</source>
-        <translation>Ange en initrd-fil att använda</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="372"/>
         <source>Select initrd file</source>
-        <translation>Välj initrd-fil</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="397"/>
         <source>Select syslinux.cfg or isolinux.cfg file</source>
-        <translation>Välj fil för syslinux.cfg eller isolinux.cfg</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="226"/>
         <location filename="unetbootin.ui" line="321"/>
         <source>Specify parameters and options to pass to the kernel</source>
-        <translation>Ange parametrar och flaggor att skicka till kärnan</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="414"/>
@@ -983,22 +934,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="421"/>
         <source>Show &amp;All Drives (Use with Care)</source>
-        <translation>Visa &amp;alla enheter (använd med försiktighet)</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="210"/>
         <source>&amp;Kernel:</source>
-        <translation>&amp;Kärna:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="296"/>
         <source>Init&amp;rd:</source>
-        <translation>Init&amp;rd:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="229"/>
         <source>&amp;Options:</source>
-        <translation>&amp;Flaggor:</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1006,32 +957,32 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="main.cpp" line="156"/>
         <source>Uninstallation Complete</source>
-        <translation>Avinstallationen utfördes</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="157"/>
         <source>%1 has been uninstalled.</source>
-        <translation>%1 har installerats.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="318"/>
         <source>Must run as root</source>
-        <translation>Det krävs att du kör programmet som root-användare</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="320"/>
         <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</source>
-        <translation>%2 Det krävs att du kör programmet som root-användare. Avsluta programmet och starta om det med antingen:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;eller:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="342"/>
         <source>%1 Uninstaller</source>
-        <translation>%1 Avinstallerare</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="343"/>
         <source>%1 is currently installed. Remove the existing version?</source>
-        <translation>%1 är redan installerad, vill du avinstallera den installerade versionen?</translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
