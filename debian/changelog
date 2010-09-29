@@ -1,8 +1,8 @@
-unetbootin (490-1) UNRELEASED; urgency=low
+unetbootin (490-1) experimental; urgency=low
 
   * New upstream release.
 
- -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 29 Sep 2010 18:51:25 +0300
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 29 Sep 2010 18:52:33 +0300
 
 unetbootin (471-1) unstable; urgency=low
 
