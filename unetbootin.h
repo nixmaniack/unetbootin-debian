@@ -25,7 +25,13 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #include <shellapi.h>
 #endif
 
-#ifdef Q_OS_UNIX
+#ifdef Q_OS_MACX
+#include <sys/param.h>
+#include <sys/mount.h>
+#include <sys/statvfs.h>
+#endif
+
+#ifdef  Q_OS_LINUX
 #include <sys/vfs.h>
 #endif
 
@@ -66,6 +72,13 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 #ifdef KIWILINUX
 #define UNETBOOTINB "Kiwi pe USB"
+#define NOMANUAL
+#define NOFLOPPY
+//#define USBINSTALL
+#endif
+
+#ifdef NIMBLEX
+#define UNETBOOTINB "NimbleX Installer"
 #define NOMANUAL
 #define NOFLOPPY
 //#define USBINSTALL

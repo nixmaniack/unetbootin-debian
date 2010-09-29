@@ -18,11 +18,11 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 "Daily_Live" << "Daily_Live_x64"
 #endif
 
-distroselect->addItem("== Select Distribution ==", (QStringList() << "== Select Version ==" <<
+distroselect->addItem(unetbootin::tr("== Select Distribution =="), (QStringList() << unetbootin::tr("== Select Version ==") <<
 unetbootin::tr("Welcome to <a href=\"http://unetbootin.sourceforge.net/\">UNetbootin</a>, the Universal Netboot Installer. Usage:"
 	"<ol><li>Select a distribution and version to download from the list above, or manually specify files to load below.</li>"
 	"<li>Select an installation type, and press OK to begin installing.</li></ol>") <<
-"== Select Version =="));
+unetbootin::tr("== Select Version ==")));
 distroselect->addItem("Arch Linux", (QStringList() << "2008.03-1" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.archlinux.org/\">http://www.archlinux.org</a><br/>"
 	"<b>Description:</b> Arch Linux is a lightweight distribution optimized for speed and flexibility.<br/>"
@@ -65,11 +65,11 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.freedrweb.com/livecd\">htt
 	"<b>Description:</b> Dr.Web AntiVirus is an anti-virus emergency kit to restore a system that broke due to malware.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") <<
 "Latest_Live"));
-distroselect->addItem("Elive", (QStringList() << "Unstable_Live" <<
+distroselect->addItem("Elive", (QStringList() << "Stable_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.elivecd.org/\">http://www.elivecd.org</a><br/>"
 	"<b>Description:</b> Elive is a Debian-based distribution featuring the Enlightenment window manager.<br/>"
-	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a>.") <<
-"Unstable_Live"));
+	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
+"Stable_Live" << "Unstable_Live"));
 distroselect->addItem("Fedora", (QStringList() << "13_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://fedoraproject.org/\">http://fedoraproject.org</a><br/>"
 	"<b>Description:</b> Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.<br/>"
@@ -156,6 +156,11 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.netbsd.org/\">http://www.n
 	"<b>Description:</b> NetBSD is a Unix-like operating system which focuses on portability.<br/>"
 	"<b>Install Notes:</b>The default version allows for both installation over the internet (FTP), or using pre-downloaded installation ISO files.") <<
 "4.0"));
+distroselect->addItem("NimbleX", (QStringList() << "Latest_Live" <<
+unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.nimblex.net/\">http://www.nimblex.net</a><br/>"
+	"<b>Description:</b> NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.<br/>"
+	"<b>Install Notes:</b> NimbleX boots in Live mode.") <<
+"Latest_Live"));
 distroselect->addItem("NTPasswd", (QStringList() << "2008.05.26" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html\">http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html</a><br/>"
 	"<b>Description:</b> The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.<br/>"

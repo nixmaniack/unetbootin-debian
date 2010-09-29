@@ -74,10 +74,15 @@ if (nameDistro == "Ubuntu Eee")
 
 if (nameDistro == "Elive")
 {
+	if (relname == "unstable")
+		relname = "development";
 	downloadfile(fileFilterNetDir(QStringList() << 
-	"http://elive.leviathan-avc.com/development/" << 
-	"http://elive.cmhacks.com/development/" << 
-	"http://elive.icedslash.com/isos/development/"
+	"http://elive.icedslash.com/isos/"+relname+"/" <<
+	"http://elive.leviathan-avc.com/"+relname+"/" <<
+	"http://elive.jumbef.net/"+relname+"/" <<
+	"http://elive.homogenica.com/"+relname+"/" <<
+	"http://elive.evryanz.net/isos/"+relname+"/" <<
+	"http://elive.7ds.pl/isos/"+relname+"/"
 	, 524288000, 1048576000, QList<QRegExp>() << 
 	QRegExp(".iso$", Qt::CaseInsensitive) << 
 	QRegExp("elive\\S{0,}.iso$", Qt::CaseInsensitive)
@@ -108,6 +113,15 @@ if (nameDistro == "Kiwi Linux")
 
 #endif
 
+#ifdef NIMBLEX
+
+if (nameDistro == "NimbleX")
+{
+	downloadfile("http://public.nimblex.net/Download/NimbleX-latest.iso", isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
+#endif
 
 #ifdef SLITAZ
 
@@ -295,12 +309,17 @@ if (nameDistro == "Dr.Web AntiVirus")
 
 if (nameDistro == "Elive")
 {
-	downloadfile(fileFilterNetDir(QStringList() << 
-	"http://elive.leviathan-avc.com/development/" << 
-	"http://elive.cmhacks.com/development/" << 
-	"http://elive.icedslash.com/isos/development/"
-	, 524288000, 1048576000, QList<QRegExp>() << 
-	QRegExp(".iso$", Qt::CaseInsensitive) << 
+	if (relname == "unstable")
+		relname = "development";
+	downloadfile(fileFilterNetDir(QStringList() <<
+	"http://elive.icedslash.com/isos/"+relname+"/" <<
+	"http://elive.leviathan-avc.com/"+relname+"/" <<
+	"http://elive.jumbef.net/"+relname+"/" <<
+	"http://elive.homogenica.com/"+relname+"/" <<
+	"http://elive.evryanz.net/isos/"+relname+"/" <<
+	"http://elive.7ds.pl/isos/"+relname+"/"
+	, 524288000, 1048576000, QList<QRegExp>() <<
+	QRegExp(".iso$", Qt::CaseInsensitive) <<
 	QRegExp("elive\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
 	extractiso(isotmpf, targetPath);
@@ -674,6 +693,12 @@ if (nameDistro == "NetBSD")
 	initrdLoc = "";
 }
 
+if (nameDistro == "NimbleX")
+{
+	downloadfile("http://public.nimblex.net/Download/NimbleX-latest.iso", isotmpf);
+	extractiso(isotmpf, targetPath);
+}
+
 if (nameDistro == "NTPasswd")
 {
 	downloadfile(QString("http://downloads.sourceforge.net/sourceforge/lubi/ntpasswd-%1-kernel").arg(relname), QString("%1ubnkern").arg(targetPath));
@@ -855,8 +880,8 @@ if (nameDistro == "Super OS")
 if (nameDistro == "SystemRescueCD")
 {
 	downloadfile(fileFilterNetDir(QStringList() << 
-	"ftp://ftp.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/sy/systemrescuecd/" <<
-	"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/sy/systemrescuecd/"
+	"ftp://ftp.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/project/sy/systemrescuecd/" <<
+	"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/s/project/sy/systemrescuecd/"
 	, 9440000, 1147483647, QList<QRegExp>() << 
 	QRegExp("systemrescuecd\\S{0,}.iso$", Qt::CaseInsensitive) << 
 	QRegExp("x86", Qt::CaseInsensitive) <<

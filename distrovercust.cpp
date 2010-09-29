@@ -49,12 +49,12 @@ unetbootin::tr("<img src=\":/eeeubuntu.png\" style=\"float:left;\" /><br/>"
 "8.04"));
 #endif
 #ifdef ELIVE
-distroselect->addItem("Elive", (QStringList() << "Unstable_Live" <<
+distroselect->addItem("Elive", (QStringList() << "Stable_Live" <<
 unetbootin::tr("<img src=\":/elive.png\" /><br/>"
 	"<b>Homepage:</b> <a href=\"http://www.elivecd.org/\">http://www.elivecd.org</a><br/>"
 	"<b>Description:</b> Elive is a Debian-based distribution featuring the Enlightenment window manager.<br/>"
-	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the <a href=\"http://www.elivecd.org/Download/Stable\">Stable version</a> is installed. This installer is based on <a href=\"http://unetbootin.sourceforge.net/\">UNetbootin</a>.") <<
-"Unstable_Live"));
+	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
+	"Stable_Live" << "Unstable_Live"));
 #endif
 #ifdef KIWILINUX
 distroselect->addItem("Kiwi Linux", (QStringList() << "9.04" <<
@@ -71,6 +71,14 @@ unetbootin::tr("<img src=\":/gnewsense.png\" /><br/>"
 	"<b>Description:</b> gNewSense is a high-quality GNU/Linux distribution that extends and improves Ubuntu to create a completely free operating system without any binary blobs or package trees that contain proprietary software.<br/>"
 	"<b>Install Notes:</b> Make sure install media is empty and formatted before proceeding with install.") <<
 "deltah-2.1"));
+#endif
+#ifdef NIMBLEX
+distroselect->addItem("NimbleX", (QStringList() << "Latest_Live" <<
+unetbootin::tr("<img src=\":/nimblex.png\" /><br/>"
+	"<b>Homepage:</b> <a href=\"http://www.nimblex.net/\">http://www.nimblex.net</a><br/>"
+	"<b>Description:</b> NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.<br/>"
+	"<b>Install Notes:</b> NimbleX boots in Live mode.") <<
+"Latest_Live"));
 #endif
 #ifdef SLITAZ
 distroselect->addItem("SliTaz", (QStringList() << "Stable" <<
