@@ -1,3 +1,9 @@
+unetbootin (471-2) UNRELEASED; urgency=low
+
+  * 
+
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 03 Nov 2010 18:50:50 +0200
+
 unetbootin (471-1) unstable; urgency=low
 
   * New upstream release.
