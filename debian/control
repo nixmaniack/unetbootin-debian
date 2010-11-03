@@ -10,7 +10,7 @@ Homepage: http://unetbootin.sourceforge.net
 
 Package: unetbootin
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, syslinux, p7zip-full, udev
+Depends: ${misc:Depends}, ${shlibs:Depends}, syslinux, p7zip-full, udev, mtools
 Recommends: unetbootin-translations (>= ${binary:Version})
 Description: installer of Linux/BSD distributions to a partition or USB drive
  UNetbootin allows for the installation of various Linux/BSD distributions to a
