@@ -1,10 +1,10 @@
-unetbootin (502-1) UNRELEASED; urgency=low
+unetbootin (502-1) unstable; urgency=low
 
   * New upstream release.
   * debian/control:
     - Bumped Standards-Version to 3.9.1, no changes needed.
 
- -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 13 Feb 2011 11:20:02 +0200
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Sun, 13 Feb 2011 11:52:04 +0200
 
 unetbootin (471-2) unstable; urgency=medium
 
