@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sk_SK">
+<TS version="2.0" language="nn_NO">
 <context>
     <name></name>
     <message>
         <source></source>
-        <translatorcomment>Slovak translation for unetbootin
-Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+        <translatorcomment>Norwegian Nynorsk translation for unetbootin
+Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 This file is distributed under the same license as the unetbootin package.
-FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2009.
+FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, 2010.
 
 </translatorcomment>
         <translation>Project-Id-Version: unetbootin
 Report-Msgid-Bugs-To: FULL NAME &lt;EMAIL@ADDRESS&gt;
 POT-Creation-Date: 2011-01-15 00:21-0500
-PO-Revision-Date: 2010-01-29 07:58+0000
-Last-Translator: UNetbootin Team &lt;Unknown&gt;
-Language-Team: Slovak &lt;sk@li.org&gt;
+PO-Revision-Date: 2010-10-06 23:16+0000
+Last-Translator: Geza Kovacs &lt;geza0kovacs@gmail.com&gt;
+Language-Team: Norwegian Nynorsk &lt;nn@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -30,7 +30,7 @@ X-Generator: Launchpad (build 12200)
     <message>
         <location filename="main.cpp" line="266"/>
         <source>LeftToRight</source>
-        <translation>LeftToRight</translation>
+        <translation>Venstre-til-høgre</translation>
     </message>
 </context>
 <context>
@@ -47,7 +47,7 @@ X-Generator: Launchpad (build 12200)
         <location filename="unetbootin.cpp" line="3240"/>
         <location filename="unetbootin.cpp" line="3695"/>
         <source>Hard Disk</source>
-        <translation>Pevný disk</translation>
+        <translation>Harddisk</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="190"/>
@@ -69,7 +69,7 @@ X-Generator: Launchpad (build 12200)
         <location filename="unetbootin.cpp" line="3244"/>
         <location filename="unetbootin.cpp" line="3699"/>
         <source>USB Drive</source>
-        <translation>USB mechanika</translation>
+        <translation>USB-disk</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="191"/>
@@ -91,7 +91,7 @@ X-Generator: Launchpad (build 12200)
         <location filename="unetbootin.cpp" line="577"/>
         <location filename="unetbootin.cpp" line="3138"/>
         <source>Floppy</source>
-        <translation>Disketa</translation>
+        <translation>Diskett</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="222"/>
@@ -101,12 +101,12 @@ X-Generator: Launchpad (build 12200)
         <location filename="unetbootin.cpp" line="240"/>
         <location filename="unetbootin.cpp" line="252"/>
         <source>either</source>
-        <translation>obidva</translation>
+        <translation>enten</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="568"/>
         <source>Open Disk Image File</source>
-        <translation>Výber súboru s obrazom disku</translation>
+        <translation>Opne biletfil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="568"/>
@@ -118,375 +118,377 @@ X-Generator: Launchpad (build 12200)
         <location filename="unetbootin.cpp" line="594"/>
         <location filename="unetbootin.cpp" line="602"/>
         <source>All Files (*)</source>
-        <translation></translation>
+        <translation>Alle filer (*)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="586"/>
         <source>Open Kernel File</source>
-        <translation>Výber súboru s jadrom</translation>
+        <translation>Opne kjernefil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="594"/>
         <source>Open Initrd File</source>
-        <translation>Výber súboru s initrd</translation>
+        <translation>Opne initrd-fil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="602"/>
         <source>Open Bootloader Config File</source>
-        <translation>Výber súboru s nastaveniami zavádzača</translation>
+        <translation>Opne konfigurasjonsfil for oppstartslastar</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="624"/>
         <source>Insert a USB flash drive</source>
-        <translation>Vložte USB flash disk</translation>
+        <translation>Set inn ein USB-disk</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="625"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Nenašli sa žiadne USB flash disky. Ak je predsa USB flash disk zapojený, skúste ho naformátovať na FAT32.</translation>
+        <translation>Ingen USB-diskar vart funne. Om du allereie har sett inn USB-disken, prøv å formatere den som FAT32.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="640"/>
         <source>%1 not mounted</source>
-        <translation>%1 nie je pripojený</translation>
+        <translation>%1 ikkje montert</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="641"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
-        <translation>Najskôr je potrebné pripojiť USB disk %1 k prípojnému bodu. Väčšina distribúcií to urobí automaticky po odpojení a opätovnom zapojení USB disku</translation>
+        <translation>Du må først montere USB-disken %1 til eit monteringspunkt. Dei fleste distribusjonar ordnar dette automatisk etter at du har fjerna og sett inn att USB-disken.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="656"/>
         <source>Select a distro</source>
-        <translation>Vyberte distribúciu</translation>
+        <translation>Vel ein distribusjon</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="657"/>
         <source>You must select a distribution to load.</source>
-        <translation>Pre spustenie musíte vybrať distribúciu.</translation>
+        <translation>Du må velje distribusjonen som skal brukast.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="671"/>
         <source>Select a disk image file</source>
-        <translation>Vyberte súbor s obrazom disku</translation>
+        <translation>Vel biletfil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="672"/>
         <source>You must select a disk image file to load.</source>
-        <translation>Pre spustenie musíte vybrať súbor s obrazom disku.</translation>
+        <translation>Du må velje biletfila som skal brukast.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="686"/>
         <source>Select a kernel and/or initrd file</source>
-        <translation>Vyberte jadro a/alebo súbor initrd</translation>
+        <translation>Vel ei kjerne- og/eller ei initrd-fil</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="687"/>
         <source>You must select a kernel and/or initrd file to load.</source>
-        <translation>Pre spustenie musíte vybrať jadro a/alebo súbor initrd.</translation>
+        <translation>Du må velje kjerne- og/eller initrd-fila som skal brukast</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="701"/>
         <source>Diskimage file not found</source>
-        <translation>Súbor obrazu disku sa nenašiel.</translation>
+        <translation>Biletfil ikkje funne</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="702"/>
         <source>The specified diskimage file %1 does not exist.</source>
-        <translation>Zvolený obraz disku %1 neexistuje.</translation>
+        <translation>Den valde biletfila %1 finst ikkje.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="716"/>
         <source>Kernel file not found</source>
-        <translation>Súbor jadra sa nenašiel.</translation>
+        <translation>Kjernefil ikkje funne</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="717"/>
         <source>The specified kernel file %1 does not exist.</source>
-        <translation>Zvolený súbor jadra %1 neexistuje.</translation>
+        <translation>Den valde kernel-fila %1 finst ikkje.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="731"/>
         <source>Initrd file not found</source>
-        <translation>Súbor initrd sa nenašiel</translation>
+        <translation>Initrd-fil ikkje funne</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="732"/>
         <source>The specified initrd file %1 does not exist.</source>
-        <translation>Zvolený súbor initrd %1 neexistuje.</translation>
+        <translation>Den valde initrd-fila %1 finst ikkje.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="836"/>
         <source>%1 exists, overwrite?</source>
-        <translation>%1 existuje, prepísať?</translation>
+        <translation>%1 finst, overskrive?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="837"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
-        <translation>Súbor %1 už existuje. Zvolte &apos;Áno pre všetky&apos; pre jeho prepísanie a prepísanie ďalších bez opýtania, &apos;Áno&apos; pre prepísanie súboru a &apos;Nie&apos; pre zachovanie súčasnej verzie. Ak neviete, zvoľte &apos;Áno pre všetky&apos;.</translation>
+        <translation>Fila %1 finst allereie. Trykk &quot;Ja til alt&quot; for å overskrive og ikkje bli spurt igjen. &quot;Ja&quot; for å overskrive enkeltfiler, og &quot;Nei&quot; for å behalde den eksisterande versjonen. Om du er usikker, trykk &quot;Ja til alt&quot;.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="863"/>
         <source>%1 is out of space, abort installation?</source>
-        <translation>Na %1 už nie je dostatok miesta, prerušiť inštaláciu?</translation>
+        <translation>%1 har ikkje meir ledig plass, avbryte installasjonen?</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="864"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
-        <translation>V adresári %1 nie je dostatok miesta. Pre prerušenie inštalácie zvoľte &apos;Áno&apos;, pre ignorovanie tejto chyby a  pre pokračovanie inštalácie  zvoľte &apos;Nie&apos; a pre ignorovanie všetkých chýb o nedostatku miesta zvoľte &apos;Nie pre všetky&apos;.</translation>
+        <translation>Mappa %1 har ikkje meir ledig plass. Trykk &quot;Ja&quot; for å avbryte installasjonen, &quot;Nei&quot; for å ignorere denne feilen og prøve å halde fram med installasjonen, og &quot;Nei til alt&quot; for å ignorere alle feil som følgje av for lite ledig plass.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="958"/>
         <source>Locating kernel file in %1</source>
-        <translation></translation>
+        <translation>Finn kjernefil i %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="999"/>
         <source>Copying kernel file from %1</source>
-        <translation></translation>
+        <translation>Kopierar kjernefil frå %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1005"/>
         <source>Locating initrd file in %1</source>
-        <translation></translation>
+        <translation>Finn initrd-fil i %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1046"/>
         <source>Copying initrd file from %1</source>
-        <translation></translation>
+        <translation>Kopierar initrd-fil frå %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1052"/>
         <location filename="unetbootin.cpp" line="1112"/>
         <source>Extracting bootloader configuration</source>
-        <translation></translation>
+        <translation>Hentar ut konfigurasjon om oppstartslastar</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1327"/>
         <location filename="unetbootin.cpp" line="1353"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Rozbaľovanie ISO obrazu:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Pakkar ut komprimert ISO-fil:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1582"/>
         <source>Copying file, please wait...</source>
-        <translation></translation>
+        <translation>Kopierar fil, vent litt...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1583"/>
         <location filename="unetbootin.cpp" line="2387"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Zdroj:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>&lt;b&gt;Kjelde:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1584"/>
         <location filename="unetbootin.cpp" line="2388"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Cieľ:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Mål:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1585"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Kopiert:&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1623"/>
         <source>Extracting files, please wait...</source>
-        <translation>Rozbaľovanie súborov, prosím čakajte...</translation>
+        <translation>Pakkar ut filer, vent litt...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1624"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;Archív:&lt;/b&gt; %1</translation>
+        <translation>&lt;b&gt;Arkiv:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1625"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Zdroj:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Kjelde:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1626"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Cieľ:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Mål:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1627"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <translation>&lt;b&gt;Rozbalené:&lt;/b&gt; 0 z %1 súborov</translation>
+        <translation>&lt;b&gt;Pakka ut:&lt;/b&gt; 0 av %1 filer</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1630"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <translation>&lt;b&gt;Zdroj:&lt;/b&gt; %1 (%2)</translation>
+        <translation>&lt;b&gt;Kjelde:&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1631"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <translation>&lt;b&gt;Cieľ:&lt;/b&gt; %1%2</translation>
+        <translation>&lt;b&gt;Mål:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1632"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <translation>&lt;b&gt;Rozbalené:&lt;/b&gt; %1 z %2 súborov</translation>
+        <translation>&lt;b&gt;Pakka ut:&lt;/b&gt; %1 av %2 filer</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2386"/>
         <source>Downloading files, please wait...</source>
-        <translation>Sťahovanie súborov, prosím čakajte...</translation>
+        <translation>Lastar ned filer, vent litt...</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2389"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <translation>&lt;b&gt;Stiahnuté:&lt;/b&gt; 0 bajtov</translation>
+        <translation>&lt;b&gt;Lasta ned:&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2466"/>
         <location filename="unetbootin.cpp" line="2481"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
-        <translation>&lt;b&gt;Stiahnuté:&lt;/b&gt; %1 z %2</translation>
+        <translation>&lt;b&gt;Lasta ned:&lt;/b&gt; %1 av %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2496"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Kopiert:&lt;/b&gt; %1 av %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2572"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Hľadá sa v &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>Søkjer i &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2576"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <translation>%1/%2 zhôd v &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
+        <translation>%1/%2 treff i &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2761"/>
         <source>%1 not found</source>
-        <translation>%1 sa nenašlo</translation>
+        <translation>Fann ikkje %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2762"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <translation>%1 sa nenašlo. Toto je požadované pre %2 inštalačný režim.
-Nainštalujte balík &quot;%3&quot; alebo jeho ekvivalent.</translation>
+        <translation>Fann ikkje %1. Dette er naudsynt for installasjonsmetoden %2.
+Installer &quot;%3&quot;-pakken tilsvarande din distribusjon.</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3051"/>
         <source>(Current)</source>
-        <translation>(Aktuálny)</translation>
+        <translation>(Noverande)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3052"/>
         <source>(Done)</source>
-        <translation>(Hotovo)</translation>
+        <translation>(Ferdig)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3319"/>
         <source>Configuring grub2 on %1</source>
-        <translation>grub2 sa nastavuje na %1</translation>
+        <translation>Set opp grub2 på %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3331"/>
         <source>Configuring grldr on %1</source>
-        <translation>grldr sa nastavuje na %1</translation>
+        <translation>Set opp grldr på %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3359"/>
         <source>Configuring grub on %1</source>
-        <translation>grub sa nastavuje na %1</translation>
+        <translation>Set opp grub på %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3544"/>
         <source>Installing syslinux to %1</source>
-        <translation>syslinux sa inštaluje do %1</translation>
+        <translation>Installerar syslinux til %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3579"/>
         <source>Installing extlinux to %1</source>
-        <translation>extlinux sa inštaluje do %1</translation>
+        <translation>Installerar extlinux til %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3685"/>
         <source>Syncing filesystems</source>
-        <translation>Synchronizácia súborových systémov</translation>
+        <translation>Synkroniserar filsystem</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3697"/>
         <source>After rebooting, select the </source>
-        <translation>Po reštarte zvoľte </translation>
+        <translation>Etter omstart, velg </translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="3701"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
-        <translation>Po reštarte zvoľte v BIOSe zavádzanie systému z USB.%1
-Reštartovať teraz?</translation>
+        <translation>Etter omstart, vel alternativet for USB-boot i BIOS-oppstartsmenyen.%1
+Starte på nytt no?</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="27"/>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
-        <translation></translation>
+        <translation>
+*VIKTIG* Før omstart, må du plassere iso-fila Ubuntu alternate (ikkje desktop) i øverste mappa på harddisken eller USB-disken. Denne fila finn du på cdimage.ubuntu.com</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="219"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;mirrors.kernel.org&apos; when prompted for a server, and enter &apos;/centos/%1/os/%2&apos; when asked for the folder.</source>
         <translation>
-*DÔLEŽITÉ* Po reštarte ignorujte všetky chybové hlásenia, ak ste vyzvaný  k vloženiu CD, zvoľte späť, potom z hlavného menu vyberte &apos;Začiatok inštalácie&apos;, ako zdroj vyberte &apos;Sieť&apos;, ako protokol vyberte &apos;HTTP&apos;, pri výzve k zadaniu adresy servera zadajte &apos;mirrors.kernel.org&apos; a pri dotaze na adresár zadajte &apos;/centos/%1/os/%2&apos;.</translation>
+*VIKTIG* Etter omstart, ignorer alle feilmeldingar, og vel tilbake om du blir spurt etter ein CD. Gå deretter til hovudmenyen, vel &quot;Start installasjon&quot;, vel &quot;Nettverk&quot; som kjelde og &quot;HTTP&quot; som protokoll. Skriv inn &quot;mirrors.kernel.org&quot; som server og &quot;/centos/%1/os/%2&quot; når du blir spurt etter mappe.</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="275"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
-        <translation></translation>
+        <translation>
+*VIKITIG* Før omstart må du plassere ei Debian-iso-fil i øverste mappa på harddisken eller USB-disken. Denne fila finn du på cdimage.debian.org</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="368"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
-*DÔLEŽITÉ* Po reštarte ignorujte všetky chybové hlásenia, ak ste vyzvaný  k vloženiu CD, zvoľte späť, potom z hlavného menu vyberte &apos;Začiatok inštalácie&apos;, ako zdroj vyberte &apos;Sieť&apos;, ako protokol vyberte &apos;HTTP&apos;, pri výzve k zadaniu adresy servera zadajte &apos;download.fedora.redhat.com&apos; a pri dotaze na adresár zadajte &apos;/pub/fedora/linux/development/%1/os&apos;.</translation>
+*VIKTIG* Etter omstart, ignorer alle feilmeldingar, og vel tilbake om du blir spurt etter ein CD. Gå deretter til hovudmenyen, vel &quot;Start installasjon&quot;, vel &quot;Nettverk&quot; som kjelde og &quot;HTTP&quot; som protokoll. Skriv inn &quot;download.fedora.redhat.com&quot; som server og &quot;/pub/fedora/linux/development/%1/os&quot; når du blir spurt etter mappe.</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="374"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
-*DÔLEŽITÉ* Po reštarte ignorujte všetky chybové hlásenia, ak ste vyzvaný  k vloženiu CD, zvoľte späť, potom z hlavného menu vyberte &apos;Začiatok inštalácie&apos;, ako zdroj vyberte &apos;Sieť&apos;, ako protokol vyberte &apos;HTTP&apos;, pri výzve k zadaniu adresy servera zadajte &apos;download.fedora.redhat.com&apos; a pri dotaze na adresár zadajte &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos;.</translation>
+*VIKTIG* Etter omstart, ignorer alle feilmeldingar, og vel tilbake om du blir spurt etter ein CD. Gå deretter til hovudmenyen, vel &quot;Start installasjon&quot;, vel &quot;Nettverk&quot; som kjelde og &quot;HTTP&quot; som protokoll. Skriv inn &quot;download.fedora.redhat.com&quot; som server og &quot;/pub/fedora/linux/releases/%1/Fedora/%2/os&quot; når du blir spurt etter mappe.</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="734"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
-*DÔLEŽITÉ* Po reštarte ignorujte všetky chybové hlásenia, ak ste vyzvaný  k vloženiu CD, zvoľte späť, potom z hlavného menu vyberte &apos;Začiatok inštalácie&apos;, ako zdroj vyberte &apos;Sieť&apos;, ako protokol vyberte &apos;HTTP&apos;, pri výzve k zadaniu adresy servera zadajte &apos;download.opensuse.org&apos; a pri dotaze na adresár zadajte &apos;/factory/repo/oss&apos;.</translation>
+*VIKTIG* Etter omstart, ignorer alle feilmeldingar, og vel tilbake om du blir spurt etter ein CD. Gå deretter til hovudmenyen, vel &quot;Start installasjon&quot;, vel &quot;Nettverk&quot; som kjelde og &quot;HTTP&quot; som protokoll. Skriv inn &quot;download.opensuse.org&quot; som server og &quot;/factory/repo/oss&quot; når du blir spurt etter mappe.</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="740"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
-*DÔLEŽITÉ* Po reštarte ignorujte všetky chybové hlásenia, ak ste vyzvaný  k vloženiu CD, zvoľte späť, potom z hlavného menu vyberte &apos;Začiatok inštalácie&apos;, ako zdroj vyberte &apos;Sieť&apos;, ako protokol vyberte &apos;HTTP&apos;, pri výzve k zadaniu adresy servera zadajte &apos;download.opensuse.org&apos; a pri dotaze na adresár zadajte &apos;/distribution/%1/repo/oss&apos; .</translation>
+*VIKTIG* Etter omstart, ignorer alle feilmeldingar, og vel tilbake om du blir spurt etter ein CD. Gå deretter til hovudmenyen, vel &quot;Start installasjon&quot;, vel &quot;Nettverk&quot; som kjelde og &quot;HTTP&quot; som protokoll. Skriv inn &quot;download.opensuse.org&quot; som server og &quot;/distribution/%1/repo/oss&quot; når du blir spurt etter mappe.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="22"/>
         <location filename="unetbootin.cpp" line="652"/>
         <source>== Select Distribution ==</source>
-        <translation></translation>
+        <translation>== Vel distribusjon ==</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="22"/>
         <location filename="distrover.cpp" line="26"/>
         <source>== Select Version ==</source>
-        <translation></translation>
+        <translation>== Vel versjon ==</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="23"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
-        <translation>Vitajte v &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt; - Universal Netboot Installer. Použitie:&lt;ol&gt;&lt;li&gt;Z horného zoznamu vyberte distribúciu a jej verziu, alebo ručne vyberte potrebné súbory nižšie.&lt;/li&gt;&lt;li&gt;Vyberte typ inštalácie a pre jej začatie kliknite na OK.&lt;/li&gt;&lt;/ol&gt;</translation>
+        <translation>Velkomen til &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, det universielle verktøyet for netboot-installasjon. Bruk:&lt;ol&gt;&lt;li&gt;Vel ein distribusjon og versjon du vil laste ned frå lista ovanfor, eller vel filer manuelt nedanfor.&lt;/li&gt;&lt;li&gt;Vel ein installasjonstype, og trykk OK for å starte installasjonen.&lt;/li&gt;&lt;/ol&gt;</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="28"/>
@@ -501,17 +503,17 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrover.cpp" line="39"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CentOS is a free Red Hat Enterprise Linux clone.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; CentOS je bezplatný klon Red Hat Enterprise Linux.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Štandardná verzia umožňuje inštaláciu z Internetu (FTP) a offline inštaláciu zo stiahnutých ISO obrazov.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="44"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CloneZilla is a distribution used for disk backup and imaging.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; CloneZilla is booted and run in live mode; no installation is required to use it.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; CloneZilla je distribúcia určená na tvorbu záloh a obrazov diskov.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; CloneZilla funguje ako živý (Live) systém a nevyžaduje inštaláciu.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="49"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Damn Small Linux is a minimalist distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Damn Small Linux je minimalistická distribúcia určená pre staršie počítače..&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Live verzia načíta celý systém do RAM, z ktorej je následne zavedený. Inštalácia nie je nutná, ale je možná.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="54"/>
@@ -521,12 +523,12 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrover.cpp" line="60"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dreamlinux is a user-friendly Debian-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Dreamlinux je užívateľsky prívetivá distribúcia založená na Debiane&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verzia umožňuje spustenie systému priamo z CD s možnosťou spustenia inštalácie.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="65"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dr.Web AntiVirus is an anti-virus emergency kit to restore a system that broke due to malware.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Dr.Web AntiVirus je antivírový balík určený na opravu poškodeného systému škodlivým softvérom.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verzia umožňuje spustenie systému priamo z CD a vykonanie kontroly nainštalovaného systému.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="70"/>
@@ -536,17 +538,17 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrover.cpp" line="75"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Fedora je komunitná distribúcia sponzorovaná firmou Red Hat a je zameraná na najnovší free/open-source softvér.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Živá (Live) verzia umožňuje spustenie systému priamo z CD s možnosťou spustenia inštalácie. Verzia NetInstall umožňuje inštaláciu cez FTP alebo z dopredu stiahnutých ISO obrazov.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="80"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeBSD is a general-purpose Unix-like operating system designed for scalability and performance.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; FreeBSD je unixový operačný systém navrhnutý pre stabilitu a rýchlosť.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Štandardná verzia umožňuje inštaláciu z internetu (FTP) alebo z dopredu stiahnutých ISO obrazov.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="85"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeDOS is a free MS-DOS compatible operating system.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; See the &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;manual&lt;/a&gt; for installation details.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; FreeDOS je slobodný MS-DOS kompatibilný operačný systém.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Pozrite si &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;manuál&lt;/a&gt; pre detaily inštalácie.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="90"/>
@@ -672,7 +674,7 @@ Reštartovať teraz?</translation>
         <location filename="distrover.cpp" line="216"/>
         <location filename="distrovercust.cpp" line="12"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
-        <translation>&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Super Grub Disk slúži na jednoduchú obnovu MBR a rôznych zavádzačov systémov.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; SGD sa jednoducho zavedie a spustí - nie je potrebná inštalácia.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="221"/>
@@ -707,12 +709,12 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrovercust.cpp" line="33"/>
         <source>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; EeePCLinuxOS is a user-friendly PCLinuxOS based distribution for the EeePC.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; EeePCLinuxOS je užívateľsky priateľská distribúcia postavená na PCLinuxOS určená pre počítače EeePC.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Pred odsúhlasením inštalácie sa uistite, že médium je prázdne a naformátované.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="41"/>
         <source>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu Eee is not only Ubuntu optimized for the Asus Eee PC. It&apos;s an operating system, using the Netbook Remix interface, which favors the best software available instead of open source alternatives (ie. Skype instead of Ekiga).&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeeubuntu.png&quot; style=&quot;float:left;&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu-eee.com/&quot;&gt;http://www.ubuntu-eee.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Ubuntu Eee nie je len Ubuntu upravené pre Asus Eee PC. Je to operačný systém používajúci rozhranie Netbook Remix uprednostňujúci najlepší softvér pred slobodnými alternatívami (napr. Skype namiesto Ekiga).&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Pred odsúhlasením inštalácie sa uistite, že médium je prázdne a naformátované.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="53"/>
@@ -722,12 +724,12 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrovercust.cpp" line="61"/>
         <source>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kiwi Linux is an Ubuntu derivative primarily made for Romanian, Hungarian and English speaking users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; Kiwi Linux je derivát Ubuntu určený prevažne pre rumunsky, maďarsky a anglicky hovoriacich užívateľov.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Pred odsúhlasením inštalácie sa uistite, že médium je prázdne a naformátované.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="69"/>
         <source>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is a high-quality GNU/Linux distribution that extends and improves Ubuntu to create a completely free operating system without any binary blobs or package trees that contain proprietary software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; gNewSense je vysoko kvalitná linuxová distribúcia, ktorá je postavená na Ubuntu a prináša úplne slobodný systém bez binárnych súčastí a licenčne problematických balíkov.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Pred odsúhlasením inštalácie sa uistite, že médium je prázdne a naformátované.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="77"/>
@@ -737,12 +739,12 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="distrovercust.cpp" line="85"/>
         <source>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
-        <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; SliTaz je &quot;odľahčená&quot; mikrodistribúcia zameraná na desktopy. &lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Live verzia načíta celý systém do RAM, z ktorej je následne zavedený. Inštalácia nie je nutná, ale je možná. Inštalátor je založený na &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="93"/>
         <source>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
-        <translation>&lt;img src=&quot;:/xpud.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Domovská stránka:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Popis:&lt;/b&gt; xPUD je malá distribúcia, ktorá prináša celoobrazovkové rozhranie s internetovým prehliadačom a multimediálnym prehrávačom.&lt;br/&gt;&lt;b&gt;Poznámky:&lt;/b&gt; Live verzia načíta celý systém do RAM, z ktorej je následne zavedený.</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -756,7 +758,7 @@ Reštartovať teraz?</translation>
         <location filename="unetbootin.ui" line="44"/>
         <location filename="unetbootin.ui" line="65"/>
         <source>Select from a list of supported distributions</source>
-        <translation>Vyberte z ponuky podporovaných distribúcií</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="47"/>
@@ -766,7 +768,7 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="unetbootin.ui" line="131"/>
         <source>Specify a disk image file to load</source>
-        <translation>Výber obrazu disku</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="134"/>
@@ -776,7 +778,7 @@ Reštartovať teraz?</translation>
     <message>
         <location filename="unetbootin.ui" line="147"/>
         <source>Manually specify a kernel and initrd to load</source>
-        <translation>Ručný výber jadra a initrd</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="150"/>
@@ -790,11 +792,7 @@ Reštartovať teraz?</translation>
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This &lt;span style=&quot; font-weight:600;&quot;&gt;potentially dangerous&lt;/span&gt; option will format the selected drive, wiping out all data on it. It shouldn&apos;t be necessary if you&apos;re using a standard USB drive.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Táto &lt;span style=&quot; font-weight:600;&quot;&gt;potenciálne nebezpečná&lt;/span&gt; voľba zformátuje vybrané zariadenie a zničí všetky prítomné dáta. Ak používate bežný USB disk, nemusí to byť  nutné.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="435"/>
@@ -804,7 +802,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="498"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="501"/>
@@ -814,7 +812,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="508"/>
         <source>Cancel</source>
-        <translation>Zrušiť</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="511"/>
@@ -824,38 +822,38 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="556"/>
         <source>Reboot Now</source>
-        <translation>Reštartovať teraz</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="563"/>
         <source>Exit</source>
-        <translation>Koniec</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="655"/>
         <source>1. Downloading Files</source>
-        <translation>1. Sťahovanie súborov</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="662"/>
         <source>2. Extracting and Copying Files</source>
-        <translation>2. Rozbaľovanie a kopírovanie súborov</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="669"/>
         <source>3. Installing Bootloader</source>
-        <translation>3. Inštalácia zavádzača</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="676"/>
         <source>4. Installation Complete, Reboot</source>
-        <translation>4. Inštalácia je úplná, reštart</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="472"/>
         <location filename="unetbootin.ui" line="491"/>
         <source>Select the target drive to install to</source>
-        <translation>Vyberte zariadenie pre inštaláciu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="475"/>
@@ -866,7 +864,7 @@ p, li { white-space: pre-wrap; }
         <location filename="unetbootin.ui" line="446"/>
         <location filename="unetbootin.ui" line="465"/>
         <source>Select the installation target type</source>
-        <translation>Vyberte typ zariadenia pre inštaláciu:</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="449"/>
@@ -876,12 +874,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="81"/>
         <source>Select the distribution version</source>
-        <translation>Vyberte verziu distribúcie</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="347"/>
         <source>Select disk image file</source>
-        <translation>Vyberte súbor s obrazom disku</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="286"/>
@@ -889,50 +887,50 @@ p, li { white-space: pre-wrap; }
         <location filename="unetbootin.ui" line="375"/>
         <location filename="unetbootin.ui" line="400"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="188"/>
         <source>Select the disk image type</source>
-        <translation>Vyberte typ obrazu disku</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="243"/>
         <source>Specify a floppy/hard disk image, or CD image (ISO) file to load</source>
-        <translation>Vyberte obraz disku, diskety alebo CD (ISO)</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="207"/>
         <location filename="unetbootin.ui" line="258"/>
         <source>Specify a kernel file to load</source>
-        <translation>Vyberte súbor s jadrom</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="283"/>
         <source>Select kernel file</source>
-        <translation>Vyberte súbor s jadrom</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="293"/>
         <location filename="unetbootin.ui" line="312"/>
         <source>Specify an initrd file to load</source>
-        <translation>Vyberte súbor s initrd</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="372"/>
         <source>Select initrd file</source>
-        <translation>Vyberte súbor initrd</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="397"/>
         <source>Select syslinux.cfg or isolinux.cfg file</source>
-        <translation>Vyberte súbor syslinux.cfg alebo isolinux.cfg</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="226"/>
         <location filename="unetbootin.ui" line="321"/>
         <source>Specify parameters and options to pass to the kernel</source>
-        <translation>Vyber parametrov a volieb jadra</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="414"/>
@@ -941,11 +939,7 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This &lt;span style=&quot; font-weight:600;&quot;&gt;potentially dangerous&lt;/span&gt; option will show all drives in the drop-down box titled &quot;Drives&quot;. Enable this only if you know what you&apos;re doing; if you use this option, the installation will likely fail, or can lead to system boot issues.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Táto &lt;span style=&quot; font-weight:600;&quot;&gt;potenciálne nebezpečná&lt;/span&gt; voľba zobrazí všetky zariadenia a sprístupní ich v rozbalovacej ponuke &quot;Zariadení&quot;. Povoľte len v prípade, že viete čo robíte - môže znemožniť vytvorenie spustiteľného disku alebo poškodiť existujúci systém.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="421"/>
@@ -973,33 +967,33 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="main.cpp" line="156"/>
         <source>Uninstallation Complete</source>
-        <translation>Odinštalácia kompletná</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="157"/>
         <source>%1 has been uninstalled.</source>
-        <translation>%1 bolo odinštalované.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="318"/>
         <source>Must run as root</source>
-        <translation>Je potrebné spustiť ako root</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="320"/>
         <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su - -c &apos;%1&apos;&lt;/b&gt;</source>
         <oldsource>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</oldsource>
-        <translation type="unfinished">%2 je potrebné spustiť ako root. Zatvorte a spustite s použitím nasledujúceho:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;alebo:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="main.cpp" line="342"/>
         <source>%1 Uninstaller</source>
-        <translation>%1 Odinštalátor</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="main.cpp" line="343"/>
         <source>%1 is currently installed. Remove the existing version?</source>
-        <translation>%1 je už nainštalované. Odstrániť súčasnú verziu?</translation>
+        <translation></translation>
     </message>
 </context>
 </TS>

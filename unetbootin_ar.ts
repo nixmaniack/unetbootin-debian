@@ -7,243 +7,16 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2010-06-19 01:22-0700
-PO-Revision-Date: 2010-02-14 05:27+0000
-Last-Translator: Geza Kovacs &lt;geza0kovacs@gmail.com&gt;
+POT-Creation-Date: 2011-01-15 00:21-0500
+PO-Revision-Date: 2010-11-08 21:09+0000
+Last-Translator: Ahmed Mohammed &lt;Unknown&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2010-06-20 22:16+0000
-X-Generator: Launchpad (build Unknown)
+X-Launchpad-Export-Date: 2011-01-15 16:41+0000
+X-Generator: Launchpad (build 12200)
 </translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; توزيعة Debian هي توزيعة لينيكس تم تطويرها من قبل المجتمع حيث تدعم تشكيلة واسعة من البنئ وتقدم مستودع ضخم من الحزم. &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التثبيت عند الرغبة, وتسمح نسخة NetInstall بالتثبيت من خلال FTP.</translation>
-    </message>
-    <message>
-        <source>UNetbootin</source>
-        <translation type="obsolete">UNetbootin</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2 bytes</source>
-        <translation type="obsolete">&lt;b&gt;تم تنزيل:&lt;/b&gt; %1 من %2 بايت</translation>
-    </message>
-    <message>
-        <source>Distribution</source>
-        <translation type="obsolete">التوزيعة</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="obsolete">مخصص</translation>
-    </message>
-    <message>
-        <source>Drive:</source>
-        <translation type="obsolete">السواقة:</translation>
-    </message>
-    <message>
-        <source>Type:</source>
-        <translation type="obsolete">النوع:</translation>
-    </message>
-    <message>
-        <source>Kernel:</source>
-        <translation type="obsolete">النواة:</translation>
-    </message>
-    <message>
-        <source>Initrd:</source>
-        <translation type="obsolete">ملف قرص الذاكرة المؤقته المبدئية (initrd):</translation>
-    </message>
-    <message>
-        <source>Diskimage</source>
-        <translation type="obsolete">صورة القرص</translation>
-    </message>
-    <message>
-        <source>Show All Drives (Use with Care)</source>
-        <translation type="obsolete">عرض جميع السواقات (إستخدم هذا الخيار بحذر)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation type="obsolete">الخيارات:</translation>
-    </message>
-    <message>
-        <source>Format Drive (Wipes Out Data)</source>
-        <translation type="obsolete">تهيئة السواقة (ستمحو كافة البيانات)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP). If interested in a LiveUSB version, see FaunOS.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يعد آرك لينيكس توزيعة خفيفة تم ضبط إعداداتها للحصول على أفضل سرعة ومرونة. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الإفتراضية بالتنصيب عن طريق الشبكة العالمية (FTP), وإذا كنت مهتماً بنسخة اليو إس بي الحية قم بالإطلاع على FaunOS.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.remote-exploit.org/backtrack.html&quot;&gt;http://www.remote-exploit.org/backtrack.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; توزيعة BackTrack تركز على تحليل الشبكة واختبار إمكانية الاختراق. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; يقلع BackTrack ويعمل في الوضعية الحية حيث ان إستخدامه لايحتاج إلى تنصيب.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Xubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد توزيعة كىوبنتو توزيعة مشتقة رسمياً من أوبنتو متسمة ببيئة سطح المكتب كى دي إي. &gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة, و تسمح نسخة التنصيب الشبكي بالتنصيب عن طريق الشبكة العالمية (FTP) وبستطاعتها إيضاً تنصيب توزيعة إكسبونتوا والمشتقات الرسمية الأخرى لأوبنتو.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.faunos.com/&quot;&gt;http://www.faunos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FaunOS is a distribution based on Arch Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.faunos.com/&quot;&gt;http://www.faunos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مبنية على توزيعة آرتش لينكس.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode. The Unstable version does not support Hard Drive installations, though the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; (not freely downloadable) does.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مبنية على توزيعة دبيان متسمة بمدير النوافذ تنوير (Enlightenment).&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي, مع العلم أن النسخة غير المستقرة لاتدعم التنصيب عن طريق القرص الصلب بينما &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;النسخة المستقرة&lt;/a&gt; (not freely downloadable) تدعم ذلك.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مشتقة رسمياً من توزيعة أوبنتو متسمة ببيئة سطح المكتب إكسفس (XFCE).&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة, و تسمح نسخة التنصيب الشبكي بالتنصيب عن طريق الشبكة العالمية (FTP) وبستطاعتها إيضاً تنصيب توزيعة كوبونتو والمشتقات الرسمية الأخرى لأوبنتو.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة سهلة الإستعمال مرتكزة على ديبيان, وفي الوقت الحالي هي أكثر توزيعات لينيكس المستخدمة في حواسيب سطح المكتب شعبية.&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة, و تسمح نسخة التنصيب الشبكي بالتنصيب عن طريق الشبكة العالمية (FTP) وبستطاعتها إيضاً تنصيب توزيعة كوبونتو والمشتقات الرسمية الأخرى لأوبنتو.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Ubuntu is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation type="obsolete">&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_Ubuntu&quot;&gt;http://hacktolive.org/wiki/Super_Ubuntu&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هو مشتق غير رسمي من أوبنتو مشتمل على برمجيات إضافية في نسخته الإفتراضية, ويحتاج ذاكرة يو إس بي بحجم ٢ جيجا من أجل عملية التنصيب.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
-        <comment>#1</comment>
-        <translation type="obsolete">&lt;b&gt;يتم إستخراج ملف الأي إس أو المضغوط:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <source>Extracting files, please wait...</source>
-        <comment>#2</comment>
-        <translation type="obsolete">يتم إستخراج الملفات, انتظر من فضلك...</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
-        <comment>#3</comment>
-        <translation type="obsolete">&lt;b&gt;الارشيف:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Source:&lt;/b&gt;</source>
-        <comment>#4</comment>
-        <translation type="obsolete">&lt;b&gt;المصدر:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
-        <comment>#5</comment>
-        <translation type="obsolete">&lt;b&gt;الوجهة:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
-        <comment>#6</comment>
-        <translation type="obsolete">&lt;b&gt;تم إستخراج:&lt;/b&gt; 0 من ملفات %1</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
-        <comment>#7</comment>
-        <translation type="obsolete">&lt;b&gt;المصدر:&lt;/b&gt; %1 (%2)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
-        <comment>#8</comment>
-        <translation type="obsolete">&lt;b&gt;الوجهة:&lt;/b&gt; %1%2</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
-        <comment>#9</comment>
-        <translation type="obsolete">&lt;b&gt;إستخراج:&lt;/b&gt; %1 من ملفات %2</translation>
-    </message>
-    <message>
-        <source>Downloading files, please wait...</source>
-        <comment>#10</comment>
-        <translation type="obsolete">يتم تنزيل الملفات, إنتظر من فضلك...</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <comment>#11</comment>
-        <translation type="obsolete">&lt;b&gt;المصدر:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <comment>#12</comment>
-        <translation type="obsolete">&lt;b&gt;الوجهة:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
-        <comment>#13</comment>
-        <translation type="obsolete">&lt;b&gt;تم تنزيل:&lt;/b&gt; 0 بايت</translation>
-    </message>
-    <message>
-        <source>USB Drive</source>
-        <comment>#14</comment>
-        <translation type="obsolete">ّذاكرة يو إس بي</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2 bytes</source>
-        <comment>#15</comment>
-        <translation type="obsolete">&lt;b&gt;تم تنزيل:&lt;/b&gt; %1 من %2 بايت</translation>
-    </message>
-    <message>
-        <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <comment>#16</comment>
-        <translation type="obsolete">يتم البحث في &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
-        <comment>#17</comment>
-        <translation type="obsolete">%1/%2 تطابق في &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>%1 not found</source>
-        <comment>#18</comment>
-        <translation type="obsolete">لم يتم العثور %1</translation>
-    </message>
-    <message>
-        <source>%1 not found. This is required for %2 install mode.
-Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
-        <comment>#19</comment>
-        <translation type="obsolete">لم يتم العثور على %1. و ﻷنه مطلوب من إجل وضعية تنصيب %2 قم بتنصيب حزمة &quot;%3&quot; أو مايكافئها في توزيعتك.</translation>
-    </message>
-    <message>
-        <source>Hard Disk</source>
-        <comment>#20</comment>
-        <translation type="obsolete">القرص الصلب</translation>
-    </message>
-    <message>
-        <source>Floppy</source>
-        <comment>#21</comment>
-        <translation type="obsolete">قرص فلوبي</translation>
-    </message>
-    <message>
-        <source>ISO</source>
-        <comment>#22</comment>
-        <translation type="obsolete">ملف آي إس أو</translation>
-    </message>
-    <message>
-        <source>After rebooting, select the </source>
-        <comment>#23</comment>
-        <translation type="obsolete">بعد إعادة التشغيل قم بإختيار </translation>
-    </message>
-    <message>
-        <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
-Reboot now?</source>
-        <comment>#24</comment>
-        <translation type="obsolete">بعد إعادة التشغيل قم بإختيار خيار الإقلاع من ذاكرة اليو إس بي في قائمة الإقلاع الموجودة في نظام الادخال و الاخراج الأساسي (البيوس).%1
-هل تريد إعادة التشغيل الأن؟</translation>
-    </message>
-    <message>
-        <source>Hard Disk</source>
-        <comment>unetbootin#6</comment>
-        <translation type="obsolete">القرص الصلب</translation>
-    </message>
-    <message>
-        <source>USB Drive</source>
-        <comment>unetbootin#7</comment>
-        <translation type="obsolete">ّذاكرة يو إس بي</translation>
-    </message>
-    <message>
-        <source>ISO</source>
-        <comment>unetbootin#8</comment>
-        <translation type="obsolete">ملف آي إس أو</translation>
-    </message>
-    <message>
-        <source>Floppy</source>
-        <comment>unetbootin#9</comment>
-        <translation type="obsolete">قرص فلوبي</translation>
     </message>
 </context>
 <context>
@@ -331,11 +104,15 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="568"/>
+        <source>All Files</source>
+        <translation>كل الملفات</translation>
+    </message>
+    <message>
         <location filename="unetbootin.cpp" line="586"/>
         <location filename="unetbootin.cpp" line="594"/>
         <location filename="unetbootin.cpp" line="602"/>
         <source>All Files (*)</source>
-        <translation></translation>
+        <translation>كلّ الملفات (*)</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="586"/>
@@ -455,28 +232,28 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.cpp" line="958"/>
         <source>Locating kernel file in %1</source>
-        <translation></translation>
+        <translation>تحديد ملف kernal في %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="999"/>
         <source>Copying kernel file from %1</source>
-        <translation></translation>
+        <translation>نسخ ملف kernal من %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1005"/>
         <source>Locating initrd file in %1</source>
-        <translation></translation>
+        <translation>تحديد ملف initrd في %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1046"/>
         <source>Copying initrd file from %1</source>
-        <translation></translation>
+        <translation>نسخ ملف initrd من %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1052"/>
         <location filename="unetbootin.cpp" line="1112"/>
         <source>Extracting bootloader configuration</source>
-        <translation></translation>
+        <translation>استخراج اعدادات الاقلاع</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1327"/>
@@ -487,17 +264,24 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.cpp" line="1582"/>
         <source>Copying file, please wait...</source>
-        <translation></translation>
+        <translation>نسخ الملف, يرجى الانتظار...</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1583"/>
+        <location filename="unetbootin.cpp" line="2387"/>
+        <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
+        <translation>&lt;b&gt;المصدر:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="1584"/>
+        <location filename="unetbootin.cpp" line="2388"/>
+        <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
+        <translation>&lt;b&gt;الوجهة:&lt;/b&gt; %1</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1585"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="2496"/>
-        <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
-        <translation></translation>
+        <translation>&lt;b&gt;نسخ:&lt;/b&gt; 0 بايت</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="1623"/>
@@ -545,18 +329,6 @@ Reboot now?</source>
         <translation>يتم تنزيل الملفات, إنتظر من فضلك...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1583"/>
-        <location filename="unetbootin.cpp" line="2387"/>
-        <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;b&gt;المصدر:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.cpp" line="1584"/>
-        <location filename="unetbootin.cpp" line="2388"/>
-        <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt;الوجهة:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
         <location filename="unetbootin.cpp" line="2389"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;تم تنزيل:&lt;/b&gt; 0 بايت</translation>
@@ -566,6 +338,11 @@ Reboot now?</source>
         <location filename="unetbootin.cpp" line="2481"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;تمّ تحميل:&lt;/b&gt; %1 من %2</translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="2496"/>
+        <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
+        <translation>&lt;b&gt;نسخ:&lt;/b&gt; %1 من %2</translation>
     </message>
     <message>
         <location filename="unetbootin.cpp" line="2572"/>
@@ -657,267 +434,267 @@ Reboot now?</source>
         <location filename="distrolst.cpp" line="275"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
-        <translation></translation>
+        <translation>
+*تنبيه* قبل إعادة التشغيل , ضع ملف إقلاع Debian في مجلد الجذر في القرص الصلب أو ال USB.تلك الملفات ممكن الخصول عليها من cdimage.debian.org</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="364"/>
+        <location filename="distrolst.cpp" line="368"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *IMPORTANT* بعد إعادة تشغيل الجهاز قم بتجاهل أي رسالة خطأ قد تظهر لك وقم بإختيار خيار الرجوع إذا طُولبت بإدخال إسطوانة سي دي ثم اذهب إلى القائمة الرئيسية وختر خيار &apos;إبدأ التثبيت&apos; ثم أختر &apos;شبكي&apos; ليكون مصدر التثبيت و أختر &apos;HTTP&apos; ليكون البروتوكول ثم قم بكتابة &apos;download.fedora.redhat.com&apos; عندما تطالب بالمزود و &apos;/pub/fedora/linux/development/%1/os&apos; عندما تسئل عن المجلد.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="370"/>
+        <location filename="distrolst.cpp" line="374"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *IMPORTANT* بعد إعادة تشغيل الجهاز قم بتجاهل أي رسالة خطأ قد تظهر لك وقم بإختيار خيار الرجوع إذا طُولبت بإدخال إسطوانة سي دي ثم اذهب إلى القائمة الرئيسية وختر خيار &apos;إبدأ التثبيت&apos; ثم أختر &apos;شبكي&apos; ليكون مصدر التثبيت و أختر &apos;HTTP&apos; ليكون البروتوكول ثم قم بكتابة &apos;download.fedora.redhat.com&apos; عندما تطالب بالمزود و &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; عندما تسئل عن المجلد.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="730"/>
+        <location filename="distrolst.cpp" line="734"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
 بعد إعادة تشغيل الجهاز قم بتجاهل أي رسالة خطأ قد تظهر لك وقم بإختيار خيار الرجوع إذا طُولبت بإدخال إسطوانة سي دي ثم اذهب إلى القائمة الرئيسية وختر خيار &apos;إبدأ التثبيت&apos; ثم أختر &apos;شبكي&apos; ليكون مصدر التثبيت و أختر &apos;HTTP&apos; ليكون البروتوكول ثم قم بكتابة &apos;download.opensuse.org&apos; عندما تطالب بالمزود و &apos;/factory/repo/oss&apos; عندما تسئل عن المجلد.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="736"/>
+        <location filename="distrolst.cpp" line="740"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *IMPORTANT* بعد إعادة تشغيل الجهاز قم بتجاهل أي رسالة خطأ قد تظهر لك وقم بإختيار خيار الرجوع إذا طُولبت بإدخال إسطوانة سي دي ثم اذهب إلى القائمة الرئيسية وختر خيار &apos;إبدأ التثبيت&apos; ثم أختر &apos;شبكي&apos; ليكون مصدر التثبيت و أختر &apos;HTTP&apos; ليكون البروتوكول ثم قم بكتابة &apos;download.opensuse.org&apos; عندما تطالب بالمزود و &apos;/distribution/%1/repo/oss&apos; عندما تسئل عن المجلد.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="21"/>
+        <location filename="distrover.cpp" line="22"/>
         <location filename="unetbootin.cpp" line="652"/>
         <source>== Select Distribution ==</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="distrover.cpp" line="21"/>
-        <location filename="distrover.cpp" line="25"/>
-        <source>== Select Version ==</source>
-        <translation></translation>
+        <translation>== إختيار التوزيعة ==</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="22"/>
+        <location filename="distrover.cpp" line="26"/>
+        <source>== Select Version ==</source>
+        <translation>== إختيار الإصدار ==</translation>
+    </message>
+    <message>
+        <location filename="distrover.cpp" line="23"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
         <translation>مرحباً بك إلى &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, برنامج التنصيب الشامل القادر على الإقلاع عن طريق الشبكة. طريقة الإستخدام:&lt;ol&gt;&lt;li&gt;قم بإختيار توزيعة ونسخة ليتم تنزيلها من القائمة الموجودة في الإعلى أو حدد الملفات التي ترغب في تحميلها يديوياً  بالأسفل.&lt;/li&gt;&lt;li&gt;ثم قم بإختيار نوع التنصيب والضغط على زر موافق لبدء التنصيب.&lt;/li&gt;&lt;/ol&gt;</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="27"/>
+        <location filename="distrover.cpp" line="28"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP).</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="33"/>
+        <location filename="distrover.cpp" line="34"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.backtrack-linux.org/&quot;&gt;http://www.backtrack-linux.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; BackTrack is a distribution focused on network analysis and penetration testing.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; BackTrack is booted and run in live mode; no installation is required to use it.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="38"/>
+        <location filename="distrover.cpp" line="39"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CentOS is a free Red Hat Enterprise Linux clone.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد توزيعة CentOS مستنسخ حر من لينيكس شركة Red Hat Enterprise. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الإفتراضية بكلا التنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب بدون إتصال شبكي عن طريق إستخدام ملفات التنصيب الأي إس أو اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="43"/>
+        <location filename="distrover.cpp" line="44"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CloneZilla is a distribution used for disk backup and imaging.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; CloneZilla is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://clonezilla.org/&quot;&gt;http://clonezilla.org/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد CloneZilla توزيعة تستخدم من أجل الحصول على نسخ إحتياطية من الأقراص وستنساخها.&lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; يقلع ويعمل CloneZilla في الوضع الحي لذلك لا يحتاج إلى تنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="48"/>
+        <location filename="distrover.cpp" line="49"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Damn Small Linux is a minimalist distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مبنية من أدنى حد ممكن من العناصر مصممه لأجهزة الحاسوب القديمة.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تقوم النسخة الحية بتحميل كامل النظام إلى ذاكرة الوصول العشوائي (RAM) والإقلاع من الذاكرة, لذلك التنصيب إختياري وليس إلزامي.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="53"/>
+        <location filename="distrover.cpp" line="54"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.debian.org/&quot;&gt;http://www.debian.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Debian is a community-developed Linux distribution that supports a wide variety of architectures and offers a large repository of packages.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The NetInstall version allows for installation over FTP. If you would like to use a pre-downloaded install iso, use the HdMedia option, and then place the install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="59"/>
+        <location filename="distrover.cpp" line="60"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dreamlinux is a user-friendly Debian-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة سهلة الإستعمال مرتكزة على توزيعة ديبيان.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="64"/>
+        <location filename="distrover.cpp" line="65"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dr.Web AntiVirus is an anti-virus emergency kit to restore a system that broke due to malware.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.freedrweb.com/livecd&quot;&gt;http://www.freedrweb.com/livecd&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي عدة طوارئ لمكافحة الفيروسات تستخدم لإستعادة النظام اللذي حطمته البرمجيات الخبيثة.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="69"/>
+        <location filename="distrover.cpp" line="70"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <oldsource>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. This installs the unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt;.</oldsource>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="74"/>
+        <location filename="distrover.cpp" line="75"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مدعومة من قبل المجتمع ترعاها شركة ريدهات تقوم بعرض آخر و أحدث البرمجيات الحرة ذات المصدر المفتوح. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة, و تسمح نسخة التنصيب الشبكي بالتنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب عن طريق ملفات الأي إس أو اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="79"/>
+        <location filename="distrover.cpp" line="80"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeBSD is a general-purpose Unix-like operating system designed for scalability and performance.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هو نظام تشغيل للأغراض العامة شبيه بنظام التشغيل يونكس تم تصميمه لغرض الأداء و قابلية التدرج في الأداء حسب العمل المطلوب. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الإفتراضية بالتنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب عن طريق ملفات التنصيب الأي إس أو اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="84"/>
+        <location filename="distrover.cpp" line="85"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeDOS is a free MS-DOS compatible operating system.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; See the &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;manual&lt;/a&gt; for installation details.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هو نظام تشغيل حر متوافق مع نظام تشغيل القرص لشركة مايكروسوفت (MS-DOS).&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; قم بالإطلاع على &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;الدليل&lt;/a&gt; لتفاصيل عملية التنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="89"/>
+        <location filename="distrover.cpp" line="90"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeNAS is an embedded open source NAS (Network-Attached Storage) distribution based on FreeBSD.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The LiveCD version creates a RAM drive for FreeNAS, and uses a FAT formatted floppy disk or USB key for saving the configuration file. The embedded version allows installation to hard disk.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="94"/>
+        <location filename="distrover.cpp" line="95"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Frugalware is a general-purpose Slackware-based distro for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default option allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة للأغراض العامة مشتقة من توزيعة Slackware للمستخدمين المتقدمين.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الإفتراضية بالتنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب عن طريق ملفات الأي إس أو اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="99"/>
+        <location filename="distrover.cpp" line="100"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.f-secure.com/linux-weblog/&quot;&gt;http://www.f-secure.com/linux-weblog/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; F-Secure Rescue CD detects and removes malware from your Windows installation.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.f-secure.com/linux-weblog/&quot;&gt;http://www.f-secure.com/linux-weblog/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تقوم إسطوانة أمان إف للإنقاذ بإكتشاف وإزالة البرمجيات الخبيثة من تنصيبة وندوز.&lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء البحث عن البرمجيات الخبيثة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="104"/>
+        <location filename="distrover.cpp" line="105"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;http://www.gentoo.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Gentoo is a flexible source-based distribution designed for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;http://www.gentoo.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; توزيعة Gentoo هي توزيعة مبنية على مصادر مرنة مصممة للمستخدمين المتقدمين. &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية  بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التثبيت عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="114"/>
+        <location filename="distrover.cpp" line="115"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is an FSF-endorsed distribution based on Ubuntu with all non-free components removed.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مشتقة من أوبنتو مصدقة من مؤسسة البرمجيات الحرة وخالية من جميع المكونات غير الحرة. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="119"/>
+        <location filename="distrover.cpp" line="120"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://gujin.sourceforge.net/&quot;&gt;http://gujin.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Gujin is a graphical boot manager which can bootstrap various volumes and files.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Gujin simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://gujin.sourceforge.net/&quot;&gt;http://gujin.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يعد Gujin مدير إقلاع بياني بستطاعته الإقلاع المشترك للأحجام والملفات المختلفة. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; يقلع ويعمل Gujin بسهولة في الوضع الحي بدون الحاجة إلى تنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="124"/>
+        <location filename="distrover.cpp" line="125"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ftp.kaspersky.com/devbuilds/RescueDisk/&quot;&gt;http://ftp.kaspersky.com/devbuilds/RescueDisk/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kaspersky Rescue Disk detects and removes malware from your Windows installation.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which malware scans can be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://ftp.kaspersky.com/devbuilds/RescueDisk/&quot;&gt;http://ftp.kaspersky.com/devbuilds/RescueDisk/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يقوم قرص Kaspersky للإنقاذ بالكشف عن وإزالة البرمجيات الخبيثة من تنصيبة وندوز. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء البحث عن البرمجيات الخبيثة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="129"/>
+        <location filename="distrover.cpp" line="130"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="134"/>
+        <location filename="distrover.cpp" line="135"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxconsole.org/&quot;&gt;http://linuxconsole.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The 1.0.2009 is latest 1.0 release.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="139"/>
+        <location filename="distrover.cpp" line="140"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد تعد توزيعة Linux Mint توزيعة سهلة الإستعمال مشتقة من أوبنتو مشتملة على ملفات الترميز والبرمجيات الإحتكارية الأخرى إفتراضياً. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التثبيت عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="144"/>
+        <location filename="distrover.cpp" line="145"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Mandriva is a user-friendly distro formerly known as Mandrake Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over the internet (FTP) or via pre-downloaded &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;&quot;Free&quot; iso image files&lt;/a&gt;.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد توزيعة Mandriva توزيعة سهلة الإستعمال كانت تعرف سابقاً بإسم Mandrake Linux. &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية من الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التثبيت عند الرغبة, و تسمح نسخة التنصيب الشبكي بالتنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب عن طريق &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;ملفات الأي إس أو المجانية&lt;/a&gt; اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="150"/>
+        <location filename="distrover.cpp" line="151"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mepis.org/&quot;&gt;http://www.mepis.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; MEPIS is a Debian-based distribution. SimplyMEPIS is a user-friendly version based on KDE, while AntiX is a lightweight version for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; MEPIS supports booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.mepis.org/&quot;&gt;http://www.mepis.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; توزيعة MEPIS مبينة على نظام تشغيل Debian. نسخة SimplyMEPIS هي نسخة سهلة الإستعمال مرتكزة على بيئة سطح المكتب كى دي إي, بينما تعد نسخة AntiX نسخة سهلة الإستعمال للإجهزة القديمة.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تدعم توزيعة MEPIS الإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="155"/>
+        <location filename="distrover.cpp" line="156"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.netbsd.org/&quot;&gt;http://www.netbsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NetBSD is a Unix-like operating system which focuses on portability.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt;The default version allows for both installation over the internet (FTP), or using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.netbsd.org/&quot;&gt;http://www.netbsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يعد NetBSD نظام تشغيل شبيه بينيكس مركز على إمكانية التنقل.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الإفتراضية بالتنصيب عن طريق الشبكة العالمية (FTP) أو التنصيب عن طريق ملفات الأي إس أو اللتي تم تنزيلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="160"/>
+        <location filename="distrover.cpp" line="161"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.nimblex.net/&quot;&gt;http://www.nimblex.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NimbleX boots in Live mode.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="165"/>
+        <location filename="distrover.cpp" line="166"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NTPasswd is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&quot;&gt;http://home.eunet.no/pnordahl/ntpasswd/bootdisk.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يستطيع محرر كلمات السر والسجلات إن تي تصفير كلمات سر وندوز وتحرير سجلات الإعدادات الموجودة في وندوز ٢٠٠٠ إلى وندوز فيستا.  &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; يقلع ويعمل NTPasswd في الوضع الحي بدون الحاجة إلى تنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="170"/>
+        <location filename="distrover.cpp" line="171"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; openSUSE is a user-friendly Novell sponsored distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; توزيعة openSUSE هي توزيعة سهلة الإستعمال برعاية Novell.  &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الإفتراضية بكلا التثبيت عن طريق الشبكة العالمية (FTP) أو التثبيت بدون إتصال عن طريق ملفات التثبيت الأي إس أو التي تم تحميلها مسبقاً.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="175"/>
+        <location filename="distrover.cpp" line="176"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ophcrack can crack Windows passwords.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Ophcrack is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://ophcrack.sourceforge.net/&quot;&gt;http://ophcrack.sourceforge.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يستطيع Ophcrack فك كلمات السر في وندوز.&lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; يقلع ويعمل Ophcrack في الوضع الحي بدون الحاجة إلى تنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="180"/>
+        <location filename="distrover.cpp" line="181"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Parted Magic includes the GParted partition manager and other system utilities which can resize, copy, backup, and manipulate disk partitions.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Parted Magic is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://partedmagic.com/&quot;&gt;http://partedmagic.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مشتملة على مدير التجزئة (GParted) وخدمات النظام الأخرى اللتي بوسعها تغيير حجم ونسخ وصنع نسخة إحتياطية من وتعديل أجزاء القرص.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; يقلع ويعمل Parted Magic في الوضع الحي بدون الحاجة إلى تنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="185"/>
+        <location filename="distrover.cpp" line="186"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; PCLinuxOS is a user-friendly Mandriva-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.pclinuxos.com/&quot;&gt;http://www.pclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة سهلة الإستعمال مرتكزة على توزيعة Mandriva. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="190"/>
+        <location filename="distrover.cpp" line="191"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Puppy Linux is a lightweight distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة خفيفة مصممة للإستعمال مع الحواسيب القديمة. &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تقوم النسخة الحية بتحميل كامل النظام إلى ذاكرة الوصول العشوائي (RAM) والإقلاع من الذاكرة, لذلك التنصيب إختياري وليس إلزامي.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="195"/>
+        <location filename="distrover.cpp" line="196"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.sabayonlinux.org/&quot;&gt;http://www.sabayonlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة من النوع اللذي يكتب على إسطوانة دي في دي حية مرتكزة على توزيعة جنتو ومتسمة بمدير الحزم الثنائية إنتروبية (Entropy) بالإضافة إلى نظام إدارة الحزم المصدري (Portage).&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة. مع العلم أن حجم نسخة (LiteMCE) ٢ جيجا بينما تحتاج النسخة الكاملة إلى ذاكرة يو إس بي بحجم ٨ جيجا.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="200"/>
+        <location filename="distrover.cpp" line="201"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Slax is a Slackware-based distribution featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مرتكزة على توزيعة (Slackware) متسمة ببيئة سطح المكتب كى دي إي.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="205"/>
+        <location filename="distrover.cpp" line="206"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt;&lt;br/&gt; هي توزيعة خفيفة مصغرة موجهة للإستخدام مع حاسوب سطح المكتب.&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تقوم النسخة الحية بتحميل كامل النظام إلى ذاكرة الوصول العشوائي (RAM) والإقلاع من الذاكرة, لذلك التنصيب إختياري وليس إلزامي.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="210"/>
+        <location filename="distrover.cpp" line="211"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Smart Boot Manager is a bootloader which can overcome some boot-related BIOS limitations and bugs.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SBM simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://btmgr.sourceforge.net/about.html&quot;&gt;http://btmgr.sourceforge.net/about.html&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هو محمل إقلاع قادر على التغلب على بعض جوانب القصور والعلل الموجودة في نظام الادخال و الاخراج الأساسي بيوس (BIOS). &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; يقلع ويعمل مدير الإقلاع الذكي (SBM) بدون الحاجة إلى التنصيب.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="215"/>
+        <location filename="distrover.cpp" line="216"/>
         <location filename="distrovercust.cpp" line="12"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super Grub Disk is a bootloader which can perform a variety of MBR and bootloader recovery tasks.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SGD simply boots and runs; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.supergrubdisk.org&quot;&gt;http://www.supergrubdisk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يعتبر قرص قرب الخارق محمل إقلاع قادر على القيام بالعديد من مهمات إصلاح إم بي أر و محملات الإقلاع الأخرى. &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; يقلع ويعمل قرص قرب الخارق مباشرة بدون الحاجة إلى التثبيت.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="220"/>
+        <location filename="distrover.cpp" line="221"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super OS is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="225"/>
+        <location filename="distrover.cpp" line="226"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SystemRescueCD includes various partition management and data recovery and backup tools.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; SystemRescueCD is booted and run in live mode; no installation is required to use it.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.sysresccd.org&quot;&gt;http://www.sysresccd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; يشتمل SystemRescueCD على العديد من أدوات إدارة التجزئة و إسترداد البيانات والحصول على نسخ إحتياطية.  &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; يقلع ويعمل SystemRescueCD في الوضع الحي حيث لا يحتاج إلى التثبيت.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="230"/>
+        <location filename="distrover.cpp" line="231"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="235"/>
+        <location filename="distrover.cpp" line="236"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.xpud.org/&quot;&gt;http://www.xpud.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة خفيفة متسمة بواجهة بسيطة شبيه بكشك ومشتملة على متصفح لشبكة ومشغل وسائط.&lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تقوم النسخة الحية بتحميل كامل النظام إلى ذاكرة الوصول العشوائي (RAM) والإقلاع من الذاكرة.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="240"/>
+        <location filename="distrover.cpp" line="241"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="245"/>
+        <location filename="distrover.cpp" line="246"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Zenwalk is a Slackware-based distribution featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
         <translation>&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; هي توزيعة مرتكزة على توزيعة (Slackware) متسمة ببيئة سطح المكتب (إكسفس). &lt;br/&gt;&lt;b&gt;ملاحظات التنصيب:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذي يمكن من داخله بدء برنامج التنصيب عند الرغبة.</translation>
     </message>
@@ -934,8 +711,7 @@ Reboot now?</source>
     <message>
         <location filename="distrovercust.cpp" line="53"/>
         <source>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <oldsource>&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Elive is a Debian-based distribution featuring the Enlightenment window manager.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The Unstable version, not the &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;Stable version&lt;/a&gt; is installed. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</oldsource>
-        <translation type="unfinished">&lt;img src=&quot;:/elive.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;الصفحة الرئيسية:&lt;/b&gt; &lt;a href=&quot;http://www.elivecd.org/&quot;&gt;http://www.elivecd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;الوصف:&lt;/b&gt; تعد Elive توزيعة مبنية على نظام التشغيل Debian متسمة بمدير النوافذ Enlightenment. &lt;br/&gt;&lt;b&gt;ملاحظات التثبيت:&lt;/b&gt; تسمح النسخة الحية بالإقلاع إلى الوضع الحي اللذى يمكن من داخله بدء برنامج التثبيت عند الرغبة. لم يتم تثبيت &lt;a href=&quot;http://www.elivecd.org/Download/Stable&quot;&gt;النسخة المستقرة&lt;/a&gt; بل تم تثبيت النسخة غير المستقرة. برنامج التثبيت مبني على &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="61"/>
@@ -950,7 +726,7 @@ Reboot now?</source>
     <message>
         <location filename="distrovercust.cpp" line="77"/>
         <source>&lt;img src=&quot;:/nimblex.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.nimblex.net/&quot;&gt;http://www.nimblex.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NimbleX is a small, versatile Slackware-based distribution. It is built using the linux-live scripts, and features the KDE desktop. It can be booted from CD or flash memory (USB pens or MP3 players), and can easily be customized and extended.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NimbleX boots in Live mode.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="85"/>
@@ -968,7 +744,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="20"/>
         <source>Unetbootin</source>
-        <translation></translation>
+        <translation>Copy text   	 Unetbootin</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="44"/>
@@ -979,7 +755,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="47"/>
         <source>&amp;Distribution</source>
-        <translation></translation>
+        <translation>&amp;توزيعة</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="131"/>
@@ -989,7 +765,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="134"/>
         <source>Disk&amp;image</source>
-        <translation></translation>
+        <translation>قرص&amp;صورة</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="147"/>
@@ -999,7 +775,7 @@ Reboot now?</source>
     <message>
         <location filename="unetbootin.ui" line="150"/>
         <source>&amp;Custom</source>
-        <translation></translation>
+        <translation>&amp;تخصيص</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="428"/>
@@ -1017,7 +793,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="435"/>
         <source>&amp;Format Drive (Wipes Out Data)</source>
-        <translation></translation>
+        <translation>تهيئة قرص (مسح بيانات)</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="498"/>
@@ -1027,7 +803,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="501"/>
         <source>Return</source>
-        <translation></translation>
+        <translation>رجوع</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="508"/>
@@ -1037,7 +813,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="511"/>
         <source>Esc</source>
-        <translation></translation>
+        <translation>خروج</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="556"/>
@@ -1078,7 +854,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="475"/>
         <source>Dri&amp;ve:</source>
-        <translation></translation>
+        <translation>سوا&amp;قة</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="446"/>
@@ -1089,7 +865,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="449"/>
         <source>&amp;Type:</source>
-        <translation></translation>
+        <translation>&amp;نوع</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="81"/>
@@ -1168,22 +944,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="421"/>
         <source>Show &amp;All Drives (Use with Care)</source>
-        <translation></translation>
+        <translation>إظهار &amp;كل السواقات (استخدم بحذر)</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="210"/>
         <source>&amp;Kernel:</source>
-        <translation></translation>
+        <translation>&amp;Kernel:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="296"/>
         <source>Init&amp;rd:</source>
-        <translation></translation>
+        <translation>Init&amp;rd:</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="229"/>
         <source>&amp;Options:</source>
-        <translation></translation>
+        <translation>&amp;اختيارات:</translation>
     </message>
 </context>
 <context>
@@ -1205,8 +981,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="main.cpp" line="320"/>
-        <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</source>
-        <translation>يجب تشغيل %2 بستخدام صلاحية الجذر. لذلك قم بإقفاله ثم إعادة تشغيله بستخدام:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;أو:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
+        <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su - -c &apos;%1&apos;&lt;/b&gt;</source>
+        <oldsource>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</oldsource>
+        <translation type="unfinished">يجب تشغيل %2 بستخدام صلاحية الجذر. لذلك قم بإقفاله ثم إعادة تشغيله بستخدام:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;أو:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="main.cpp" line="342"/>

@@ -14,7 +14,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
-	relname.replace("10.04", "lucid").replace("9.10", "karmic").replace("9.04", "jaunty").replace("8.10", "intrepid").replace("8.04", "hardy").replace("7.10", "gutsy").replace("7.04", "feisty").replace("6.10", "edgy").replace("6.06", "dapper");
+	relname.replace("10.10", "maverick").replace("10.04", "lucid").replace("9.10", "karmic").replace("9.04", "jaunty").replace("8.10", "intrepid").replace("8.04", "hardy").replace("7.10", "gutsy").replace("7.04", "feisty").replace("6.10", "edgy").replace("6.06", "dapper");
 #endif
 
 #ifndef ubuntunetinst
@@ -345,10 +345,14 @@ if (nameDistro == "Fedora")
 		{
 			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-Live-%2.iso").arg(relname, cpuarch), isotmpf);
 		}
-                if (relname == "10")
-                {
-                    downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/F%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
-                }
+		else if (relname == "10")
+		{
+			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/F%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
+		}
+		else if (relname == "14")
+		{
+			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live-Desktop.iso").arg(relname, cpuarch), isotmpf);
+		}
 		else
 		{
 			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
