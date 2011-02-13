@@ -1,3 +1,10 @@
+unetbootin (471-2) unstable; urgency=medium
+
+  * debian/control:
+    - Added 'mtools' to Depends of unetbootin. (Closes: #602193)
+
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 03 Nov 2010 18:56:22 +0200
+
 unetbootin (490-1) experimental; urgency=low
 
   * New upstream release.
