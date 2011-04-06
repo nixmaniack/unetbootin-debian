@@ -289,6 +289,7 @@ int main(int argc, char **argv)
 				argsconc += QString("\"%1\" ").arg(allappargs.at(i));
 			}
 			argsconc += "'rootcheck=no'";
+#ifdef Q_OS_LINUX
 			QString gksulocation = checkforgraphicalsu("gksu");
 			if (gksulocation != "REQCNOTFOUND")
 			{
@@ -326,15 +327,25 @@ int main(int argc, char **argv)
 				default:
 					break;
 			}
+#endif
+#ifdef Q_OS_MAC
+			QProcess osascriptProc;
+			osascriptProc.start("osascript");
+			osascriptProc.write(QString("do shell script \""+app.applicationFilePath()+"\" with administrator privileges\n").toAscii().data());
+			osascriptProc.closeWriteChannel();
+			osascriptProc.waitForFinished(-1);
+			return 0;
+#endif
 		}
 	}
 	#endif
 	#ifdef Q_OS_WIN32
 	QSettings chkinst("HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\UNetbootin", QSettings::NativeFormat);
 	#endif
-	#ifdef Q_OS_UNIX
+	#ifdef Q_OS_LINUX
 	QSettings chkinst(QSettings::SystemScope, "UNetbootin");
 	#endif
+#ifndef Q_OS_MAC
 	if (chkinst.contains("Location"))
 	{
 		QMessageBox uninstmsgb;
@@ -355,10 +366,18 @@ int main(int argc, char **argv)
  		}
 		return 0;
 	}
+#endif
 	unetbootin unetbootin;
 	unetbootin.appNlang = tnapplang;
 	unetbootin.appDir = QDir::toNativeSeparators(QString("%1/").arg(app.applicationDirPath()));
 	unetbootin.appLoc = app.applicationFilePath();
+	QIcon icon;
+	icon.addFile(":/unetbootin_16.png", QSize(16,16));
+	icon.addFile(":/unetbootin_22.png", QSize(22,22));
+	icon.addFile(":/unetbootin_24.png", QSize(24,24));
+	icon.addFile(":/unetbootin_32.png", QSize(32,32));
+	icon.addFile(":/unetbootin_48.png", QSize(48,48));
+	unetbootin.setWindowIcon(icon);
 	bool automate = unetbootin.ubninitialize(oppairs);
 	unetbootin.show();
 	if (automate)

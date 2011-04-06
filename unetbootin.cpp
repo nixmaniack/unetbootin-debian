@@ -95,6 +95,16 @@ void callexternappT::run()
 	#endif
 }
 
+void callexternappWriteToStdinT::run()
+{
+	QProcess lnexternapp;
+	lnexternapp.start(QString("%1 %2").arg(execFile).arg(execParm));
+	lnexternapp.write(writeToStdin.toAscii().data());
+	lnexternapp.closeWriteChannel();
+	lnexternapp.waitForFinished(-1);
+	retnValu = QString(lnexternapp.readAll());
+}
+
 void copyfileT::run()
 {
 	QFile srcF(source);
@@ -174,6 +184,10 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	overwriteall = false;
 	searchsymlinks = false;
 	ignoreoutofspace = false;
+	persistenceSpaceMB = 0;
+#ifdef Q_OS_MAC
+	ignoreoutofspace = true;
+#endif
 	dontgeneratesyslinuxcfg = false;
 	#ifdef Q_OS_UNIX
 	isext2 = false;
@@ -184,9 +198,9 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	firstlayer->show();
 	this->setWindowTitle(UNETBOOTINB);
 	overwriteall = false;
-	formatdrivecheckbox->setEnabled(false);
-	formatdrivecheckbox->hide();
+#ifndef Q_OS_MAC
 	typeselect->addItem(tr("Hard Disk"));
+#endif
 	typeselect->addItem(tr("USB Drive"));
 	diskimagetypeselect->addItem(tr("ISO"));
 	diskimagetypeselect->addItem(tr("Floppy"));
@@ -215,7 +229,16 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	#include "distrover.cpp"
 	#endif
 	#include "customdistselect.cpp"
-	#ifdef Q_OS_UNIX
+#ifdef Q_OS_MAC
+	resourceDir = QDir(QApplication::applicationDirPath());
+	resourceDir.cdUp();
+	resourceDir.cd("Resources");
+	syslinuxcommand = resourceDir.absoluteFilePath("syslinux-mac");
+	sevzcommand = resourceDir.absoluteFilePath("7z-mac");
+	mke2fscommand = resourceDir.absoluteFilePath("mke2fs");
+	fdiskcommand = locatecommand("fdisk", tr("either"), "util-linux");
+#endif
+	#ifdef Q_OS_LINUX
 	if (QFile::exists("/sbin/fdisk"))
 		fdiskcommand = "/sbin/fdisk";
 	else
@@ -224,10 +247,6 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 				dfcommand = "/bin/df";
 		else
 				dfcommand = locatecommand("df", tr("either"), "util-linux");
-	if (QFile::exists("/sbin/sfdisk"))
-		sfdiskcommand = "/sbin/sfdisk";
-	else
-		sfdiskcommand = locatecommand("sfdisk", tr("either"), "util-linux");
 	if (QFile::exists("/lib/udev/vol_id"))
 		volidcommand = "/lib/udev/vol_id";
 	else
@@ -241,14 +260,30 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	}
 	else
 		blkidcommand = "/sbin/blkid";
-	locatecommand("mtools", tr("USB Drive"), "mtools");
-		syslinuxcommand = "/usr/bin/ubnsylnx";
-		extlinuxcommand = "/usr/bin/ubnexlnx";
+	if (QFile::exists("/sbin/mke2fs"))
+		mke2fscommand = "/sbin/mke2fs";
+	else
+		mke2fscommand = locatecommand("mke2fs", tr("LiveUSB persistence"), "e2fsprogs");
+	if (QFile::exists("/sbin/e2label"))
+		e2labelcommand = "/sbin/e2label";
+	else
+		e2labelcommand = locatecommand("e2label", "Arch Linux", "e2fsprogs");
+	if (QFile::exists("/usr/bin/mlabel"))
+		mlabelcommand = "/usr/bin/mlabel";
+	else
+		mlabelcommand = locatecommand("mlabel", "Arch Linux", "mtools");
+	syslinuxcommand = "/usr/bin/ubnsylnx";
+	extlinuxcommand = "/usr/bin/ubnexlnx";
 	#ifdef NOSTATIC
+	if (QFile::exists("/usr/bin/syslinux"))
 		syslinuxcommand = "/usr/bin/syslinux";
+	else
+		syslinuxcommand = locatecommand("syslinux", tr("FAT32-formatted USB drive"), "syslinux");
+	if (QFile::exists("/usr/bin/extlinux"))
 		extlinuxcommand = "/usr/bin/extlinux";
+	else
+		extlinuxcommand = locatecommand("extlinux", tr("EXT2-formatted USB drive"), "syslinux");
 	#endif
-//	syslinuxcommand = locatecommand("syslinux", tr("USB Drive"), "syslinux");
 	sevzcommand = locatecommand("7z", tr("either"), "p7zip-full");
 	ubntmpf = "/tmp/";
 	#endif
@@ -363,6 +398,13 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 		{
 			intromessage->setText(psecond);
 		}
+		else if (pfirst.contains("persistentspace", Qt::CaseInsensitive))
+		{
+			bool isInt = false;
+			int numMBpersistentSpace = psecond.toInt(&isInt, 10);
+			if (isInt)
+				this->persistencevalue->setValue(numMBpersistentSpace);
+		}
 		else if (pfirst.contains("autoinstall", Qt::CaseInsensitive))
 		{
 			if (psecond.contains('y', Qt::CaseInsensitive))
@@ -417,11 +459,6 @@ void unetbootin::on_distroselect_currentIndexChanged(int distroselectIndex)
 	radioDistro->setChecked(true);
 }
 
-void unetbootin::on_showalldrivescheckbox_clicked()
-{
-	refreshdriveslist();
-}
-
 void unetbootin::refreshdriveslist()
 {
 	driveselect->clear();
@@ -434,14 +471,7 @@ void unetbootin::refreshdriveslist()
 
 QStringList unetbootin::listcurdrives()
 {
-	if (showalldrivescheckbox->isChecked())
-	{
-		return listalldrives();
-	}
-	else
-	{
-		return listsanedrives();
-	}
+	return listsanedrives();
 }
 
 QStringList unetbootin::listsanedrives()
@@ -466,7 +496,7 @@ QStringList unetbootin::listsanedrives()
 			}
 		}
 		#endif
-				#ifdef Q_OS_UNIX
+				#ifdef Q_OS_LINUX
 				QDir devlstdir("/dev/disk/by-id/");
 				QFileInfoList usbfileinfoL = devlstdir.entryInfoList(QDir::NoDotAndDotDot|QDir::Files);
 				for (int i = 0; i < usbfileinfoL.size(); ++i)
@@ -507,6 +537,14 @@ QStringList unetbootin::listsanedrives()
 				}
 				*/
 		#endif
+#ifdef Q_OS_MAC
+QString diskutilList = callexternapp("disktool", "-l");
+QStringList usbdevsL = diskutilList.split("\n").filter("msdos").join("'").split("'").filter("disk");
+for (int i = 0; i < usbdevsL.size(); ++i)
+{
+	fulldrivelist.append("/dev/"+usbdevsL.at(i));
+}
+#endif
 	}
 	return fulldrivelist;
 }
@@ -522,7 +560,7 @@ QStringList unetbootin::listalldrives()
 		fulldrivelist.append(QDir::toNativeSeparators(extdrivesList.at(i).path().toUpper()));
 	}
 	#endif
-	#ifdef Q_OS_UNIX
+	#ifdef Q_OS_LINUX
 		QString fdisklusbdevsS = callexternapp(fdiskcommand, "-l");
 		QString dflusbdevsS = callexternapp(dfcommand, "");
 		fulldrivelist = QString(dflusbdevsS).split(" ").join("\n").split("\t").join("\n").split("\n").filter("/dev/");
@@ -533,23 +571,14 @@ QStringList unetbootin::listalldrives()
 				fulldrivelist.append(fulldrivelist2.at(i));
 		}
 	#endif
+#ifdef Q_OS_MAC
+		return listsanedrives();
+#endif
 	return fulldrivelist;
 }
 
 void unetbootin::on_typeselect_currentIndexChanged(int typeselectIndex)
 {
-	showalldrivescheckbox->setChecked(false);
-	formatdrivecheckbox->setChecked(false);
-	if (typeselectIndex == typeselect->findText(tr("Hard Disk")))
-	{
-		showalldrivescheckbox->setEnabled(false);
-		formatdrivecheckbox->setEnabled(false);
-	}
-	if (typeselectIndex == typeselect->findText(tr("USB Drive")))
-	{
-		showalldrivescheckbox->setEnabled(true);
-//		formatdrivecheckbox->setEnabled(true);
-	}
 	refreshdriveslist();
 }
 
@@ -632,7 +661,11 @@ void unetbootin::on_okbutton_clicked()
 				break;
 		}
 	}
-	#ifdef Q_OS_UNIX
+#ifdef Q_OS_MAC
+	if (locatemountpoint(driveselect->currentText()) == "NOT MOUNTED")
+		callexternapp("hdiutil", "mount "+driveselect->currentText());
+#endif
+	#ifdef Q_OS_LINUX
 	else if (typeselect->currentIndex() == typeselect->findText(tr("USB Drive")) && locatemountpoint(driveselect->currentText()) == "NOT MOUNTED")
 	{
 		QMessageBox merrordevnotmountedmsgbx;
@@ -930,7 +963,7 @@ bool unetbootin::checkifoutofspace(QString destindir)
 	bool outofspace = false;
 	#ifdef Q_OS_UNIX
 	struct statfs diskstatS;
-	if (!statfs(QString(destindir+"/.").toLocal8Bit(), &diskstatS))
+	if (!statfs(QString(destindir+"/.").toAscii(), &diskstatS))
 	{
 		if (diskstatS.f_bavail * diskstatS.f_bfree < 1024)
 			outofspace = true;
@@ -940,7 +973,7 @@ bool unetbootin::checkifoutofspace(QString destindir)
 	ULARGE_INTEGER FreeBytesAvailable;
 	ULARGE_INTEGER TotalNumberOfBytes;
 	ULARGE_INTEGER TotalNumberOfFreeBytes;
-	if (GetDiskFreeSpaceExA(destindir.toLocal8Bit(), &FreeBytesAvailable, &TotalNumberOfBytes, &TotalNumberOfFreeBytes))
+	if (GetDiskFreeSpaceExA(destindir.toAscii(), &FreeBytesAvailable, &TotalNumberOfBytes, &TotalNumberOfFreeBytes))
 	{
 		if (FreeBytesAvailable.QuadPart < 1024)
 			outofspace = true;
@@ -1311,7 +1344,7 @@ QStringList unetbootin::filteroutlistL(QStringList listofdata, QList<QRegExp> li
 	}
 }
 
-void unetbootin::extractiso(QString isofile, QString exoutputdir)
+void unetbootin::extractiso(QString isofile)
 {
 	if (!sdesc2->text().contains(trcurrent))
 	{
@@ -1326,11 +1359,11 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 		randtmpfile tmpoutsubarchive(ubntmpf, subarchivename.right(3));
 		pdesc1->setText(tr("<b>Extracting compressed iso:</b> %1").arg(subarchivename));
 		extractfile(subarchivename, tmpoutsubarchive.fileName(), isofile);
-		return extractiso(tmpoutsubarchive.fileName(), exoutputdir);
+		return extractiso(tmpoutsubarchive.fileName());
 	}
 	if (listfilesizedirpair.first.first.contains(QDir::toNativeSeparators("rescue/KRD.VERSION"), Qt::CaseInsensitive))
 	{
-		return extractiso_krd10(isofile, exoutputdir);
+		return extractiso_krd10(isofile);
 	}
 	QFileInfo isofileFI(isofile);
 	qint64 isofileSize = isofileFI.size();
@@ -1352,7 +1385,7 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 					randtmpfile tmpoutsubarchive(ubntmpf, subarchivename.right(3));
 					pdesc1->setText(tr("<b>Extracting compressed iso:</b> %1").arg(subarchivename));
 					extractfile(subarchivename, tmpoutsubarchive.fileName(), isofile);
-					return extractiso(tmpoutsubarchive.fileName(), exoutputdir);
+					return extractiso(tmpoutsubarchive.fileName());
 				}
 			}
 		}
@@ -1443,14 +1476,14 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 	kernelOpts = extractcfg(isofile, listfilesizedirpair.first.first);
 	extraoptionsPL = extractcfgL(isofile, listfilesizedirpair.first.first);
 #ifndef NOEXTRACTKERNEL
-	extractkernel(isofile, QString("%1ubnkern").arg(exoutputdir), listfilesizedirpair.first);
+	extractkernel(isofile, QString("%1ubnkern").arg(targetPath), listfilesizedirpair.first);
 #endif
 #ifndef NOEXTRACTINITRD
-	extractinitrd(isofile, QString("%1ubninit").arg(exoutputdir), listfilesizedirpair.first);
+	extractinitrd(isofile, QString("%1ubninit").arg(targetPath), listfilesizedirpair.first);
 #endif
 	}
 	QStringList createdpaths = makepathtree(targetDrive, directorypathnames);
-	QFile ubnpathlF(QDir::toNativeSeparators(QString("%1ubnpathl.txt").arg(exoutputdir)));
+	QFile ubnpathlF(QDir::toNativeSeparators(QString("%1ubnpathl.txt").arg(targetPath)));
 	if (ubnpathlF.exists())
 	{
 		rmFile(ubnpathlF);
@@ -1463,7 +1496,7 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 	}
 	ubnpathlF.close();
 	QStringList extractedfiles = extractallfiles(isofile, targetDrive, listfilesizedirpair.first, filepathnames);
-	QFile ubnfilelF(QDir::toNativeSeparators(QString("%1ubnfilel.txt").arg(exoutputdir)));
+	QFile ubnfilelF(QDir::toNativeSeparators(QString("%1ubnfilel.txt").arg(targetPath)));
 	if (ubnfilelF.exists())
 	{
 		rmFile(ubnfilelF);
@@ -1476,19 +1509,19 @@ void unetbootin::extractiso(QString isofile, QString exoutputdir)
 	}
 	ubnfilelF.close();
 #ifdef XPUD
-	rmFile(QString("%1boot.cat").arg(exoutputdir));
-	rmFile(QString("%1isolinux.bin").arg(exoutputdir));
-	rmFile(QString("%1syslinux.cfg").arg(exoutputdir));
-	QFile::rename(QString("%1isolinux.cfg").arg(exoutputdir), QString("%1syslinux.cfg").arg(exoutputdir));
+	rmFile(QString("%1boot.cat").arg(targetPath));
+	rmFile(QString("%1isolinux.bin").arg(targetPath));
+	rmFile(QString("%1syslinux.cfg").arg(targetPath));
+	QFile::rename(QString("%1isolinux.cfg").arg(targetPath), QString("%1syslinux.cfg").arg(targetPath));
 	if (installType == tr("USB Drive"))
 	{
-		rmFile(QString("%1ubnfilel.txt").arg(exoutputdir));
-		rmFile(QString("%1ubnpathl.txt").arg(exoutputdir));
+		rmFile(QString("%1ubnfilel.txt").arg(targetPath));
+		rmFile(QString("%1ubnpathl.txt").arg(targetPath));
 	}
 #endif
 }
 
-void unetbootin::extractiso_krd10(QString isofile, QString exoutputdir)
+void unetbootin::extractiso_krd10(QString isofile)
 {
 	if (!sdesc2->text().contains(trcurrent))
 	{
@@ -1537,7 +1570,7 @@ void unetbootin::extractiso_krd10(QString isofile, QString exoutputdir)
 	if (!bootpaths.contains("rescue"))
 		bootpaths.append("rescue");
 	QStringList createdpaths = makepathtree(targetDrive, bootpaths);
-	QFile ubnpathlF(QDir::toNativeSeparators(QString("%1ubnpathl.txt").arg(exoutputdir)));
+	QFile ubnpathlF(QDir::toNativeSeparators(QString("%1ubnpathl.txt").arg(targetPath)));
 	if (ubnpathlF.exists())
 	{
 		rmFile(ubnpathlF);
@@ -1562,7 +1595,7 @@ void unetbootin::extractiso_krd10(QString isofile, QString exoutputdir)
 		extractedfiles.append(QString("%1rescue%2rescue.iso").arg(targetDrive).arg(QDir::toNativeSeparators("/")));
 	//QFile::copy(isofile, QString("%1rescue%2rescue.iso").arg(targetDrive).arg(QDir::toNativeSeparators("/")));
 	copyfilegui(isofile, QString("%1rescue%2rescue.iso").arg(targetDrive).arg(QDir::toNativeSeparators("/")));
-	QFile ubnfilelF(QDir::toNativeSeparators(QString("%1ubnfilel.txt").arg(exoutputdir)));
+	QFile ubnfilelF(QDir::toNativeSeparators(QString("%1ubnfilel.txt").arg(targetPath)));
 	if (ubnfilelF.exists())
 	{
 		rmFile(ubnfilelF);
@@ -2630,9 +2663,12 @@ void unetbootin::sysreboot()
 	AdjustTokenPrivileges(hToken, FALSE, &tkp, 0, (PTOKEN_PRIVILEGES)NULL, 0);
 	ExitWindowsEx(EWX_REBOOT, EWX_FORCE);
 	#endif
-	#ifdef Q_OS_UNIX
+	#ifdef Q_OS_LINUX
 	callexternapp("init", "6 &");
 	#endif
+#ifdef Q_OS_MAC
+callexternapp("shutdown", "-r now &");
+#endif
 }
 
 QString unetbootin::callexternapp(QString xexecFile, QString xexecParm)
@@ -2647,8 +2683,34 @@ QString unetbootin::callexternapp(QString xexecFile, QString xexecParm)
 	return cxat.retnValu;
 }
 
+QString unetbootin::callexternappWriteToStdin(QString xexecFile, QString xexecParm, QString xwriteToStdin)
+{
+	QEventLoop cxaw;
+	callexternappWriteToStdinT cxat;
+	connect(&cxat, SIGNAL(finished()), &cxaw, SLOT(quit()));
+	cxat.execFile = xexecFile;
+	cxat.execParm = xexecParm;
+	cxat.writeToStdin = xwriteToStdin;
+	cxat.start();
+	cxaw.exec();
+	return cxat.retnValu;
+}
+
 QString unetbootin::getdevluid(QString voldrive)
 {
+#ifdef Q_OS_MAC
+	QString diskutilinfo = callexternapp("diskutil", "info " + voldrive);
+	QString uuidS = getuuid(voldrive, diskutilinfo);
+	if (uuidS == "None")
+	{
+		return QString("LABEL=%1").arg(getlabel(voldrive, diskutilinfo));
+	}
+	else
+	{
+		return QString("UUID=%1").arg(uuidS);
+	}
+#endif
+#ifndef Q_OS_MAC
 	QString uuidS = getuuid(voldrive);
 	if (uuidS == "None")
 	{
@@ -2658,10 +2720,28 @@ QString unetbootin::getdevluid(QString voldrive)
 	{
 		return QString("UUID=%1").arg(uuidS);
 	}
+#endif
 }
+
+#ifdef Q_OS_MAC
+QString unetbootin::getlabel(QString voldrive, QString diskutilinfo)
+{
+	QStringList diskutiloutput = diskutilinfo.split("\n");
+	QStringList labelLines = diskutiloutput.filter("Volume Name");
+	if (labelLines.size() == 0)
+		return "None";
+	QStringList labelAtEnd = labelLines.at(0).split(":");
+	if (labelAtEnd.size() < 2)
+		return "None";
+	return labelAtEnd.at(labelAtEnd.size()-1).trimmed();
+}
+#endif
 
 QString unetbootin::getlabel(QString voldrive)
 {
+#ifdef Q_OS_MAC
+	return getlabel(voldrive, callexternapp("diskutil", "info " + voldrive));
+#endif
 	#ifdef Q_OS_WIN32
 	voldrive.append("\\");
 	wchar_t vollabel[50];
@@ -2676,7 +2756,7 @@ QString unetbootin::getlabel(QString voldrive)
 		return vollabelS;
 	}
 	#endif
-	#ifdef Q_OS_UNIX
+	#ifdef Q_OS_LINUX
 	QString volidpS = "";
 	if (!volidcommand.isEmpty())
 		volidpS = QString(callexternapp(volidcommand, QString("-l %1").arg(voldrive))).remove("\r").remove("\n").trimmed();
@@ -2697,8 +2777,49 @@ QString unetbootin::getlabel(QString voldrive)
 	#endif
 }
 
+#ifdef Q_OS_MAC
+QString unetbootin::getuuid(QString voldrive, QString diskutilinfo)
+{
+	QStringList diskutiloutput = diskutilinfo.split("\n");
+	QStringList uuidList = diskutiloutput.filter("UUID"); // TODO untested
+	if (uuidList.size() > 0)
+	{
+		uuidList = uuidList.at(0).split(" ");
+		return uuidList.at(uuidList.size()-1).trimmed();
+	}
+	// otherwise FAT32 or FAT16; return serial number
+	bool isFat32 = diskutiloutput.filter("FAT32").size() > 0;
+	if (!isFat32)
+	{
+		if (diskutiloutput.filter("FAT16").size() == 0 && diskutiloutput.filter("FAT12").size() == 0)
+			return "None";
+	}
+	callexternapp("hdiutil", "unmount "+targetDev);
+	QFile rawDevice(voldrive);
+	rawDevice.open(QIODevice::ReadOnly);
+	if (isFat32)
+	{
+		rawDevice.seek(67);
+	}
+	else // FAT16 or FAT12
+	{
+		rawDevice.seek(39);
+	}
+	unsigned char pserial[4];
+	rawDevice.read((char*)pserial, 4);
+	QString serialNumber = QString::number(pserial[3], 16).rightJustified(2, '0')+QString::number(pserial[2], 16).rightJustified(2, '0')+"-"+QString::number(pserial[1], 16).rightJustified(2, '0')+QString::number(pserial[0], 16).rightJustified(2, '0');
+	rawDevice.close();
+	callexternapp("hdiutil", "mount "+targetDev);
+	return serialNumber.toUpper();
+}
+
+#endif
+
 QString unetbootin::getuuid(QString voldrive)
 {
+#ifdef Q_OS_MAC
+	return getuuid(voldrive, callexternapp("diskutil", "info " + voldrive));
+#endif
 	#ifdef Q_OS_WIN32
 	voldrive.append("\\");
 	DWORD volserialnum;
@@ -2717,7 +2838,7 @@ QString unetbootin::getuuid(QString voldrive)
 		return tvolsernum;
 	}
 	#endif
-	#ifdef Q_OS_UNIX
+	#ifdef Q_OS_LINUX
 	QString volidpS = "";
 	if (!volidcommand.isEmpty())
 		volidpS = QString(callexternapp(volidcommand, QString("-u %1").arg(voldrive))).remove("\r").remove("\n").trimmed();
@@ -2773,10 +2894,7 @@ QString unetbootin::locatecommand(QString commandtolocate, QString reqforinstall
 
 QString unetbootin::locatedevicenode(QString mountpoint)
 {
-	QFile procmountsF("/proc/mounts");
-	procmountsF.open(QIODevice::ReadOnly | QIODevice::Text);
-	QTextStream procmountsS(&procmountsF);
-	QStringList rawdeviceL = procmountsS.readAll().replace("\t", " ").split("\n").filter("/dev/").filter(QString(" %1 ").arg(mountpoint));
+	QStringList rawdeviceL = QString(callexternapp("mount", "")).replace("\t", " ").split("\n").filter("/dev/").filter(QString(" %1 ").arg(mountpoint));
 	if (rawdeviceL.isEmpty())
 	{
 		return "NOT FOUND";
@@ -2789,26 +2907,23 @@ QString unetbootin::locatedevicenode(QString mountpoint)
 
 QString unetbootin::locatemountpoint(QString devicenode)
 {
-	QFile procmountsF("/proc/mounts");
-	procmountsF.open(QIODevice::ReadOnly | QIODevice::Text);
-	QTextStream procmountsS(&procmountsF);
-	QStringList procmountsL;
-	procmountsL = procmountsS.readAll().split("\n").filter(devicenode);
-	if (procmountsL.isEmpty())
+	QStringList procmountsL = callexternapp("mount", "").split("\n");
+	for (int i = 0; i < procmountsL.size(); ++i)
 	{
-		return "NOT MOUNTED";
+		QString mountinfo = procmountsL.at(i).split("\t").join(" ");
+		QStringList deviceAndRest = mountinfo.split(" on ");
+		if (deviceAndRest.size() < 2)
+			continue;
+		if (deviceAndRest.at(0).trimmed() != devicenode)
+			continue;
+		QStringList mountpointAndOptions = deviceAndRest.at(1).split(" (").join(" type ").split(" type ");
+		if (mountpointAndOptions.size() < 1)
+			continue;
+		QString mountpoint = mountpointAndOptions.at(0).trimmed();
+		if (QDir(mountpoint).exists())
+			return mountpoint;
 	}
-	else
-	{
-		if (procmountsL.at(0).split("\t").join(" ").split(" ").size() >= 2)
-		{
-						return procmountsL.at(0).split("\t").join(" ").split(" ")[1].replace("\\040", " ");
-		}
-		else
-		{
-			return "NOT MOUNTED";
-		}
-	}
+	return "NOT MOUNTED";
 }
 
 QString unetbootin::getGrubNotation(QString devicenode)
@@ -2884,7 +2999,7 @@ void unetbootin::installsvzip()
 
 void unetbootin::configsysEdit()
 {
-	SetFileAttributesA(QDir::toNativeSeparators(QString("%1config.sys").arg(targetDrive)).toLocal8Bit(), FILE_ATTRIBUTE_NORMAL);
+	SetFileAttributesA(QDir::toNativeSeparators(QString("%1config.sys").arg(targetDrive)).toAscii(), FILE_ATTRIBUTE_NORMAL);
 	QFile::copy(QDir::toNativeSeparators(QString("%1config.sys").arg(targetDrive)), QString("%1config.sys").arg(targetPath));
 	QFile::copy(QDir::toNativeSeparators(QString("%1config.sys").arg(targetDrive)), QString("%1confignw.txt").arg(targetPath));
 	QFile confignwFile(QString("%1confignw.txt").arg(targetPath));
@@ -3062,6 +3177,7 @@ void unetbootin::runinst()
 	tprogress->setValue(0);
 	installType = typeselect->currentText();
 	targetDrive = driveselect->currentText();
+	persistenceSpaceMB = this->persistencevalue->value();
 	QString ginstallDir;
 	QString installDir;
 	QString isotmpf = randtmpfile::getrandfilename(ubntmpf, "iso");
@@ -3094,17 +3210,23 @@ void unetbootin::runinst()
 			installDir = "boot/";
 			targetDev = devnboot;
 		}
+		devluid = getdevluid(targetDev);
 	}
 	if (installType == tr("USB Drive"))
 	{
 		targetDev = driveselect->currentText();
+		devluid = getdevluid(targetDev);
 		ginstallDir = "";
 		installDir = ginstallDir;
 		targetDrive = QString("%1/").arg(locatemountpoint(targetDev));
 	}
+#ifdef Q_OS_LINUX
 	rawtargetDev = QString(targetDev).remove(QRegExp("\\d$"));
+#endif
+#ifdef Q_OS_MAC
+	rawtargetDev = QString(targetDev).remove(QRegExp("s\\d$"));
+#endif
 	#endif
-	devluid = getdevluid(targetDev);
 	kernelLine = "kernel";
 	kernelLoc = QString("/%1ubnkern").arg(ginstallDir);
 	initrdLine = "initrd";
@@ -3146,11 +3268,11 @@ void unetbootin::runinst()
 		if (diskimagetypeselect->currentIndex() == diskimagetypeselect->findText(tr("ISO")))
 		{
 			if (!FloppyPath->text().startsWith("http://") && !FloppyPath->text().startsWith("ftp://"))
-				extractiso(FloppyPath->text(), targetPath);
+				extractiso(FloppyPath->text());
 			else
 			{
 				downloadfile(FloppyPath->text(), isotmpf);
-				extractiso(isotmpf, targetPath);
+				extractiso(isotmpf);
 			}
 			if (QFile::exists(QString("%1sevnz.exe").arg(ubntmpf)))
 			{
@@ -3232,6 +3354,14 @@ void unetbootin::runinst()
 	}
 	sdesc3->setText(QString("<b>%1 %2</b>").arg(sdesc3->text()).arg(trcurrent));
 	tprogress->setValue(0);
+	if (this->persistenceSpaceMB > 0)
+	{
+		this->kernelOpts += " persistent";
+		for (int i = 0; i < this->extraoptionsPL.second.second.size(); ++i)
+		{
+			this->extraoptionsPL.second.second[i] += " persistent";
+		}
+	}
 	instDetType();
 }
 
@@ -3533,9 +3663,62 @@ void unetbootin::replaceTextInFile(QString repfilepath, QRegExp replaceme, QStri
 	//mvFile(nrepfilepath, repfilepath);
 }
 
+void unetbootin::setLabel(QString devname, QString newlabel)
+{
+#ifdef Q_OS_LINUX
+	if (isext2)
+	{
+		callexternapp(e2labelcommand, devname+" "+newlabel);
+	}
+	else
+	{
+		callexternapp(mlabelcommand, "-i "+devname+" ::"+newlabel);
+	}
+#endif
+#ifdef Q_OS_MAC
+	callexternapp("diskutil", "rename "+devname+" "+newlabel);
+#endif
+#ifdef Q_OS_WIN32
+	callexternapp("label", devname+" "+newlabel);
+#endif
+	this->devlabel = QString(newlabel);
+	if (this->devluid.startsWith("LABEL="))
+		this->devluid = "LABEL="+newlabel;
+#ifdef Q_OS_MAC
+	this->targetPath = this->locatemountpoint(devname) + "/";
+	this->targetDrive = this->targetPath;
+#endif
+}
+
 QString unetbootin::fixkernelbootoptions(const QString &cfgfileCL)
 {
-	return QString(cfgfileCL).replace("rootfstype=iso9660", "rootfstype=auto").replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=%1").arg(devluid)).replace("theme:sabayon", "theme:sabayon cdroot_type=vfat").replace("pmedia=cd", "pmedia=usbflash").trimmed();
+	if (cfgfileCL.contains("archisolabel=") && (this->devlabel == "" || this->devlabel == "None"))
+	{
+		this->devlabel = this->getlabel(this->targetDev);
+		if  (this->installType == tr("USB Drive") && (this->devlabel == "" || this->devlabel == "None"))
+		{
+			QString isolabelopt = QString(cfgfileCL).trimmed();
+			int startIdx = isolabelopt.indexOf("archisolabel=");
+			if (startIdx >= 0)
+			{
+				isolabelopt = isolabelopt.right(isolabelopt.size() - startIdx - QString("archisolabel=").size()).trimmed();
+				int endIdx = isolabelopt.indexOf(" ");
+				if (endIdx > 0)
+				{
+					isolabelopt = isolabelopt.left(endIdx);
+					setLabel(this->targetDev, isolabelopt);
+				}
+			}
+		}
+	}
+	return QString(cfgfileCL)
+	.replace("rootfstype=iso9660", "rootfstype=auto")
+	.replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid))
+	.replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=%1").arg(devluid))
+	.replace("theme:sabayon", "theme:sabayon cdroot_type=vfat")
+	.replace("pmedia=cd", "pmedia=usbflash")
+	.replace(QRegExp("archisolabel=\\S{0,}"), QString("archisolabel=%1").arg(devlabel))
+	.trimmed();
 }
 
 void unetbootin::runinstusb()
@@ -3558,7 +3741,7 @@ void unetbootin::runinstusb()
 		instIndvfl("ubnexlnx", extlinuxcommand);
 		QFile::setPermissions(extlinuxcommand, QFile::ReadOwner|QFile::ExeOwner|QFile::ReadGroup|QFile::ExeGroup|QFile::ReadOther|QFile::ExeOther|QFile::WriteOwner);
 	#endif
-	#ifdef Q_OS_UNIX
+#ifdef Q_OS_LINUX
 		isext2 = false;
 		if (!volidcommand.isEmpty())
 		{
@@ -3577,25 +3760,79 @@ void unetbootin::runinstusb()
 		if (isext2)
 		{
 			pdesc1->setText(tr("Installing extlinux to %1").arg(targetDev));
-			callexternapp(extlinuxcommand, QString("-i %1").arg(targetPath));
+			callexternapp(extlinuxcommand, QString("-i \"%1\"").arg(targetPath));
 		}
 		else
 			callexternapp(syslinuxcommand, targetDev);
-	if (rawtargetDev != targetDev)
-	{
-		callexternapp(sfdiskcommand, QString("%1 -A%2").arg(rawtargetDev, QString(targetDev).remove(rawtargetDev)));
+		if (rawtargetDev != targetDev)
+		{
+			// make active
+			bool isOk = false;
+			int partitionNumber = QString(targetDev).remove(rawtargetDev).toInt(&isOk, 10);
+			if (isOk)
+			{
+				QString output = callexternapp("fdisk", "-l");
+				QStringList outputL = output.split('\n');
+				outputL = outputL.filter(targetDev);
+				if (outputL.size() > 0)
+				{
+					outputL = outputL.filter("*");
+					bool isActive = outputL.size() > 0;
+					if (!isActive)
+					{
+						QString fdiskWriteToStdin = "a\n";
+						fdiskWriteToStdin += (QString::number(partitionNumber) + "\n");
+						fdiskWriteToStdin += "w\n";
+						callexternappWriteToStdin("fdisk", rawtargetDev, fdiskWriteToStdin);
+					}
+				}
+			}
+			QFile usbmbrF(rawtargetDev);
+			QFile mbrbinF(":/mbr.bin");
+			#ifdef NOSTATIC
+			mbrbinF.setFileName(QFile::exists("/usr/share/syslinux/mbr.bin") ? "/usr/share/syslinux/mbr.bin" : "/usr/lib/syslinux/mbr.bin");
+			#endif
+			usbmbrF.open(QIODevice::WriteOnly);
+			mbrbinF.open(QIODevice::ReadOnly);
+			usbmbrF.write(mbrbinF.readAll());
+			mbrbinF.close();
+			usbmbrF.close();
+		}
+#endif
+#ifdef Q_OS_MAC
+		callexternapp(syslinuxcommand, targetDev);
+		callexternapp("hdiutil", "unmount "+targetDev);
 		QFile usbmbrF(rawtargetDev);
-		QFile mbrbinF(":/mbr.bin");
-		#ifdef NOSTATIC
-		mbrbinF.setFileName(QFile::exists("/usr/share/syslinux/mbr.bin") ? "/usr/share/syslinux/mbr.bin" : "/usr/lib/syslinux/mbr.bin");
-		#endif
+		QFile mbrbinF(resourceDir.absoluteFilePath("mbr.bin"));
 		usbmbrF.open(QIODevice::WriteOnly);
 		mbrbinF.open(QIODevice::ReadOnly);
 		usbmbrF.write(mbrbinF.readAll());
 		mbrbinF.close();
 		usbmbrF.close();
-	}
-	#endif
+		callexternapp("hdiutil", "unmount "+targetDev);
+		// make active
+		bool isOk = false;
+		int partitionNumber = QString(targetDev).remove(rawtargetDev).remove("s").toInt(&isOk, 10);
+		if (isOk)
+		{
+			QString output = callexternapp("diskutil", "list");
+			QStringList outputL = output.split('\n');
+			outputL = outputL.filter(QString(targetDev).replace("/dev/", ""));
+			if (outputL.size() > 0)
+			{
+				outputL = outputL.filter("*");
+				bool isActive = outputL.size() > 0;
+				if (!isActive)
+				{
+					QString fdiskWriteToStdin = ("flag "+QString::number(partitionNumber)+"\n");
+					fdiskWriteToStdin += "write\n";
+					fdiskWriteToStdin += "quit\n";
+					callexternappWriteToStdin("fdisk", "-e "+rawtargetDev, fdiskWriteToStdin);
+				}
+			}
+		}
+		callexternapp("hdiutil", "mount "+targetDev);
+#endif
 #ifndef XPUD
 	if (!dontgeneratesyslinuxcfg)
 	{
@@ -3685,6 +3922,37 @@ void unetbootin::fininstall()
 	pdesc1->setText(tr("Syncing filesystems"));
 	callexternapp("sync", "");
 	#endif
+	if (this->persistenceSpaceMB > 0)
+	{
+		pdesc1->setText(tr("Setting up persistence"));
+		this->tprogress->setMaximum(persistenceSpaceMB);
+		this->tprogress->setValue(0);
+#ifdef Q_OS_WIN32
+		QString mke2fscommand = instTempfl("mke2fs.exe", "exe");
+#endif
+		if (QFile::exists(QString("%1%2").arg(targetPath).arg("casper-rw")))
+		{
+			rmFile(QString("%1%2").arg(targetPath).arg("casper-rw"));
+		}
+		QFile persistenceFile(QString("%1%2").arg(targetPath).arg("casper-rw"));
+		persistenceFile.open(QFile::WriteOnly);
+		int bytesWritten = 1048576;
+		char writeEmpty[1048576];
+		memset(writeEmpty, 0, 1048576);
+		for (int i = 0; i < persistenceSpaceMB && bytesWritten == 1048576; ++i)
+		{
+			this->tprogress->setValue(i);
+			bytesWritten = persistenceFile.write(writeEmpty, 1048576);
+		}
+		this->tprogress->setValue(this->tprogress->maximum());
+#ifdef Q_OS_UNIX
+		callexternapp(mke2fscommand, QString("-F \"%1%2\"").arg(targetPath).arg("casper-rw"));
+#endif
+#ifdef Q_OS_WIN32
+		callexternappWriteToStdin(mke2fscommand, QString("\"%1%2\"").arg(targetPath).arg("casper-rw"), "\n");
+		rmFile(mke2fscommand);
+#endif
+	}
 	pdesc1->setText("");
 	progresslayer->setEnabled(false);
 	progresslayer->hide();
@@ -3698,6 +3966,13 @@ void unetbootin::fininstall()
 	}
 	if (installType == tr("USB Drive"))
 	{
+#ifndef Q_OS_MAC
 		rebootmsgtext->setText(tr("After rebooting, select the USB boot option in the BIOS boot menu.%1\nReboot now?").arg(postinstmsg));
+#endif
+#ifdef Q_OS_MAC
+		rebootmsgtext->setText(tr("The created USB device will not boot off a Mac. Insert it into a PC, and select the USB boot option in the BIOS boot menu.%1").arg(postinstmsg));
+		this->frebootbutton->setEnabled(false);
+		this->frebootbutton->hide();
+#endif
 	}
 }

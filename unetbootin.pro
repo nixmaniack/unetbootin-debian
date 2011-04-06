@@ -14,6 +14,7 @@ SOURCES += main.cpp \
 QT += core \
     gui \
     network
+ICON = unetbootin.icns
 TRANSLATIONS += unetbootin.ts \
     unetbootin_am.ts \
     unetbootin_ar.ts \
@@ -22,11 +23,13 @@ TRANSLATIONS += unetbootin.ts \
     unetbootin_bn.ts \
     unetbootin_pt_BR.ts \
     unetbootin_cs.ts \
+    unetbootin_ur.ts \
     unetbootin_da.ts \
     unetbootin_es.ts \
     unetbootin_et.ts \
     unetbootin_el.ts \
     unetbootin_eo.ts \
+    unetbootin_eu.ts \
     unetbootin_fi.ts \
     unetbootin_fo.ts \
     unetbootin_gl.ts \
@@ -60,5 +63,6 @@ TRANSLATIONS += unetbootin.ts \
     unetbootin_sl.ts \
     unetbootin_sr.ts \
     unetbootin_sv.ts \
+    unetbootin_sw.ts \
     unetbootin_pl.ts
 DEFINES += NOSTATIC

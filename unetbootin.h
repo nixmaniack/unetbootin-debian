@@ -128,6 +128,16 @@ public:
 	void run();
 };
 
+class callexternappWriteToStdinT : public QThread
+{
+public:
+	QString execFile;
+	QString execParm;
+	QString writeToStdin;
+	QString retnValu;
+	void run();
+};
+
 class copyfileT : public QThread
 {
 	Q_OBJECT
@@ -191,6 +201,8 @@ public:
 	bool searchsymlinks;
 	bool ignoreoutofspace;
 	bool dontgeneratesyslinuxcfg;
+	int persistenceSpaceMB;
+	QString extraBootOptions;
 	QStringList locatedsyslinuxcfgfiles;
 	QString targetDrive;
 	QString targetPath;
@@ -209,13 +221,18 @@ public:
 	#ifdef Q_OS_UNIX
 	QString fdiskcommand;
 	QString dfcommand;
-	QString sfdiskcommand;
 	QString blkidcommand;
 	QString volidcommand;
 	QString syslinuxcommand;
 	QString extlinuxcommand;
+	QString mke2fscommand;
+	QString mlabelcommand;
+	QString e2labelcommand;
 	bool isext2;
 	#endif
+#ifdef Q_OS_MAC
+	QDir resourceDir;
+#endif
 	bool ubninitialize(QList<QPair<QString, QString> > oppairs);
 	QString displayfisize(quint64 fisize);
 	QPair<QPair<QStringList, QList<quint64> >, QStringList> listarchiveconts(QString archivefile);
@@ -233,8 +250,8 @@ public:
 	QString filteroutlist(QString listofdata, QList<QRegExp> listofmatches);
 	QString filteroutlist(QStringList listofdata, QList<QRegExp> listofmatches);
 	QStringList filteroutlistL(QStringList listofdata, QList<QRegExp> listofmatches);
-	void extractiso(QString isofile, QString exoutputdir);
-	void extractiso_krd10(QString isofile, QString exoutputdir);
+	void extractiso(QString isofile);
+	void extractiso_krd10(QString isofile);
 	void copyfilegui(QString src, QString dst);
 	QStringList makepathtree(QString dirmkpathw, QStringList pathlist);
 	QStringList extractallfiles(QString archivefile, QString dirxfilesto, QPair<QStringList, QList<quint64> > filesizelist, QStringList outputfilelist);
@@ -260,15 +277,21 @@ public:
 	QPair<QString, int> filterBestMatch(QStringList ufStringList, QList<QRegExp> filterExpList);
 	void sysreboot();
 	static QString callexternapp(QString xexecFile, QString xexecParm);
+	static QString callexternappWriteToStdin(QString xexecFile, QString xexecParm, QString xwriteToStdin);
 	QString getdevluid(QString voldrive);
 	QString getlabel(QString voldrive);
 	QString getuuid(QString voldrive);
+#ifdef Q_OS_MAC
+	QString getlabel(QString voldrive, QString diskutilinfo);
+	QString getuuid(QString voldrive, QString diskutilinfo);
+#endif
 	void refreshdriveslist();
 	QStringList listcurdrives();
 	QStringList listsanedrives();
 	QStringList listalldrives();
 	void replaceTextInFile(QString repfilepath, QRegExp replaceme, QString replacewith);
 	QString fixkernelbootoptions(const QString &cfgfileCL);
+	void setLabel(QString devname, QString newlabel);
 	#ifdef Q_OS_UNIX
 	QString locatecommand(QString commandtolocate, QString reqforinstallmode, QString packagename);
 	QString locatedevicenode(QString mountpoint);
@@ -302,7 +325,6 @@ public:
 
 private slots:
 	void on_distroselect_currentIndexChanged(int distroselectIndex);
-	void on_showalldrivescheckbox_clicked();
 	void on_typeselect_currentIndexChanged(int typeselectIndex);
 	void on_dverselect_currentIndexChanged();
 	void on_diskimagetypeselect_currentIndexChanged();

@@ -7,15 +7,15 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2011-01-15 00:21-0500
-PO-Revision-Date: 2010-10-06 23:16+0000
-Last-Translator: Steven Avonds &lt;steven.avonds@gmail.com&gt;
+POT-Creation-Date: 2011-04-01 15:37-0400
+PO-Revision-Date: 2011-02-02 00:28+0000
+Last-Translator: Jeroen Roovers &lt;jer@gentoo.org&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2011-01-15 16:40+0000
-X-Generator: Launchpad (build 12200)
+X-Launchpad-Export-Date: 2011-04-02 17:48+0000
+X-Generator: Launchpad (build 12710)
 </translation>
     </message>
 </context>
@@ -30,462 +30,485 @@ X-Generator: Launchpad (build 12200)
 <context>
     <name>unetbootin</name>
     <message>
-        <location filename="unetbootin.cpp" line="189"/>
-        <location filename="unetbootin.cpp" line="261"/>
-        <location filename="unetbootin.cpp" line="262"/>
-        <location filename="unetbootin.cpp" line="329"/>
-        <location filename="unetbootin.cpp" line="450"/>
-        <location filename="unetbootin.cpp" line="543"/>
-        <location filename="unetbootin.cpp" line="3069"/>
-        <location filename="unetbootin.cpp" line="3082"/>
-        <location filename="unetbootin.cpp" line="3240"/>
-        <location filename="unetbootin.cpp" line="3695"/>
+        <location filename="unetbootin.cpp" line="202"/>
+        <location filename="unetbootin.cpp" line="296"/>
+        <location filename="unetbootin.cpp" line="297"/>
+        <location filename="unetbootin.cpp" line="364"/>
+        <location filename="unetbootin.cpp" line="480"/>
+        <location filename="unetbootin.cpp" line="3185"/>
+        <location filename="unetbootin.cpp" line="3198"/>
+        <location filename="unetbootin.cpp" line="3370"/>
+        <location filename="unetbootin.cpp" line="3962"/>
         <source>Hard Disk</source>
         <translation>Harde schijf</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="190"/>
-        <location filename="unetbootin.cpp" line="244"/>
-        <location filename="unetbootin.cpp" line="258"/>
-        <location filename="unetbootin.cpp" line="259"/>
-        <location filename="unetbootin.cpp" line="331"/>
-        <location filename="unetbootin.cpp" line="454"/>
-        <location filename="unetbootin.cpp" line="548"/>
-        <location filename="unetbootin.cpp" line="620"/>
-        <location filename="unetbootin.cpp" line="636"/>
-        <location filename="unetbootin.cpp" line="890"/>
-        <location filename="unetbootin.cpp" line="1421"/>
-        <location filename="unetbootin.cpp" line="1483"/>
-        <location filename="unetbootin.cpp" line="2402"/>
-        <location filename="unetbootin.cpp" line="2444"/>
-        <location filename="unetbootin.cpp" line="3073"/>
-        <location filename="unetbootin.cpp" line="3098"/>
-        <location filename="unetbootin.cpp" line="3244"/>
-        <location filename="unetbootin.cpp" line="3699"/>
+        <location filename="unetbootin.cpp" line="204"/>
+        <location filename="unetbootin.cpp" line="293"/>
+        <location filename="unetbootin.cpp" line="294"/>
+        <location filename="unetbootin.cpp" line="366"/>
+        <location filename="unetbootin.cpp" line="484"/>
+        <location filename="unetbootin.cpp" line="649"/>
+        <location filename="unetbootin.cpp" line="669"/>
+        <location filename="unetbootin.cpp" line="923"/>
+        <location filename="unetbootin.cpp" line="1454"/>
+        <location filename="unetbootin.cpp" line="1516"/>
+        <location filename="unetbootin.cpp" line="2435"/>
+        <location filename="unetbootin.cpp" line="2477"/>
+        <location filename="unetbootin.cpp" line="3189"/>
+        <location filename="unetbootin.cpp" line="3215"/>
+        <location filename="unetbootin.cpp" line="3374"/>
+        <location filename="unetbootin.cpp" line="3697"/>
+        <location filename="unetbootin.cpp" line="3966"/>
         <source>USB Drive</source>
-        <translation>USB-schijf</translation>
+        <translation>USB-station</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="191"/>
-        <location filename="unetbootin.cpp" line="208"/>
-        <location filename="unetbootin.cpp" line="209"/>
-        <location filename="unetbootin.cpp" line="297"/>
-        <location filename="unetbootin.cpp" line="571"/>
-        <location filename="unetbootin.cpp" line="572"/>
-        <location filename="unetbootin.cpp" line="3146"/>
+        <location filename="unetbootin.cpp" line="205"/>
+        <location filename="unetbootin.cpp" line="222"/>
+        <location filename="unetbootin.cpp" line="223"/>
+        <location filename="unetbootin.cpp" line="332"/>
+        <location filename="unetbootin.cpp" line="600"/>
+        <location filename="unetbootin.cpp" line="601"/>
+        <location filename="unetbootin.cpp" line="3268"/>
         <source>ISO</source>
         <translation>ISO</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="192"/>
-        <location filename="unetbootin.cpp" line="204"/>
-        <location filename="unetbootin.cpp" line="205"/>
-        <location filename="unetbootin.cpp" line="302"/>
-        <location filename="unetbootin.cpp" line="576"/>
-        <location filename="unetbootin.cpp" line="577"/>
-        <location filename="unetbootin.cpp" line="3138"/>
+        <location filename="unetbootin.cpp" line="206"/>
+        <location filename="unetbootin.cpp" line="218"/>
+        <location filename="unetbootin.cpp" line="219"/>
+        <location filename="unetbootin.cpp" line="337"/>
+        <location filename="unetbootin.cpp" line="605"/>
+        <location filename="unetbootin.cpp" line="606"/>
+        <location filename="unetbootin.cpp" line="3260"/>
         <source>Floppy</source>
         <translation>Diskette</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="222"/>
-        <location filename="unetbootin.cpp" line="226"/>
-        <location filename="unetbootin.cpp" line="230"/>
-        <location filename="unetbootin.cpp" line="234"/>
-        <location filename="unetbootin.cpp" line="240"/>
-        <location filename="unetbootin.cpp" line="252"/>
+        <location filename="unetbootin.cpp" line="239"/>
+        <location filename="unetbootin.cpp" line="245"/>
+        <location filename="unetbootin.cpp" line="249"/>
+        <location filename="unetbootin.cpp" line="253"/>
+        <location filename="unetbootin.cpp" line="259"/>
+        <location filename="unetbootin.cpp" line="287"/>
         <source>either</source>
         <translation>Ofwel</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="568"/>
+        <location filename="unetbootin.cpp" line="266"/>
+        <source>LiveUSB persistence</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="281"/>
+        <source>FAT32-formatted USB drive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="285"/>
+        <source>EXT2-formatted USB drive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="597"/>
         <source>Open Disk Image File</source>
         <translation>Open Disk Image-bestand</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="568"/>
+        <location filename="unetbootin.cpp" line="597"/>
         <source>All Files</source>
-        <translation></translation>
+        <translation>Alle bestanden</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="586"/>
-        <location filename="unetbootin.cpp" line="594"/>
-        <location filename="unetbootin.cpp" line="602"/>
+        <location filename="unetbootin.cpp" line="615"/>
+        <location filename="unetbootin.cpp" line="623"/>
+        <location filename="unetbootin.cpp" line="631"/>
         <source>All Files (*)</source>
         <translation>Alle bestanden (*)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="586"/>
+        <location filename="unetbootin.cpp" line="615"/>
         <source>Open Kernel File</source>
         <translation>Open Kernel-bestand</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="594"/>
+        <location filename="unetbootin.cpp" line="623"/>
         <source>Open Initrd File</source>
-        <translation>Open Initrd-bestand</translation>
+        <translation>Open initrd-bestand</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="602"/>
+        <location filename="unetbootin.cpp" line="631"/>
         <source>Open Bootloader Config File</source>
-        <translation>Open Bootloader configuratiebestand</translation>
+        <translation>Open bootloader-configuratiebestand</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="624"/>
+        <location filename="unetbootin.cpp" line="653"/>
         <source>Insert a USB flash drive</source>
         <translation>Sluit een USB-schijf aan</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="625"/>
+        <location filename="unetbootin.cpp" line="654"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
-        <translation>Er werden geen USB-schijven gevonden. Als je er wel één hebt aangesloten, probeer deze dan te formatteren als FAT32.</translation>
+        <translation>Er zijn geen USB-schijven gevonden. Als er wel één is aangesloten, formatteer deze dan als FAT32.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="640"/>
+        <location filename="unetbootin.cpp" line="673"/>
         <source>%1 not mounted</source>
         <translation>%1 niet aangekoppeld.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="641"/>
+        <location filename="unetbootin.cpp" line="674"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
         <translation>Je moet de USB drive %1 eerst aankoppelen (mounten). De meeste distributies doen dat automatisch als je de de USB drive verwijdert en vervolgens terugplaatst.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="656"/>
+        <location filename="unetbootin.cpp" line="689"/>
         <source>Select a distro</source>
         <translation>Selecteer een distributie</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="657"/>
+        <location filename="unetbootin.cpp" line="690"/>
         <source>You must select a distribution to load.</source>
         <translation>Je dient een distributie te selecteren om te laden.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="671"/>
+        <location filename="unetbootin.cpp" line="704"/>
         <source>Select a disk image file</source>
         <translation>Selecteer een disk image bestand.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="672"/>
+        <location filename="unetbootin.cpp" line="705"/>
         <source>You must select a disk image file to load.</source>
         <translation>Je dient een disk image-bestand te selecteren om in te laden.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="686"/>
+        <location filename="unetbootin.cpp" line="719"/>
         <source>Select a kernel and/or initrd file</source>
         <translation>Selecteer een kernel- en/of initrd-bestand</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="687"/>
+        <location filename="unetbootin.cpp" line="720"/>
         <source>You must select a kernel and/or initrd file to load.</source>
         <translation>Je dient een kernel- en/of initrd-bestand te selecteren om te laden</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="701"/>
+        <location filename="unetbootin.cpp" line="734"/>
         <source>Diskimage file not found</source>
         <translation>Disk image-bestand niet gevonden.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="702"/>
+        <location filename="unetbootin.cpp" line="735"/>
         <source>The specified diskimage file %1 does not exist.</source>
         <translation>Het gekozen disk image-bestand %1 bestaat niet.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="716"/>
+        <location filename="unetbootin.cpp" line="749"/>
         <source>Kernel file not found</source>
         <translation>Kernelbestand niet gevonden.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="717"/>
+        <location filename="unetbootin.cpp" line="750"/>
         <source>The specified kernel file %1 does not exist.</source>
         <translation>Het geselecteerde kernelbestand %1 bestaat niet.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="731"/>
+        <location filename="unetbootin.cpp" line="764"/>
         <source>Initrd file not found</source>
         <translation>Initrd-bestand niet gevonden</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="732"/>
+        <location filename="unetbootin.cpp" line="765"/>
         <source>The specified initrd file %1 does not exist.</source>
         <translation>Het geselecteerde initrd-bestand %1 bestaat niet.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="836"/>
+        <location filename="unetbootin.cpp" line="869"/>
         <source>%1 exists, overwrite?</source>
         <translation>%1 bestaat al, wil je het overschrijven?</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="837"/>
+        <location filename="unetbootin.cpp" line="870"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
         <translation>Het bestand %1 bestaat al. Klik &apos;Ja op alles&apos; om het te overschrijven en dit voor alle volgende situaties ook te doen, &apos;Ja&apos; om het te overschrijven en de volgende keer weer te vragen en &apos;Nee&apos; om de huidige versie te behouden. Als je twijfelt, klik dan op &apos;Ja op alles&apos;.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="863"/>
+        <location filename="unetbootin.cpp" line="896"/>
         <source>%1 is out of space, abort installation?</source>
         <translation>Geen ruimte meer op %1, installatie annuleren?</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="864"/>
+        <location filename="unetbootin.cpp" line="897"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
         <translation>De directory %1 heeft geen vrije ruimte meer. Klik &apos;Ja&apos; om te annuleren, of &apos;Nee&apos; om deze fout te negeren en toch proberen door te gaan. Kies &apos;Nee op alles&apos; om alle toekomstige ruimte-meldingen te negeren.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="958"/>
+        <location filename="unetbootin.cpp" line="991"/>
         <source>Locating kernel file in %1</source>
         <translation>Kernelbestand aan het zoeken in %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="999"/>
+        <location filename="unetbootin.cpp" line="1032"/>
         <source>Copying kernel file from %1</source>
         <translation>Kernelbestand aan het kopiëren van %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1005"/>
+        <location filename="unetbootin.cpp" line="1038"/>
         <source>Locating initrd file in %1</source>
         <translation>initrd-bestand aan het zoeken in %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1046"/>
+        <location filename="unetbootin.cpp" line="1079"/>
         <source>Copying initrd file from %1</source>
         <translation>initrd-bestand aan het kopiëren van %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1052"/>
-        <location filename="unetbootin.cpp" line="1112"/>
+        <location filename="unetbootin.cpp" line="1085"/>
+        <location filename="unetbootin.cpp" line="1145"/>
         <source>Extracting bootloader configuration</source>
         <translation>bootloader-configuratie aan het uitpakken</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1327"/>
-        <location filename="unetbootin.cpp" line="1353"/>
+        <location filename="unetbootin.cpp" line="1360"/>
+        <location filename="unetbootin.cpp" line="1386"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Iso bestand uitpakken:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1582"/>
+        <location filename="unetbootin.cpp" line="1615"/>
         <source>Copying file, please wait...</source>
         <translation>Bestand wordt gekopieerd, even geduld...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1583"/>
-        <location filename="unetbootin.cpp" line="2387"/>
+        <location filename="unetbootin.cpp" line="1616"/>
+        <location filename="unetbootin.cpp" line="2420"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>&lt;b&gt;Bron:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1584"/>
-        <location filename="unetbootin.cpp" line="2388"/>
+        <location filename="unetbootin.cpp" line="1617"/>
+        <location filename="unetbootin.cpp" line="2421"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1585"/>
+        <location filename="unetbootin.cpp" line="1618"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;Gekopieerd:&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1623"/>
+        <location filename="unetbootin.cpp" line="1656"/>
         <source>Extracting files, please wait...</source>
         <translation>Bestanden uitpakken, één moment...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1624"/>
+        <location filename="unetbootin.cpp" line="1657"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Archief:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1625"/>
+        <location filename="unetbootin.cpp" line="1658"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Bron:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1626"/>
+        <location filename="unetbootin.cpp" line="1659"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Bestemming:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1627"/>
+        <location filename="unetbootin.cpp" line="1660"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
         <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; 0 van%1 bestand(en)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1630"/>
+        <location filename="unetbootin.cpp" line="1663"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
         <translation>&lt;b&gt;Bron::&lt;/b&gt; %1 (%2)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1631"/>
+        <location filename="unetbootin.cpp" line="1664"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
         <translation>&lt;b&gt;Bestemming:&lt;/b&gt; %1%2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1632"/>
+        <location filename="unetbootin.cpp" line="1665"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
         <translation>&lt;b&gt;Uitgepakt:&lt;/b&gt; %1 van %2 bestand(en)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2386"/>
+        <location filename="unetbootin.cpp" line="2419"/>
         <source>Downloading files, please wait...</source>
         <translation>Bestanden worden gedownload, één momentje...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2389"/>
+        <location filename="unetbootin.cpp" line="2422"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;Gedownload:&lt;/b&gt; 0 bytes</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2466"/>
-        <location filename="unetbootin.cpp" line="2481"/>
+        <location filename="unetbootin.cpp" line="2499"/>
+        <location filename="unetbootin.cpp" line="2514"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;Gedownload:&lt;b&gt; %1 van %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2496"/>
+        <location filename="unetbootin.cpp" line="2529"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;Gekopieerd:&lt;/b&gt; %1 of %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2572"/>
+        <location filename="unetbootin.cpp" line="2605"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>Aan het zoeken in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2576"/>
+        <location filename="unetbootin.cpp" line="2609"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
         <translation>%1/%2  overeenkomsten op &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2761"/>
+        <location filename="unetbootin.cpp" line="2882"/>
         <source>%1 not found</source>
         <translation>%1 niet gevonden</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2762"/>
+        <location filename="unetbootin.cpp" line="2883"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
         <translation>%1 niet gevonden. Dit is noodzakelijk voor de %2 installatiemodus.
 Installeer het &quot;%3&quot; pakket of het equivalent voor jouw distributie.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3051"/>
+        <location filename="unetbootin.cpp" line="3166"/>
         <source>(Current)</source>
         <translation>(huidig)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3052"/>
+        <location filename="unetbootin.cpp" line="3167"/>
         <source>(Done)</source>
         <translation>(Voltooid)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3319"/>
+        <location filename="unetbootin.cpp" line="3449"/>
         <source>Configuring grub2 on %1</source>
         <translation>grub 2 configureren op %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3331"/>
+        <location filename="unetbootin.cpp" line="3461"/>
         <source>Configuring grldr on %1</source>
         <translation>grldr configureren op %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3359"/>
+        <location filename="unetbootin.cpp" line="3489"/>
         <source>Configuring grub on %1</source>
         <translation>grub configureren op %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3544"/>
+        <location filename="unetbootin.cpp" line="3726"/>
         <source>Installing syslinux to %1</source>
         <translation>syslinux installeren op %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3579"/>
+        <location filename="unetbootin.cpp" line="3761"/>
         <source>Installing extlinux to %1</source>
         <translation>extlinux installeren op %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3685"/>
+        <location filename="unetbootin.cpp" line="3921"/>
         <source>Syncing filesystems</source>
         <translation>Bestandssystemen synchroniseren</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3697"/>
+        <location filename="unetbootin.cpp" line="3926"/>
+        <source>Setting up persistence</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.cpp" line="3964"/>
         <source>After rebooting, select the </source>
         <translation>Na het herstarten, selecteer de </translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3701"/>
+        <location filename="unetbootin.cpp" line="3969"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
         <translation>Kies, na het herstarten, in je BIOS de optie &apos;USB boot&apos; %1
 Nu herstarten?</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="27"/>
+        <location filename="unetbootin.cpp" line="3972"/>
+        <source>The created USB device will not boot off a Mac. Insert it into a PC, and select the USB boot option in the BIOS boot menu.%1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="distrolst.cpp" line="41"/>
         <source>
 *IMPORTANT* Before rebooting, place an Ubuntu alternate (not desktop) install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.ubuntu.com</source>
         <translation>
 *BELANGRIJK* Plaats voor het herstarten een Ubuntu Alternate (geen desktop)ISO-bestand in de hoofdmap van uw harde- of USB-schijf. Deze ISO-bestanden zijn beschikbaar op cdimage.ubuntu.cm</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="219"/>
+        <location filename="distrolst.cpp" line="232"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;mirrors.kernel.org&apos; when prompted for a server, and enter &apos;/centos/%1/os/%2&apos; when asked for the folder.</source>
         <translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;mirrors.kernel.org&apos; in, en voer &apos;/centos/%1/os/%2&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="275"/>
+        <location filename="distrolst.cpp" line="288"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
         <translation>
 *BELANGRIJK* Plaats voor het herstarten een Debian-ISO-beeldbestand in de hoofdmap van uw harde- of USB-schijf. Deze ISO-bestanden zijn beschikbaar op cdimage.debian.org</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="368"/>
+        <location filename="distrolst.cpp" line="381"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;download.fedora.redhat.com&apos; in, en voer &apos;/pub/fedora/linux/development/%1/os&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="374"/>
+        <location filename="distrolst.cpp" line="387"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;download.fedora.redhat.com&apos; in, en voer &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="734"/>
+        <location filename="distrolst.cpp" line="747"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;download.opensuse.org&apos; in, en voer &apos;/factory/repo/oss&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="740"/>
+        <location filename="distrolst.cpp" line="753"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *BELANGRIJK* Negeer na het herstarten mogelijke foutmeldingen, kies &apos;back&apos; als gevraagd wordt om een CD. Ga dan naar het hoofdmenu, kies de optie &apos;Start installatie&apos;, kies &apos;Netwerk&apos; als bron, kies &apos;HTTP&apos; als protocol. Als gevraagd wordt om een server voer je &apos;download.opensuse.org&apos; in, en voer &apos;/distribution/%1/repo/oss&apos; wanneer gevraagd wordt naar de directory.</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="22"/>
-        <location filename="unetbootin.cpp" line="652"/>
+        <location filename="distrover.cpp" line="23"/>
+        <location filename="unetbootin.cpp" line="685"/>
         <source>== Select Distribution ==</source>
         <translation>== Selecteer distributie ==</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="22"/>
-        <location filename="distrover.cpp" line="26"/>
+        <location filename="distrover.cpp" line="23"/>
+        <location filename="distrover.cpp" line="27"/>
         <source>== Select Version ==</source>
         <translation>== Selecteer versie ==</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="23"/>
+        <location filename="distrover.cpp" line="24"/>
         <source>Welcome to &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, the Universal Netboot Installer. Usage:&lt;ol&gt;&lt;li&gt;Select a distribution and version to download from the list above, or manually specify files to load below.&lt;/li&gt;&lt;li&gt;Select an installation type, and press OK to begin installing.&lt;/li&gt;&lt;/ol&gt;</source>
         <translation>Welkom bij &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;, ofwel &apos;Universal Netboot Installer&apos;. Gebruik:&lt;ol&gt;&lt;li&gt;Selecteer een distributie en versie om te downloaden van de lijst hierboven, of kies handmatig bestanden om te laden, hier beneden.&lt;/li&gt;&lt;li&gt;Kies een installatietype en klik OK om te beginnen.&lt;/li&gt;&lt;/ol&gt;</translation>
     </message>
     <message>
-        <location filename="distrover.cpp" line="28"/>
+        <location filename="distrover.cpp" line="29"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP).</source>
         <translation>&lt;b&gt;Webpagina:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Omschrijving:&lt;/b&gt; Arch Linux is een lichtgewicht distributie waarbij de nadruk ligt op optimalisatie voor snelheid en flexibiliteit.&lt;br/&gt;&lt;b&gt;Installatieopmerkingen:&lt;/b&gt; De standaardversie biedt de mogelijkheid om te installeren via internet (FTP).</translation>
     </message>
@@ -547,7 +570,7 @@ Nu herstarten?</translation>
     <message>
         <location filename="distrover.cpp" line="90"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeNAS is an embedded open source NAS (Network-Attached Storage) distribution based on FreeBSD.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The LiveCD version creates a RAM drive for FreeNAS, and uses a FAT formatted floppy disk or USB key for saving the configuration file. The embedded version allows installation to hard disk.</source>
-        <translation>&lt;b&gt;Webpagina:&lt;/b&gt; &lt;a href=&quot;http://freenas.org/&quot;&gt;http://www.freenas.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Omschrijving:&lt;/b&gt; FreeNAS is opensource en een geïntegreerde NAS(Network-Attached Storage)-distributie die gebaseerd is op FreeBSD.&lt;br/&gt;&lt;b&gt;Installatieopmerkingen:&lt;/b&gt; De Live-cdversie maakt een RAM-drive aan voor FreeNAS en gebruikt een FAT-geformatteerde floppy- of USB-disk om het configuratiebestand op te slaan. Met de zogeheten &apos;embedded&apos; versie kunt u FreeNAS volledig installeren op uw harde schijf.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="95"/>
@@ -597,7 +620,7 @@ Nu herstarten?</translation>
     <message>
         <location filename="distrover.cpp" line="145"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Mandriva is a user-friendly distro formerly known as Mandrake Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over the internet (FTP) or via pre-downloaded &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;&quot;Free&quot; iso image files&lt;/a&gt;.</source>
-        <translation>&lt;b&gt;Website:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Beschrijving:&lt;/b&gt; Mandriva is een gebruiksvriendelijke distributie, voorheen bekend als Mandrake Linux.&lt;br/&gt;&lt;b&gt;Opmerkingen m.b.t. installatie:&lt;/b&gt; Met de live versie kan worden opgestart naar Live modus, vanuit waar optioneel de installatie kan worden gestart. met de Netinstall versie kan over FTP worden geïnstalleerd, of via vooraf gedownloade &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;&quot;vrije&quot; ISO bestanden&lt;/a&gt;.</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="151"/>
@@ -780,92 +803,90 @@ Nu herstarten?</translation>
         <translation>Aan&amp;gepast</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="428"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This &lt;span style=&quot; font-weight:600;&quot;&gt;potentially dangerous&lt;/span&gt; option will format the selected drive, wiping out all data on it. It shouldn&apos;t be necessary if you&apos;re using a standard USB drive.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Deze &lt;span style=&quot; font-weight:600;&quot;&gt;potentieel gevaarlijke&lt;/span&gt; optie formatteert de geselecteerde schijf. Alle gegevens op deze schijf zullen verloren gaan. Normaliter is niet niet nodig op een USB-drive.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location filename="unetbootin.ui" line="414"/>
+        <location filename="unetbootin.ui" line="430"/>
+        <source>Space to reserve for user files which are preserved across reboots. Works only for LiveUSBs for Ubuntu and derivatives. If value exceeds drive capacity, the maximum space available will be used.</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="435"/>
-        <source>&amp;Format Drive (Wipes Out Data)</source>
-        <translation>&amp;Formatteer Schijf (Wist Alle Gegevens)</translation>
+        <location filename="unetbootin.ui" line="417"/>
+        <source>Space used to preserve files across reboots (Ubuntu only):</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="498"/>
+        <location filename="unetbootin.ui" line="440"/>
+        <source>MB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="unetbootin.ui" line="503"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="501"/>
+        <location filename="unetbootin.ui" line="506"/>
         <source>Return</source>
         <translation>Terug</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="508"/>
+        <location filename="unetbootin.ui" line="513"/>
         <source>Cancel</source>
         <translation>Annuleren</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="511"/>
+        <location filename="unetbootin.ui" line="516"/>
         <source>Esc</source>
         <translation>Esc</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="556"/>
+        <location filename="unetbootin.ui" line="561"/>
         <source>Reboot Now</source>
-        <translation>Nu herstarten</translation>
+        <translation>Nu opnieuw starten</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="563"/>
+        <location filename="unetbootin.ui" line="568"/>
         <source>Exit</source>
-        <translation>Afsluiten</translation>
+        <translation>Sluiten</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="655"/>
+        <location filename="unetbootin.ui" line="660"/>
         <source>1. Downloading Files</source>
         <translation>1. Bestanden aan het downloaden</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="662"/>
+        <location filename="unetbootin.ui" line="667"/>
         <source>2. Extracting and Copying Files</source>
         <translation>Bestanden uitpakken en kopiëren</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="669"/>
+        <location filename="unetbootin.ui" line="674"/>
         <source>3. Installing Bootloader</source>
         <translation>Bootloader installeren</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="676"/>
+        <location filename="unetbootin.ui" line="681"/>
         <source>4. Installation Complete, Reboot</source>
-        <translation>Installatie gereed. Opnieuw opstarten</translation>
+        <translation>Installatie gereed. Opnieuw starten</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="472"/>
-        <location filename="unetbootin.ui" line="491"/>
+        <location filename="unetbootin.ui" line="477"/>
+        <location filename="unetbootin.ui" line="496"/>
         <source>Select the target drive to install to</source>
         <translation>Selecteer de harde schijf waarop geïnstalleerd wordt</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="475"/>
+        <location filename="unetbootin.ui" line="480"/>
         <source>Dri&amp;ve:</source>
         <translation>Sch&amp;ijf</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="446"/>
-        <location filename="unetbootin.ui" line="465"/>
+        <location filename="unetbootin.ui" line="451"/>
+        <location filename="unetbootin.ui" line="470"/>
         <source>Select the installation target type</source>
         <translation>Selecteer het type van de installatiebestemming</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="449"/>
+        <location filename="unetbootin.ui" line="454"/>
         <source>&amp;Type:</source>
         <translation>&amp;Type:</translation>
     </message>
@@ -890,7 +911,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="unetbootin.ui" line="188"/>
         <source>Select the disk image type</source>
-        <translation>Selecteer het disk-image type</translation>
+        <translation>Selecteer het type disk-image</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="243"/>
@@ -931,24 +952,6 @@ p, li { white-space: pre-wrap; }
         <translation>Geef parameters en opties op die aan de kernel moeten worden doorgegeven</translation>
     </message>
     <message>
-        <location filename="unetbootin.ui" line="414"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This &lt;span style=&quot; font-weight:600;&quot;&gt;potentially dangerous&lt;/span&gt; option will show all drives in the drop-down box titled &quot;Drives&quot;. Enable this only if you know what you&apos;re doing; if you use this option, the installation will likely fail, or can lead to system boot issues.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Deze &lt;span style=&quot; font-weight:600;&quot;&gt;potentieel gevaarlijke&lt;/span&gt; optie toont alle schijven in het selectiemenu. Doe dit alleen als u weet waar u mee bezig bent. Als u dit doet, zal de installatie waarschijnlijk mislukken of leiden tot opstartproblemen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="unetbootin.ui" line="421"/>
-        <source>Show &amp;All Drives (Use with Care)</source>
-        <translation>Toon &amp;Alle Schijven (voor geavanceerde gebruikers)</translation>
-    </message>
-    <message>
         <location filename="unetbootin.ui" line="210"/>
         <source>&amp;Kernel:</source>
         <translation>&amp;Kernel:</translation>
@@ -977,23 +980,22 @@ p, li { white-space: pre-wrap; }
         <translation>%1 is gedeïnstalleerd</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="318"/>
+        <location filename="main.cpp" line="319"/>
         <source>Must run as root</source>
         <translation>Moet als root worden uitgevoerd</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="320"/>
+        <location filename="main.cpp" line="321"/>
         <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su - -c &apos;%1&apos;&lt;/b&gt;</source>
-        <oldsource>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</oldsource>
-        <translation type="unfinished">%2 Moet als root worden uitgevoerd. Sluit het en start het opnieuw op deze manier:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;of:&lt;br/&gt;&lt;b&gt;su -c &apos;%1&apos;&lt;/b&gt;</translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="main.cpp" line="342"/>
+        <location filename="main.cpp" line="353"/>
         <source>%1 Uninstaller</source>
         <translation>%1 Uninstaller</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="343"/>
+        <location filename="main.cpp" line="354"/>
         <source>%1 is currently installed. Remove the existing version?</source>
         <translation>%1 is momenteel geïnstalleerd. Huidige versie verwijderen?</translation>
     </message>
