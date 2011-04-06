@@ -1,9 +1,9 @@
-unetbootin (549-1) UNRELEASED; urgency=low
+unetbootin (549-1) unstable; urgency=low
 
   * New upstream release.
     - A .desktop file has an icon now. (Closes: #573729)
 
- -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 06 Apr 2011 21:10:31 +0300
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Wed, 06 Apr 2011 21:21:13 +0300
 
 unetbootin (502-1) unstable; urgency=low
 
