@@ -9,12 +9,26 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 #ifndef debianrelnamereplace
 #define debianrelnamereplace \
-	relname.replace("unstable", "sid").replace("testing", "squeeze").replace("stable", "lenny");
+	relname \
+	.replace("unstable", "sid") \
+	.replace("testing", "wheezy") \
+	.replace("stable", "squeeze");
 #endif
 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
-	relname.replace("10.10", "maverick").replace("10.04", "lucid").replace("9.10", "karmic").replace("9.04", "jaunty").replace("8.10", "intrepid").replace("8.04", "hardy").replace("7.10", "gutsy").replace("7.04", "feisty").replace("6.10", "edgy").replace("6.06", "dapper");
+	relname \
+	.replace("11.04", "natty") \
+	.replace("10.10", "maverick") \
+	.replace("10.04", "lucid") \
+	.replace("9.10", "karmic") \
+	.replace("9.04", "jaunty") \
+	.replace("8.10", "intrepid") \
+	.replace("8.04", "hardy") \
+	.replace("7.10", "gutsy") \
+	.replace("7.04", "feisty") \
+	.replace("6.10", "edgy") \
+	.replace("6.06", "dapper");
 #endif
 
 #ifndef ubuntunetinst
@@ -55,7 +69,7 @@ if (nameDistro == "Super Grub Disk")
 if (nameDistro == "EeePCLinuxOS")
 {
 	downloadfile(QString("http://www.eeepclinuxos.com/eeepclos-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -65,7 +79,7 @@ if (nameDistro == "EeePCLinuxOS")
 if (nameDistro == "Ubuntu Eee")
 {
 	downloadfile(QString("http://lubi.sourceforge.net/ubuntu-eee-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -87,7 +101,7 @@ if (nameDistro == "Elive")
 	QRegExp(".iso$", Qt::CaseInsensitive) << 
 	QRegExp("elive\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -97,7 +111,7 @@ if (nameDistro == "Elive")
 if (nameDistro == "gNewSense")
 {
 	downloadfile(QString("http://cdimage.gnewsense.org/gnewsense-livecd-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -107,7 +121,7 @@ if (nameDistro == "gNewSense")
 if (nameDistro == "Kiwi Linux")
 {
         downloadfile(QString("http://depo.osn.ro/content/distributii/linux/romanesti/kiwilinux-%1.iso").arg(relname), isotmpf);
-        extractiso(isotmpf, targetPath);
+        extractiso(isotmpf);
 
 }
 
@@ -118,7 +132,7 @@ if (nameDistro == "Kiwi Linux")
 if (nameDistro == "NimbleX")
 {
 	downloadfile("http://public.nimblex.net/Download/NimbleX-latest.iso", isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -136,7 +150,7 @@ if (nameDistro == "SliTaz")
 		initrdOpts = "";
 		initrdLoc = "";
 //		downloadfile("http://mirror.slitaz.org/boot/slitaz-boot.iso", isotmpf);
-//		extractiso(isotmpf, targetPath);
+//		extractiso(isotmpf);
 	}
 	else
 	{
@@ -147,7 +161,7 @@ if (nameDistro == "SliTaz")
 		QRegExp(".iso$", Qt::CaseInsensitive) <<
 		QRegExp("^slitaz-\\S{1,}.iso$", Qt::CaseInsensitive)
 		), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 
 }
@@ -166,7 +180,7 @@ if (nameDistro == "xPUD")
 	{
 		downloadfile("http://xpud.org/xpud-latest-snapshot.php", isotmpf);
 	}
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif
@@ -183,25 +197,24 @@ if (nameDistro == "Arch Linux")
 	{
 		cpuarch = "i686";
 	}
-	if (relname.contains("2007.08"))
-	{
-		downloadfile(QString("ftp://ftp.archlinux.org/iso/%3/%2/Archlinux-%2-%1.ftp.iso").arg(relname, cpuarch, QString(relname).remove(QRegExp("-\\d{0,}$"))), isotmpf);
-	}
-	else if (relname.contains("2008.03"))
-	{
-		downloadfile(QString("ftp://ftp.archlinux.org/iso/%3/%2/Archlinux-%2-%1-archboot.ftp.iso").arg(relname, cpuarch, QString(relname).remove(QRegExp("-\\d{0,}$"))), isotmpf);
-	}
-	else
-	{
-		downloadfile(QString("ftp://ftp.archlinux.org/iso/%3/archlinux-%1-ftp-%2.iso").arg(relname, cpuarch, QString(relname).remove(QRegExp("-\\d{0,}$"))), isotmpf);
-	}
-	extractiso(isotmpf, targetPath);
+	downloadfile(fileFilterNetDir(QStringList() <<
+	"http://mirrors.kernel.org/archlinux/iso/latest/" <<
+	"http://distro.ibiblio.org/archlinux/iso/latest/" <<
+	"http://mirror.rit.edu/archlinux/iso/latest/"
+	, 3072000, 2048576000, QList<QRegExp>() <<
+	QRegExp("^arch", Qt::CaseInsensitive) <<
+	QRegExp("^archlinux", Qt::CaseInsensitive) <<
+	QRegExp(".iso$", Qt::CaseInsensitive) <<
+	QRegExp(cpuarch, Qt::CaseInsensitive) <<
+	QRegExp(relname, Qt::CaseInsensitive)
+	), isotmpf);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "BackTrack")
 {
 	downloadfile(QString("http://www.backtrack-linux.org/download.php?fname=bt%1").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "CentOS")
@@ -223,7 +236,7 @@ if (nameDistro == "CentOS")
 if (nameDistro == "CloneZilla")
 {
 	downloadfile(QString("http://downloads.sourceforge.net/clonezilla/clonezilla-live-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Damn Small Linux")
@@ -249,7 +262,7 @@ if (nameDistro == "Damn Small Linux")
 	QRegExp("initrd.iso$", Qt::CaseInsensitive) << 
 	QRegExp("^dsl-\\S{1,}-initrd.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Debian")
@@ -266,7 +279,7 @@ if (nameDistro == "Debian")
 	{
 		debianrelnamereplace
 		downloadfile(QString("http://live.debian.net/cdimage/%1-builds/current/%2/debian-live-%1-%2-gnome-desktop.iso").arg(relname, cpuarch), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else if (ishdmedia)
 	{
@@ -292,7 +305,7 @@ if (nameDistro == "Dreamlinux")
 	QRegExp(".iso$", Qt::CaseInsensitive) << 
 	QRegExp("DL\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Dr.Web AntiVirus")
@@ -304,7 +317,7 @@ if (nameDistro == "Dr.Web AntiVirus")
 	QRegExp(".iso$", Qt::CaseInsensitive) << 
 	QRegExp("DrWeb\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Elive")
@@ -322,7 +335,7 @@ if (nameDistro == "Elive")
 	QRegExp(".iso$", Qt::CaseInsensitive) <<
 	QRegExp("elive\\S{0,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Fedora")
@@ -357,7 +370,7 @@ if (nameDistro == "Fedora")
 		{
 			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
 		}
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -464,7 +477,7 @@ if (nameDistro == "Frugalware")
 if (nameDistro == "F-Secure Rescue CD")
 {
 	downloadfile("http://unetbootin.sourceforge.net/f-secure-rescue-cd.zip", isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "GAG")
@@ -484,7 +497,7 @@ if (nameDistro == "Gentoo")
 		cpuarch = "x86";
 	}
 	downloadfile(QString("http://bouncer.gentoo.org/fetch/gentoo-%1-livecd/%2/").arg(relname, cpuarch), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "gNewSense")
@@ -499,7 +512,7 @@ if (nameDistro == "gNewSense")
 	QRegExp("gnewsense\\S{0,}.iso$", Qt::CaseInsensitive) <<
 	QRegExp(".iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Kaspersky Rescue Disk")
@@ -526,7 +539,7 @@ if (nameDistro == "Kaspersky Rescue Disk")
 		QRegExp("k\\S{0,}.iso$", Qt::CaseInsensitive)
 		), isotmpf);
 	}
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Gujin")
@@ -538,12 +551,12 @@ if (nameDistro == "Gujin")
 if (nameDistro == "LinuxConsole")
 {
   downloadfile(QString("http://jukebox.linuxconsole.org/official/linuxconsole%1.iso").arg(QString(relname)), isotmpf);
-  extractiso(isotmpf, targetPath);
+  extractiso(isotmpf);
 }
 
 if (nameDistro == "Linux Mint")
 {
-	if (relname == "9")
+	if (relname == "9" || relname == "10")
 	{
 		if (isarch64)
 		{
@@ -569,7 +582,7 @@ if (nameDistro == "Linux Mint")
 		QRegExp(".iso$", Qt::CaseInsensitive) <<
 		QRegExp("linuxmint", Qt::CaseInsensitive) <<
 		QRegExp(cpuarch, Qt::CaseInsensitive);
-	if (relname == "9")
+	if (relname == "9" || relname == "10")
 	{
 		mintregex.append(QRegExp("cd", Qt::CaseInsensitive));
 		mintregex.append(QRegExp("gnome", Qt::CaseInsensitive));
@@ -605,7 +618,7 @@ if (nameDistro == "Linux Mint")
 	QString("ftp://ftp.tpnet.pl/pub/linux/linuxmint/isos/stable/%1/").arg(relname) <<
 	QString("ftp://mirror.unej.ac.id/pub/iso/linux-mint/stable/%1/").arg(relname)
 	, 61440000, 1048576000, mintregex), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Mandriva")
@@ -628,7 +641,7 @@ if (nameDistro == "Mandriva")
 		{
 			downloadfile(QString("ftp://ftp.free.fr/mirrors/ftp.mandriva.com/MandrivaLinux/official/iso/%1/mandriva-linux-one-%3-spring-GNOME-int-cdrom-%2.iso").arg(relname, cpuarch, QString(relname).remove(QRegExp("\\.\\d{0,}$"))), isotmpf);
 		}
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -676,7 +689,7 @@ if (nameDistro == "MEPIS")
 		QRegExp("\\S{0,}"+cpuarch+".iso$", Qt::CaseInsensitive)
 		), isotmpf);
 	}
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "NetBSD")
@@ -700,7 +713,7 @@ if (nameDistro == "NetBSD")
 if (nameDistro == "NimbleX")
 {
 	downloadfile("http://public.nimblex.net/Download/NimbleX-latest.iso", isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "NTPasswd")
@@ -723,7 +736,7 @@ if (nameDistro == "openSUSE")
 	if (islivecd)
 	{
 		downloadfile(QString("http://download.opensuse.org/distribution/%1/iso/cd/openSUSE-%1-GM-GNOME-Live-%2.iso").arg(relname, cpuarch), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -746,7 +759,7 @@ if (nameDistro == "openSUSE")
 if (nameDistro == "Ophcrack")
 {
 	downloadfile(QString("http://downloads.sourceforge.net/ophcrack/ophcrack-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Parted Magic")
@@ -771,7 +784,7 @@ if (nameDistro == "Parted Magic")
 		QRegExp("\\d.iso.zip$", Qt::CaseInsensitive) << 
 		QRegExp("^pmagic-\\d", Qt::CaseInsensitive)
 		), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 }
 
@@ -787,7 +800,7 @@ if (nameDistro == "PCLinuxOS")
 	QRegExp(deskn, Qt::CaseInsensitive) <<
 	QRegExp(vern, Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Puppy Linux")
@@ -802,7 +815,7 @@ if (nameDistro == "Puppy Linux")
 	QRegExp("^puppy-\\d{1,}\\S{1,}.iso$", Qt::CaseInsensitive) << 
 	QRegExp("^puppy-4\\S{1,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Sabayon Linux")
@@ -842,13 +855,13 @@ if (nameDistro == "Sabayon Linux")
 		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
 		QRegExp("^Sabayon\\S{0,}Linux\\S{0,}"+relnamenum+"\\S{0,}"+relnamepart+"\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive)
         ), isotmpf);
-        extractiso(isotmpf, targetPath);
+        extractiso(isotmpf);
 }
 
 if (nameDistro == "Slax")
 {
 	downloadfile("http://www.slax.org/get_slax.php?download=iso", isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "SliTaz")
@@ -860,7 +873,7 @@ if (nameDistro == "SliTaz")
 	QRegExp(".iso$", Qt::CaseInsensitive) <<
 	QRegExp("^slitaz-\\S{1,}.iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Smart Boot Manager")
@@ -878,7 +891,7 @@ if (nameDistro == "Super Grub Disk")
 if (nameDistro == "Super OS")
 {
 	downloadfile("http://hacktolive.org/download/os", isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "SystemRescueCD")
@@ -892,7 +905,7 @@ if (nameDistro == "SystemRescueCD")
 	QRegExp("systemrescuecd-x86\\S{0,}.iso$", Qt::CaseInsensitive) << 
 	QRegExp(".iso$", Qt::CaseInsensitive)
 	), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Ubuntu")
@@ -914,7 +927,7 @@ if (nameDistro == "Ubuntu")
 		QRegExp("desktop\\S{0,}.iso$", Qt::CaseInsensitive) << 
 		QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 		), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -937,7 +950,7 @@ if (nameDistro == "Ubuntu")
 			QRegExp("ubuntu\\S{0,}"+relname+"\\S{0,}desktop\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) << 
 			QRegExp("ubuntu-"+relname+"\\S{0,}-desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 			), isotmpf);
-			extractiso(isotmpf, targetPath);
+			extractiso(isotmpf);
 		}
 	}
 	ubuntunetinst
@@ -962,7 +975,7 @@ if (nameDistro == "Kubuntu")
 		QRegExp("desktop\\S{0,}.iso$", Qt::CaseInsensitive) << 
 		QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 		), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -985,7 +998,7 @@ if (nameDistro == "Kubuntu")
 			QRegExp("kubuntu\\S{0,}"+relname+"\\S{0,}desktop\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) << 
 			QRegExp("kubuntu-"+relname+"\\S{0,}-desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 			), isotmpf);
-			extractiso(isotmpf, targetPath);
+			extractiso(isotmpf);
 		}
 	}
 	ubuntunetinst
@@ -1008,7 +1021,7 @@ if (nameDistro == "xPUD")
 	initrdLine = "";
 	slinitrdLine = "";
 	*/
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 if (nameDistro == "Xubuntu")
@@ -1030,7 +1043,7 @@ if (nameDistro == "Xubuntu")
 		QRegExp("desktop\\S{0,}.iso$", Qt::CaseInsensitive) << 
 		QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 		), isotmpf);
-		extractiso(isotmpf, targetPath);
+		extractiso(isotmpf);
 	}
 	else
 	{
@@ -1054,7 +1067,7 @@ if (nameDistro == "Xubuntu")
 			QRegExp("xubuntu\\S{0,}"+relname+"\\S{0,}desktop\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) << 
 			QRegExp("xubuntu-"+relname+"\\S{0,}-desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 			), isotmpf);
-			extractiso(isotmpf, targetPath);
+			extractiso(isotmpf);
 		}
 	}
 	ubuntunetinst
@@ -1063,7 +1076,7 @@ if (nameDistro == "Xubuntu")
 if (nameDistro == "Zenwalk")
 {
 	downloadfile(QString("ftp://zenwalk.mirrors.tds.net/pub/linux/zenlive/zenwalk-live-%1.iso").arg(relname), isotmpf);
-	extractiso(isotmpf, targetPath);
+	extractiso(isotmpf);
 }
 
 #endif

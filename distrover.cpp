@@ -16,6 +16,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 "9.10_NetInstall" << "9.10_NetInstall_x64" << "9.10_HdMedia" << "9.10_HdMedia_x64" << "9.10_Live" << "9.10_Live_x64" << \
 "10.04_NetInstall" << "10.04_NetInstall_x64" << "10.04_HdMedia" << "10.04_HdMedia_x64" << "10.04_Live" << "10.04_Live_x64" << \
 "10.10_NetInstall" << "10.10_NetInstall_x64" << "10.10_HdMedia" << "10.10_HdMedia_x64" << "10.10_Live" << "10.10_Live_x64" << \
+"11.04_NetInstall" << "11.04_NetInstall_x64" << "11.04_HdMedia" << "11.04_HdMedia_x64" << "11.04_Live" << "11.04_Live_x64" << \
 "Daily_Live" << "Daily_Live_x64"
 #endif
 
@@ -24,12 +25,11 @@ unetbootin::tr("Welcome to <a href=\"http://unetbootin.sourceforge.net/\">UNetbo
 	"<ol><li>Select a distribution and version to download from the list above, or manually specify files to load below.</li>"
 	"<li>Select an installation type, and press OK to begin installing.</li></ol>") <<
 unetbootin::tr("== Select Version ==")));
-distroselect->addItem("Arch Linux", (QStringList() << "2008.03-1" <<
+distroselect->addItem("Arch Linux", (QStringList() << "core" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.archlinux.org/\">http://www.archlinux.org</a><br/>"
 	"<b>Description:</b> Arch Linux is a lightweight distribution optimized for speed and flexibility.<br/>"
 	"<b>Install Notes:</b> The default version allows for installation over the internet (FTP).") <<
-"2007.08-2" << "2007.08-2_x64" << "2008.03-1" << "2008.03-1_x64"));
-//	"2007.08-2" << "2007.08-2_x64" << "2008.03-1" << "2008.03-1_x64" << "2008.06" << "2008.06_x64"));
+"core" << "core_x64" << "netinstall" << "netinstall_x64"));
 distroselect->addItem("BackTrack", (QStringList() << "4f" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.backtrack-linux.org/\">http://www.backtrack-linux.org/</a><br/>"
 	"<b>Description:</b> BackTrack is a distribution focused on network analysis and penetration testing.<br/>"
@@ -136,11 +136,11 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxconsole.org/\">http://lin
  "<b>Description:</b> LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .<br/>"
  "<b>Install Notes:</b> The 1.0.2009 is latest 1.0 release.") <<
  "1.0.2009-cd"));
-	distroselect->addItem("Linux Mint", (QStringList() << "9_Live" <<
+	distroselect->addItem("Linux Mint", (QStringList() << "10_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxmint.com/\">http://linuxmint.com</a><br/>"
 	"<b>Description:</b> Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
-	"3.1_Live" << "4.0_Live" << "5_Live" << "5_Live_x64" << "6_Live" << "6_Live_x64" << "7_Live" << "7_Live_x64" << "8_Live" << "8_Live_x64" << "9_Live" << "9_Live_x64"));
+	"3.1_Live" << "4.0_Live" << "5_Live" << "5_Live_x64" << "6_Live" << "6_Live_x64" << "7_Live" << "7_Live_x64" << "8_Live" << "8_Live_x64" << "9_Live" << "9_Live_x64" << "10_Live" << "10_Live_x64"));
 distroselect->addItem("Mandriva", (QStringList() << "2008.1_NetInstall" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.mandriva.com/\">http://www.mandriva.com/</a><br/>"
 	"<b>Description:</b> Mandriva is a user-friendly distro formerly known as Mandrake Linux.<br/>"
