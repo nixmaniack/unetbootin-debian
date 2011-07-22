@@ -1,10 +1,10 @@
-unetbootin (549-2) UNRELEASED; urgency=low
+unetbootin (549-2) unstable; urgency=low
 
   * debian/control:
     - Added 'extlinux' to Recommends. (Closes: #635012)
     - Bumped Standards-Version to 3.9.2, no changes needed.
 
- -- Eugene V. Lyubimkin <jackyf@debian.org>  Fri, 22 Jul 2011 19:45:37 +0300
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Fri, 22 Jul 2011 20:01:10 +0300
 
 unetbootin (549-1) unstable; urgency=low
 
