@@ -184,6 +184,9 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 	overwriteall = false;
 	searchsymlinks = false;
 	ignoreoutofspace = false;
+	downloadFailed = false;
+	exitOnCompletion = false;
+	testingDownload = false;
 	persistenceSpaceMB = 0;
 #ifdef Q_OS_MAC
 	ignoreoutofspace = true;
@@ -405,10 +408,50 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 			if (isInt)
 				this->persistencevalue->setValue(numMBpersistentSpace);
 		}
+		else if (pfirst.contains("testingdownload", Qt::CaseInsensitive))
+		{
+			if (psecond.contains('y', Qt::CaseInsensitive))
+			{
+				testingDownload = true;
+				exitOnCompletion = true;
+			}
+		}
+		else if (pfirst.contains("exitoncompletion", Qt::CaseInsensitive))
+		{
+			if (psecond.contains('y', Qt::CaseInsensitive))
+			{
+				exitOnCompletion = true;
+			}
+		}
 		else if (pfirst.contains("autoinstall", Qt::CaseInsensitive))
 		{
 			if (psecond.contains('y', Qt::CaseInsensitive))
+			{
+				exitOnCompletion = true;
+				overwriteall = true;
 				return true;
+			}
+		}
+		else if (pfirst.contains("action", Qt::CaseInsensitive))
+		{
+			if (psecond.contains("listdistros", Qt::CaseInsensitive))
+			{
+				for (int i = 1; i < this->distroselect->count(); ++i)
+				{
+					printf("%s\n", this->distroselect->itemText(i).toAscii().constData());
+				}
+				QApplication::exit();
+				exit(0);
+			}
+			else if (psecond.contains("listversions", Qt::CaseInsensitive))
+			{
+				for (int i = 0; i < this->dverselect->count(); ++i)
+				{
+					printf("%s\n", this->dverselect->itemText(i).toAscii().constData());
+				}
+				QApplication::exit();
+				exit(0);
+			}
 		}
 	}
 	if (hideCustom)
@@ -538,8 +581,8 @@ QStringList unetbootin::listsanedrives()
 				*/
 		#endif
 #ifdef Q_OS_MAC
-QString diskutilList = callexternapp("disktool", "-l");
-QStringList usbdevsL = diskutilList.split("\n").filter("msdos").join("'").split("'").filter("disk");
+QString diskutilList = callexternapp("diskutil", "list");
+QStringList usbdevsL = diskutilList.split("\n").filter("FAT").join(" ").split(" ").filter("disk");
 for (int i = 0; i < usbdevsL.size(); ++i)
 {
 	fulldrivelist.append("/dev/"+usbdevsL.at(i));
@@ -663,7 +706,7 @@ void unetbootin::on_okbutton_clicked()
 	}
 #ifdef Q_OS_MAC
 	if (locatemountpoint(driveselect->currentText()) == "NOT MOUNTED")
-		callexternapp("hdiutil", "mount "+driveselect->currentText());
+		callexternapp("diskutil", "mount "+driveselect->currentText());
 #endif
 	#ifdef Q_OS_LINUX
 	else if (typeselect->currentIndex() == typeselect->findText(tr("USB Drive")) && locatemountpoint(driveselect->currentText()) == "NOT MOUNTED")
@@ -989,7 +1032,7 @@ bool unetbootin::checkifoutofspace(QString destindir)
 QString unetbootin::locatekernel(QString archivefile, QPair<QStringList, QList<quint64> > archivefileconts)
 {
 	pdesc1->setText(tr("Locating kernel file in %1").arg(archivefile));
-	QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux" << "rescue" << "xpud";
+	QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux" << "rescue" << "xpud" << "bzI" << "kexec";
 	QStringList tnarchivefileconts;
 	QStringList narchivefileconts;
 	QString curarcitm;
@@ -2186,6 +2229,13 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 			kernelpassed = true;
 			continue;
 		}
+		if (cfgfileCL.contains(QRegExp("^initrd\\s{1,}\\S{1,}", Qt::CaseInsensitive)))
+		{
+			if (kernelandinitrd.second[curindex] == initrdLoc) {
+				kernelandinitrd.second[curindex] = getFirstTextBlock(QString(cfgfileCL).remove(QRegExp("^initrd", Qt::CaseInsensitive)).trimmed());
+			}
+			continue;
+		}
 	}
 	return qMakePair(kernelandinitrd, titleandparams);
 }
@@ -2398,10 +2448,13 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 	return QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> >();
 }
 
-void unetbootin::downloadfile(QString fileurl, QString targetfile)
+void unetbootin::downloadfile(QString fileurl, QString targetfile, int minsize=524288)
 {
 	if (fileurl.isEmpty())
+	{
+		showDownloadFailedScreen(fileurl);
 		return;
+	}
 	if (QFile::exists(targetfile))
 	{
 		rmFile(targetfile);
@@ -2462,7 +2515,8 @@ void unetbootin::downloadfile(QString fileurl, QString targetfile)
 		{
 			dloutfile.close();
 			rmFile(dloutfile);
-			downloadfile(dlresponse.value("Location"), targetfile);
+			downloadfile(dlresponse.value("Location"), targetfile, minsize);
+			return;
 		}
 	}
 	if (isftp)
@@ -2478,11 +2532,42 @@ void unetbootin::downloadfile(QString fileurl, QString targetfile)
 	{
 		dloutfile.rename(targetfile);
 	}
+	if (QFile(targetfile).size() < minsize)
+	{
+		// download failed
+		showDownloadFailedScreen(fileurl);
+		return;
+	}
 	pdesc4->setText("");
 	pdesc3->setText("");
 	pdesc2->setText("");
 	pdesc1->setText("");
 	tprogress->setValue(0);
+	if (testingDownload)
+	{
+		// Note that this only tests that the first download succeeds
+		printf("exitstatus:downloadcomplete\n");
+		QApplication::exit();
+		exit(0);
+	}
+}
+
+void unetbootin::showDownloadFailedScreen(const QString &fileurl)
+{
+	progresslayer->setEnabled(false);
+	progresslayer->hide();
+	rebootlayer->setEnabled(true);
+	rebootlayer->show();
+	rebootmsgtext->setText(tr("Download of %1 %2 from %3 failed. Please try downloading the ISO file from the website directly and supply it via the diskimage option.").arg(nameDistro).arg(nameVersion).arg(fileurl));
+	this->frebootbutton->setEnabled(false);
+	this->frebootbutton->hide();
+	this->downloadFailed = true;
+	if (exitOnCompletion)
+	{
+		printf("exitstatus:downloadfailed\n");
+		QApplication::exit();
+		exit(0);
+	}
 }
 
 void unetbootin::dlprogressupdate(int dlbytes, int maxbytes)
@@ -2575,7 +2660,22 @@ QStringList unetbootin::lstFtpDirFiles(QString ldfDirStringUrl, int ldfMinSize, 
 QStringList unetbootin::lstHttpDirFiles(QString ldfDirStringUrl)
 {
 	QStringList relativefilelinksL;
-	QStringList relativelinksL = downloadpagecontents(ldfDirStringUrl).replace(">", ">\n").replace("<", "\n<").split("\n").filter(QRegExp("<a href=\"(?!\\?)\\S{1,}\">", Qt::CaseInsensitive)).replaceInStrings(QRegExp("<a href=\"", Qt::CaseInsensitive), "").replaceInStrings("\">", "");
+	QStringList relativelinksLPreFilter =
+		downloadpagecontents(ldfDirStringUrl)
+		.replace(">", ">\n")
+		.replace("<", "\n<")
+		.split("\n");
+	QStringList relativelinksLPart1 =
+		relativelinksLPreFilter
+		.filter(QRegExp("<a href=\"(?!\\?)\\S{1,}\">", Qt::CaseInsensitive))
+		.replaceInStrings(QRegExp("<a href=\"", Qt::CaseInsensitive), "")
+		.replaceInStrings("\">", "");
+	QStringList relativelinksLPart2 =
+		relativelinksLPreFilter
+		.filter(QRegExp("<a href=\'(?!\\?)\\S{1,}\'>", Qt::CaseInsensitive))
+		.replaceInStrings(QRegExp("<a href=\'", Qt::CaseInsensitive), "")
+		.replaceInStrings("\'>", "");
+	QStringList relativelinksL = relativelinksLPart1 << relativelinksLPart2;
 	for (int i = 0; i < relativelinksL.size(); ++i)
 	{
 		if (!relativelinksL.at(i).endsWith('/'))
@@ -2794,7 +2894,7 @@ QString unetbootin::getuuid(QString voldrive, QString diskutilinfo)
 		if (diskutiloutput.filter("FAT16").size() == 0 && diskutiloutput.filter("FAT12").size() == 0)
 			return "None";
 	}
-	callexternapp("hdiutil", "unmount "+targetDev);
+	callexternapp("diskutil", "umount "+targetDev);
 	QFile rawDevice(voldrive);
 	rawDevice.open(QIODevice::ReadOnly);
 	if (isFat32)
@@ -2809,7 +2909,7 @@ QString unetbootin::getuuid(QString voldrive, QString diskutilinfo)
 	rawDevice.read((char*)pserial, 4);
 	QString serialNumber = QString::number(pserial[3], 16).rightJustified(2, '0')+QString::number(pserial[2], 16).rightJustified(2, '0')+"-"+QString::number(pserial[1], 16).rightJustified(2, '0')+QString::number(pserial[0], 16).rightJustified(2, '0');
 	rawDevice.close();
-	callexternapp("hdiutil", "mount "+targetDev);
+	callexternapp("diskutil", "mount "+targetDev);
 	return serialNumber.toUpper();
 }
 
@@ -3227,6 +3327,9 @@ void unetbootin::runinst()
 	rawtargetDev = QString(targetDev).remove(QRegExp("s\\d$"));
 #endif
 	#endif
+#ifndef Q_OS_UNIX
+	devluid = getdevluid(targetDev);
+#endif
 	kernelLine = "kernel";
 	kernelLoc = QString("/%1ubnkern").arg(ginstallDir);
 	initrdLine = "initrd";
@@ -3338,6 +3441,10 @@ void unetbootin::runinst()
 		if (QFile::exists(QString("%1\\7z.dll").arg(ubntmpf)))
 		{
 			rmFile(QString("%1\\7z.dll").arg(ubntmpf));
+		}
+		if (downloadFailed)
+		{
+			return;
 		}
 	}
 	if (!sdesc1->text().contains(trdone))
@@ -3801,7 +3908,7 @@ void unetbootin::runinstusb()
 #endif
 #ifdef Q_OS_MAC
 		callexternapp(syslinuxcommand, targetDev);
-		callexternapp("hdiutil", "unmount "+targetDev);
+		callexternapp("diskutil", "umount "+targetDev);
 		QFile usbmbrF(rawtargetDev);
 		QFile mbrbinF(resourceDir.absoluteFilePath("mbr.bin"));
 		usbmbrF.open(QIODevice::WriteOnly);
@@ -3809,7 +3916,7 @@ void unetbootin::runinstusb()
 		usbmbrF.write(mbrbinF.readAll());
 		mbrbinF.close();
 		usbmbrF.close();
-		callexternapp("hdiutil", "unmount "+targetDev);
+		callexternapp("diskutil", "umount "+targetDev);
 		// make active
 		bool isOk = false;
 		int partitionNumber = QString(targetDev).remove(rawtargetDev).remove("s").toInt(&isOk, 10);
@@ -3831,7 +3938,7 @@ void unetbootin::runinstusb()
 				}
 			}
 		}
-		callexternapp("hdiutil", "mount "+targetDev);
+		callexternapp("diskutil", "mount "+targetDev);
 #endif
 #ifndef XPUD
 	if (!dontgeneratesyslinuxcfg)
@@ -3915,6 +4022,11 @@ void unetbootin::runinstusb()
 	fininstall();
 }
 
+void unetbootin::killApplication()
+{
+	exit(0);
+}
+
 void unetbootin::fininstall()
 {
 	#ifdef Q_OS_UNIX
@@ -3974,5 +4086,11 @@ void unetbootin::fininstall()
 		this->frebootbutton->setEnabled(false);
 		this->frebootbutton->hide();
 #endif
+	}
+	if (exitOnCompletion)
+	{
+		printf("exitstatus:success\n");
+		QApplication::exit();
+		exit(0);
 	}
 }

@@ -201,6 +201,9 @@ public:
 	bool searchsymlinks;
 	bool ignoreoutofspace;
 	bool dontgeneratesyslinuxcfg;
+	bool downloadFailed;
+	bool exitOnCompletion;
+	bool testingDownload;
 	int persistenceSpaceMB;
 	QString extraBootOptions;
 	QStringList locatedsyslinuxcfgfiles;
@@ -267,7 +270,7 @@ public:
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > searchforincludesfileL(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
 	QString searchforgrub2includesfile(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
 	QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > searchforgrub2includesfileL(QString includesfile, QString archivefile, QStringList archivefileconts, QStringList visitedincludes);
-	void downloadfile(QString fileurl, QString targetfile);
+	void downloadfile(QString fileurl, QString targetfile, int minsize);
 	QString downloadpagecontents(QString pageurl);
 	QStringList lstFtpDirFiles(QString ldfDirStringUrl, int ldfMinSize, int ldfMaxSize);
 	QStringList lstHttpDirFiles(QString ldfDirStringUrl);
@@ -322,6 +325,7 @@ public:
 	void rmFile(QFile &fn);
 	void mvFile(const QString &fn, const QString &outfn);
 	void mvFile(QFile &fn, QFile &outfn);
+	void showDownloadFailedScreen(const QString &fileurl);
 
 private slots:
 	void on_distroselect_currentIndexChanged(int distroselectIndex);
@@ -341,6 +345,7 @@ public slots:
 	void dlprogressupdate64(qint64 dlbytes, qint64 maxbytes);
 	void cpprogressupdate64(qint64 dlbytes, qint64 maxbytes);
 	void on_okbutton_clicked();
+	void killApplication();
 };
 
 #endif
