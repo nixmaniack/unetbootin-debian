@@ -18,6 +18,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
 	relname \
+	.replace("11.10", "oneiric") \
 	.replace("11.04", "natty") \
 	.replace("10.10", "maverick") \
 	.replace("10.04", "lucid") \
@@ -213,7 +214,15 @@ if (nameDistro == "Arch Linux")
 
 if (nameDistro == "BackTrack")
 {
-	downloadfile(QString("http://www.backtrack-linux.org/download.php?fname=bt%1").arg(relname), isotmpf);
+	if (isarch64)
+	{
+		cpuarch = "64";
+	}
+	else
+	{
+		cpuarch = "32";
+	}
+	downloadfile(QString("http://www.backtrack-linux.org/ajax/download_redirect.php?id=BT%1-%2.iso").arg(nameVersion).arg(cpuarch), isotmpf);
 	extractiso(isotmpf);
 }
 
@@ -362,7 +371,7 @@ if (nameDistro == "Fedora")
 		{
 			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/F%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
 		}
-		else if (relname == "14")
+		else if (relname == "14" || relname == "15")
 		{
 			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live-Desktop.iso").arg(relname, cpuarch), isotmpf);
 		}
@@ -486,6 +495,12 @@ if (nameDistro == "GAG")
 	downloadfile(QString("http://downloads.sourceforge.net/sourceforge/lubi/gag-%1.img.gz").arg(relname), QString("%1ubninit").arg(targetPath));
 }
 
+if (nameDistro == "GeeXboX")
+{
+        downloadfile(QString("http://www.geexbox.org/wp-content/plugins/download-monitor/download.php?id=geexbox-%1.iso").arg(relname), isotmpf);
+	extractiso(isotmpf);
+}
+
 if (nameDistro == "Gentoo")
 {
 	if (isarch64)
@@ -545,7 +560,7 @@ if (nameDistro == "Kaspersky Rescue Disk")
 if (nameDistro == "Gujin")
 {
 	instIndvfl("memdisk", QString("%1ubnkern").arg(targetPath));
-	downloadfile(QString("http://downloads.sourceforge.net/sourceforge/lubi/gujin-%1.img.gz").arg(relname), QString("%1ubninit").arg(targetPath));
+	downloadfile(QString("http://downloads.sourceforge.net/sourceforge/lubi/gujin-%1.img.gz").arg(relname), QString("%1ubninit").arg(targetPath), 81920);
 }
 
 if (nameDistro == "LinuxConsole")
@@ -692,6 +707,12 @@ if (nameDistro == "MEPIS")
 	extractiso(isotmpf);
 }
 
+if (nameDistro == "NetbootCD")
+{
+	downloadfile("http://download.tuxfamily.org/netbootcd/NetbootCD-current.iso", isotmpf);
+	extractiso(isotmpf);
+}
+
 if (nameDistro == "NetBSD")
 {
 	if (isarch64)
@@ -772,14 +793,21 @@ if (nameDistro == "Parted Magic")
 	}
 	else
 	{
+		if (isarch64)
+		{
+			cpuarch = "x86_64";
+		}
+		else
+		{
+			cpuarch = "i686";
+		}
 		downloadfile(fileFilterNetDir(QStringList() << 
 		"http://exo.enarel.eu/mirror/partedmagic/" << 
-		"ftp://ftp.mirrorservice.org/sites/ftp.sourceforge.net/pub/sourceforge/p/pa/partedmagic/" <<
-		"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/p/pa/partedmagic/" <<
 		"http://fulloffacts.com/get/partedmagic/" <<
 		"http://www.digitalincursion.net/partedmagic/"
 		, 10485760, 209715200, QList<QRegExp>() << 
 		QRegExp("^pmagic", Qt::CaseInsensitive) << 
+		QRegExp(cpuarch, Qt::CaseInsensitive) <<
 		QRegExp(".iso.zip$", Qt::CaseInsensitive) << 
 		QRegExp("\\d.iso.zip$", Qt::CaseInsensitive) << 
 		QRegExp("^pmagic-\\d", Qt::CaseInsensitive)
