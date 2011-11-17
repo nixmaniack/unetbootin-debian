@@ -1,3 +1,10 @@
+unetbootin (563-1) unstable; urgency=low
+
+  * New upstream release.
+  * New Maintainer. (Closes: #621132)  
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Thu, 17 Nov 2011 18:57:02 +0530
+
 unetbootin (549-2) unstable; urgency=low
 
   * debian/control:

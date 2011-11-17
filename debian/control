@@ -1,7 +1,7 @@
 Source: unetbootin
 Section: utils
 Priority: optional
-Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
+Maintainer: Muneeb Shaikh <iammuneeb@gmail.com>
 Build-Depends: syslinux, debhelper (>= 7), libqt4-dev (>= 4.2)
 Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/collab-maint/unetbootin.git
