@@ -1,9 +1,23 @@
+unetbootin (563-2) unstable; urgency=low
+
+  * debian/source/format
+    - Switched to 3.0 (quilt) source format
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Sun, 20 Nov 2011 03:34:50 +0530
+
 unetbootin (563-1) unstable; urgency=low
 
   * New upstream release.
   * New Maintainer. (Closes: #621132)  
 
  -- Muneeb Shaikh <iammuneeb@gmail.com>  Thu, 17 Nov 2011 18:57:02 +0530
+
+unetbootin (555-1) unstable; urgency=low
+
+  * Orphaned the package.
+  * New upstream release.
+
+ -- Eugene V. Lyubimkin <jackyf@debian.org>  Sat, 10 Sep 2011 13:16:45 +0300
 
 unetbootin (549-2) unstable; urgency=low
 
