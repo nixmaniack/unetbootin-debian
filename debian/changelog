@@ -1,3 +1,13 @@
+unetbootin (565-1) unstable; urgency=low
+
+  * New upstream release.
+  * Menu entry with icon. (Closes: 635013)
+  * Only build for architectures where syslinux is available. (Closes: 649102)
+  * debian/copyright
+    - Updated headers to machine readable format and updated license.
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Wed, 07 Dec 2011 22:57:36 +0530
+
 unetbootin (563-2) unstable; urgency=low
 
   * debian/source/format
