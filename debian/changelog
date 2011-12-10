@@ -1,3 +1,9 @@
+unetbootin (565-3) unstable; urgency=low
+
+  * Reverted to debhelper 7.
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Sun, 11 Dec 2011 04:56:56 +0530
+
 unetbootin (565-2) unstable; urgency=low
 
   * debian/control
