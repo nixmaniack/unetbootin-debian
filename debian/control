@@ -22,8 +22,8 @@ Package: unetbootin-translations
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: unetbootin
-Description: translations for unetbootin distribution installer
+Description: translations for the unetbootin distribution installer
  UNetbootin is an installer of Linux/BSD distributions to a partition or USB
  drive.
  .
- This package contains translations files for unetbootin.
+ This package contains translation files for unetbootin.
