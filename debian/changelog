@@ -1,3 +1,9 @@
+unetbootin (565-4) unstable; urgency=low
+
+  * Fixed some typos. (Closes: 653097)
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Sat, 24 Dec 2011 05:52:07 +0530
+
 unetbootin (565-3) unstable; urgency=low
 
   * Reverted to debhelper 7.
