@@ -1,3 +1,9 @@
+unetbootin (568-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Muneeb Shaikh <iammuneeb@gmail.com>  Sun, 29 Jan 2012 01:31:44 +0530
+
 unetbootin (565-4) unstable; urgency=low
 
   * Fixed some typos. (Closes: 653097)
