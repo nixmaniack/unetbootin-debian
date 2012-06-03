@@ -18,6 +18,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
 	relname \
+	.replace("12.04", "precise") \
 	.replace("11.10", "oneiric") \
 	.replace("11.04", "natty") \
 	.replace("10.10", "maverick") \
@@ -799,7 +800,7 @@ if (nameDistro == "Parted Magic")
 		}
 		else
 		{
-			cpuarch = "i686";
+			cpuarch = "i\\d86";
 		}
 		downloadfile(fileFilterNetDir(QStringList() << 
 		"http://exo.enarel.eu/mirror/partedmagic/" << 
@@ -886,6 +887,89 @@ if (nameDistro == "Sabayon Linux")
         extractiso(isotmpf);
 }
 
+if (nameDistro == "Salix")
+{
+	QString edition = "NONE"; // for old Salix
+	if (relname.contains("_xfce"))
+	{
+		relname.remove("_xfce");
+		edition = "xfce";
+	}
+	else if (relname.contains("_lxde"))
+	{
+		relname.remove("_lxde");
+		edition = "lxde";
+	}
+	else if (relname.contains("_kde"))
+	{
+		relname.remove("_kde");
+		edition = "kde";
+	}
+	else if (relname.contains("_fluxbox"))
+	{
+		relname.remove("_fluxbox");
+		edition = "fluxbox";
+	}
+	else if (relname.contains("_ratpoison"))
+	{
+		relname.remove("_ratpoison");
+		edition = "ratpoison";
+	}
+	// relname should only contains the version from there, i.e. 13.0.2a, 13.1.2, 13.37, 14.0, ... or latest
+    QString version = relname;
+	if (version == "latest") {
+        QString archfolder;
+        if (isarch64)
+        {
+            archfolder = "x86_64";
+            cpuarch = "64";
+        }
+        else
+        {
+            archfolder = "i486";
+            cpuarch = "";
+        }
+		if (islivecd) {
+            downloadfile(QString("http://latestsalix.enialis.net/%1/salixlive%2-%3.iso").arg(archfolder).arg(cpuarch).arg(edition), isotmpf);
+        }
+        else
+        {
+            downloadfile(QString("http://latestsalix.enialis.net/%1/salix%2-%3.iso").arg(archfolder).arg(cpuarch).arg(edition), isotmpf);
+        }
+    } else {
+        QStringList decomposedVersion = version.split(".");
+        QString simpleversion = decomposedVersion.at(0); // simple version contains only the two first numbers, i.e. 13.1 not 13.1.2
+        if (decomposedVersion.size() > 1) {
+            simpleversion.append(".").append(decomposedVersion.at(1));
+        }
+		if (islivecd) {
+            if (isarch64)
+            {
+                cpuarch = "64";
+            }
+            else
+            {
+                cpuarch = "32";
+            }
+            downloadfile(QString("http://downloads.sourceforge.net/salix/%1/salixlive-%4-%2-%3.iso").arg(simpleversion).arg(version).arg(cpuarch).arg(edition), isotmpf);
+        } else {
+            if (isarch64)
+            {
+                cpuarch = "64";
+            }
+            else
+            {
+                cpuarch = "";
+            }
+            if (edition == "NONE") { // Salix 13.0 does not have any edition, Xfce was the default.
+                downloadfile(QString("http://downloads.sourceforge.net/salix/%1/salix%3-%2.iso").arg(simpleversion).arg(version).arg(cpuarch), isotmpf);
+            } else {
+                downloadfile(QString("http://downloads.sourceforge.net/salix/%1/salix%3-%4-%2.iso").arg(simpleversion).arg(version).arg(cpuarch).arg(edition), isotmpf);
+            }
+        }
+    }
+	extractiso(isotmpf);
+}
 if (nameDistro == "Slax")
 {
 	downloadfile("http://www.slax.org/get_slax.php?download=iso", isotmpf);
@@ -1010,14 +1094,7 @@ if (nameDistro == "Kubuntu")
 		if (islivecd)
 		{
 			downloadfile(fileFilterNetDir(QStringList() << 
-			"http://releases.ubuntu.com/kubuntu/"+relname << 
-			"http://releases.ubuntu.com/releases/kubuntu/"+relname <<
-//			"ftp://releases.ubuntu.com/releases/.pool/" << 
-			"http://mirrors.gigenet.com/ubuntu/kubuntu/"+relname <<
-			"http://mirrors.easynews.com/linux/ubuntu-releases/kubuntu/"+relname <<
-			"http://www.gtlib.gatech.edu/pub/ubuntu-releases/kubuntu/"+relname <<
-			"http://ftp.wayne.edu/linux_distributions/ubuntu/kubuntu/"+relname <<
-			"http://ubuntu.mirrors.proxad.net/kubuntu/"+relname
+			"http://cdimage.ubuntu.com/kubuntu/releases/"+relname+"/release"
 			, 524288000, 1048576000, QList<QRegExp>() << 
 			QRegExp(".iso$", Qt::CaseInsensitive) << 
 			QRegExp(cpuarch+".iso$", Qt::CaseInsensitive) << 
@@ -1025,6 +1102,47 @@ if (nameDistro == "Kubuntu")
 			QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive) << 
 			QRegExp("kubuntu\\S{0,}"+relname+"\\S{0,}desktop\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) << 
 			QRegExp("kubuntu-"+relname+"\\S{0,}-desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
+			), isotmpf);
+			extractiso(isotmpf);
+		}
+	}
+	ubuntunetinst
+}
+
+if (nameDistro == "Lubuntu")
+{
+	if (isarch64)
+	{
+		cpuarch = "amd64";
+	}
+	else
+	{
+		cpuarch = "i386";
+	}
+	if (relname == "daily")
+	{
+		downloadfile(fileFilterNetDir(QStringList() <<
+		"http://cdimage.ubuntu.com/lubuntu/daily-live/current/"
+		, 61440000, 1048576000, QList<QRegExp>() <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("desktop\\S{0,}.iso$", Qt::CaseInsensitive) <<
+		QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
+		), isotmpf);
+		extractiso(isotmpf);
+	}
+	else
+	{
+		if (islivecd)
+		{
+			downloadfile(fileFilterNetDir(QStringList() <<
+			"http://cdimage.ubuntu.com/lubuntu/releases/"+relname+"/release"
+			, 524288000, 1048576000, QList<QRegExp>() <<
+			QRegExp(".iso$", Qt::CaseInsensitive) <<
+			QRegExp(cpuarch+".iso$", Qt::CaseInsensitive) <<
+			QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive) <<
+			QRegExp("desktop-"+cpuarch+".iso$", Qt::CaseInsensitive) <<
+			QRegExp("lubuntu\\S{0,}"+relname+"\\S{0,}desktop\\S{0,}"+cpuarch+"\\S{0,}.iso$", Qt::CaseInsensitive) <<
+			QRegExp("lubuntu-"+relname+"\\S{0,}-desktop-"+cpuarch+".iso$", Qt::CaseInsensitive)
 			), isotmpf);
 			extractiso(isotmpf);
 		}
@@ -1078,15 +1196,7 @@ if (nameDistro == "Xubuntu")
 		if (islivecd)
 		{
 			downloadfile(fileFilterNetDir(QStringList() << 
-			"http://cdimage.ubuntu.com/xubuntu/releases/"+relname+"/release/" <<
-			"http://mirror.csclub.uwaterloo.ca/xubuntu-releases/"+relname+"/release/" <<
-			"http://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/"+relname+"/release/" <<
-			"http://se.archive.ubuntu.com/mirror/cdimage.ubuntu.com/xubuntu/releases/"+relname+"/release/" <<
-			"http://mirror.anl.gov/pub/ubuntu-iso/CDs-Xubuntu/"+relname+"/release/" <<
-			"http://mirror.yandex.ru/ubuntu-cdimage/xubuntu/releases/"+relname+"/release/" <<
-			"http://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/"+relname+"/release/" <<
-			"http://ubuntu.univ-nantes.fr/ubuntu-cd/xubuntu/"+relname+"/release/" <<
-			"ftp://ftp.free.fr/mirrors/ftp.xubuntu.com/releases/"+relname+"/release/"
+			"http://cdimage.ubuntu.com/xubuntu/releases/"+relname+"/release"
 			, 524288000, 1048576000, QList<QRegExp>() << 
 			QRegExp(".iso$", Qt::CaseInsensitive) << 
 			QRegExp(cpuarch+".iso$", Qt::CaseInsensitive) << 
