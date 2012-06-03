@@ -9,12 +9,17 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 #ifndef ubuntuverlist
 #define ubuntuverlist \
-"8.04_NetInstall" << "8.04_NetInstall_x64" << "8.04_HdMedia" << "8.04_HdMedia_x64" << "8.04_Live" << "8.04_Live_x64" << \
-"9.10_NetInstall" << "9.10_NetInstall_x64" << "9.10_HdMedia" << "9.10_HdMedia_x64" << "9.10_Live" << "9.10_Live_x64" << \
 "10.04_NetInstall" << "10.04_NetInstall_x64" << "10.04_HdMedia" << "10.04_HdMedia_x64" << "10.04_Live" << "10.04_Live_x64" << \
-"10.10_NetInstall" << "10.10_NetInstall_x64" << "10.10_HdMedia" << "10.10_HdMedia_x64" << "10.10_Live" << "10.10_Live_x64" << \
 "11.04_NetInstall" << "11.04_NetInstall_x64" << "11.04_HdMedia" << "11.04_HdMedia_x64" << "11.04_Live" << "11.04_Live_x64" << \
 "11.10_NetInstall" << "11.10_NetInstall_x64" << "11.10_HdMedia" << "11.10_HdMedia_x64" << "11.10_Live" << "11.10_Live_x64" << \
+"12.04_NetInstall" << "12.04_NetInstall_x64" << "12.04_HdMedia" << "12.04_HdMedia_x64" << "12.04_Live" << "12.04_Live_x64" << \
+"Daily_Live" << "Daily_Live_x64"
+#endif
+
+#ifndef lubverlist
+#define lubverlist \
+"11.10_NetInstall" << "11.10_NetInstall_x64" << "11.10_HdMedia" << "11.10_HdMedia_x64" << "11.10_Live" << "11.10_Live_x64" << \
+"12.04_NetInstall" << "12.04_NetInstall_x64" << "12.04_HdMedia" << "12.04_HdMedia_x64" << "12.04_Live" << "12.04_Live_x64" << \
 "Daily_Live" << "Daily_Live_x64"
 #endif
 
@@ -127,21 +132,26 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://ftp.kaspersky.com/devbuilds/Re
 	"<b>Description:</b> Kaspersky Rescue Disk detects and removes malware from your Windows installation.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which malware scans can be launched.") <<
 "10_Live" << "8_Live"));
-	distroselect->addItem("Kubuntu", (QStringList() << "10.04_Live" <<
+	distroselect->addItem("Kubuntu", (QStringList() << "12.04_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.kubuntu.org/\">http://www.kubuntu.org</a><br/>"
 	"<b>Description:</b> Kubuntu is an official Ubuntu derivative featuring the KDE desktop.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive") <<
 ubuntuverlist));
-	distroselect->addItem("LinuxConsole", (QStringList() << "1.0.2009-cd" <<
+	distroselect->addItem("LinuxConsole", (QStringList() << "1.0.2010-cd" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxconsole.org/\">http://linuxconsole.org</a><br/>"
  "<b>Description:</b> LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .<br/>"
- "<b>Install Notes:</b> The 1.0.2009 is latest 1.0 release.") <<
- "1.0.2009-cd"));
+ "<b>Install Notes:</b> The 1.0.2010 is latest 1.0, now available on rolling release (run liveuptate to update modules and kernel).") <<
+ "1.0.2010-cd"));
 	distroselect->addItem("Linux Mint", (QStringList() << "10_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://linuxmint.com/\">http://linuxmint.com</a><br/>"
 	"<b>Description:</b> Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.") <<
 	"3.1_Live" << "4.0_Live" << "5_Live" << "5_Live_x64" << "6_Live" << "6_Live_x64" << "7_Live" << "7_Live_x64" << "8_Live" << "8_Live_x64" << "9_Live" << "9_Live_x64" << "10_Live" << "10_Live_x64"));
+distroselect->addItem("Lubuntu", (QStringList() << "12.04_Live" <<
+unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.lubuntu.net/\">http://www.lubuntu.net</a><br/>"
+	"<b>Description:</b> Lubuntu is an official Ubuntu derivative featuring the LXDE desktop.<br/>"
+	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive") <<
+lubverlist));
 distroselect->addItem("Mandriva", (QStringList() << "2008.1_NetInstall" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.mandriva.com/\">http://www.mandriva.com/</a><br/>"
 	"<b>Description:</b> Mandriva is a user-friendly distro formerly known as Mandrake Linux.<br/>"
@@ -202,6 +212,18 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.sabayonlinux.org/\">http:/
 	"<b>Description:</b> Sabayon Linux is a Gentoo-based Live DVD distribution which features the Entropy binary package manager in addition to the source-based Portage.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The LiteMCE edition is 2 GB, while the full edition will need an 8 GB USB drive") <<
 	"5.1" << "5.1_x64" << "5.2" << "5.2_x64"));
+distroselect->addItem("Salix", (QStringList() << "13.37_Live_Xfce" <<
+unetbootin::tr("<b>Homepage:</b> <a href=\"http://salixos.org\">http://salixos.org</a><br/>"
+	"<b>Description:</b> Salix is a GNU/Linux distribution based on Slackware (fully compatible) that is simple, fast and easy to use.<br/>"
+	"Like a bonsai, Salix is small, light & the product of infinite care.<br/>"
+	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched.<br/>"
+	"Default root password is <b>live</b>.") <<
+	"13.0.2a_HdMedia" << "13.0.2a_HdMedia_x64" <<
+  "13.1.2_HdMedia_Fluxbox" << "13.1.2_HdMedia_Fluxbox_x64" << "13.1.2_HdMedia_KDE" << "13.1.2_HdMedia_KDE_x64" << "13.1.2_HdMedia_LXDE" << "13.1.2_HdMedia_LXDE_x64" << "13.1.2_HdMedia_Xfce" << "13.1.2_HdMedia_Xfce_x64" <<
+  "13.37_HdMedia_Fluxbox" << "13.37_HdMedia_Fluxbox_x64" << "13.37_HdMedia_KDE" << "13.37_HdMedia_KDE_x64" << "13.37_HdMedia_LXDE" << "13.37_HdMedia_LXDE_x64" << "13.37_HdMedia_Ratpoison" << "13.37_HdMedia_Ratpoison_x64" << "13.37_HdMedia_Xfce" << "13.37_HdMedia_Xfce_x64" <<
+  "13.37_Live_Xfce" << "13.37_Live_Xfce_x64" <<
+  "Latest_HdMedia_Fluxbox" << "Latest_HdMedia_Fluxbox_x64" << "Latest_HdMedia_KDE" << "Latest_HdMedia_KDE_x64" << "Latest_HdMedia_LXDE" << "Latest_HdMedia_LXDE_x64" << "Latest_HdMedia_Ratpoison" << "Latest_HdMedia_Ratpoison_x64" << "Latest_HdMedia_Xfce" << "Latest_HdMedia_Xfce_x64" <<
+  "Latest_Live_Fluxbox" << "Latest_Live_Fluxbox_x64" << "Latest_Live_KDE" << "Latest_Live_KDE_x64" << "Latest_Live_LXDE" << "Latest_Live_LXDE_x64" << "Latest_Live_Ratpoison" << "Latest_Live_Ratpoison_x64" << "Latest_Live_Xfce" << "Latest_Live_Xfce_x64"));
 distroselect->addItem("Slax", (QStringList() << "Latest_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.slax.org/\">http://www.slax.org</a><br/>"
 	"<b>Description:</b> Slax is a Slackware-based distribution featuring the KDE desktop.<br/>"
@@ -232,7 +254,7 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://hacktolive.org/wiki/Super_OS\"
 //	"<b>Description:</b> SystemRescueCD includes various partition management and data recovery and backup tools.<br/>"
 //	"<b>Install Notes:</b> SystemRescueCD is booted and run in live mode; no installation is required to use it.") <<
 //"Latest_Live"));
-distroselect->addItem("Ubuntu", (QStringList() << "10.04_Live" <<
+distroselect->addItem("Ubuntu", (QStringList() << "12.04_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.ubuntu.com/\">http://www.ubuntu.com</a><br/>"
 	"<b>Description:</b> Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive") <<
@@ -242,7 +264,7 @@ unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.xpud.org/\">http://www.xpu
 	"<b>Description:</b> xPUD is a lightweight distribution featuring a simple kiosk-like interface with a web browser and media player.<br/>"
 	"<b>Install Notes:</b> The Live version loads the entire system into RAM and boots from memory.") <<
 "Stable_Live" << "Unstable_Live"));
-distroselect->addItem("Xubuntu", (QStringList() << "10.04_Live" <<
+distroselect->addItem("Xubuntu", (QStringList() << "12.04_Live" <<
 unetbootin::tr("<b>Homepage:</b> <a href=\"http://www.xubuntu.org/\">http://www.xubuntu.org</a><br/>"
 	"<b>Description:</b> Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.<br/>"
 	"<b>Install Notes:</b> The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive") <<
