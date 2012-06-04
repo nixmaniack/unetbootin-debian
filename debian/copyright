@@ -1,10 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: UNetbootin
+Upstream-Contact: Geza Kovacs <geza0kovacs@gmail.com>
+Source: http://sourceforge.net/projects/unetbootin/files/
+
 Files: *
 Copyright: (C) 2007-2011 Geza Kovacs <geza0kovacs@gmail.com>
 License: GPL-2+
 
 Files: debian/*
- (C) 2008-2011 Eugene V. Lyubimkin <jackyf.devel@gmail.com>
- (C) 2011 Muneeb Shaikh <iammuneeb@gmail.com>
+Copyright: (C) 2008-2011 Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Copyright: (C) 2011-2012 Muneeb Shaikh <iammuneeb@gmail.com>
 License: GPL-3
 
 License: GPL-2+
