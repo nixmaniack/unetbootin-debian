@@ -1,6 +1,10 @@
 unetbootin (575-1) unstable; urgency=low
 
   * New upstream release.
+  * debian/control
+   - Bumped Standards-Version 3.9.3, changes in copyright header
+  * debian/copyright
+   - Added copyright headers according to new copyright-format
 
  -- Muneeb Shaikh <iammuneeb@gmail.com>  Tue, 05 Jun 2012 02:23:24 +0530
 
