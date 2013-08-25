@@ -4,8 +4,10 @@ unetbootin (585-1) unstable; urgency=low
   * debian/control
    - Bumped Standards-Version to 3.9.4
    - Added Geza Kovacs to Uploaders
+  * debian/copyright
+   - Corrected copyright header format
 
- -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 25 Aug 2013 16:08:34 -0700
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 25 Aug 2013 16:30:09 -0700
 
 unetbootin (575-1) unstable; urgency=low
 
