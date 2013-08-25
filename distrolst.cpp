@@ -18,6 +18,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #ifndef ubunturelnamereplace
 #define ubunturelnamereplace \
 	relname \
+    .replace("13.04", "raring") \
+    .replace("12.10", "quantal") \
 	.replace("12.04", "precise") \
 	.replace("11.10", "oneiric") \
 	.replace("11.04", "natty") \
@@ -102,7 +104,7 @@ if (nameDistro == "Elive")
 	, 524288000, 1048576000, QList<QRegExp>() << 
 	QRegExp(".iso$", Qt::CaseInsensitive) << 
 	QRegExp("elive\\S{0,}.iso$", Qt::CaseInsensitive)
-	), isotmpf);
+    ), isotmpf);
 	extractiso(isotmpf);
 }
 
@@ -237,10 +239,26 @@ if (nameDistro == "CentOS")
 	{
 		cpuarch = "i386";
 	}
-	downloadfile(QString("http://isoredirect.centos.org/centos/%1/os/%2/images/pxeboot/vmlinuz").arg(relname, cpuarch), QString("%1ubnkern").arg(targetPath));
-	downloadfile(QString("http://isoredirect.centos.org/centos/%1/os/%2/images/pxeboot/initrd.img").arg(relname, cpuarch), QString("%1ubninit").arg(targetPath));
-	postinstmsg = unetbootin::tr("\n*IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the 'Start Installation' option, choose 'Network' as the source, choose 'HTTP' as the protocol, enter 'mirrors.kernel.org' when prompted for a server, and enter '/centos/%1/os/%2' when asked for the folder.").arg(nameVersion, cpuarch);
-	kernelOpts = "splash=silent showopts";
+	if (islivecd)
+	{
+		downloadfile(fileFilterNetDir(QStringList() <<
+		QString("http://mirrors.kernel.org/centos/%1/isos/%2/").arg(relname, cpuarch) <<
+		QString("http://mirror.stanford.edu/yum/pub/centos/%1/isos/%2/").arg(relname, cpuarch) <<
+		QString("http://ftp.osuosl.org/pub/centos/%1/isos/%2/").arg(relname, cpuarch) <<
+		QString("http://mirrors.usc.edu/pub/linux/distributions/centos/%1/isos/%2/").arg(relname, cpuarch)
+		, 524288000, 1048576000, QList<QRegExp>() <<
+		QRegExp(".iso$", Qt::CaseInsensitive) <<
+		QRegExp("LiveCD\\S{0,}.iso$", Qt::CaseInsensitive)
+		), isotmpf);
+		extractiso(isotmpf);
+	}
+	else
+	{
+		downloadfile(QString("http://isoredirect.centos.org/centos/%1/os/%2/images/pxeboot/vmlinuz").arg(relname, cpuarch), QString("%1ubnkern").arg(targetPath));
+		downloadfile(QString("http://isoredirect.centos.org/centos/%1/os/%2/images/pxeboot/initrd.img").arg(relname, cpuarch), QString("%1ubninit").arg(targetPath));
+		postinstmsg = unetbootin::tr("\n*IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the 'Start Installation' option, choose 'Network' as the source, choose 'HTTP' as the protocol, enter 'mirrors.kernel.org' when prompted for a server, and enter '/centos/%1/os/%2' when asked for the folder.").arg(nameVersion, cpuarch);
+		kernelOpts = "splash=silent showopts";
+	}
 }
 
 if (nameDistro == "CloneZilla")
@@ -350,50 +368,42 @@ if (nameDistro == "Elive")
 
 if (nameDistro == "Fedora")
 {
+    QString minorarch = "";
 	if (isarch64)
 	{
 		cpuarch = "x86_64";
+        minorarch = "x86_64";
 	}
 	else
 	{
 		cpuarch = "i386";
+        minorarch = "i686";
 	}
 	if (islivecd)
 	{
-		if (!isarch64)
-		{
-			cpuarch = "i686";
-		}
-		if (relname == "8")
-		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-Live-%2.iso").arg(relname, cpuarch), isotmpf);
-		}
-		else if (relname == "10")
-		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/F%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
-		}
-		else if (relname == "11" || relname == "12" || relname == "13")
-		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live.iso").arg(relname, cpuarch), isotmpf);
-		}
-		else
-		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%2-Live-Desktop.iso").arg(relname, cpuarch), isotmpf);
-		}
-		extractiso(isotmpf);
+        if (relname == "19")
+        {
+            downloadfile(QString("http://download.fedoraproject.org/pub/fedora/linux/releases/%1/Live/%2/Fedora-Live-Desktop-%3-%1-1.iso").arg(relname).arg(cpuarch).arg(minorarch), isotmpf);
+            extractiso(isotmpf);
+        }
+        else
+        {
+            downloadfile(QString("http://download.fedoraproject.org/pub/fedora/linux/releases/%1/Live/%2/Fedora-%1-%3-Live-Desktop.iso").arg(relname).arg(cpuarch).arg(minorarch), isotmpf);
+            extractiso(isotmpf);
+        }
 	}
 	else
 	{
 		if (relname == "rawhide")
 		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/development/%1/os/images/pxeboot/vmlinuz").arg(cpuarch), QString("%1ubnkern").arg(targetPath));
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/development/%1/os/images/pxeboot/initrd.img").arg(cpuarch), QString("%1ubninit").arg(targetPath));
+            downloadfile(QString("download.fedoraproject.org/pub/fedora/linux/development/%1/os/images/pxeboot/vmlinuz").arg(cpuarch), QString("%1ubnkern").arg(targetPath));
+            downloadfile(QString("download.fedoraproject.org/pub/fedora/linux/development/%1/os/images/pxeboot/initrd.img").arg(cpuarch), QString("%1ubninit").arg(targetPath));
 			postinstmsg = unetbootin::tr("\n*IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the 'Start Installation' option, choose 'Network' as the source, choose 'HTTP' as the protocol, enter 'download.fedora.redhat.com' when prompted for a server, and enter '/pub/fedora/linux/development/%1/os' when asked for the folder.").arg(cpuarch);
-		}
+        }
 		else
 		{
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Fedora/%2/os/images/pxeboot/vmlinuz").arg(relname, cpuarch), QString("%1ubnkern").arg(targetPath));
-			downloadfile(QString("http://download.fedora.redhat.com/pub/fedora/linux/releases/%1/Fedora/%2/os/images/pxeboot/initrd.img").arg(relname, cpuarch), QString("%1ubninit").arg(targetPath));
+            downloadfile(QString("http://download.fedoraproject.org/pub/fedora/linux/releases/%1/Fedora/%2/os/images/pxeboot/vmlinuz").arg(relname, cpuarch), QString("%1ubnkern").arg(targetPath));
+            downloadfile(QString("http://download.fedoraproject.org/pub/fedora/linux/releases/%1/Fedora/%2/os/images/pxeboot/initrd.img").arg(relname, cpuarch), QString("%1ubninit").arg(targetPath));
 			postinstmsg = unetbootin::tr("\n*IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the 'Start Installation' option, choose 'Network' as the source, choose 'HTTP' as the protocol, enter 'download.fedora.redhat.com' when prompted for a server, and enter '/pub/fedora/linux/releases/%1/Fedora/%2/os' when asked for the folder.").arg(relname, cpuarch);
 		}
 		kernelOpts = "splash=silent showopts";
@@ -572,37 +582,20 @@ if (nameDistro == "LinuxConsole")
 
 if (nameDistro == "Linux Mint")
 {
-	if (relname == "9" || relname == "10")
-	{
-		if (isarch64)
-		{
-			cpuarch = "amd64";
-		}
-		else
-		{
-			cpuarch = "i386";
-		}
-	}
+    if (isarch64)
+    {
+        cpuarch = "64";
+    }
 	else
-	{
-		if (isarch64)
-		{
-			cpuarch = "-x64";
-		}
-		else
-		{
-			cpuarch = "";
-		}
+    {
+        cpuarch = "32";
 	}
 	QList<QRegExp> mintregex = QList<QRegExp>() <<
 		QRegExp(".iso$", Qt::CaseInsensitive) <<
 		QRegExp("linuxmint", Qt::CaseInsensitive) <<
-		QRegExp(cpuarch, Qt::CaseInsensitive);
-	if (relname == "9" || relname == "10")
-	{
-		mintregex.append(QRegExp("cd", Qt::CaseInsensitive));
-		mintregex.append(QRegExp("gnome", Qt::CaseInsensitive));
-	}
+        QRegExp(cpuarch, Qt::CaseInsensitive) <<
+        QRegExp("^((?!nocodecs).)*$", Qt::CaseInsensitive) <<
+        QRegExp("cinnamon", Qt::CaseInsensitive);
 	downloadfile(fileFilterNetDir(QStringList() <<
 	QString("http://ftp.heanet.ie/pub/linuxmint.com/stable/%1/").arg(relname) <<
 	QString("http://mira.sunsite.utk.edu/linuxmint/stable/%1/").arg(relname) <<
@@ -794,25 +787,7 @@ if (nameDistro == "Parted Magic")
 	}
 	else
 	{
-		if (isarch64)
-		{
-			cpuarch = "x86_64";
-		}
-		else
-		{
-			cpuarch = "i\\d86";
-		}
-		downloadfile(fileFilterNetDir(QStringList() << 
-		"http://exo.enarel.eu/mirror/partedmagic/" << 
-		"http://fulloffacts.com/get/partedmagic/" <<
-		"http://www.digitalincursion.net/partedmagic/"
-		, 10485760, 209715200, QList<QRegExp>() << 
-		QRegExp("^pmagic", Qt::CaseInsensitive) << 
-		QRegExp(cpuarch, Qt::CaseInsensitive) <<
-		QRegExp(".iso.zip$", Qt::CaseInsensitive) << 
-		QRegExp("\\d.iso.zip$", Qt::CaseInsensitive) << 
-		QRegExp("^pmagic-\\d", Qt::CaseInsensitive)
-		), isotmpf);
+        downloadfile("http://partedmagic.com/partedmagic-latest.iso", isotmpf);
 		extractiso(isotmpf);
 	}
 }

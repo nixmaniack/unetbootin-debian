@@ -7,15 +7,15 @@
         <source></source>
         <translation>Project-Id-Version: PACKAGE VERSION
 Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2012-03-25 16:01-0400
-PO-Revision-Date: 2010-11-15 22:03+0000
+POT-Creation-Date: 2012-12-24 00:10-0800
+PO-Revision-Date: 2012-12-27 08:33+0000
 Last-Translator: Yaron &lt;sh.yaron@gmail.com&gt;
 Language-Team: LANGUAGE &lt;LL@li.org&gt;
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
-X-Launchpad-Export-Date: 2012-04-28 07:32+0000
-X-Generator: Launchpad (build 15149)
+X-Launchpad-Export-Date: 2013-06-06 06:04+0000
+X-Generator: Launchpad (build 16667)
 </translation>
     </message>
 </context>
@@ -30,422 +30,424 @@ X-Generator: Launchpad (build 15149)
 <context>
     <name>unetbootin</name>
     <message>
-        <location filename="unetbootin.cpp" line="208"/>
-        <location filename="unetbootin.cpp" line="306"/>
+        <location filename="unetbootin.cpp" line="209"/>
         <location filename="unetbootin.cpp" line="307"/>
-        <location filename="unetbootin.cpp" line="374"/>
-        <location filename="unetbootin.cpp" line="530"/>
-        <location filename="unetbootin.cpp" line="3344"/>
-        <location filename="unetbootin.cpp" line="3357"/>
-        <location filename="unetbootin.cpp" line="3536"/>
-        <location filename="unetbootin.cpp" line="4147"/>
+        <location filename="unetbootin.cpp" line="308"/>
+        <location filename="unetbootin.cpp" line="375"/>
+        <location filename="unetbootin.cpp" line="542"/>
+        <location filename="unetbootin.cpp" line="3409"/>
+        <location filename="unetbootin.cpp" line="3422"/>
+        <location filename="unetbootin.cpp" line="3604"/>
+        <location filename="unetbootin.cpp" line="4230"/>
         <source>Hard Disk</source>
         <translation>כונן קשיח</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="210"/>
-        <location filename="unetbootin.cpp" line="303"/>
+        <location filename="unetbootin.cpp" line="211"/>
         <location filename="unetbootin.cpp" line="304"/>
-        <location filename="unetbootin.cpp" line="376"/>
-        <location filename="unetbootin.cpp" line="534"/>
-        <location filename="unetbootin.cpp" line="699"/>
-        <location filename="unetbootin.cpp" line="719"/>
-        <location filename="unetbootin.cpp" line="973"/>
-        <location filename="unetbootin.cpp" line="1534"/>
-        <location filename="unetbootin.cpp" line="1618"/>
-        <location filename="unetbootin.cpp" line="2547"/>
-        <location filename="unetbootin.cpp" line="2590"/>
-        <location filename="unetbootin.cpp" line="3348"/>
-        <location filename="unetbootin.cpp" line="3374"/>
-        <location filename="unetbootin.cpp" line="3540"/>
-        <location filename="unetbootin.cpp" line="3864"/>
-        <location filename="unetbootin.cpp" line="4151"/>
+        <location filename="unetbootin.cpp" line="305"/>
+        <location filename="unetbootin.cpp" line="377"/>
+        <location filename="unetbootin.cpp" line="546"/>
+        <location filename="unetbootin.cpp" line="712"/>
+        <location filename="unetbootin.cpp" line="732"/>
+        <location filename="unetbootin.cpp" line="986"/>
+        <location filename="unetbootin.cpp" line="1561"/>
+        <location filename="unetbootin.cpp" line="1645"/>
+        <location filename="unetbootin.cpp" line="2574"/>
+        <location filename="unetbootin.cpp" line="2617"/>
+        <location filename="unetbootin.cpp" line="3413"/>
+        <location filename="unetbootin.cpp" line="3439"/>
+        <location filename="unetbootin.cpp" line="3608"/>
+        <location filename="unetbootin.cpp" line="3932"/>
+        <location filename="unetbootin.cpp" line="4234"/>
         <source>USB Drive</source>
         <translation>כונן USB</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="211"/>
-        <location filename="unetbootin.cpp" line="228"/>
+        <location filename="unetbootin.cpp" line="212"/>
         <location filename="unetbootin.cpp" line="229"/>
-        <location filename="unetbootin.cpp" line="342"/>
-        <location filename="unetbootin.cpp" line="650"/>
-        <location filename="unetbootin.cpp" line="651"/>
-        <location filename="unetbootin.cpp" line="3430"/>
+        <location filename="unetbootin.cpp" line="230"/>
+        <location filename="unetbootin.cpp" line="343"/>
+        <location filename="unetbootin.cpp" line="660"/>
+        <location filename="unetbootin.cpp" line="663"/>
+        <location filename="unetbootin.cpp" line="664"/>
+        <location filename="unetbootin.cpp" line="3498"/>
         <source>ISO</source>
         <translation>ISO</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="212"/>
-        <location filename="unetbootin.cpp" line="224"/>
+        <location filename="unetbootin.cpp" line="213"/>
         <location filename="unetbootin.cpp" line="225"/>
-        <location filename="unetbootin.cpp" line="347"/>
-        <location filename="unetbootin.cpp" line="655"/>
-        <location filename="unetbootin.cpp" line="656"/>
-        <location filename="unetbootin.cpp" line="3422"/>
+        <location filename="unetbootin.cpp" line="226"/>
+        <location filename="unetbootin.cpp" line="348"/>
+        <location filename="unetbootin.cpp" line="660"/>
+        <location filename="unetbootin.cpp" line="668"/>
+        <location filename="unetbootin.cpp" line="669"/>
+        <location filename="unetbootin.cpp" line="3490"/>
         <source>Floppy</source>
         <translation>דיסקט</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="245"/>
-        <location filename="unetbootin.cpp" line="251"/>
-        <location filename="unetbootin.cpp" line="255"/>
-        <location filename="unetbootin.cpp" line="259"/>
-        <location filename="unetbootin.cpp" line="263"/>
-        <location filename="unetbootin.cpp" line="269"/>
-        <location filename="unetbootin.cpp" line="297"/>
+        <location filename="unetbootin.cpp" line="246"/>
+        <location filename="unetbootin.cpp" line="252"/>
+        <location filename="unetbootin.cpp" line="256"/>
+        <location filename="unetbootin.cpp" line="260"/>
+        <location filename="unetbootin.cpp" line="264"/>
+        <location filename="unetbootin.cpp" line="270"/>
+        <location filename="unetbootin.cpp" line="298"/>
         <source>either</source>
         <translation>או</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="276"/>
+        <location filename="unetbootin.cpp" line="277"/>
         <source>LiveUSB persistence</source>
-        <translation></translation>
+        <translation>שימור עם LiveUSB</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="291"/>
+        <location filename="unetbootin.cpp" line="292"/>
         <source>FAT32-formatted USB drive</source>
-        <translation></translation>
+        <translation>כונן USB בפריסת FAT32</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="295"/>
+        <location filename="unetbootin.cpp" line="296"/>
         <source>EXT2-formatted USB drive</source>
-        <translation></translation>
+        <translation>כונן USB בפריסת EXT2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="647"/>
+        <location filename="unetbootin.cpp" line="660"/>
         <source>Open Disk Image File</source>
         <translation>פתיחת קובץ דמות תקליטור</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="647"/>
+        <location filename="unetbootin.cpp" line="660"/>
         <source>All Files</source>
         <translation>כל הקבצים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="665"/>
-        <location filename="unetbootin.cpp" line="673"/>
-        <location filename="unetbootin.cpp" line="681"/>
+        <location filename="unetbootin.cpp" line="678"/>
+        <location filename="unetbootin.cpp" line="686"/>
+        <location filename="unetbootin.cpp" line="694"/>
         <source>All Files (*)</source>
         <translation>כל הקבצים (*)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="665"/>
+        <location filename="unetbootin.cpp" line="678"/>
         <source>Open Kernel File</source>
         <translation>פתיחת קובץ ליבה</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="673"/>
+        <location filename="unetbootin.cpp" line="686"/>
         <source>Open Initrd File</source>
         <translation>פתיחת קובץ Initrd</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="681"/>
+        <location filename="unetbootin.cpp" line="694"/>
         <source>Open Bootloader Config File</source>
         <translation>פתיחת קובץ תצורת איתחול</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="703"/>
+        <location filename="unetbootin.cpp" line="716"/>
         <source>Insert a USB flash drive</source>
         <translation>יש לחבר כונן USB</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="704"/>
+        <location filename="unetbootin.cpp" line="717"/>
         <source>No USB flash drives were found. If you have already inserted a USB drive, try reformatting it as FAT32.</source>
         <translation>לא נמצאו כונני USB. במידה שכבר חובר כונן USB, יש לנסות לפרמט אותו כ־FAT32.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="723"/>
+        <location filename="unetbootin.cpp" line="736"/>
         <source>%1 not mounted</source>
         <translation>%1 אינו מעוגן</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="724"/>
+        <location filename="unetbootin.cpp" line="737"/>
         <source>You must first mount the USB drive %1 to a mountpoint. Most distributions will do this automatically after you remove and reinsert the USB drive.</source>
         <translation>ראשית יש לעגן את כונן ה־USB %1 לנקודת עגינה. רוב ההפצות יעשו זאת אוטומטית לאחר הסרה וחיבור מחדש של כונן ה־USB.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="739"/>
+        <location filename="unetbootin.cpp" line="752"/>
         <source>Select a distro</source>
         <translation>יש לבחור הפצה</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="740"/>
+        <location filename="unetbootin.cpp" line="753"/>
         <source>You must select a distribution to load.</source>
         <translation>יש לבחור הפצה לטעינה.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="754"/>
+        <location filename="unetbootin.cpp" line="767"/>
         <source>Select a disk image file</source>
         <translation>יש לבחור קובץ דמות תקליטור</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="755"/>
+        <location filename="unetbootin.cpp" line="768"/>
         <source>You must select a disk image file to load.</source>
         <translation>יש לבחור קובץ דמות לטעינה.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="769"/>
+        <location filename="unetbootin.cpp" line="782"/>
         <source>Select a kernel and/or initrd file</source>
         <translation>יש לבחור ליבה ו/או קובץ initrd</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="770"/>
+        <location filename="unetbootin.cpp" line="783"/>
         <source>You must select a kernel and/or initrd file to load.</source>
         <translation>יש לבחור ליבה ו/או קובץ initrd לטעינה.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="784"/>
+        <location filename="unetbootin.cpp" line="797"/>
         <source>Diskimage file not found</source>
         <translation>קובץ דמות התקליטור לא נמצא</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="785"/>
+        <location filename="unetbootin.cpp" line="798"/>
         <source>The specified diskimage file %1 does not exist.</source>
         <translation>קובץ דמות התקליטור שצוין %1 אינו קיים.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="799"/>
+        <location filename="unetbootin.cpp" line="812"/>
         <source>Kernel file not found</source>
         <translation>קובץ הליבה לא נמצא</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="800"/>
+        <location filename="unetbootin.cpp" line="813"/>
         <source>The specified kernel file %1 does not exist.</source>
         <translation>קובץ הליבה שצוין %1 לא נמצא.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="814"/>
+        <location filename="unetbootin.cpp" line="827"/>
         <source>Initrd file not found</source>
         <translation>קובץ ה־initrd לא נמצא</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="815"/>
+        <location filename="unetbootin.cpp" line="828"/>
         <source>The specified initrd file %1 does not exist.</source>
         <translation>קובץ ה־initrd שצוין %1 לא נמצא.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="919"/>
+        <location filename="unetbootin.cpp" line="932"/>
         <source>%1 exists, overwrite?</source>
         <translation>%1 קיים, לשכתב?</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="920"/>
+        <location filename="unetbootin.cpp" line="933"/>
         <source>The file %1 already exists. Press &apos;Yes to All&apos; to overwrite it and not be prompted again, &apos;Yes&apos; to overwrite files on an individual basis, and &apos;No&apos; to retain your existing version. If in doubt, press &apos;Yes to All&apos;.</source>
         <translation>הקובץ %1 כבר קיים. יש ללחוץ על &apos;כן להכול&apos; כדי לשכתב ושלא תופיע שאלה שוב, &apos;כן&apos; כדי לשכתב קבצים באופן יחידני ו־&apos;לא&apos; כדי לשמור על הגרסה הנוכחית. אם קיים ספק, יש לבחור ב־&apos;כן להכול&apos;.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="946"/>
+        <location filename="unetbootin.cpp" line="959"/>
         <source>%1 is out of space, abort installation?</source>
         <translation>המקום שב־%1 אזל, האם לבטל את ההתקנה?</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="947"/>
+        <location filename="unetbootin.cpp" line="960"/>
         <source>The directory %1 is out of space. Press &apos;Yes&apos; to abort installation, &apos;No&apos; to ignore this error and attempt to continue installation, and &apos;No to All&apos; to ignore all out-of-space errors.</source>
         <translation>בתיקייה %1 אין עוד מקום. ניתן ללחוץ על &apos;כן&apos; כדי לבטל את ההתקנה, &apos;לא&apos; כדי להתעלם משגיאה זו ולנסות להמשיך בהתקנה ו־&apos;לא להכול&apos; כדי להתעלם מכל ההתרעות אודות המחסור במקום.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1041"/>
+        <location filename="unetbootin.cpp" line="1054"/>
         <source>Locating kernel file in %1</source>
         <translation>מתבצע איתור של קובץ הליבה ב־%1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1092"/>
+        <location filename="unetbootin.cpp" line="1105"/>
         <source>Copying kernel file from %1</source>
         <translation>קובץ הליבה מועתק מ־%1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1098"/>
+        <location filename="unetbootin.cpp" line="1111"/>
         <source>Locating initrd file in %1</source>
         <translation>קומתבצע איתור של קובץ ה־initrd ב־%1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1139"/>
+        <location filename="unetbootin.cpp" line="1152"/>
         <source>Copying initrd file from %1</source>
         <translation>קובץ ה־initrd מועתק מ־%1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1145"/>
-        <location filename="unetbootin.cpp" line="1225"/>
+        <location filename="unetbootin.cpp" line="1158"/>
+        <location filename="unetbootin.cpp" line="1238"/>
         <source>Extracting bootloader configuration</source>
         <translation>תצורת מנהל הטעינה מחולצת</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1440"/>
-        <location filename="unetbootin.cpp" line="1466"/>
+        <location filename="unetbootin.cpp" line="1467"/>
+        <location filename="unetbootin.cpp" line="1493"/>
         <source>&lt;b&gt;Extracting compressed iso:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;חילוץ קובץ ה־ISO הדחוס:&lt;/b&gt;‏ %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1717"/>
+        <location filename="unetbootin.cpp" line="1744"/>
         <source>Copying file, please wait...</source>
         <translation>הקבצים מועתקים, נא להמתין...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1718"/>
-        <location filename="unetbootin.cpp" line="2532"/>
+        <location filename="unetbootin.cpp" line="1745"/>
+        <location filename="unetbootin.cpp" line="2559"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>&lt;b&gt;מקור:&lt;/b&gt;‏ &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1719"/>
-        <location filename="unetbootin.cpp" line="2533"/>
+        <location filename="unetbootin.cpp" line="1746"/>
+        <location filename="unetbootin.cpp" line="2560"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;יעד:&lt;/b&gt;‏ %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1720"/>
+        <location filename="unetbootin.cpp" line="1747"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;הועתקו:&lt;/b&gt; 0 בתים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1758"/>
+        <location filename="unetbootin.cpp" line="1785"/>
         <source>Extracting files, please wait...</source>
         <translation>הקבצים בחילוץ, נא להמתין...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1759"/>
+        <location filename="unetbootin.cpp" line="1786"/>
         <source>&lt;b&gt;Archive:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;ארכיון:&lt;/b&gt;‏ %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1760"/>
+        <location filename="unetbootin.cpp" line="1787"/>
         <source>&lt;b&gt;Source:&lt;/b&gt;</source>
         <translation>&lt;b&gt;מקור:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1761"/>
+        <location filename="unetbootin.cpp" line="1788"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt;</source>
         <translation>&lt;b&gt;יעד:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1762"/>
+        <location filename="unetbootin.cpp" line="1789"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; 0 of %1 files</source>
         <translation>&lt;b&gt;חולצו:&lt;/b&gt;‏ 0 מתוך %1 קבצים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1765"/>
+        <location filename="unetbootin.cpp" line="1792"/>
         <source>&lt;b&gt;Source:&lt;/b&gt; %1 (%2)</source>
         <translation>&lt;b&gt;מקור:&lt;/b&gt;‏ %1 (%2)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1766"/>
+        <location filename="unetbootin.cpp" line="1793"/>
         <source>&lt;b&gt;Destination:&lt;/b&gt; %1%2</source>
         <translation>&lt;b&gt;יעד:&lt;/b&gt;‏ %1%2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="1767"/>
+        <location filename="unetbootin.cpp" line="1794"/>
         <source>&lt;b&gt;Extracted:&lt;/b&gt; %1 of %2 files</source>
         <translation>&lt;b&gt;חולצו:&lt;/b&gt;‏ %1 מתוך %2 קבצים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2531"/>
+        <location filename="unetbootin.cpp" line="2558"/>
         <source>Downloading files, please wait...</source>
         <translation>קבצים בהורדה, נא להמתין...</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2534"/>
+        <location filename="unetbootin.cpp" line="2561"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; 0 bytes</source>
         <translation>&lt;b&gt;הורדו:&lt;/b&gt;‏ 0 בתים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2620"/>
+        <location filename="unetbootin.cpp" line="2685"/>
         <source>Download of %1 %2 from %3 failed. Please try downloading the ISO file from the website directly and supply it via the diskimage option.</source>
-        <translation></translation>
+        <translation>ההורדה של %1 %2 מ־%3 נכשלה. נא לנסות להוריד את קובץ ה־ISO ישירות מהאתר ולספק אותו דרך אפשרות דמות הכונן.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2643"/>
-        <location filename="unetbootin.cpp" line="2658"/>
+        <location filename="unetbootin.cpp" line="2708"/>
+        <location filename="unetbootin.cpp" line="2723"/>
         <source>&lt;b&gt;Downloaded:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;הורדו:&lt;/b&gt;‏ %1 מתוך %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2673"/>
+        <location filename="unetbootin.cpp" line="2738"/>
         <source>&lt;b&gt;Copied:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;הועתקו:&lt;/b&gt; %1 מתוך %2</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2764"/>
+        <location filename="unetbootin.cpp" line="2829"/>
         <source>Searching in &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>חיפוש תחת &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="2768"/>
+        <location filename="unetbootin.cpp" line="2833"/>
         <source>%1/%2 matches in &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</source>
         <translation>%1/%2 התאמות תחת &lt;a href=&quot;%3&quot;&gt;%3&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3041"/>
+        <location filename="unetbootin.cpp" line="3106"/>
         <source>%1 not found</source>
         <translation>%1 לא נמצא</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3042"/>
+        <location filename="unetbootin.cpp" line="3107"/>
         <source>%1 not found. This is required for %2 install mode.
 Install the &quot;%3&quot; package or your distribution&apos;s equivalent.</source>
         <translation>%1 לא נמצא. רכיב זה נדרש למצב ההתקנה של %2.
 יש להתקין את החבילה &quot;%3&quot; או המקבילה להפצה שנבחרה.</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3325"/>
+        <location filename="unetbootin.cpp" line="3390"/>
         <source>(Current)</source>
         <translation>(נוכחי)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3326"/>
+        <location filename="unetbootin.cpp" line="3391"/>
         <source>(Done)</source>
         <translation>(בוצע)</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3615"/>
+        <location filename="unetbootin.cpp" line="3683"/>
         <source>Configuring grub2 on %1</source>
         <translation>הגדרת grub2 על גבי %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3627"/>
+        <location filename="unetbootin.cpp" line="3695"/>
         <source>Configuring grldr on %1</source>
         <translation>הגדרת grldr על %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3655"/>
+        <location filename="unetbootin.cpp" line="3723"/>
         <source>Configuring grub on %1</source>
         <translation>הגדרת grub על %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3893"/>
+        <location filename="unetbootin.cpp" line="3976"/>
         <source>Installing syslinux to %1</source>
         <translation>התקנת syslinux אל %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="3928"/>
+        <location filename="unetbootin.cpp" line="4011"/>
         <source>Installing extlinux to %1</source>
         <translation>התקנת extlinux אל %1</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="4099"/>
+        <location filename="unetbootin.cpp" line="4182"/>
         <source>Syncing filesystems</source>
         <translation>סנכרון מערכות קבצים</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="4104"/>
+        <location filename="unetbootin.cpp" line="4187"/>
         <source>Setting up persistence</source>
-        <translation></translation>
+        <translation>הגדרת שימור</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="4149"/>
+        <location filename="unetbootin.cpp" line="4232"/>
         <source>After rebooting, select the </source>
         <translation>לאחר האתחול, יש לבחור ב־ </translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="4154"/>
+        <location filename="unetbootin.cpp" line="4237"/>
         <source>After rebooting, select the USB boot option in the BIOS boot menu.%1
 Reboot now?</source>
         <translation>לאחר ההפעלה מחדש, יש לבחור באפשרות ההפעלה מ־USB בתפריט ההפעלה של ה־BIOS.‏ %1
 האם הפעיל מחדש כעת?</translation>
     </message>
     <message>
-        <location filename="unetbootin.cpp" line="4157"/>
+        <location filename="unetbootin.cpp" line="4240"/>
         <source>The created USB device will not boot off a Mac. Insert it into a PC, and select the USB boot option in the BIOS boot menu.%1</source>
-        <translation></translation>
+        <translation>התקן ה־USB שנוצר לא יכול לשמש לצורך אתחול Mac. יש להכניס את ההתקן למחשב ולבחור באפשרות האתחול באמצעות USB מתפריט האתחול של ה־BIOS.%1</translation>
     </message>
     <message>
         <location filename="distrolst.cpp" line="43"/>
@@ -455,42 +457,42 @@ Reboot now?</source>
 *חשוב* בטרם ההפעלה מחדש, יש להציב קובץ iso של התקנה אלטרנטיבית (לא באמצעות שולחן עבודה) של אובונטו בתיקיית הבסיס של הכונן הקשיח או של כונן ה־USB שלך. ניתן להשיג קבצים אלה דרך cdimage.ubuntu.com</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="242"/>
+        <location filename="distrolst.cpp" line="257"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;mirrors.kernel.org&apos; when prompted for a server, and enter &apos;/centos/%1/os/%2&apos; when asked for the folder.</source>
         <translation>
 *שובה* לאחר ההפעלה מחדש יש להתעלם מהודעות השגיאה ולבחור באחורה אם התבקש תקליטור, אז יש לגשת אל התפריט הראשי, לבחור באפשרות &apos;התחלת ההתקנה&apos;, לבחור ב־&apos;רשת&apos; כמקור, לבחור ב־&apos;HTTP&apos; כפרוטוקול, להזין את הכתובת &apos;mirrors.kernel.org&apos; כשיתבקש שם השרת ולהזין &apos;/centos/%1/os/%2&apos; כאשר יתבקש שם התיקייה.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="298"/>
+        <location filename="distrolst.cpp" line="314"/>
         <source>
 *IMPORTANT* Before rebooting, place a Debian install iso file on the root directory of your hard drive or USB drive. These can be obtained from cdimage.debian.org</source>
         <translation>
 *חשוב* בטרם ההפעלה מחדש, יש להציב קובץ iso של ההתקנה של דביאן בתיקיית הבסיס של הכונן הקשיח או של כונן ה־USB שלך. ניתן להשיג קבצים אלה דרך cdimage.debian.org</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="391"/>
+        <location filename="distrolst.cpp" line="407"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/development/%1/os&apos; when asked for the folder.</source>
         <translation>
 *חשוב* לאחר ההפעלה מחדש יש להתעלם מהודעות השגיאה ולבחור באחורה אם התבקש תקליטור, אז יש לגשת אל התפריט הראשי, לבחור באפשרות &apos;התחלת ההתקנה&apos;, לבחור ב־&apos;רשת&apos; כמקור, לבחור ב־&apos;HTTP&apos; כפרוטוקול, להזין את הכתובת &apos;download.fedora.redhat.com&apos; כשיתבקש שם השרת ולהזין &apos;/pub/fedora/linux/development/%1/os&apos; כאשר יתבקש שם התיקייה.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="397"/>
+        <location filename="distrolst.cpp" line="413"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.fedora.redhat.com&apos; when prompted for a server, and enter &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; when asked for the folder.</source>
         <translation>
 *חשוב* לאחר ההפעלה מחדש יש להתעלם מהודעות השגיאה ולבחור באחורה אם התבקש תקליטור, אז יש לגשת אל התפריט הראשי, לבחור באפשרות &apos;התחלת ההתקנה&apos;, לבחור ב־&apos;רשת&apos; כמקור, לבחור ב־&apos;HTTP&apos; כפרוטוקול, להזין את הכתובת &apos;download.fedora.redhat.com&apos; כשיתבקש שם השרת ולהזין &apos;/pub/fedora/linux/releases/%1/Fedora/%2/os&apos; כאשר יתבקש שם התיקייה.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="769"/>
+        <location filename="distrolst.cpp" line="785"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/factory/repo/oss&apos; when asked for the folder.</source>
         <translation>
 *חשוב* לאחר ההפעלה מחדש יש להתעלם מהודעות השגיאה ולבחור באחורה אם התבקש תקליטור, אז יש לגשת אל התפריט הראשי, לבחור באפשרות &apos;התחלת ההתקנה&apos;, לבחור ב־&apos;רשת&apos; כמקור, לבחור ב־&apos;HTTP&apos; כפרוטוקול, להזין את הכתובת &apos;download.opensuse.org&apos; כשיתבקש שם השרת ולהזין &apos;/factory/repo/oss&apos; כאשר יתבקש שם התיקייה.</translation>
     </message>
     <message>
-        <location filename="distrolst.cpp" line="775"/>
+        <location filename="distrolst.cpp" line="791"/>
         <source>
 *IMPORTANT* After rebooting, ignore any error messages and select back if prompted for a CD, then go to the main menu, select the &apos;Start Installation&apos; option, choose &apos;Network&apos; as the source, choose &apos;HTTP&apos; as the protocol, enter &apos;download.opensuse.org&apos; when prompted for a server, and enter &apos;/distribution/%1/repo/oss&apos; when asked for the folder.</source>
         <translation>
@@ -498,7 +500,7 @@ Reboot now?</source>
     </message>
     <message>
         <location filename="distrover.cpp" line="26"/>
-        <location filename="unetbootin.cpp" line="735"/>
+        <location filename="unetbootin.cpp" line="748"/>
         <source>== Select Distribution ==</source>
         <translation>== נא לבחור הפצה ==</translation>
     </message>
@@ -516,7 +518,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="32"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Arch Linux is a lightweight distribution optimized for speed and flexibility.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for installation over the internet (FTP).</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;‏ Arch Linux היא הפצה קלילה המותאמת למהירות ולגמישות.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת ברירת המחדל מאפשרת התקנה דרך האינטרנט (FTP).</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.archlinux.org/&quot;&gt;http://www.archlinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;‏ Arch Linux היא הפצה קלילה המותאמת למהירות ולגמישות.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת בררת המחדל מאפשרת התקנה דרך האינטרנט (FTP).</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="37"/>
@@ -526,7 +528,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="42"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; CentOS is a free Red Hat Enterprise Linux clone.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;‏ CentOS הנה כפילה חופשית של Red Hat Enterprise Linux.&lt;br/&gt;‏&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת ברירת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.centos.org/&quot;&gt;http://www.centos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;‏ CentOS הנה כפילה חופשית של Red Hat Enterprise Linux.&lt;br/&gt;‏&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת בררת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="47"/>
@@ -536,7 +538,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="52"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Damn Small Linux is a minimalist distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Damn Small Linux הינה הפצה פשטנית המיועדת למחשבים ישנים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה טוענת את המערכת כולה אל זיכרון ה־RAM ומאתחלת מהזיכרון, כך שלא נדרשת התקנה אך היא אפשרית.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://damnsmalllinux.org/&quot;&gt;http://damnsmalllinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Damn Small Linux הנה הפצה פשטנית המיועדת למחשבים ישנים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה טוענת את המערכת כולה אל זיכרון ה־RAM ומאתחלת מהזיכרון, כך שלא נדרשת התקנה אך היא אפשרית.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="57"/>
@@ -546,7 +548,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="63"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Dreamlinux is a user-friendly Debian-based distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Dreamlinux הינה הפצה ידידותית למשתמש מבוססת דביאן.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה מאפשרת איתחול במצב חי, ממנו ניתן להפעיל את תוכנית ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.dreamlinux.com.br/&quot;&gt;http://www.dreamlinux.com.br&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Dreamlinux הנה הפצה ידידותית למשתמש מבוססת דביאן.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת אתחול במצב חי, ממנו ניתן להפעיל את תוכנית ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="68"/>
@@ -561,17 +563,17 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="78"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Fedora is a Red Hat sponsored community distribution which showcases the latest cutting-edge free/open-source software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt;  &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Fedora הינה הפצה קהילתית הממומנת על ידי Red Hat המציגה את התוכנה החופשית/חינמית העדכנית ביותר.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה מאפשרת איתחול במצב חי, ממנו ניתן להפעיל את תוכנית ההתקנה. גירסת התקנת הרשת מאפשרת התקנה דרך האינטרנט (FTP), או התקנה באמצעות קובצי ISO שאוחזרו מראש.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt;  &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;http://fedoraproject.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Fedora הנה הפצה קהילתית הממומנת על ידי Red Hat המציגה את התכנה החופשית/חינמית העדכנית ביותר.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת אתחול במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה. גרסת התקנת הרשת מאפשרת התקנה דרך האינטרנט (FTP), או התקנה באמצעות קובצי ISO שאוחזרו מראש.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="83"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeBSD is a general-purpose Unix-like operating system designed for scalability and performance.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; FreeBSD הינה מערכת דמויית יוניקס לשימוש כללי המתוכננת לריבוי שינויים וביצועים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גירסת ברירת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.freebsd.org/&quot;&gt;http://www.freebsd.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; FreeBSD הנה מערכת דמויית יוניקס לשימוש כללי המתוכננת לריבוי שינויים וביצועים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת בררת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="88"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; FreeDOS is a free MS-DOS compatible operating system.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; See the &lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;manual&lt;/a&gt; for installation details.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; FreeDOS הינה מערכת הפעלה תואמת MS-DOS&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; עיין ב&lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;מדריך למשתמש&lt;/a&gt; לפרטים אודות ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.freedos.org/&quot;&gt;http://www.freedos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; FreeDOS הנה מערכת הפעלה תואמת MS-DOS&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; ניתן לעיין ב&lt;a href=&quot;http://fd-doc.sourceforge.net/wiki/index.php?n=FdDocEn.FdInstall&quot;&gt;מדריך למשתמש&lt;/a&gt; לפרטים על ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="93"/>
@@ -581,12 +583,12 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="98"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Frugalware is a general-purpose Slackware-based distro for advanced users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default option allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Frugalware הנה הפצה המבוססת על Slackware לשימוש כללי.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; אפשרות ברירת המחדל מאפשרת התקנה דרך האינטרנט, או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://frugalware.org/&quot;&gt;http://frugalware.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Frugalware הנה הפצה המבוססת על Slackware לשימוש כללי.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; אפשרות בררת המחדל מאפשרת התקנה דרך האינטרנט, או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="108"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.geexbox.org/&quot;&gt;http://www.geexbox.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; GeeXboX is an Embedded Linux Media Center Distribution.&lt;br/&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.geexbox.org/&quot;&gt;http://www.geexbox.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; GeeXboX הנה הפצה המבוססת על לינוקס להתקנים משובצים לצורך מרכז מולטימדיה.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="121"/>
@@ -606,27 +608,27 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="136"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kubuntu is an official Ubuntu derivative featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Ubuntu iהנה הפצה ידידותית מבוססת דביאן. נכון לעכשיו זוהי הפצת הלינוקס הנפוצה ביותר למחשבים אישיים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;http://www.kubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;Kubuntu הנה נגזרת רשמית של Ubuntu עם סביבת שולחן העבודה KDE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="141"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxconsole.org/&quot;&gt;http://linuxconsole.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; LinuxConsole is a desktop distro to play games, easy to install, easy to use and fast to boot .&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The 1.0.2010 is latest 1.0, now available on rolling release (run liveuptate to update modules and kernel).</source>
-        <translation></translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://linuxconsole.org/&quot;&gt;http://linuxconsole.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; LinuxConsole הנה הפצה לשולחן העבודה לצורכי משחקים, פשוטה להתקנה, קלה לשימוש ועולה מהר .&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסה 1.0.2010 הנה העדכנית ביותר לסדרה 1.0, זמינה כעת בהפצה מתגלגלת (יש להריץ liveupdate כדי לעדכן את המודולים והליבה).</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="146"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Linux Mint is a user-friendly Ubuntu-based distribution which includes additional proprietary codecs and other software by default.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Linux Mint הינה הפצה ידידותית למשתמש המבוססת על אובונטו הכוללת מפענחים ותוכנות נוספות קנייניים כברירת מחדל&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt;הגירסה החיה מאפשרת הפעלה במצב חי, ממנו ניתן לטעון את תכנית ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://linuxmint.com/&quot;&gt;http://linuxmint.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Linux Mint הנה הפצה ידידותית למשתמש המבוססת על אובונטו הכוללת מפענחים ותוכנות נוספות קנייניים כבררת מחדל&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt;הגרסה החיה מאפשרת הפעלה במצב חי, ממנו ניתן לטעון את תכנית ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="151"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.lubuntu.net/&quot;&gt;http://www.lubuntu.net&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Lubuntu is an official Ubuntu derivative featuring the LXDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.lubuntu.org/&quot;&gt;http://www.lubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;Lubuntu הנה נגזרת רשמית של Ubuntu עם סביבת שולחן העבודה LXDE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="156"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Mandriva is a user-friendly distro formerly known as Mandrake Linux.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over the internet (FTP) or via pre-downloaded &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;&quot;Free&quot; iso image files&lt;/a&gt;.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Mandriva הינה הפצה ידידותית למשתמש שבעברה נודעה בשם מנדרייק לינוקס.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה מאפשרת אתחול במצב חי, ממנו ניתן לטעון את תוכנית ההתקנה. גירסת ההתקנה מהרשת מאפשרת התקנה דרך האינטרנט או דרך &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;קובצי דמות ISO &quot;חופשיים&quot;&lt;/a&gt;.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.mandriva.com/&quot;&gt;http://www.mandriva.com/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Mandriva הנה הפצה ידידותית למשתמש שבעברה נודעה בשם מנדרייק לינוקס.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת אתחול במצב חי, ממנו ניתן לטעון את תוכנית ההתקנה. גרסת ההתקנה מהרשת מאפשרת התקנה דרך האינטרנט או דרך &lt;a href=&quot;http://www.mandriva.com/en/download&quot;&gt;קובצי דמות ISO „חופשיים“&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="161"/>
@@ -636,7 +638,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="166"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://netbootcd.tuxfamily.org/&quot;&gt;http://netbootcd.tuxfamily.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; NetbootCD is a small boot CD that downloads and boots network-based installers for other distributions.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NetbootCD boots and runs in live mode.</source>
-        <translation></translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://netbootcd.tuxfamily.org/&quot;&gt;http://netbootcd.tuxfamily.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; NetbootCD הנו תקליטור קטן שמוריד ומפעיל תכניות התקנה מבוססות אינטרנט לשלל הפצות.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; NetbootCD פועל ורץ במצב חי.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="176"/>
@@ -646,12 +648,12 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="181"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://pogostick.net/~pnh/ntpasswd/&quot;&gt;http://pogostick.net/~pnh/ntpasswd/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; The Offline NT Password and Registry Editor can reset Windows passwords and edit the registry on Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; NTPasswd is booted and run in live mode; no installation is required to use it.</source>
-        <translation></translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://pogostick.net/~pnh/ntpasswd/&quot;&gt;http://pogostick.net/~pnh/ntpasswd/&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; עורך ססמאות NT ורישומי מערכת בלתי מקוונים יכול לאפס ולערוך את רישומי המערכת של Windows 2000-Vista.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; NTPasswd מופעל ורץ במצב חי; לא נדרשת התקנה כדי להשתמש בכלי הזה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="186"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; openSUSE is a user-friendly Novell sponsored distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The default version allows for both installation over the internet (FTP), or offline installation using pre-downloaded installation ISO files.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; openSUSE הינה הפצה ידידותית למשתמש הממומנת על ידי נובל&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גירסת ברירת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;http://www.opensuse.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; openSUSE הנה הפצה ידידותית למשתמש הממומנת על ידי נובל&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; גרסת בררת המחדל מאפשרת התקנה דרך האינטרנט (FTP), או התקנה לא מקוונת באמצעות קובצי ISO שאוחזרו מראש.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="191"/>
@@ -666,7 +668,7 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="206"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Puppy Linux is a lightweight distribution designed for older computers.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Puppy Linux הינה הפצה קלת משקל המיועדת למחשבים ישנים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה טוענת את המערכת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה על אף שזה אפשרי.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.puppylinux.com/&quot;&gt;http://www.puppylinux.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Puppy Linux הנה הפצה קלת משקל המיועדת למחשבים ישנים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה טוענת את המערכת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה על אף שזה אפשרי.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="211"/>
@@ -676,17 +678,17 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="216"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://salixos.org&quot;&gt;http://salixos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Salix is a GNU/Linux distribution based on Slackware (fully compatible) that is simple, fast and easy to use.&lt;br/&gt;Like a bonsai, Salix is small, light &amp; the product of infinite care.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.&lt;br/&gt;Default root password is &lt;b&gt;live&lt;/b&gt;.</source>
-        <translation></translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://salixos.org&quot;&gt;http://salixos.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Salix הנה הפצת גנו/לינוקס המבוססת על Slackware (עם תאימות מלאה) והיא גם מערכת פשוטה, מהירה ונוחה לשימוש.&lt;br/&gt;ממש כמו עץ בונזאי, Salix הנה קטנה, קלילה ותוצר של טיפוח אינסופי.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת לעבוד במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה לבחירתך.&lt;br/&gt;ססמת העל (root) כבררת מחדל הנה &lt;b&gt;live&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="228"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Slax is a Slackware-based distribution featuring the KDE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Slax הינה הפצה המבוססת על Slackware המציגה את שולחן העבודה KDE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה מאפשרת איתחול במצב חי, ממנו ניתן להפעיל את תוכנית ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.slax.org/&quot;&gt;http://www.slax.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Slax הנה הפצה המבוססת על Slackware הכוללת את שולחן העבודה KDE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת אתחול במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="233"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; SliTaz הינה מיקרו הפצה קלת משקל המיועדת למחשבים שולחניים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה נטענת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה אך ניתן לבצע אותה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; SliTaz הנה מיקרו הפצה קלת משקל המיועדת למחשבים שולחניים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה נטענת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה אך ניתן לבצע אותה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="238"/>
@@ -702,12 +704,12 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="248"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Super OS is an unofficial derivative of Ubuntu which includes additional software by default. Requires a 2GB USB drive to install.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Super OS הנה נגזרת בלתי רשמית של אובונטו הכוללת תוכנות נוספות כברירת מחדל. יש צורך בכונן USB בנפח של 2 ג&quot;ב כדי להתקין.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://hacktolive.org/wiki/Super_OS&quot;&gt;http://hacktolive.org/wiki/Super_OS&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Super OS הנה נגזרת בלתי רשמית של אובונטו הכוללת תוכנות נוספות כבררת מחדל. יש צורך בכונן USB בנפח של 2 ג״ב כדי להתקין.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="258"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Ubuntu is a user-friendly Debian-based distribution. It is currently the most popular Linux desktop distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Ubuntu iהנה הפצה ידידותית מבוססת דביאן. נכון לעכשיו זוהי הפצת הלינוקס הנפוצה ביותר למחשבים אישיים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;http://www.ubuntu.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;Ubuntu הנה הפצה ידידותית מבוססת דביאן. נכון לעכשיו זוהי הפצת הלינוקס הנפוצה ביותר למחשבים אישיים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="263"/>
@@ -717,17 +719,17 @@ Reboot now?</source>
     <message>
         <location filename="distrover.cpp" line="268"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Xubuntu is an official Ubuntu derivative featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched. The NetInstall version allows for installation over FTP, and can install Kubuntu and other official Ubuntu derivatives. If you would like to use a pre-downloaded alternate (not desktop) install iso, use the HdMedia option, and then place the alternate install iso file on the root directory of your hard drive or USB drive</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Ubuntu iהנה הפצה ידידותית מבוססת דביאן. נכון לעכשיו זוהי הפצת הלינוקס הנפוצה ביותר למחשבים אישיים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.xubuntu.org/&quot;&gt;http://www.xubuntu.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt;Xubuntu הנה נגזרת רשמית של Ubuntu עם סביבת שולחן העבודה XFCE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת הפעלה במצב חי ממנה ניתן להפעיל את ההתקנה. גרסת ההתקנה המקוונת (NetInstall) מאפשרת להתקין דרך FTP, וניתן דרכה להתקין קובונטו ונגזרות רשמיות נוספות של אובונטו. אם ברצונך להשתמש בקובץ ה־iso להתקנה החלופית (ללא שולחן עבודה) יש להשתמש באפשרות ה־HdMedia, ואז להציב את קובץ ה־iso של ההתקנה החלופית בכונן הקשיח או בכונן ה־USB שלך.</translation>
     </message>
     <message>
         <location filename="distrover.cpp" line="273"/>
         <source>&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Zenwalk is a Slackware-based distribution featuring the XFCE desktop.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version allows for booting in Live mode, from which the installer can optionally be launched.</source>
-        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Zenwalk הינה הפצה המבוססת על Slackware המציגה את שולחן העבודה XFCE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה מאפשרת איתחול במצב חי, ממנו ניתן להפעיל את תוכנית ההתקנה.</translation>
+        <translation>&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.zenwalk.org/&quot;&gt;http://www.zenwalk.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Zenwalk הנה הפצה המבוססת על Slackware הכוללת את שולחן העבודה XFCE.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה מאפשרת אתחול במצב חי, ממנו ניתן להפעיל את תכנית ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="33"/>
         <source>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; EeePCLinuxOS is a user-friendly PCLinuxOS based distribution for the EeePC.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; EeePCLinuxOS הינה הפצה ידידותית למשתמש המבוססת על PCLinuxOS עבור EeePC.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא שהמדיה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
+        <translation>&lt;img src=&quot;:/eeepclos.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.eeepclinuxos.com/&quot;&gt;http://www.eeepclinuxos.com&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; EeePCLinuxOS הנה הפצה ידידותית למשתמש המבוססת על PCLinuxOS עבור EeePC.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא שהמדיה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="41"/>
@@ -742,12 +744,12 @@ Reboot now?</source>
     <message>
         <location filename="distrovercust.cpp" line="61"/>
         <source>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; Kiwi Linux is an Ubuntu derivative primarily made for Romanian, Hungarian and English speaking users.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Kiwi Linux הינה הפצת לינוקס שנגזרה מאובונטו ומיועד בעיקר לדוברי רומנית, הונגרית ואנגלית.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא שהמדיה המשמשת להתקנה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
+        <translation>&lt;img src=&quot;:/kiwi_logo_ro.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.kiwilinux.org/&quot;&gt;http://www.kiwilinux.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; Kiwi Linux הנה הפצת לינוקס שנגזרה מאובונטו ומיועדת בעיקר לדוברי רומנית, הונגרית ואנגלית.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא שהמדיה המשמשת להתקנה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="69"/>
         <source>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; gNewSense is a high-quality GNU/Linux distribution that extends and improves Ubuntu to create a completely free operating system without any binary blobs or package trees that contain proprietary software.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; Make sure install media is empty and formatted before proceeding with install.</source>
-        <translation>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; gNewSense הינה הפצת GNU/לינוקס המרחיבה ומשפרת את אובונטו ליצירת מערכת הפעלה חופשית לגמרי ללא כתמים בינאריים או עצי חבילות המכילים תוכנה קניינית.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא כי מדיית ההתקנה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
+        <translation>&lt;img src=&quot;:/gnewsense.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;a href=&quot;http://www.gnewsense.org/&quot;&gt;http://www.gnewsense.org&lt;/a&gt;&lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; gNewSense הנה הפצת GNU/לינוקס המרחיבה ומשפרת את אובונטו ליצירת מערכת הפעלה חופשית לגמרי ללא כתמים בינאריים או עצי חבילות המכילים תכנה קניינית.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; יש לוודא כי מדיית ההתקנה ריקה ומפורמטת בטרם המשך ההתקנה.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="77"/>
@@ -757,7 +759,7 @@ Reboot now?</source>
     <message>
         <location filename="distrovercust.cpp" line="85"/>
         <source>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;Homepage:&lt;/b&gt; &lt;a href=&quot;http://www.slitaz.org/en/&quot;&gt;http://www.slitaz.org/en&lt;/a&gt;&lt;br/&gt;&lt;b&gt;Description:&lt;/b&gt; SliTaz is a lightweight, desktop-oriented micro distribution.&lt;br/&gt;&lt;b&gt;Install Notes:&lt;/b&gt; The Live version loads the entire system into RAM and boots from memory, so installation is not required but optional. This installer is based on &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</source>
-        <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; SliTaz הינה מיקרו הפצה קלת משקל המיועדת למחשבים שולחניים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגירסה החיה נטענת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה אך ניתן לבצע אותה. תוכנית התקנה זו מבוססת על &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
+        <translation>&lt;img src=&quot;:/slitaz.png&quot; /&gt;&lt;br/&gt;&lt;b&gt;דף הבית:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;תיאור:&lt;/b&gt; SliTaz הנה מיקרו הפצה קלת משקל המיועדת למחשבים שולחניים.&lt;br/&gt;&lt;b&gt;הערות התקנה:&lt;/b&gt; הגרסה החיה נטענת כולה אל זיכרון ה־RAM ומתאתחלת מהזיכרון, כך שאין צורך בהתקנה אך ניתן לבצע אותה. תכנית התקנה זו מבוססת על &lt;a href=&quot;http://unetbootin.sourceforge.net/&quot;&gt;UNetbootin&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="distrovercust.cpp" line="93"/>
@@ -807,19 +809,17 @@ Reboot now?</source>
         <location filename="unetbootin.ui" line="414"/>
         <location filename="unetbootin.ui" line="430"/>
         <source>Space to reserve for user files which are preserved across reboots. Works only for LiveUSBs for Ubuntu and derivatives. If value exceeds drive capacity, the maximum space available will be used.</source>
-        <oldsource>Space to reserve for user files which are preserved across reboots. Works only for LiveUSBs for Ubuntu and derivatives, and SaLT-based distributions. If value exceeds drive capacity, the maximum space available will be used.</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>שטח לשימור קובצי משתמש כדי שניתן יהיה להשתמש בהן גם לאחר הפעלה מחדש. עובד רק עבור התקני LiveUSB של אובונטו ונגזרותיה. אם הערך חורג מגודל הכונן ייעשה שימוש בשטח הגדול ביותר הזמין.</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="417"/>
         <source>Space used to preserve files across reboots (Ubuntu only):</source>
-        <oldsource>Space used to preserve files across reboots (Ubuntu and SaLT only):</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>השטח המשמש לשימור קבצים בין הפעלות מחדש (אובונטו בלבד):</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="440"/>
         <source>MB</source>
-        <translation></translation>
+        <translation>מ״ב</translation>
     </message>
     <message>
         <location filename="unetbootin.ui" line="503"/>
@@ -990,7 +990,7 @@ Reboot now?</source>
     <message>
         <location filename="main.cpp" line="321"/>
         <source>%2 must be run as root. Close it, and re-run using either:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;or:&lt;br/&gt;&lt;b&gt;su - -c &apos;%1&apos;&lt;/b&gt;</source>
-        <translation></translation>
+        <translation>יש להריץ את %2 כמשתמש על. יש לסגור את היישום, ולהפעיל אותו מחדש באחת הצורות הבאות:&lt;br/&gt;&lt;b&gt;sudo %1&lt;/b&gt;&lt;br/&gt;או:&lt;br/&gt;&lt;b&gt;su - -c &apos;%1&apos;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="main.cpp" line="353"/>
