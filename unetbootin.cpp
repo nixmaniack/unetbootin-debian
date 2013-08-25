@@ -52,8 +52,9 @@ static const QList<QRegExp> ignoredtypesbothRL = QList<QRegExp>()
 << QRegExp(".cat$", Qt::CaseInsensitive)
 << QRegExp(".txt$", Qt::CaseInsensitive)
 << QRegExp(".tar$", Qt::CaseInsensitive)
-<< QRegExp(".efi$", Qt::CaseInsensitive)
 << QRegExp(".exe$", Qt::CaseInsensitive)
+<< QRegExp(".deb$", Qt::CaseInsensitive)
+<< QRegExp(".udeb$", Qt::CaseInsensitive)
 << QRegExp("system.map", Qt::CaseInsensitive);
 
 static const QList<QRegExp> ignoredtypeskernelRL = QList<QRegExp>()
@@ -179,6 +180,7 @@ unetbootin::unetbootin(QWidget *parent)
 
 bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 {
+    redundanttopleveldir = false;
 	isarch64 = false;
 	islivecd = false;
 	isnetinstall = false;
@@ -377,10 +379,21 @@ bool unetbootin::ubninitialize(QList<QPair<QString, QString> > oppairs)
 		}
 		else if (pfirst.contains("targetdrive", Qt::CaseInsensitive))
 		{
+#ifdef Q_OS_WIN32
+			if (!psecond.endsWith('\\'))
+			{
+				psecond = psecond + '\\';
+			}
+#endif
 			int driveidx = this->driveselect->findText(psecond, Qt::MatchFixedString);
 			if (driveidx != -1)
 			{
 				this->driveselect->setCurrentIndex(driveidx);
+			}
+			else
+			{
+				this->driveselect->addItem(psecond);
+				this->driveselect->setCurrentIndex(this->driveselect->findText(psecond, Qt::MatchFixedString));
 			}
 		}
 		else if (pfirst.contains("showcustom", Qt::CaseInsensitive))
@@ -555,8 +568,9 @@ QStringList unetbootin::listsanedrives()
 //                    {
 //                        fulldrivelist.append(usbfileinfoL.at(i).canonicalFilePath());
 //                    }
-					if (usbfileinfoL.at(i).fileName().contains(QRegExp("^usb-\\S{1,}$")))
-					{
+                    if (usbfileinfoL.at(i).fileName().contains(QRegExp("^usb-\\S{1,}$")) ||
+                        usbfileinfoL.at(i).fileName().contains(QRegExp("^mmc-\\S{1,}$")))
+                    {
 						if (!volidcommand.isEmpty())
 						{
 							if (QString(callexternapp(volidcommand, QString("-t %2").arg(usbfileinfoL.at(i).canonicalFilePath()))).contains(QRegExp("(vfat|ext2|ext3|ext4)")))
@@ -644,7 +658,7 @@ void unetbootin::on_diskimagetypeselect_currentIndexChanged()
 
 void unetbootin::on_FloppyFileSelector_clicked()
 {
-	QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath(), tr("All Files") + " (*)"));
+	QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath(), tr("All Files") + " (*);;" + tr("ISO") + " (*.iso);;" + tr("Floppy") + " (*.img)"));
 	if (QFileInfo(nameFloppy).completeSuffix().contains("iso", Qt::CaseInsensitive))
 	{
 		if (diskimagetypeselect->findText(tr("ISO")) != -1)
@@ -1048,7 +1062,7 @@ QString unetbootin::locatekernel(QString archivefile, QPair<QStringList, QList<q
 	}
 	else
 	{
-	QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux" << "rescue" << "xpud" << "bzI" << "kexec";
+        QStringList kernelnames = QStringList() << "vmlinuz" << "vmlinux" << "bzImage" << "kernel" << "sabayon" << "gentoo" << "linux26" << "linux24" << "bsd" << "unix" << "linux" << "rescue" << "xpud" << "bzI" << "kexec" << "vmlinuz.efi";
 	QStringList tnarchivefileconts;
 	QStringList narchivefileconts;
 	QString curarcitm;
@@ -1111,7 +1125,7 @@ QString unetbootin::locateinitrd(QString archivefile, QPair<QStringList, QList<q
 //		{
 //			continue;
 //		}
-		if (archivefileconts.second.at(i) >= 128000 && archivefileconts.second.at(i) < 209715200) // between 128 KB and 200 MB
+        if (archivefileconts.second.at(i) >= 128000 && archivefileconts.second.at(i) < 314572800) // between 128 KB and 300 MB
 		{
 			tnarchivefileconts.append(archivefileconts.first.at(i));
 		}
@@ -1290,6 +1304,16 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 		return syslinuxpcfg;
 	}
 	*/
+#ifdef NOINITRD
+    for (int i = 0; i < combinedcfgPL.first.second.size(); ++i)
+    {
+        combinedcfgPL.first.second[i] = "";
+    }
+    for (int i = 0; i < combinedcfgPL.second.second.size(); ++i)
+    {
+        combinedcfgPL.second.second[i] = "";
+    }
+#endif
 	for (int i = 0; i < combinedcfgPL.first.first.size(); ++i)
 	{
 		bool isduplicate = false;
@@ -1337,17 +1361,21 @@ QPair<QPair<QStringList, QStringList>, QPair<QStringList, QStringList> > unetboo
 			filteredcfgPL.second.second.append(combinedcfgPL.second.second.at(i));
 		}
 	}
-#ifdef NOINITRD
-	for (int i = 0; i < combinedcfgPL.first.second.size(); ++i)
-	{
-		combinedcfgPL.first.second[i] = "";
-	}
-	for (int i = 0; i < combinedcfgPL.second.second.size(); ++i)
-	{
-		combinedcfgPL.second.second[i] = "";
-	}
-#endif
-	return filteredcfgPL;
+    if (redundanttopleveldir && !redundantrootdirname.isEmpty())
+    {
+        for (int i = 0; i < filteredcfgPL.first.second.size(); ++i)
+        {
+            if (filteredcfgPL.first.second.at(i).startsWith(redundantrootdirname))
+            {
+                filteredcfgPL.first.second[i] = filteredcfgPL.first.second[i].mid(redundantrootdirname.length());
+            }
+            if (filteredcfgPL.first.second.at(i).startsWith("/" + redundantrootdirname))
+            {
+                filteredcfgPL.first.second[i] = filteredcfgPL.first.second[i].mid(redundantrootdirname.length() + 1);
+            }
+        }
+    }
+    return filteredcfgPL;
 }
 
 QString unetbootin::getfullarchivepath(QString relativefilepath, QStringList archivefile)
@@ -1474,8 +1502,8 @@ void unetbootin::extractiso(QString isofile)
 	QStringList directorypathnames;
 	if (listfilesizedirpair.second.size() > 0)
 	{
-		bool redundanttopleveldir = true;
-		QString redundantrootdirname = listfilesizedirpair.second.at(0);
+        redundanttopleveldir = true;
+        redundantrootdirname = listfilesizedirpair.second.at(0);
 		for (int i = 0; i < listfilesizedirpair.second.size(); ++i)
 		{
 			if (listfilesizedirpair.second.at(i).size() < redundantrootdirname.size())
@@ -2591,6 +2619,44 @@ void unetbootin::downloadfile(QString fileurl, QString targetfile, int minsize=5
 	{
 		dloutfile.rename(targetfile);
 	}
+    if (QFile(targetfile).size() <= 4096)
+    {
+        QString redirectTargetURL;
+        QFile seeRedirect(targetfile);
+        seeRedirect.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream seeRedirectTextStream(&seeRedirect);
+        while (!seeRedirectTextStream.atEnd())
+        {
+            QString curline = seeRedirectTextStream.readLine();
+            if (curline.contains("content=\"0;url="))
+            {
+                int urlstartidx = curline.indexOf("content=\"0;url=") + QString("content=\"0;url=").size();
+                redirectTargetURL = curline.mid(urlstartidx);
+                if (redirectTargetURL.contains("\""))
+                {
+                    redirectTargetURL = redirectTargetURL.left(redirectTargetURL.indexOf("\""));
+                }
+                break;
+            }
+            if (curline.contains("content='0;url="))
+            {
+                int urlstartidx = curline.indexOf("content='0;url=") + QString("content='0;url=").size();
+                redirectTargetURL = curline.mid(urlstartidx);
+                if (redirectTargetURL.contains("'"))
+                {
+                    redirectTargetURL = redirectTargetURL.left(redirectTargetURL.indexOf("'"));
+                }
+                break;
+            }
+        }
+        seeRedirect.close();
+        if (!redirectTargetURL.isEmpty())
+        {
+            rmFile(targetfile);
+            downloadfile(redirectTargetURL, targetfile, minsize);
+            return;
+        }
+    }
 	if (QFile(targetfile).size() < minsize)
 	{
 		// download failed
@@ -3380,7 +3446,10 @@ void unetbootin::runinst()
 		targetDrive = QString("%1/").arg(locatemountpoint(targetDev));
 	}
 #ifdef Q_OS_LINUX
-	rawtargetDev = QString(targetDev).remove(QRegExp("\\d$"));
+	if (targetDev.contains(QRegExp("p\\d$")))
+		rawtargetDev = QString(targetDev).remove(QRegExp("p\\d$"));
+	else
+		rawtargetDev = QString(targetDev).remove(QRegExp("\\d$"));
 #endif
 #ifdef Q_OS_MAC
 	rawtargetDev = QString(targetDev).remove(QRegExp("s\\d$"));
@@ -3877,11 +3946,26 @@ QString unetbootin::fixkernelbootoptions(const QString &cfgfileCL)
 			}
 		}
 	}
-	return QString(cfgfileCL)
+    if ((this->devlabel == "" || this->devlabel == "None") && devluid.contains("LABEL") && (cfgfileCL.contains(QRegExp("root=\\S{0,}LABEL=\\S{0,}")) || cfgfileCL.contains(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"))))
+    {
+        setLabel(this->targetDev, "LIVE");
+    }
+    QString ncfgfileCL = cfgfileCL;
+    if (ncfgfileCL.contains("root=live:CDLABEL"))
+    {
+        ncfgfileCL = QString(ncfgfileCL)
+        .replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=live:%1").arg(devluid))
+        .replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=live:%1").arg(devluid));
+    }
+    else
+    {
+        ncfgfileCL = QString(ncfgfileCL)
+        .replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=%1").arg(devluid))
+        .replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid));
+    }
+    return QString(ncfgfileCL)
 	.replace("rootfstype=iso9660", "rootfstype=auto")
-	.replace(QRegExp("root=\\S{0,}CDLABEL=\\S{0,}"), QString("root=%1").arg(devluid))
-	.replace(QRegExp("root=\\S{0,}LABEL=\\S{0,}"), QString("root=%1").arg(devluid))
-	.replace("theme:sabayon", "theme:sabayon cdroot_type=vfat")
+    .replace("theme:sabayon", "theme:sabayon cdroot_type=vfat")
 	.replace("pmedia=cd", "pmedia=usbflash")
 	.replace(QRegExp("archisolabel=\\S{0,}"), QString("archisolabel=%1").arg(devlabel))
 	.trimmed();
@@ -3935,11 +4019,11 @@ void unetbootin::runinstusb()
 			// make active
 			if (sfdiskcommand != "") {
 				// use sfdisk if available
-				callexternapp(sfdiskcommand, QString("%1 -A%2").arg(rawtargetDev, QString(targetDev).remove(rawtargetDev)));
+                callexternapp(sfdiskcommand, QString("%1 -A%2").arg(rawtargetDev, QString(targetDev).remove(rawtargetDev).remove("p")));
 			} else {
 				// use fdisk if sfdisk is unavailable
 				bool isOk = false;
-				int partitionNumber = QString(targetDev).remove(rawtargetDev).toInt(&isOk, 10);
+                int partitionNumber = QString(targetDev).remove(rawtargetDev).remove("p").toInt(&isOk, 10);
 				if (isOk)
 				{
 					QString output = callexternapp("fdisk", "-l");
