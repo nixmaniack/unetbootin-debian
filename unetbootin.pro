@@ -67,4 +67,5 @@ TRANSLATIONS += unetbootin.ts \
     unetbootin_pl.ts \
     unetbootin_fa.ts \
     unetbootin_si.ts
+RESOURCES += unetbootin.qrc
 DEFINES += NOSTATIC
