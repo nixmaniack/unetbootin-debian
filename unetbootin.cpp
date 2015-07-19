@@ -673,7 +673,11 @@ void unetbootin::on_diskimagetypeselect_currentIndexChanged()
 
 void unetbootin::on_FloppyFileSelector_clicked()
 {
-	QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath(), tr("All Files") + " (*);;" + tr("ISO") + " (*.iso);;" + tr("Floppy") + " (*.img)"));
+    QString nameFloppy = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Disk Image File"), QDir::homePath(), tr("All Files") + " (*);;" + tr("ISO") + " (*.iso);;" + tr("Floppy") + " (*.img)", 0
+    #if (QT_VERSION >= QT_VERSION_CHECK(4, 5, 0))
+    , QFileDialog::ReadOnly
+    #endif
+    ));
 	if (QFileInfo(nameFloppy).completeSuffix().contains("iso", Qt::CaseInsensitive))
 	{
 		if (diskimagetypeselect->findText(tr("ISO")) != -1)
@@ -691,7 +695,11 @@ void unetbootin::on_FloppyFileSelector_clicked()
 
 void unetbootin::on_KernelFileSelector_clicked()
 {
-	QString nameKernel = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Kernel File"), QDir::homePath(), tr("All Files (*)")));
+    QString nameKernel = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Kernel File"), QDir::homePath(), tr("All Files (*)"), 0
+    #if (QT_VERSION >= QT_VERSION_CHECK(4, 5, 0))
+    , QFileDialog::ReadOnly
+    #endif
+    ));
 	KernelPath->clear();
 	KernelPath->insert(nameKernel);
 	radioManual->setChecked(true);
@@ -699,7 +707,11 @@ void unetbootin::on_KernelFileSelector_clicked()
 
 void unetbootin::on_InitrdFileSelector_clicked()
 {
-	QString nameInitrd = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Initrd File"), QDir::homePath(), tr("All Files (*)")));
+    QString nameInitrd = QDir::toNativeSeparators(QFileDialog::getOpenFileName(this, tr("Open Initrd File"), QDir::homePath(), tr("All Files (*)"), 0
+    #if (QT_VERSION >= QT_VERSION_CHECK(4, 5, 0))
+    , QFileDialog::ReadOnly
+    #endif
+    ));
 	InitrdPath->clear();
 	InitrdPath->insert(nameInitrd);
 	radioManual->setChecked(true);
@@ -707,7 +719,11 @@ void unetbootin::on_InitrdFileSelector_clicked()
 
 void unetbootin::on_CfgFileSelector_clicked()
 {
-	QString nameCfg = QFileDialog::getOpenFileName(this, tr("Open Bootloader Config File"), QDir::homePath(), tr("All Files (*)"));
+    QString nameCfg = QFileDialog::getOpenFileName(this, tr("Open Bootloader Config File"), QDir::homePath(), tr("All Files (*)"), 0
+    #if (QT_VERSION >= QT_VERSION_CHECK(4, 5, 0))
+    , QFileDialog::ReadOnly
+    #endif
+    );
 	OptionEnter->clear();
 	QString cfgoptstxt = getcfgkernargs(nameCfg, "", QStringList(), QStringList());
 	if (cfgoptstxt.isEmpty())
@@ -3376,13 +3392,29 @@ void unetbootin::instIndvfl(QString srcfName, QString dstfName)
 	if (srcfName == "memdisk")
 				srcF.setFileName(QFile::exists("/usr/share/syslinux/memdisk") ? "/usr/share/syslinux/memdisk" : "/usr/lib/syslinux/memdisk");
 	else if (srcfName == "menu.c32")
+	{
 				srcF.setFileName(QFile::exists("/usr/share/syslinux/menu.c32") ? "/usr/share/syslinux/menu.c32" : "/usr/lib/syslinux/menu.c32");
+				if (QFile::exists("/usr/lib/syslinux/modules/bios/menu.c32"))
+					srcF.setFileName("/usr/lib/syslinux/modules/bios/menu.c32");
+	}
     else if (srcfName == "libutil.c32")
+	{
                 srcF.setFileName(QFile::exists("/usr/share/syslinux/libutil.c32") ? "/usr/share/syslinux/libutil.c32" : "/usr/lib/syslinux/libutil.c32");
+		if (QFile::exists("/usr/lib/syslinux/modules/bios/libutil.c32"))
+			srcF.setFileName("/usr/lib/syslinux/modules/bios/libutil.c32");
+	}
     else if (srcfName == "libcom32.c32")
+	{
                 srcF.setFileName(QFile::exists("/usr/share/syslinux/libcom32.c32") ? "/usr/share/syslinux/libcom32.c32" : "/usr/lib/syslinux/libcom32.c32");
+		if (QFile::exists("/usr/lib/syslinux/modules/bios/libcom32.c32"))
+			srcF.setFileName("/usr/lib/syslinux/modules/bios/libcom32.c32");
+	}
     else if (srcfName == "mbr.bin")
-				srcF.setFileName(QFile::exists("/usr/share/syslinux/mbr.bin") ? "/usr/share/syslinux/mbr.bin" : "/usr/lib/syslinux/mbr.bin");
+	{
+			srcF.setFileName(QFile::exists("/usr/share/syslinux/mbr.bin") ? "/usr/share/syslinux/mbr.bin" : "/usr/lib/syslinux/mbr.bin");
+		if (QFile::exists("/usr/lib/syslinux/mbr/mbr.bin"))
+			srcF.setFileName("/usr/lib/syslinux/mbr/mbr.bin");
+	}
 	else if (srcfName == "ubnsylnx")
 		srcF.setFileName("/usr/bin/syslinux");
 //	else
@@ -4118,6 +4150,8 @@ void unetbootin::runinstusb()
 			QFile mbrbinF(":/mbr.bin");
 			#ifdef NOSTATIC
 			mbrbinF.setFileName(QFile::exists("/usr/share/syslinux/mbr.bin") ? "/usr/share/syslinux/mbr.bin" : "/usr/lib/syslinux/mbr.bin");
+			if (QFile::exists("/usr/lib/syslinux/mbr/mbr.bin"))
+				mbrbinF.setFileName("/usr/lib/syslinux/mbr/mbr.bin");
 			#endif
 			usbmbrF.open(QIODevice::WriteOnly);
 			mbrbinF.open(QIODevice::ReadOnly);
