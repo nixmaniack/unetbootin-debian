@@ -1,4 +1,10 @@
-unetbootin (603-1) precise; urgency=low
+unetbootin (608-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 19 Jul 2015 15:18:37 -0700
+
+unetbootin (603-1) unstable; urgency=low
 
   * New upstream release.
 
