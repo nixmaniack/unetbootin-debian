@@ -1,3 +1,44 @@
+unetbootin (613-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Mon, 20 Jul 2015 02:11:34 -0700
+
+unetbootin (611-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 19 Jul 2015 16:00:43 -0700
+
+unetbootin (608-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 19 Jul 2015 15:18:37 -0700
+
+unetbootin (603-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Mon, 21 Apr 2014 21:10:48 -0400
+
+unetbootin (602-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Mon, 21 Apr 2014 20:42:16 -0400
+
+unetbootin (585-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control
+   - Bumped Standards-Version to 3.9.4
+   - Added Geza Kovacs to Uploaders
+  * debian/copyright
+   - Corrected copyright header format
+
+ -- Geza Kovacs <geza0kovacs@gmail.com>  Sun, 25 Aug 2013 16:30:09 -0700
+
 unetbootin (575-1) unstable; urgency=low
 
   * New upstream release.
